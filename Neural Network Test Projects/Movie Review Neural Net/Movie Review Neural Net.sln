@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Movie Review Neural Net", "Movie Review Neural Net\Movie Review Neural Net.pyproj", "{002AA97D-7BF1-4CFE-B386-7A031C077B10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{002AA97D-7BF1-4CFE-B386-7A031C077B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{002AA97D-7BF1-4CFE-B386-7A031C077B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1CB58DE-B421-4A0C-8934-7415E9E18CA4}
+	EndGlobalSection
+EndGlobal
