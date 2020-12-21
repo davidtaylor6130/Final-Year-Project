@@ -1,2 +1,2 @@
-C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\Definitions.FYP.h
-c:\users\david\documents\unreal projects\fyp\source\fyp\FYP.h
+C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\Definitions.FYP.h
+c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP.h

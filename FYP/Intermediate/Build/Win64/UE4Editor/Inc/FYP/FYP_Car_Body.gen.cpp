@@ -69,6 +69,14 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_NorthRayDistanceUI;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LapMultiplyerUI_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_LapMultiplyerUI;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DistanceTraveledScoreUI_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DistanceTraveledScoreUI;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TimeLeft_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TimeLeft;
@@ -80,14 +88,6 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GearDisplayColor_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_GearDisplayColor;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GearDisplayString_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FTextPropertyParams NewProp_GearDisplayString;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SpeedDisplayString_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FTextPropertyParams NewProp_SpeedDisplayString;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EngineSoundComponent_MetaData[];
 #endif
@@ -196,6 +196,24 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthRayDistanceUI = { "NorthRayDistanceUI", nullptr, (EPropertyFlags)0x00400000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFYPPawn, NorthRayDistanceUI), Z_Construct_UClass_UTextRenderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthRayDistanceUI_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthRayDistanceUI_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFYPPawn_Statics::NewProp_LapMultiplyerUI_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Display" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFYPPawn_Statics::NewProp_LapMultiplyerUI = { "LapMultiplyerUI", nullptr, (EPropertyFlags)0x00400000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFYPPawn, LapMultiplyerUI), Z_Construct_UClass_UTextRenderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFYPPawn_Statics::NewProp_LapMultiplyerUI_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFYPPawn_Statics::NewProp_LapMultiplyerUI_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFYPPawn_Statics::NewProp_DistanceTraveledScoreUI_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Display" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFYPPawn_Statics::NewProp_DistanceTraveledScoreUI = { "DistanceTraveledScoreUI", nullptr, (EPropertyFlags)0x00400000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFYPPawn, DistanceTraveledScoreUI), Z_Construct_UClass_UTextRenderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFYPPawn_Statics::NewProp_DistanceTraveledScoreUI_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFYPPawn_Statics::NewProp_DistanceTraveledScoreUI_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFYPPawn_Statics::NewProp_TimeLeft_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Display" },
@@ -224,24 +242,6 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFYPPawn_Statics::NewProp_GearDisplayColor = { "GearDisplayColor", nullptr, (EPropertyFlags)0x0010000000030015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFYPPawn, GearDisplayColor), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(Z_Construct_UClass_AFYPPawn_Statics::NewProp_GearDisplayColor_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFYPPawn_Statics::NewProp_GearDisplayColor_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFYPPawn_Statics::NewProp_GearDisplayString_MetaData[] = {
-		{ "Category", "Display" },
-		{ "Comment", "/** The current gear as a string (R,N, 1,2 etc) */" },
-		{ "ModuleRelativePath", "FYP_Car_Body.h" },
-		{ "ToolTip", "The current gear as a string (R,N, 1,2 etc)" },
-	};
-#endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_AFYPPawn_Statics::NewProp_GearDisplayString = { "GearDisplayString", nullptr, (EPropertyFlags)0x0010000000030015, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFYPPawn, GearDisplayString), METADATA_PARAMS(Z_Construct_UClass_AFYPPawn_Statics::NewProp_GearDisplayString_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFYPPawn_Statics::NewProp_GearDisplayString_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFYPPawn_Statics::NewProp_SpeedDisplayString_MetaData[] = {
-		{ "Category", "Display" },
-		{ "Comment", "/** The current speed as a string eg 10 km/h */" },
-		{ "ModuleRelativePath", "FYP_Car_Body.h" },
-		{ "ToolTip", "The current speed as a string eg 10 km/h" },
-	};
-#endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_AFYPPawn_Statics::NewProp_SpeedDisplayString = { "SpeedDisplayString", nullptr, (EPropertyFlags)0x0010000000030015, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFYPPawn, SpeedDisplayString), METADATA_PARAMS(Z_Construct_UClass_AFYPPawn_Statics::NewProp_SpeedDisplayString_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFYPPawn_Statics::NewProp_SpeedDisplayString_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFYPPawn_Statics::NewProp_EngineSoundComponent_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -306,11 +306,11 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_EastRayDistanceUI,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthEastRayDistanceUI,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthRayDistanceUI,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_LapMultiplyerUI,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_DistanceTraveledScoreUI,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_TimeLeft,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_GearDisplayReverseColor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_GearDisplayColor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_GearDisplayString,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_SpeedDisplayString,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_EngineSoundComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_InCarGear,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_InCarSpeed,
@@ -344,7 +344,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFYPPawn, 3530692301);
+	IMPLEMENT_CLASS(AFYPPawn, 1334420038);
 	template<> FYP_API UClass* StaticClass<AFYPPawn>()
 	{
 		return AFYPPawn::StaticClass();

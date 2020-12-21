@@ -23,12 +23,6 @@
 #define HMD_MODULE_INCLUDED 0
 #endif
 
-// Needed for VR Headset
-#if HMD_MODULE_INCLUDED
-#include "IXRTrackingSystem.h"
-#include "HeadMountedDisplayFunctionLibrary.h"
-#endif // HMD_MODULE_INCLUDED
-
 const FName AFYPPawn::LookUpBinding("LookUp");
 const FName AFYPPawn::LookRightBinding("LookRight");
 const FName AFYPPawn::EngineAudioRPM("RPM");
@@ -173,6 +167,18 @@ AFYPPawn::AFYPPawn()
 	TimeLeft->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
 	TimeLeft->SetupAttachment(GetMesh());
 
+	DistanceTraveledScoreUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Distance Traveled"));
+	DistanceTraveledScoreUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	DistanceTraveledScoreUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
+	DistanceTraveledScoreUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	DistanceTraveledScoreUI->SetupAttachment(GetMesh());
+
+	LapMultiplyerUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Lap Multiplyer"));
+	LapMultiplyerUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	LapMultiplyerUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
+	LapMultiplyerUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	LapMultiplyerUI->SetupAttachment(GetMesh());
+
 	NorthRayDistanceUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("N"));
 	NorthRayDistanceUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	NorthRayDistanceUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
@@ -220,8 +226,17 @@ AFYPPawn::AFYPPawn()
 	NorthWestRayDistanceUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
 	NorthWestRayDistanceUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
 	NorthWestRayDistanceUI->SetupAttachment(GetMesh());
+
+	mf_DistanceTraveled = 0.036f;
 }
 
+void AFYPPawn::BeginPlay()
+{
+	Super::BeginPlay();
+
+	// Start an engine sound playing
+	EngineSoundComponent->Play();
+}
 
 void AFYPPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
@@ -263,76 +278,67 @@ void AFYPPawn::OnHandbrakeReleased()
 void AFYPPawn::Tick(float Delta)
 {
 	Super::Tick(Delta);
+
+	// Update Hud
+	//- Calculations for Speed And Gear -//
+		float KPH = FMath::Abs(GetVehicleMovement()->GetForwardSpeed()) * 0.036f;
+		int32 KPH_int = FMath::FloorToInt(KPH);
+		int32 Gear = GetVehicleMovement()->GetCurrentGear();
+
+		//- Creating Strings and Setting Speed String -//
+		FText GearDisplayString, SpeedDisplayString = FText::Format(LOCTEXT("SpeedFormat", "{0} km/h"), FText::AsNumber(KPH_int));
+
+		if (KPH < 1)
+			GearDisplayString = FText(LOCTEXT("ReverseGear", "N"));
+		else
+			GearDisplayString = (Gear == -1) ? LOCTEXT("R", "R") : FText::AsNumber(Gear);
+
+	//- Calculations for Time Left -//
+
+	//- Calculations for Distance Traveled -//
 	
-	// Update phsyics material
-	UpdatePhysicsMaterial();
+		mf_DistanceTraveled += (GetVehicleMovement()->GetForwardSpeed() * 0.036f) * Delta;
 
-	// Update the strings used in the hud (incar and onscreen)
-	UpdateHUDStrings();
+	//- Calculations for LapMultiplayer -//
+	
+	//- Calculations for NorthRayDistance -//
+	
+	//- Calculations for NorthEastRayDistance -//
+	
+	//- Calculations for East Ray Distance -//
+	
+	//- Calculations for South East Ray Distance -//
+	
+	//- Calculations for South Ray Distance -//
+	
+	//- Calculations for South West Ray Distance -//
+	
+	//- Calculations for West Ray Distance -//
 
-	// Set the string in the incar hud
-	SetupInCarHUD();
+	//- Calculations for North West Distance -//
+
+
+	//- Setting Each UI Elements To Needed Text -//
+	InCarSpeed->SetText(SpeedDisplayString);
+	InCarGear->SetText(GearDisplayString);
+
+	//TimeLeft->SetText();
+	DistanceTraveledScoreUI->SetText(FText::AsNumber(mf_DistanceTraveled));
+	//LapMultiplyerUI->SetText();
+	//NorthRayDistanceUI->SetText();
+	//NorthEastRayDistanceUI->SetText();
+	//EastRayDistanceUI->SetText();
+	//SouthEastRayDistanceUI->SetText();
+	//SouthRayDistanceUI->SetText();
+	//SouthWestRayDistanceUI->SetText();
+	//WestRayDistanceUI->SetText();
+	//NorthWestRayDistanceUI->SetText();
+
+
 
 	// Pass the engine RPM to the sound component
 	float RPMToAudioScale = 2500.0f / GetVehicleMovement()->GetEngineMaxRotationSpeed();
 	EngineSoundComponent->SetFloatParameter(EngineAudioRPM, GetVehicleMovement()->GetEngineRotationSpeed()*RPMToAudioScale);
-}
-
-void AFYPPawn::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// Start an engine sound playing
-	EngineSoundComponent->Play();
-}
-
-void AFYPPawn::UpdateHUDStrings()
-{
-	float KPH = FMath::Abs(GetVehicleMovement()->GetForwardSpeed()) * 0.036f;
-	int32 KPH_int = FMath::FloorToInt(KPH);
-	int32 Gear = GetVehicleMovement()->GetCurrentGear();
-
-	// Using FText because this is display text that should be localizable
-	SpeedDisplayString = FText::Format(LOCTEXT("SpeedFormat", "{0} km/h"), FText::AsNumber(KPH_int));
-
-
-	if (KPH < 1)
-	{
-		GearDisplayString = FText(LOCTEXT("ReverseGear", "N"));
-	}
-	else
-	{
-		GearDisplayString = (Gear == -1) ? LOCTEXT("R", "R") : FText::AsNumber(Gear);
-	}
-
-}
-
-void AFYPPawn::SetupInCarHUD()
-{
-	APlayerController* PlayerController = Cast<APlayerController>(GetController());
-	if ((PlayerController != nullptr) && (InCarSpeed != nullptr) && (InCarGear != nullptr))
-	{
-		// Setup the text render component strings
-		InCarSpeed->SetText(SpeedDisplayString);
-		InCarGear->SetText(GearDisplayString);
-	}
-}
-
-void AFYPPawn::UpdatePhysicsMaterial()
-{
-	if (GetActorUpVector().Z < 0)
-	{
-		if (bIsLowFriction == true)
-		{
-			GetMesh()->SetPhysMaterialOverride(NonSlipperyMaterial);
-			bIsLowFriction = false;
-		}
-		else
-		{
-			GetMesh()->SetPhysMaterialOverride(SlipperyMaterial);
-			bIsLowFriction = true;
-		}
-	}
 }
 
 #undef LOCTEXT_NAMESPACE

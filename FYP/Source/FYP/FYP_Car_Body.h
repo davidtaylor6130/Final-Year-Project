@@ -41,14 +41,6 @@ class AFYPPawn : public AWheeledVehicle
 public:
 	AFYPPawn();
 
-	/** The current speed as a string eg 10 km/h */
-	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly)
-	FText SpeedDisplayString;
-
-	/** The current gear as a string (R,N, 1,2 etc) */
-	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly)
-	FText GearDisplayString;
-
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly)
 	/** The color of the incar gear text in forward gears */
 	FColor	GearDisplayColor;
@@ -67,17 +59,8 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
-	// End Actor interface
-
 	/** Handle pressing forwards */
 	void MoveForward(float Val);
-
-	/** Setup the strings used on the hud */
-	void SetupInCarHUD();
-
-	/** Update the physics material used by the vehicle mesh */
-	void UpdatePhysicsMaterial();
-
 	/** Handle pressing right */
 	void MoveRight(float Val);
 	/** Handle handbrake pressed */
@@ -91,7 +74,7 @@ public:
 
 private:
 	/** Update the gear and speed strings */
-	void UpdateHUDStrings();
+	void UpdateSpeedAndGearHUD();
 	/* Are we on a 'slippery' surface */
 	bool bIsLowFriction;
 	/** Slippery Material instance */
@@ -117,9 +100,6 @@ private:
 	//-  ALL AI CODE NEEDED -//
 	//- CODE BY DAVID TAYLOR -//
 
-	void UpdateAIUIMethods();
-
-
 	//- ALtering Input Method -//
 		/** Update to check user inputs **/
 		void CheckKeyPresses();
@@ -128,6 +108,12 @@ private:
 		//- UI Elements For AI -//
 			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 			UTextRenderComponent* TimeLeft;
+
+			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+			UTextRenderComponent* DistanceTraveledScoreUI;
+
+			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+			UTextRenderComponent* LapMultiplyerUI;
 
 			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 			UTextRenderComponent* NorthRayDistanceUI;
@@ -152,32 +138,7 @@ private:
 
 			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 			UTextRenderComponent* NorthWestRayDistanceUI;
-
-		//- Fail Conditions For AI -//	
-			/** Causes Death Of AI If not Moving **/
-			/** Text component for the In-Car speed */
-			float mf_TimeStationary();
-
-			void CheckIfStationary();
-
-			/** Causes Death Of AI if Collides with walls **/
-			void CheckIfCrashed();
-
-		//- Reward Conditions For AI-//
-			/** Distance Traveled Score **/
-			void DistanceTraveled();
-			float mf_DistanceTraveled;
-			
-			/** Lap Multiplyer For Score **/
-			void LapMultiplyer();
-			int mi_LapMultiplyer;
-			
-
-
-	//- Functions to allow AI to drive -//
-		/** NeuralNetwork To Car Inputs **/
-		void PassAIOutputToCar();
-	
-
+		
+	float mf_DistanceTraveled;
 
 };

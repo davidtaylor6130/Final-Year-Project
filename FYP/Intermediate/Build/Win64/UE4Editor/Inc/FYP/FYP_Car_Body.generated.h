@@ -64,6 +64,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFYPPawn); \
 	FORCEINLINE static uint32 __PPO__InCarGear() { return STRUCT_OFFSET(AFYPPawn, InCarGear); } \
 	FORCEINLINE static uint32 __PPO__EngineSoundComponent() { return STRUCT_OFFSET(AFYPPawn, EngineSoundComponent); } \
 	FORCEINLINE static uint32 __PPO__TimeLeft() { return STRUCT_OFFSET(AFYPPawn, TimeLeft); } \
+	FORCEINLINE static uint32 __PPO__DistanceTraveledScoreUI() { return STRUCT_OFFSET(AFYPPawn, DistanceTraveledScoreUI); } \
+	FORCEINLINE static uint32 __PPO__LapMultiplyerUI() { return STRUCT_OFFSET(AFYPPawn, LapMultiplyerUI); } \
 	FORCEINLINE static uint32 __PPO__NorthRayDistanceUI() { return STRUCT_OFFSET(AFYPPawn, NorthRayDistanceUI); } \
 	FORCEINLINE static uint32 __PPO__NorthEastRayDistanceUI() { return STRUCT_OFFSET(AFYPPawn, NorthEastRayDistanceUI); } \
 	FORCEINLINE static uint32 __PPO__EastRayDistanceUI() { return STRUCT_OFFSET(AFYPPawn, EastRayDistanceUI); } \

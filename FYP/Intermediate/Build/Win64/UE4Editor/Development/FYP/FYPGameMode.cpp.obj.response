@@ -498,9 +498,9 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I Runtime\ClothingSystemRuntimeInterface
-/I "C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP"
-/I "C:\Users\david\Documents\Unreal Projects\FYP\Source"
-/I "C:\Users\david\Documents\Unreal Projects\FYP\Source\FYP"
+/I C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP
+/I C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source
+/I C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP
 /I ..\Plugins\Runtime\PhysXVehicles\Intermediate\Build\Win64\UE4Editor\Inc\PhysXVehicles
 /I ..\Plugins\Runtime\PhysXVehicles\Source
 /I ..\Plugins\Runtime\PhysXVehicles\Source\PhysXVehicles\Public
@@ -545,12 +545,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\FYPEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\FYPEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\FYPEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\david\Documents\Unreal Projects\FYP\Source\FYP\FYPGameMode.cpp"
-/FI"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\Definitions.FYP.h"
-/Fo"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYPGameMode.cpp.obj"
+/FI"C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\FYPEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\FYPEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\FYPEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP\FYPGameMode.cpp"
+/FI"C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\Definitions.FYP.h"
+/Fo"C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYPGameMode.cpp.obj"
 /TP
 /GR-
 /W4
