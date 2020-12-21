@@ -1,0 +1,24 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-FYP.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\FYPEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYP.cpp.obj"
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYPGameMode.cpp.obj"
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYPHud.cpp.obj"
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYPPawn.cpp.obj"
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYPWheelFront.cpp.obj"
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYPWheelRear.cpp.obj"
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYP.init.gen.cpp.obj"
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYPGameMode.gen.cpp.obj"
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYPHud.gen.cpp.obj"
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYPPawn.gen.cpp.obj"
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYPWheelFront.gen.cpp.obj"
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\FYPWheelRear.gen.cpp.obj"
+"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\Default.rc2.res"
+/OUT:"C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP.lib"
+/INCLUDE:IMPLEMENT_MODULE_FYP

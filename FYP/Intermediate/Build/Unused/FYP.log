@@ -1,0 +1,17 @@
+﻿  Parsing headers for FYPEditor
+    Running UnrealHeaderTool "C:\Users\david\Documents\Unreal Projects\FYP\FYP.uproject" "C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\FYPEditor\Development\FYPEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for FYPEditor in 7.1218973 seconds
+  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 8 actions with 4 processes...
+    [1/8] FYP.init.gen.cpp
+    [2/8] FYP_Car_Body.gen.cpp
+    [3/8] FYPGameMode.cpp
+    [4/8] FYP_Car_Body.cpp
+    [5/8] FYP_Car_Hud.cpp
+    [6/8] UE4Editor-FYP-0020.lib
+       Creating library C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0020.lib and object C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0020.exp
+    [7/8] UE4Editor-FYP-0020.dll
+       Creating library C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0020.suppressed.lib and object C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0020.suppressed.exp
+    [8/8] FYPEditor.target
+  Total time in Parallel executor: 13.00 seconds
+  Total execution time: 21.06 seconds

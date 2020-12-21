@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\FYP.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{2BB50869-8B13-44EE-96DD-186E302E8FB4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FYP.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\FYPEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{7D8EA693-9B19-4741-8CF3-39351A4BE8F3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\FYP">
+      <UniqueIdentifier>{16C89C67-C891-4397-B87C-9F525E95F212}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FYP\FYP.Build.cs">
+      <Filter>Source\FYP</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\FYP\FYP.cpp">
+      <Filter>Source\FYP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FYP\FYP.h">
+      <Filter>Source\FYP</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FYP\FYPGameMode.cpp">
+      <Filter>Source\FYP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FYP\FYPGameMode.h">
+      <Filter>Source\FYP</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FYP\FYPHud.cpp">
+      <Filter>Source\FYP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FYP\FYPHud.h">
+      <Filter>Source\FYP</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FYP\FYPPawn.cpp">
+      <Filter>Source\FYP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FYP\FYPPawn.h">
+      <Filter>Source\FYP</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FYP\FYPWheelFront.cpp">
+      <Filter>Source\FYP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FYP\FYPWheelFront.h">
+      <Filter>Source\FYP</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FYP\FYPWheelRear.cpp">
+      <Filter>Source\FYP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FYP\FYPWheelRear.h">
+      <Filter>Source\FYP</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\FYP\TopViewCameraControler.h">
+      <Filter>Source\FYP</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\FYP\TopViewCameraControler.cpp">
+      <Filter>Source\FYP</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

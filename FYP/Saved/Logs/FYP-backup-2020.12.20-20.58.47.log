@@ -1,0 +1,1281 @@
+﻿Log file open, 12/20/20 20:47:56
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: FYP
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.095316
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin RawInput
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.23-CL-9631420
+LogInit: Engine Version: 4.23.1-9631420+++UE4+Release-4.23
+LogInit: Compatible Engine Version: 4.23.0-8386587+++UE4+Release-4.23
+LogInit: Net CL: 8386587
+LogInit: OS: Windows 10 (Release 2009) (), CPU:        Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz, GPU: NVIDIA GeForce RTX 2060 SUPER
+LogInit: Compiled (64-bit): Oct 18 2019 02:07:44
+LogInit: Compiled with Visual C++: 19.16.27030.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.23
+LogInit: Command Line:  -EpicPortal -epicusername=tauntcorpse5866 -epicuserid=e3fa17de25344c4b9e8f9f55e5e8e750 -epiclocale=en
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.23/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 23
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 3
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 34
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 35
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 31
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 11
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 27
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 6
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 9
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.20-20.47.56:715][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.12.20-20.47.56:715][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
+[2020.12.20-20.47.56:716][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.12.20-20.47.56:716][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.12.20-20.47.56:716][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.12.20-20.47.56:716][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.12.20-20.47.56:716][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.12.20-20.47.56:716][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.12.20-20.47.56:716][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.20-20.47.56:716][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.20-20.47.56:718][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:718][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.12.20-20.47.56:718][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.12.20-20.47.56:718][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:718][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.12.20-20.47.56:718][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:718][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.12.20-20.47.56:718][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.12.20-20.47.56:718][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.12.20-20.47.56:719][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.12.20-20.47.56:720][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.12.20-20.47.56:720][  0]LogInit: Selected Device Profile: [Windows]
+[2020.12.20-20.47.56:720][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.12.20-20.47.56:723][  0]LogHAL: Display: Platform has ~ 16 GB [17129328640 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.12.20-20.47.56:723][  0]LogInit: Going up to parent DeviceProfile []
+[2020.12.20-20.47.56:724][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.12.20-20.47.56:724][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.12.20-20.47.56:725][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/david/Documents/Unreal Projects/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.20-20.47.56:725][  0]LogInit: Computer: DESKTOP-070UMBJ
+[2020.12.20-20.47.56:725][  0]LogInit: User: david
+[2020.12.20-20.47.56:725][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.12.20-20.47.56:725][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.12.20-20.47.56:726][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2020.12.20-20.47.56:726][  0]LogMemory: Platform Memory Stats for Windows
+[2020.12.20-20.47.56:726][  0]LogMemory: Process Physical Memory: 100.14 MB used, 100.14 MB peak
+[2020.12.20-20.47.56:726][  0]LogMemory: Process Virtual Memory: 98.34 MB used, 98.34 MB peak
+[2020.12.20-20.47.56:726][  0]LogMemory: Physical Memory: 6202.66 MB used,  10133.14 MB free, 16335.80 MB total
+[2020.12.20-20.47.56:726][  0]LogMemory: Virtual Memory: 4655.89 MB used,  134213072.00 MB free, 134217728.00 MB total
+[2020.12.20-20.47.56:728][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.12.20-20.47.56:777][  0]LogInit: Using OS detected language (en-GB).
+[2020.12.20-20.47.56:777][  0]LogInit: Using OS detected locale (en-GB).
+[2020.12.20-20.47.56:778][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2020.12.20-20.47.56:998][  0]LogInit: Setting process to per monitor DPI aware
+[2020.12.20-20.47.57:032][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.12.20-20.47.57:032][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.12.20-20.47.57:224][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.12.20-20.47.57:224][  0]LogD3D11RHI: D3D11 adapters:
+[2020.12.20-20.47.57:369][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060 SUPER' (Feature Level 11_0)
+[2020.12.20-20.47.57:369][  0]LogD3D11RHI:       8031/0/8167 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2020.12.20-20.47.57:372][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.12.20-20.47.57:372][  0]LogD3D11RHI:       0/0/8167 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.12.20-20.47.57:372][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.12.20-20.47.57:378][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.12.20-20.47.57:378][  0]LogD3D11RHI:     GPU DeviceId: 0x1f06 (for the marketing name, search the web for "GPU Device Id")
+[2020.12.20-20.47.57:379][  0]LogWindows: EnumDisplayDevices:
+[2020.12.20-20.47.57:379][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2060 SUPER' (P:1 D:1)
+[2020.12.20-20.47.57:379][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2060 SUPER' (P:0 D:0)
+[2020.12.20-20.47.57:379][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2060 SUPER' (P:0 D:0)
+[2020.12.20-20.47.57:380][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060 SUPER' (P:0 D:0)
+[2020.12.20-20.47.57:380][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.12.20-20.47.57:380][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060 SUPER
+[2020.12.20-20.47.57:380][  0]LogD3D11RHI:   Driver Version: 460.89 (internal:27.21.14.6089, unified:460.89)
+[2020.12.20-20.47.57:380][  0]LogD3D11RHI:      Driver Date: 12-11-2020
+[2020.12.20-20.47.57:380][  0]LogRHI: Texture pool is 5621 MB (70% of 8031 MB)
+[2020.12.20-20.47.57:495][  0]LogD3D11RHI: Async texture creation enabled
+[2020.12.20-20.47.57:514][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.12.20-20.47.57:850][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
+[2020.12.20-20.47.57:861][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
+[2020.12.20-20.47.57:871][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
+[2020.12.20-20.47.57:882][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
+[2020.12.20-20.47.57:893][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
+[2020.12.20-20.47.57:904][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
+[2020.12.20-20.47.57:915][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
+[2020.12.20-20.47.57:926][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
+[2020.12.20-20.47.57:931][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
+[2020.12.20-20.47.57:968][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
+[2020.12.20-20.47.57:968][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
+[2020.12.20-20.47.57:968][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
+[2020.12.20-20.47.57:968][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
+[2020.12.20-20.47.57:968][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
+[2020.12.20-20.47.57:968][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
+[2020.12.20-20.47.57:968][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
+[2020.12.20-20.47.57:968][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
+[2020.12.20-20.47.57:968][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
+[2020.12.20-20.47.57:968][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
+[2020.12.20-20.47.57:968][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
+[2020.12.20-20.47.57:968][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
+[2020.12.20-20.47.57:969][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
+[2020.12.20-20.47.57:969][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
+[2020.12.20-20.47.57:969][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
+[2020.12.20-20.47.57:969][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
+[2020.12.20-20.47.57:969][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
+[2020.12.20-20.47.57:969][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
+[2020.12.20-20.47.57:971][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
+[2020.12.20-20.47.57:992][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
+[2020.12.20-20.47.57:992][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
+[2020.12.20-20.47.58:009][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
+[2020.12.20-20.47.58:009][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
+[2020.12.20-20.47.58:017][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
+[2020.12.20-20.47.58:026][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
+[2020.12.20-20.47.58:034][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
+[2020.12.20-20.47.58:044][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
+[2020.12.20-20.47.58:074][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
+[2020.12.20-20.47.58:074][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
+[2020.12.20-20.47.58:074][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.12.20-20.47.58:085][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.12.20-20.47.58:155][  0]LogShaderCompilers: Guid format shader working directory is -14 characters bigger than the processId version (../../../../../../Users/david/Documents/Unreal Projects/FYP/Intermediate/Shaders/WorkingDirectory/13248/).
+[2020.12.20-20.47.58:155][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/david/AppData/Local/Temp/UnrealShaderWorkingDir/9FEC24B441CCC70F697AD1B90B8E6285/'.
+[2020.12.20-20.47.58:158][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.12.20-20.47.58:158][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.12.20-20.47.58:158][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.12.20-20.47.58:931][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.12.20-20.47.58:987][  0]LogDerivedDataCache: Loaded boot cache 0.06s 73MB C:/Users/david/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc.
+[2020.12.20-20.47.58:987][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/david/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc
+[2020.12.20-20.47.58:987][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/david/Documents/Unreal Projects/FYP/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.12.20-20.47.58:987][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.12.20-20.47.58:988][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/david/Documents/Unreal Projects/FYP/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.12.20-20.47.58:988][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.12.20-20.47.59:002][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.12.20-20.47.59:002][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.12.20-20.47.59:002][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.12.20-20.47.59:003][  0]LogDerivedDataCache: Using Local data cache path C:/Users/david/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.12.20-20.47.59:003][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.12.20-20.47.59:003][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.12.20-20.47.59:031][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.12.20-20.47.59:034][  0]LogSlate: Using FreeType 2.6.0
+[2020.12.20-20.47.59:034][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.12.20-20.47.59:098][  0]LogAssetRegistry: FAssetRegistry took 0.0028 seconds to start up
+[2020.12.20-20.47.59:441][  0]LogInit: Selected Device Profile: [Windows]
+[2020.12.20-20.47.59:635][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.12.20-20.47.59:635][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.12.20-20.47.59:635][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.12.20-20.47.59:635][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.12.20-20.47.59:635][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.12.20-20.47.59:646][  0]LogNetVersion: FYP 1.0.0, NetCL: 8386587, EngineNetVer: 11, GameNetVer: 0 (Checksum: 2864843675)
+[2020.12.20-20.48.00:139][  0]LogPackageLocalizationCache: Processed 12 localized package path(s) for 1 prioritized culture(s) in 0.056454 seconds
+[2020.12.20-20.48.00:146][  0]LogUObjectArray: 43444 objects as part of root set at end of initial load.
+[2020.12.20-20.48.00:146][  0]LogUObjectAllocator: 7548648 out of 0 bytes used by permanent object pool.
+[2020.12.20-20.48.00:146][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.12.20-20.48.01:147][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.12.20-20.48.01:193][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.12.20-20.48.01:412][  0]SourceControl: Source control is disabled
+[2020.12.20-20.48.01:412][  0]SourceControl: Source control is disabled
+[2020.12.20-20.48.01:413][  0]SourceControl: Source control is disabled
+[2020.12.20-20.48.01:414][  0]SourceControl: Source control is disabled
+[2020.12.20-20.48.01:525][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.12.20-20.48.01:667][  0]LogOcInput: OculusInput pre-init called
+[2020.12.20-20.48.01:676][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.12.20-20.48.01:676][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.12.20-20.48.01:756][  0]LogEngine: Initializing Engine...
+[2020.12.20-20.48.01:757][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.12.20-20.48.01:758][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.12.20-20.48.02:026][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.12.20-20.48.02:044][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.12.20-20.48.02:075][  0]LogInit: XAudio2 using 'Digital Audio (S/PDIF) (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.12.20-20.48.02:106][  0]LogInit: FAudioDevice initialized.
+[2020.12.20-20.48.02:106][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.12.20-20.48.02:269][  0]LogDerivedDataCache: Saved boot cache 0.16s 75MB C:/Users/david/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc.
+[2020.12.20-20.48.02:276][  0]LogInit: Texture streaming: Enabled
+[2020.12.20-20.48.02:299][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.12.20-20.48.02:299][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.12.20-20.48.02:300][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.12.20-20.48.02:330][  0]LogInit: Transaction tracking system initialized
+[2020.12.20-20.48.02:377][  0]BlueprintLog: New page: Editor Load
+[2020.12.20-20.48.02:561][  0]LocalizationService: Localization service is disabled
+[2020.12.20-20.48.02:925][  0]LogFileCache: Scanning file cache for directory 'C:/Users/david/Documents/Unreal Projects/FYP/Content/' took 0.00s
+[2020.12.20-20.48.02:925][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.12.20-20.48.02:925][  0]LogCook: Display: Mobile HDR setting 1
+[2020.12.20-20.48.03:152][  0]SourceControl: Source control is disabled
+[2020.12.20-20.48.03:155][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files/Epic Games/UE_4.23/FeaturePacks/StarterContent.upack)
+[2020.12.20-20.48.03:162][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2020.12.20-20.48.03:174][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Architecture/Floor_400x400.uasset"
+[2020.12.20-20.48.03:192][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Architecture/Pillar_50x500.uasset"
+[2020.12.20-20.48.03:206][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
+[2020.12.20-20.48.03:218][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Architecture/Wall_400x200.uasset"
+[2020.12.20-20.48.03:232][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Architecture/Wall_400x300.uasset"
+[2020.12.20-20.48.03:245][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Architecture/Wall_400x400.uasset"
+[2020.12.20-20.48.03:257][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Architecture/Wall_500x500.uasset"
+[2020.12.20-20.48.03:270][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
+[2020.12.20-20.48.03:282][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
+[2020.12.20-20.48.03:294][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
+[2020.12.20-20.48.03:307][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
+[2020.12.20-20.48.03:319][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Collapse01.uasset"
+[2020.12.20-20.48.03:333][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Collapse02.uasset"
+[2020.12.20-20.48.03:340][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Collapse_Cue.uasset"
+[2020.12.20-20.48.03:352][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Explosion01.uasset"
+[2020.12.20-20.48.03:365][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Explosion02.uasset"
+[2020.12.20-20.48.03:373][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Explosion_Cue.uasset"
+[2020.12.20-20.48.03:386][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Fire01.uasset"
+[2020.12.20-20.48.03:394][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Fire01_Cue.uasset"
+[2020.12.20-20.48.03:407][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Fire_Sparks01.uasset"
+[2020.12.20-20.48.03:415][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2020.12.20-20.48.03:429][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Light01.uasset"
+[2020.12.20-20.48.03:437][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Light01_Cue.uasset"
+[2020.12.20-20.48.03:451][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Light02.uasset"
+[2020.12.20-20.48.03:459][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Light02_Cue.uasset"
+[2020.12.20-20.48.03:475][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Smoke01.uasset"
+[2020.12.20-20.48.03:483][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Smoke01_Cue.uasset"
+[2020.12.20-20.48.03:495][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
+[2020.12.20-20.48.03:515][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Starter_Birds01.uasset"
+[2020.12.20-20.48.03:548][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Starter_Music01.uasset"
+[2020.12.20-20.48.03:556][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
+[2020.12.20-20.48.03:574][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Starter_Wind05.uasset"
+[2020.12.20-20.48.03:592][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Starter_Wind06.uasset"
+[2020.12.20-20.48.03:609][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Steam01.uasset"
+[2020.12.20-20.48.03:618][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Audio/Steam01_Cue.uasset"
+[2020.12.20-20.48.03:634][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2020.12.20-20.48.03:658][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2020.12.20-20.48.03:670][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2020.12.20-20.48.03:683][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2020.12.20-20.48.03:695][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2020.12.20-20.48.03:707][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
+[2020.12.20-20.48.03:720][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2020.12.20-20.48.03:733][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
+[2020.12.20-20.48.03:742][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
+[2020.12.20-20.48.03:754][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
+[2020.12.20-20.48.03:766][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
+[2020.12.20-20.48.03:778][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
+[2020.12.20-20.48.03:791][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
+[2020.12.20-20.48.03:805][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
+[2020.12.20-20.48.03:831][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
+[2020.12.20-20.48.03:839][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
+[2020.12.20-20.48.04:031][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+[2020.12.20-20.48.04:045][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Maps/Advanced_Lighting.umap"
+[2020.12.20-20.48.04:061][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset"
+[2020.12.20-20.48.04:076][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Maps/Minimal_Default.umap"
+[2020.12.20-20.48.04:097][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset"
+[2020.12.20-20.48.04:111][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Maps/StarterMap.umap"
+[2020.12.20-20.48.04:186][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap_BuiltData.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Maps/StarterMap_BuiltData.uasset"
+[2020.12.20-20.48.04:200][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_AssetPlatform.uasset"
+[2020.12.20-20.48.04:213][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Basic_Floor.uasset"
+[2020.12.20-20.48.04:227][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Basic_Wall.uasset"
+[2020.12.20-20.48.04:240][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2020.12.20-20.48.04:253][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
+[2020.12.20-20.48.04:265][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2020.12.20-20.48.04:279][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2020.12.20-20.48.04:292][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2020.12.20-20.48.04:305][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2020.12.20-20.48.04:315][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2020.12.20-20.48.04:328][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2020.12.20-20.48.04:341][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2020.12.20-20.48.04:355][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
+[2020.12.20-20.48.04:367][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
+[2020.12.20-20.48.04:380][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
+[2020.12.20-20.48.04:392][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
+[2020.12.20-20.48.04:406][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
+[2020.12.20-20.48.04:419][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Glass.uasset"
+[2020.12.20-20.48.04:438][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Ground_Grass.uasset"
+[2020.12.20-20.48.04:450][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
+[2020.12.20-20.48.04:463][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Ground_Moss.uasset"
+[2020.12.20-20.48.04:476][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2020.12.20-20.48.04:489][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2020.12.20-20.48.04:501][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
+[2020.12.20-20.48.04:513][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Metal_Copper.uasset"
+[2020.12.20-20.48.04:525][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Metal_Gold.uasset"
+[2020.12.20-20.48.04:539][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Metal_Rust.uasset"
+[2020.12.20-20.48.04:551][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Metal_Steel.uasset"
+[2020.12.20-20.48.04:563][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
+[2020.12.20-20.48.04:575][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2020.12.20-20.48.04:588][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
+[2020.12.20-20.48.04:600][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Rock_Slate.uasset"
+[2020.12.20-20.48.04:612][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2020.12.20-20.48.04:625][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2020.12.20-20.48.04:637][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2020.12.20-20.48.04:649][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Tech_Panel.uasset"
+[2020.12.20-20.48.04:661][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Water_Lake.uasset"
+[2020.12.20-20.48.04:674][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Water_Ocean.uasset"
+[2020.12.20-20.48.04:687][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2020.12.20-20.48.04:700][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2020.12.20-20.48.04:712][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Wood_Oak.uasset"
+[2020.12.20-20.48.04:724][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Wood_Pine.uasset"
+[2020.12.20-20.48.04:737][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
+[2020.12.20-20.48.04:750][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
+[2020.12.20-20.48.04:763][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/P_Explosion.uasset"
+[2020.12.20-20.48.04:776][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/P_Fire.uasset"
+[2020.12.20-20.48.04:789][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/P_Smoke.uasset"
+[2020.12.20-20.48.04:801][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/P_Sparks.uasset"
+[2020.12.20-20.48.04:813][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/P_Steam_Lit.uasset"
+[2020.12.20-20.48.04:826][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/Materials/M_Burst.uasset"
+[2020.12.20-20.48.04:839][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2020.12.20-20.48.04:852][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2020.12.20-20.48.04:863][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2020.12.20-20.48.04:875][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
+[2020.12.20-20.48.04:888][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
+[2020.12.20-20.48.04:900][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2020.12.20-20.48.04:912][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2020.12.20-20.48.04:925][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
+[2020.12.20-20.48.04:938][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Particles/Materials/M_Spark.uasset"
+[2020.12.20-20.48.04:951][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/MaterialSphere.uasset"
+[2020.12.20-20.48.04:971][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_Bush.uasset"
+[2020.12.20-20.48.04:987][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_Chair.uasset"
+[2020.12.20-20.48.04:999][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_CornerFrame.uasset"
+[2020.12.20-20.48.05:012][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_Couch.uasset"
+[2020.12.20-20.48.05:026][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_Door.uasset"
+[2020.12.20-20.48.05:041][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_DoorFrame.uasset"
+[2020.12.20-20.48.05:061][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_GlassWindow.uasset"
+[2020.12.20-20.48.05:085][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2020.12.20-20.48.05:140][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
+[2020.12.20-20.48.05:164][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2020.12.20-20.48.05:176][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_PillarFrame.uasset"
+[2020.12.20-20.48.05:190][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_PillarFrame300.uasset"
+[2020.12.20-20.48.05:204][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_Rock.uasset"
+[2020.12.20-20.48.05:219][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_Shelf.uasset"
+[2020.12.20-20.48.05:233][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_Stairs.uasset"
+[2020.12.20-20.48.05:245][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_Statue.uasset"
+[2020.12.20-20.48.05:286][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_TableRound.uasset"
+[2020.12.20-20.48.05:298][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/SM_WindowFrame.uasset"
+[2020.12.20-20.48.05:312][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/Materials/M_Bush.uasset"
+[2020.12.20-20.48.05:325][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/Materials/M_Chair.uasset"
+[2020.12.20-20.48.05:337][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/Materials/M_Door.uasset"
+[2020.12.20-20.48.05:350][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/Materials/M_Frame.uasset"
+[2020.12.20-20.48.05:362][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/Materials/M_Lamp.uasset"
+[2020.12.20-20.48.05:375][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2020.12.20-20.48.05:390][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2020.12.20-20.48.05:404][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/Materials/M_Rock.uasset"
+[2020.12.20-20.48.05:416][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/Materials/M_Shelf.uasset"
+[2020.12.20-20.48.05:428][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/Materials/M_Statue.uasset"
+[2020.12.20-20.48.05:441][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
+[2020.12.20-20.48.05:454][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Props/Materials/M_TableRound.uasset"
+[2020.12.20-20.48.05:467][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Cone.uasset"
+[2020.12.20-20.48.05:482][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Cube.uasset"
+[2020.12.20-20.48.05:501][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
+[2020.12.20-20.48.05:516][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2020.12.20-20.48.05:529][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Pipe.uasset"
+[2020.12.20-20.48.05:544][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
+[2020.12.20-20.48.05:557][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
+[2020.12.20-20.48.05:569][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Plane.uasset"
+[2020.12.20-20.48.05:582][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2020.12.20-20.48.05:597][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Sphere.uasset"
+[2020.12.20-20.48.05:609][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Torus.uasset"
+[2020.12.20-20.48.05:622][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Trim.uasset"
+[2020.12.20-20.48.05:639][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2020.12.20-20.48.05:654][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2020.12.20-20.48.05:666][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
+[2020.12.20-20.48.05:680][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Tube.uasset"
+[2020.12.20-20.48.05:694][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
+[2020.12.20-20.48.05:709][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
+[2020.12.20-20.48.05:722][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
+[2020.12.20-20.48.05:756][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2020.12.20-20.48.05:789][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2020.12.20-20.48.05:824][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2020.12.20-20.48.05:850][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2020.12.20-20.48.05:888][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2020.12.20-20.48.05:921][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2020.12.20-20.48.05:965][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2020.12.20-20.48.05:999][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2020.12.20-20.48.06:046][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2020.12.20-20.48.06:079][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2020.12.20-20.48.06:109][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2020.12.20-20.48.06:139][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2020.12.20-20.48.06:176][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2020.12.20-20.48.06:189][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Burst_M.uasset"
+[2020.12.20-20.48.06:203][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Bush_D.uasset"
+[2020.12.20-20.48.06:217][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Bush_N.uasset"
+[2020.12.20-20.48.06:231][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2020.12.20-20.48.06:243][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2020.12.20-20.48.06:259][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Chair_M.uasset"
+[2020.12.20-20.48.06:294][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Chair_N.uasset"
+[2020.12.20-20.48.06:309][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
+[2020.12.20-20.48.06:374][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2020.12.20-20.48.06:392][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2020.12.20-20.48.06:436][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2020.12.20-20.48.06:457][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2020.12.20-20.48.06:476][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2020.12.20-20.48.06:541][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2020.12.20-20.48.06:597][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2020.12.20-20.48.06:631][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2020.12.20-20.48.06:671][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2020.12.20-20.48.06:706][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2020.12.20-20.48.06:734][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2020.12.20-20.48.06:776][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2020.12.20-20.48.06:810][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2020.12.20-20.48.06:836][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2020.12.20-20.48.06:861][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2020.12.20-20.48.06:894][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2020.12.20-20.48.06:904][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2020.12.20-20.48.06:924][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2020.12.20-20.48.06:937][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Door_M.uasset"
+[2020.12.20-20.48.06:952][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Door_N.uasset"
+[2020.12.20-20.48.06:969][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
+[2020.12.20-20.48.06:989][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
+[2020.12.20-20.48.07:005][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
+[2020.12.20-20.48.07:023][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2020.12.20-20.48.07:037][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Frame_M.uasset"
+[2020.12.20-20.48.07:053][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Frame_N.uasset"
+[2020.12.20-20.48.07:061][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Gradinet_01.uasset"
+[2020.12.20-20.48.07:104][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
+[2020.12.20-20.48.07:146][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
+[2020.12.20-20.48.07:182][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2020.12.20-20.48.07:215][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2020.12.20-20.48.07:272][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
+[2020.12.20-20.48.07:311][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
+[2020.12.20-20.48.07:325][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Lamp_M.uasset"
+[2020.12.20-20.48.07:344][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Lamp_N.uasset"
+[2020.12.20-20.48.07:385][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_MacroVariation.uasset"
+[2020.12.20-20.48.07:422][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2020.12.20-20.48.07:457][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
+[2020.12.20-20.48.07:491][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
+[2020.12.20-20.48.07:513][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
+[2020.12.20-20.48.07:547][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
+[2020.12.20-20.48.07:577][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
+[2020.12.20-20.48.07:598][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
+[2020.12.20-20.48.07:625][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
+[2020.12.20-20.48.07:658][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2020.12.20-20.48.07:681][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_RockMesh_M.uasset"
+[2020.12.20-20.48.07:715][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_RockMesh_N.uasset"
+[2020.12.20-20.48.07:751][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2020.12.20-20.48.07:785][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2020.12.20-20.48.07:809][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2020.12.20-20.48.07:847][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2020.12.20-20.48.07:886][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2020.12.20-20.48.07:929][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
+[2020.12.20-20.48.07:999][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
+[2020.12.20-20.48.08:042][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2020.12.20-20.48.08:057][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Shelf_M.uasset"
+[2020.12.20-20.48.08:074][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Shelf_N.uasset"
+[2020.12.20-20.48.08:086][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
+[2020.12.20-20.48.08:108][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
+[2020.12.20-20.48.08:121][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
+[2020.12.20-20.48.08:138][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Spark_Core.uasset"
+[2020.12.20-20.48.08:151][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Statue_M.uasset"
+[2020.12.20-20.48.08:164][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Statue_N.uasset"
+[2020.12.20-20.48.08:209][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_TableRound_M.uasset"
+[2020.12.20-20.48.08:225][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_TableRound_N.uasset"
+[2020.12.20-20.48.08:238][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
+[2020.12.20-20.48.08:251][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
+[2020.12.20-20.48.08:264][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2020.12.20-20.48.08:291][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2020.12.20-20.48.08:310][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
+[2020.12.20-20.48.08:326][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
+[2020.12.20-20.48.08:343][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Water_M.uasset"
+[2020.12.20-20.48.08:361][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Water_N.uasset"
+[2020.12.20-20.48.08:385][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2020.12.20-20.48.08:408][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2020.12.20-20.48.08:433][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2020.12.20-20.48.08:461][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
+[2020.12.20-20.48.08:489][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
+[2020.12.20-20.48.08:525][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
+[2020.12.20-20.48.08:547][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
+[2020.12.20-20.48.08:575][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2020.12.20-20.48.08:597][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2020.12.20-20.48.08:615][  0]LogStaticMesh: Building static mesh Floor_400x400...
+[2020.12.20-20.48.08:619][  0]LogStaticMesh: Built static mesh [0.00s] /Game/StarterContent/Architecture/Floor_400x400.Floor_400x400
+[2020.12.20-20.48.08:671][  0]LogRenderer: Reallocating scene render targets to support 256x256 Format 10 NumSamples 1 (Frame:1).
+[2020.12.20-20.48.08:751][  0]LogSavePackage: Moving '../../../../../../Users/david/Documents/Unreal Projects/FYP/Saved/Floor_400x400666068F74DA507AEDE3D4B978B8900F0.tmp' to '../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/StarterContent/Architecture/Floor_400x400.uasset'
+[2020.12.20-20.48.08:757][  0]LogFeaturePack: Warning: Inserted 2 feature packs
+[2020.12.20-20.48.08:762][  0]Cmd: MAP LOAD FILE="../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/VehicleAdvCPP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.12.20-20.48.08:762][  0]LightingResults: New page: Lighting Build
+[2020.12.20-20.48.08:765][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.12.20-20.48.08:765][  0]MapCheck: New page: Map Check
+[2020.12.20-20.48.08:765][  0]LightingResults: New page: Lighting Build
+[2020.12.20-20.48.08:796][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.59ms
+[2020.12.20-20.48.08:998][  0]LogTexture: Display: Building textures: Texture2D_10 (BGRA8, 128X128)
+[2020.12.20-20.48.08:998][  0]LogTexture: Display: Building textures: Texture2D_3 (BGRA8, 128X128)
+[2020.12.20-20.48.08:998][  0]LogTexture: Display: Building textures: Texture2D_4 (BGRA8, 128X128)
+[2020.12.20-20.48.08:998][  0]LogTexture: Display: Building textures: Texture2D_5 (BGRA8, 128X128)
+[2020.12.20-20.48.08:998][  0]LogTexture: Display: Building textures: Texture2D_8 (BGRA8, 128X128)
+[2020.12.20-20.48.08:998][  0]LogTexture: Display: Building textures: Texture2D_9 (BGRA8, 128X128)
+[2020.12.20-20.48.08:998][  0]LogTexture: Display: Building textures: Texture2D_15 (BGRA8, 512X512)
+[2020.12.20-20.48.08:998][  0]LogTexture: Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 1024X1024)
+[2020.12.20-20.48.08:998][  0]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 2048X2048)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: HQ_Lightmap0_3 (AutoDXT, 1024X1024)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: HQ_Lightmap0_4 (AutoDXT, 1024X1024)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: HQ_Lightmap0_5 (AutoDXT, 1024X1024)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: HQ_Lightmap0_6 (AutoDXT, 1024X1024)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: HQ_Lightmap0_7 (AutoDXT, 512X512)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: HQ_Lightmap0_8 (AutoDXT, 256X256)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: HQ_Lightmap0_9 (AutoDXT, 64X64)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 2048X2048)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_2 (DXT1, 1024X1024)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_3 (DXT1, 1024X1024)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_4 (DXT1, 1024X1024)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_5 (DXT1, 1024X1024)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_6 (DXT1, 1024X1024)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_7 (DXT1, 512X512)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_8 (DXT1, 256X256)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_9 (DXT1, 64X64)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: SkyOcclusion0_1 (AutoDXT, 2048X1024)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: SkyOcclusion0_2 (AutoDXT, 1024X512)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: SkyOcclusion0_3 (AutoDXT, 1024X512)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: SkyOcclusion0_4 (AutoDXT, 1024X512)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: SkyOcclusion0_5 (AutoDXT, 1024X512)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: SkyOcclusion0_6 (AutoDXT, 1024X512)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: SkyOcclusion0_7 (AutoDXT, 512X256)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: SkyOcclusion0_8 (AutoDXT, 256X128)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: SkyOcclusion0_9 (AutoDXT, 64X32)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_0 (G8, 2048X1024)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_1 (G8, 2048X1024)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_2 (G8, 1024X512)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_4 (G8, 512X256)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_3 (G8, 2048X1024)
+[2020.12.20-20.48.14:040][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_5 (G8, 64X32)
+[2020.12.20-20.48.14:041][  0]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2020.12.20-20.48.14:098][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.12.20-20.48.14:205][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms
+[2020.12.20-20.48.14:206][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.12.20-20.48.14:206][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.215ms to complete.
+[2020.12.20-20.48.14:206][  0]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 5.444
+[2020.12.20-20.48.14:332][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.20-20.48.14:340][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.20-20.48.14:349][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.20-20.48.14:358][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.20-20.48.14:368][  0]LogCollectionManager: Loaded 0 collections in 0.002083 seconds
+[2020.12.20-20.48.14:378][  0]LogFileCache: Scanning file cache for directory 'C:/Users/david/Documents/Unreal Projects/FYP/Saved/Collections/' took 0.00s
+[2020.12.20-20.48.14:378][  0]LogFileCache: Scanning file cache for directory 'C:/Users/david/Documents/Unreal Projects/FYP/Content/Developers/david/Collections/' took 0.00s
+[2020.12.20-20.48.14:379][  0]LogFileCache: Scanning file cache for directory 'C:/Users/david/Documents/Unreal Projects/FYP/Content/Collections/' took 0.00s
+[2020.12.20-20.48.14:379][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2020.12.20-20.48.14:389][  0]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2871 classes and 687 folders.
+[2020.12.20-20.48.14:397][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.12.20-20.48.14:446][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.12.20-20.48.14:472][  0]LogSlate: Took 0.000217 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.12.20-20.48.14:476][  0]LogSlate: Took 0.000162 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.12.20-20.48.14:479][  0]LogSlate: Took 0.000233 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.12.20-20.48.14:479][  0]LogSlate: Took 0.000160 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2020.12.20-20.48.14:663][  0]LogRenderer: Reallocating scene render targets to support 1704x608 Format 10 NumSamples 1 (Frame:1).
+[2020.12.20-20.48.14:908][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.12.20-20.48.14:908][  0]LogLoad: (Engine Initialization) Total time: 19.58 seconds
+[2020.12.20-20.48.14:908][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.12.20-20.48.14:921][  0]LogRawInputWindows: Warning: Found device 0 devices
+[2020.12.20-20.48.14:922][  0]LogRawInputWindows: Warning: Found device 0 devices
+[2020.12.20-20.48.14:922][  0]LogRawInputWindows: Warning: Device was registered succesfully but not connected (Usage:4 UsagePage:1)
+[2020.12.20-20.48.14:922][  0]LogRawInputWindows: Warning: Found device 1 devices
+[2020.12.20-20.48.14:922][  0]LogRawInputWindows: Warning: Device was registered succesfully but not connected (Usage:5 UsagePage:1)
+[2020.12.20-20.48.15:094][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.12.20-20.48.15:921][ 70]LogAssetRegistry: Asset discovery search completed in 16.8228 seconds
+[2020.12.20-20.48.15:925][ 70]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000010 seconds (found 0 objects)
+[2020.12.20-20.48.15:925][ 70]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000281 seconds (updated 0 objects)
+[2020.12.20-20.48.19:916][537]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.20-20.48.19:999][547]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.20-20.48.20:003][547]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.20-20.48.20:004][547]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.20-20.48.20:005][547]PIE: New page: PIE session: VehicleAdvExampleMap (20 Dec 2020 20:48:20)
+[2020.12.20-20.48.20:006][547]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.12.20-20.48.20:007][547]LogPlayLevel: Creating play world package: /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2020.12.20-20.48.20:118][547]LogPlayLevel: PIE: StaticDuplicateObject took: (0.110767s)
+[2020.12.20-20.48.20:119][547]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2020.12.20-20.48.20:119][547]LogPlayLevel: PIE: World Init took: (0.001303s)
+[2020.12.20-20.48.20:120][547]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.112779s)
+[2020.12.20-20.48.20:145][547]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2020.12.20-20.48.20:164][547]LogInit: XAudio2 using 'Digital Audio (S/PDIF) (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.12.20-20.48.20:175][547]LogInit: FAudioDevice initialized.
+[2020.12.20-20.48.20:188][547]LogLoad: Game class is 'FYPGameMode'
+[2020.12.20-20.48.20:198][547]LogWorld: Bringing World /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2020.12.20-20.48.20
+[2020.12.20-20.48.20:199][547]LogWorld: Bringing up level for play took: 0.007720
+[2020.12.20-20.48.20:200][547]LogOnline: OSS: Creating online subsystem instance for: :Context_2
+[2020.12.20-20.48.20:208][547]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
+[2020.12.20-20.48.20:209][547]PIE: Play in editor start time for /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap 1.046
+[2020.12.20-20.48.20:209][547]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.20-20.48.38:657][703]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.20-20.48.38:658][703]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.20-20.48.38:659][703]LogWorld: BeginTearingDown for /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2020.12.20-20.48.38:659][703]LogWorld: UWorld::CleanupWorld for VehicleAdvExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.20-20.48.38:665][703]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.20-20.48.38:666][703]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.20-20.48.38:695][703]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.20-20.48.38:699][703]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2020.12.20-20.48.38:769][705]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2020.12.20-20.48.40:945][961]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.20-20.48.40:959][961]LogSlate: Took 0.000158 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.12.20-20.49.07:541][554]LogSlate: Took 0.000222 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.12.20-20.52.23:104][948]LogSlate: Took 0.000156 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.12.20-20.52.23:114][948]LogAssetEditorManager: Opening Asset editor for MapBuildDataRegistry /Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap_BuiltData.VehicleAdvExampleMap_BuiltData
+[2020.12.20-20.52.25:279][137]LogSlate: Window 'VehicleAdvExampleMap_BuiltData' being destroyed
+[2020.12.20-20.52.25:291][137]LogSlate: Window 'VehicleAdvExampleMap_BuiltData' being destroyed
+[2020.12.20-20.52.28:841][453]LogAssetEditorManager: Opening Asset editor for World /Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap
+[2020.12.20-20.52.28:865][453]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2020.12.20-20.52.28:865][453]Cmd: MAP LOAD FILE="../../../../../../Users/david/Documents/Unreal Projects/FYP/Content/VehicleAdvCPP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.12.20-20.52.28:866][453]LightingResults: New page: Lighting Build
+[2020.12.20-20.52.28:867][453]LoadErrors: New page: Loading map: VehicleAdvExampleMap.umap
+[2020.12.20-20.52.28:869][453]LogWorld: UWorld::CleanupWorld for VehicleAdvExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.20-20.52.28:870][453]MapCheck: New page: Map Check
+[2020.12.20-20.52.28:870][453]LightingResults: New page: Lighting Build
+[2020.12.20-20.52.28:899][453]LogUObjectHash: Compacting FUObjectHashTables data took   2.46ms
+[2020.12.20-20.52.29:097][453]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2020.12.20-20.52.29:116][453]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.12.20-20.52.29:150][453]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
+[2020.12.20-20.52.29:167][453]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.12.20-20.52.29:167][453]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.189ms to complete.
+[2020.12.20-20.52.29:169][453]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 0.304
+[2020.12.20-20.54.15:650][622]LogEditorSessionSummary: EditorSessionSummary sent report. Type=Shutdown, SessionId={9E5EFD0E-4FD6-9085-F389-BBACEE88EDDD}
+[2020.12.20-20.56.16:203][982]LogEditorSessionSummary: EditorSessionSummary sent report. Type=Shutdown, SessionId={51508263-4535-5F01-59F3-8DB98E5B7DD4}
+[2020.12.20-20.58.45:353][550]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
+[2020.12.20-20.58.45:416][550]LogSlate: Window 'FYP - Unreal Editor' being destroyed
+[2020.12.20-20.58.45:529][550]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/' was aborted.
+[2020.12.20-20.58.45:588][551]Cmd: QUIT_EDITOR
+[2020.12.20-20.58.46:149][551]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2020.12.20-20.58.46:182][551]LogExit: Preparing to exit.
+[2020.12.20-20.58.46:536][551]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2020.12.20-20.58.46:536][551]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2020.12.20-20.58.46:537][551]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2020.12.20-20.58.46:537][551]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2020.12.20-20.58.46:537][551]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2020.12.20-20.58.46:549][551]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2020.12.20-20.58.46:557][551]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2020.12.20-20.58.46:558][551]LogExit: Editor shut down
+[2020.12.20-20.58.46:558][551]LogExit: Transaction tracking system shut down
+[2020.12.20-20.58.46:828][551]LogExit: Object subsystem successfully closed.
+[2020.12.20-20.58.46:850][551]LogShaderCompilers: Display: Shaders left to compile 0
+[2020.12.20-20.58.46:886][551]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (678)
+[2020.12.20-20.58.46:886][551]LogModuleManager: Shutting down and abandoning module Voice (676)
+[2020.12.20-20.58.46:886][551]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (674)
+[2020.12.20-20.58.46:886][551]LogModuleManager: Shutting down and abandoning module AddContentDialog (672)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module WidgetCarousel (671)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module EditorWidgets (668)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module CollectionManager (666)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module SceneOutliner (664)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module StatsViewer (662)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module MeshBuilder (660)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (658)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module FoliageEdit (656)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module LandscapeEditor (654)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module MeshPaintMode (652)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (650)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module ActorPickerMode (648)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module GeometryMode (646)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module TextureAlignMode (644)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module BspMode (642)
+[2020.12.20-20.58.46:887][551]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (640)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (638)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module AutomationWorker (636)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module OculusMR (634)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (632)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (630)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (628)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module PlacementMode (627)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module MaterialEditor (626)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (622)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (620)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (618)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (616)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (614)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module WebMMedia (612)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (610)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (608)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module SequenceRecorder (607)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (604)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (602)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (600)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (598)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (596)
+[2020.12.20-20.58.46:888][551]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (594)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (592)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (590)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (588)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (586)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (584)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module CharacterAI (582)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module SmartSnapping (580)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module SessionServices (578)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module MeshPaint (576)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module ViewportSnapping (574)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module ViewportInteraction (572)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module ClothPainter (570)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (569)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module LogVisualizer (566)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module IntroTutorials (564)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (563)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (560)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (558)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (556)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (554)
+[2020.12.20-20.58.46:889][551]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (553)
+[2020.12.20-20.58.47:015][551]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (550)
+[2020.12.20-20.58.47:015][551]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (548)
+[2020.12.20-20.58.47:015][551]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (546)
+[2020.12.20-20.58.47:015][551]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (544)
+[2020.12.20-20.58.47:015][551]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (542)
+[2020.12.20-20.58.47:015][551]LogModuleManager: Shutting down and abandoning module InputBindingEditor (540)
+[2020.12.20-20.58.47:015][551]LogModuleManager: Shutting down and abandoning module MergeActors (538)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (536)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module LocalizationService (535)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module HardwareTargeting (532)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (530)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module UndoHistory (528)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module XmlParser (526)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module Blutility (524)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (522)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (521)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (518)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module SettingsEditor (516)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module ProjectLauncher (514)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module SessionFrontend (512)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module ProfilerClient (510)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module DeviceManager (508)
+[2020.12.20-20.58.47:016][551]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (507)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module AutomationController (504)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module AutomationWindow (502)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module Layers (500)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (498)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module DetailCustomizations (496)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module PackagesDialog (494)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (492)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module Persona (490)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (489)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module AnimGraph (487)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module Kismet (484)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module KismetWidgets (483)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module GraphEditor (480)
+[2020.12.20-20.58.47:049][551]LogModuleManager: Shutting down and abandoning module StructViewer (478)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module ClassViewer (476)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module Toolbox (474)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module DesktopPlatform (473)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module ModuleUI (470)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module MovieSceneTools (468)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module OutputLog (466)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module GammaUI (464)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module Documentation (462)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module LiveCoding (460)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module LevelSequence (458)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (456)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module MovieScene (454)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (452)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module LauncherPlatform (450)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module AnalyticsET (448)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module PortalServices (446)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module PortalRpc (444)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module MessagingRpc (442)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module AIModule (440)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module GameplayDebugger (439)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module AITestSuite (437)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module NavigationSystem (435)
+[2020.12.20-20.58.47:050][551]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (432)
+[2020.12.20-20.58.47:054][551]LogModuleManager: Shutting down and abandoning module ProfilerService (430)
+[2020.12.20-20.58.47:229][551]LogModuleManager: Shutting down and abandoning module TaskGraph (428)
+[2020.12.20-20.58.47:229][551]LogModuleManager: Shutting down and abandoning module ScreenshotTools (426)
+[2020.12.20-20.58.47:229][551]LogModuleManager: Shutting down and abandoning module SteamVRController (424)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (422)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (420)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module OculusEditor (418)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module OculusInput (416)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (414)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module EditableMesh (412)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (410)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module CableComponent (408)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module AudioCapture (406)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (404)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (402)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module AppleImageUtils (400)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module AndroidPermission (398)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (396)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (394)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module MediaCompositing (392)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module ImgMedia (390)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (388)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (386)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (384)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module RawInput (382)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module HTML5Networking (380)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (378)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (376)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module BackChannel (374)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module AutomationUtilsEditor (372)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module AutomationUtils (370)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module AlembicImporter (368)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module AlembicLibrary (367)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module GeometryCache (366)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (365)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module VariantManagerContent (360)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (358)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (356)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module PluginBrowser (354)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (352)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (350)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module CurveEditorTools (348)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module CurveEditor (347)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (344)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module CryptoKeys (342)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (340)
+[2020.12.20-20.58.47:230][551]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (338)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module UObjectPlugin (336)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (334)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (332)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module GitSourceControl (330)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module SourceControl (329)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (326)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (324)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (322)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (320)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (318)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (316)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (314)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module Paper2DEditor (312)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module FYP (310)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module SignificanceManager (308)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (306)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (304)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (300)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module ActorSequence (298)
+[2020.12.20-20.58.47:231][551]LogModuleManager: Shutting down and abandoning module UdpMessaging (296)
+[2020.12.20-20.58.47:332][551]LogModuleManager: Shutting down and abandoning module TcpMessaging (294)
+[2020.12.20-20.58.47:432][551]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (292)
+[2020.12.20-20.58.47:432][551]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (290)
+[2020.12.20-20.58.47:432][551]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (288)
+[2020.12.20-20.58.47:432][551]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (286)
+[2020.12.20-20.58.47:432][551]LogModuleManager: Shutting down and abandoning module MagicLeapController (284)
+[2020.12.20-20.58.47:432][551]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2020.12.20-20.58.47:432][551]LogModuleManager: Shutting down and abandoning module MagicLeapAR (282)
+[2020.12.20-20.58.47:432][551]LogModuleManager: Shutting down and abandoning module AugmentedReality (281)
+[2020.12.20-20.58.47:432][551]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (278)
+[2020.12.20-20.58.47:432][551]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (276)
+[2020.12.20-20.58.47:432][551]LogModuleManager: Shutting down and abandoning module FacialAnimation (274)
+[2020.12.20-20.58.47:432][551]LogModuleManager: Shutting down and abandoning module DataValidation (272)
+[2020.12.20-20.58.47:432][551]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (270)
+[2020.12.20-20.58.47:432][551]LogModuleManager: Shutting down and abandoning module LevelEditor (269)
+[2020.12.20-20.58.47:433][551]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (268)
+[2020.12.20-20.58.47:433][551]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (266)
+[2020.12.20-20.58.47:433][551]LogModuleManager: Shutting down and abandoning module MainFrame (264)
+[2020.12.20-20.58.47:433][551]LogModuleManager: Shutting down and abandoning module HotReload (263)
+[2020.12.20-20.58.47:434][551]LogModuleManager: Shutting down and abandoning module ContentBrowser (259)
+[2020.12.20-20.58.47:438][551]LogModuleManager: Shutting down and abandoning module TreeMap (257)
+[2020.12.20-20.58.47:438][551]LogModuleManager: Shutting down and abandoning module AnimationSharing (254)
+[2020.12.20-20.58.47:438][551]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (252)
+[2020.12.20-20.58.47:438][551]LogModuleManager: Shutting down and abandoning module Paper2D (250)
+[2020.12.20-20.58.47:438][551]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (248)
+[2020.12.20-20.58.47:440][551]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (246)
+[2020.12.20-20.58.47:440][551]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (244)
+[2020.12.20-20.58.47:440][551]LogModuleManager: Shutting down and abandoning module PacketHandler (242)
+[2020.12.20-20.58.47:440][551]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (240)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (238)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module MediaAssets (236)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module Overlay (234)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module OverlayEditor (233)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module VREditor (230)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module StringTableEditor (228)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (226)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (224)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module FunctionalTesting (222)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (220)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (219)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module UMG (216)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module UMGEditor (215)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module Sequencer (214)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module MessageLog (211)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module SlateReflector (206)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module Slate (204)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module LandscapeEditorUtilities (202)
+[2020.12.20-20.58.47:441][551]LogModuleManager: Shutting down and abandoning module EditorStyle (200)
+[2020.12.20-20.58.47:442][551]LogModuleManager: Shutting down and abandoning module UnrealEd (198)
+[2020.12.20-20.58.47:442][551]LogModuleManager: Shutting down and abandoning module MRMesh (196)
+[2020.12.20-20.58.47:442][551]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (194)
+[2020.12.20-20.58.47:442][551]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (192)
+[2020.12.20-20.58.47:442][551]LogModuleManager: Shutting down and abandoning module XAudio2 (190)
+[2020.12.20-20.58.47:442][551]LogModuleManager: Shutting down and abandoning module Networking (188)
+[2020.12.20-20.58.47:442][551]LogModuleManager: Shutting down and abandoning module Core (186)
+[2020.12.20-20.58.47:442][551]LogModuleManager: Shutting down and abandoning module KismetCompiler (184)
+[2020.12.20-20.58.47:442][551]LogModuleManager: Shutting down and abandoning module MeshUtilities (182)
+[2020.12.20-20.58.47:442][551]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (181)
+[2020.12.20-20.58.47:442][551]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (180)
+[2020.12.20-20.58.47:442][551]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (179)
+[2020.12.20-20.58.47:442][551]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (177)
+[2020.12.20-20.58.47:443][551]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (175)
+[2020.12.20-20.58.47:443][551]LogModuleManager: Shutting down and abandoning module MaterialBaking (171)
+[2020.12.20-20.58.47:443][551]LogModuleManager: Shutting down and abandoning module NullInstallBundleManager (166)
+[2020.12.20-20.58.47:443][551]LogModuleManager: Shutting down and abandoning module DerivedDataCache (164)
+[2020.12.20-20.58.47:469][551]LogDerivedDataCache: Shutdown
+[2020.12.20-20.58.47:469][551]LogModuleManager: Shutting down and abandoning module XGEController (162)
+[2020.12.20-20.58.47:469][551]LogModuleManager: Shutting down and abandoning module TargetPlatform (160)
+[2020.12.20-20.58.47:469][551]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (159)
+[2020.12.20-20.58.47:469][551]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (157)
+[2020.12.20-20.58.47:469][551]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (155)
+[2020.12.20-20.58.47:469][551]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (153)
+[2020.12.20-20.58.47:470][551]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (151)
+[2020.12.20-20.58.47:470][551]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (149)
+[2020.12.20-20.58.47:470][551]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (147)
+[2020.12.20-20.58.47:470][551]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (145)
+[2020.12.20-20.58.47:470][551]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (143)
+[2020.12.20-20.58.47:470][551]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (141)
+[2020.12.20-20.58.47:470][551]LogModuleManager: Shutting down and abandoning module ImageWrapper (140)
+[2020.12.20-20.58.47:470][551]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (137)
+[2020.12.20-20.58.47:470][551]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (135)
+[2020.12.20-20.58.47:470][551]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (133)
+[2020.12.20-20.58.47:470][551]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (131)
+[2020.12.20-20.58.47:470][551]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (129)
+[2020.12.20-20.58.47:471][551]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (127)
+[2020.12.20-20.58.47:471][551]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (125)
+[2020.12.20-20.58.47:471][551]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (123)
+[2020.12.20-20.58.47:471][551]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (121)
+[2020.12.20-20.58.47:471][551]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (119)
+[2020.12.20-20.58.47:471][551]LogModuleManager: Shutting down and abandoning module Messaging (117)
+[2020.12.20-20.58.47:471][551]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (115)
+[2020.12.20-20.58.47:472][551]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (113)
+[2020.12.20-20.58.47:472][551]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (111)
+[2020.12.20-20.58.47:482][551]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (109)
+[2020.12.20-20.58.47:482][551]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (107)
+[2020.12.20-20.58.47:482][551]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (105)
+[2020.12.20-20.58.47:482][551]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (103)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (101)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (99)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (97)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (95)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (93)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module InputCore (90)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module Settings (88)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (86)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module PhysXCooking (84)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (82)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (81)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module SteamVR (78)
+[2020.12.20-20.58.47:483][551]LogHMD: Freeing OpenVRDLLHandle.
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module OculusHMD (76)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (74)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (72)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (70)
+[2020.12.20-20.58.47:483][551]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (66)
+[2020.12.20-20.58.47:485][551]LogModuleManager: Shutting down and abandoning module XMPP (61)
+[2020.12.20-20.58.47:485][551]LogModuleManager: Shutting down and abandoning module WebSockets (60)
+[2020.12.20-20.58.47:504][551]LogModuleManager: Shutting down and abandoning module HTTP (57)
+[2020.12.20-20.58.47:505][551]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2020.12.20-20.58.47:505][551]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B3B573C65-4A08-18BF-8B17-7FA49AFE62CF%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.23.1-9631420%2B%2B%2BUE4%2BRelease-4.23&UserID=9c208459461970151b3e21af27b7bcf3%7Ce3fa17de25344c4b9e8f9f55e5e8e750%7Ce4068873-a721-42dd-bd42-9fd099998fda&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2020.12.20-20.58.47:547][551]LogModuleManager: Shutting down and abandoning module SSL (56)
+[2020.12.20-20.58.47:549][551]LogModuleManager: Shutting down and abandoning module WmfMedia (52)
+[2020.12.20-20.58.47:550][551]LogModuleManager: Shutting down and abandoning module Media (51)
+[2020.12.20-20.58.47:551][551]LogModuleManager: Shutting down and abandoning module MagicLeap (48)
+[2020.12.20-20.58.47:551][551]LogModuleManager: Shutting down and abandoning module DatasmithContent (46)
+[2020.12.20-20.58.47:552][551]LogModuleManager: Shutting down and abandoning module AISupportModule (44)
+[2020.12.20-20.58.47:552][551]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (42)
+[2020.12.20-20.58.47:552][551]LogModuleManager: Shutting down and abandoning module PlatformCrypto (40)
+[2020.12.20-20.58.47:552][551]LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
+[2020.12.20-20.58.47:552][551]LogModuleManager: Shutting down and abandoning module PropertyEditor (37)
+[2020.12.20-20.58.47:552][551]LogModuleManager: Shutting down and abandoning module AudioEditor (34)
+[2020.12.20-20.58.47:552][551]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2020.12.20-20.58.47:552][551]LogModuleManager: Shutting down and abandoning module RenderCore (30)
+[2020.12.20-20.58.47:552][551]LogModuleManager: Shutting down and abandoning module Landscape (28)
+[2020.12.20-20.58.47:552][551]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+[2020.12.20-20.58.47:554][551]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+[2020.12.20-20.58.47:554][551]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+[2020.12.20-20.58.47:554][551]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2020.12.20-20.58.47:554][551]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2020.12.20-20.58.47:554][551]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2020.12.20-20.58.47:554][551]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2020.12.20-20.58.47:554][551]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2020.12.20-20.58.47:554][551]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2020.12.20-20.58.47:554][551]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2020.12.20-20.58.47:554][551]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2020.12.20-20.58.47:554][551]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2020.12.20-20.58.47:554][551]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2020.12.20-20.58.47:555][551]LogD3D11RHI: Shutdown
+[2020.12.20-20.58.47:555][551]LogD3D11RHI: CleanupD3DDevice
+[2020.12.20-20.58.47:556][551]LogRendererCore: FGlobalDynamicReadBuffer::Cleanup()
+[2020.12.20-20.58.47:556][551]LogRendererCore: FGlobalDynamicReadBuffer::Cleanup()
+[2020.12.20-20.58.47:556][551]LogRendererCore: FGlobalDynamicReadBuffer::Cleanup()
+[2020.12.20-20.58.47:663][551]LogD3D11RHI: ~FD3D11DynamicRHI
+[2020.12.20-20.58.47:667][551]LogExit: Exiting.
+[2020.12.20-20.58.47:687][551]Log file closed, 12/20/20 20:58:47
