@@ -294,6 +294,20 @@ void AFYPPawn::Tick(float Delta)
 			GearDisplayString = (Gear == -1) ? LOCTEXT("R", "R") : FText::AsNumber(Gear);
 
 	//- Calculations for Time Left -//
+		
+		if (KPH < 1)
+		{
+			mf_TimeLeft += Delta; 
+			if (mf_TimeLeft > 5.0f)
+			{
+				AiFailed();
+				mf_TimeLeft = 5.0f;
+			}
+		}
+		else if (mf_TimeLeft > 0)
+		{
+			mf_TimeLeft = 0;
+		}
 
 	//- Calculations for Distance Traveled -//
 	
@@ -301,6 +315,8 @@ void AFYPPawn::Tick(float Delta)
 
 	//- Calculations for LapMultiplayer -//
 	
+
+
 	//- Calculations for NorthRayDistance -//
 	
 	//- Calculations for NorthEastRayDistance -//
@@ -322,7 +338,7 @@ void AFYPPawn::Tick(float Delta)
 	InCarSpeed->SetText(SpeedDisplayString);
 	InCarGear->SetText(GearDisplayString);
 
-	//TimeLeft->SetText();
+	TimeLeft->SetText(FText::AsNumber(mf_TimeLeft));
 	DistanceTraveledScoreUI->SetText(FText::AsNumber(mf_DistanceTraveled));
 	//LapMultiplyerUI->SetText();
 	//NorthRayDistanceUI->SetText();
@@ -339,6 +355,11 @@ void AFYPPawn::Tick(float Delta)
 	// Pass the engine RPM to the sound component
 	float RPMToAudioScale = 2500.0f / GetVehicleMovement()->GetEngineMaxRotationSpeed();
 	EngineSoundComponent->SetFloatParameter(EngineAudioRPM, GetVehicleMovement()->GetEngineRotationSpeed()*RPMToAudioScale);
+}
+
+void AFYPPawn::AiFailed()
+{
+
 }
 
 #undef LOCTEXT_NAMESPACE

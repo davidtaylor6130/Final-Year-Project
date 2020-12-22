@@ -106,39 +106,49 @@ private:
 	
 	//- New Features -//
 		//- UI Elements For AI -//
-			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-			UTextRenderComponent* TimeLeft;
+		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UTextRenderComponent* TimeLeft;
+		float mf_TimeLeft;
 
-			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-			UTextRenderComponent* DistanceTraveledScoreUI;
+		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UTextRenderComponent* DistanceTraveledScoreUI;
+		float mf_DistanceTraveled;
 
-			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-			UTextRenderComponent* LapMultiplyerUI;
+		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UTextRenderComponent* LapMultiplyerUI;
+		int mi_LapMultiplyer;
 
-			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-			UTextRenderComponent* NorthRayDistanceUI;
+		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UTextRenderComponent* NorthRayDistanceUI;
 
-			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-			UTextRenderComponent* NorthEastRayDistanceUI;
 
-			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-			UTextRenderComponent* EastRayDistanceUI;
+		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UTextRenderComponent* NorthEastRayDistanceUI;
 
-			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-			UTextRenderComponent* SouthEastRayDistanceUI;
 
-			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-			UTextRenderComponent* SouthRayDistanceUI;
+		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UTextRenderComponent* EastRayDistanceUI;
 
-			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-			UTextRenderComponent* SouthWestRayDistanceUI;
 
-			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-			UTextRenderComponent* WestRayDistanceUI;
+		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UTextRenderComponent* SouthEastRayDistanceUI;
 
-			UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-			UTextRenderComponent* NorthWestRayDistanceUI;
-		
-	float mf_DistanceTraveled;
+
+		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UTextRenderComponent* SouthRayDistanceUI;
+
+
+		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UTextRenderComponent* SouthWestRayDistanceUI;
+
+
+		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UTextRenderComponent* WestRayDistanceUI;
+
+		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UTextRenderComponent* NorthWestRayDistanceUI;
+	
+		//- eath Functions -//
+			void AiFailed();
 
 };
