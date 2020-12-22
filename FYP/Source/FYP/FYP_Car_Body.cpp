@@ -111,6 +111,7 @@ AFYPPawn::AFYPPawn()
 	// Set the inertia scale. This controls how the mass of the vehicle is distributed.
 	Vehicle4W->InertiaTensorScale = FVector(1.0f, 1.333f, 1.2f);
 
+
 	// Create a spring arm component for our chase camera
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	SpringArm->SetRelativeLocation(FVector(0.0f, 0.0f, 34.0f));
@@ -227,7 +228,17 @@ AFYPPawn::AFYPPawn()
 	NorthWestRayDistanceUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
 	NorthWestRayDistanceUI->SetupAttachment(GetMesh());
 
+	mp_collider = CreateDefaultSubobject<UBoxComponent>(TEXT("mp_collider"));
+	mp_collider->SetCollisionProfileName(TEXT("Trigger"));
+	mp_collider->SetupAttachment(GetMesh());
+	mp_collider->OnComponentBeginOverlap.AddDynamic(this, &AFYPPawn::LapMarkerCollider);
+
 	mf_DistanceTraveled = 0.036f;
+	LapMarkerNames[0] = "LapMarker1";
+	LapMarkerNames[1] = "LapMarker2";
+	LapMarkerNames[2] = "LapMarker3";
+	LapMarkerNames[3] = "LapMarker4";
+	mi_LapMarkerIndex = 0;
 }
 
 void AFYPPawn::BeginPlay()
@@ -314,7 +325,7 @@ void AFYPPawn::Tick(float Delta)
 		mf_DistanceTraveled += (GetVehicleMovement()->GetForwardSpeed() * 0.036f) * Delta;
 
 	//- Calculations for LapMultiplayer -//
-	
+
 
 
 	//- Calculations for NorthRayDistance -//
@@ -340,7 +351,7 @@ void AFYPPawn::Tick(float Delta)
 
 	TimeLeft->SetText(FText::AsNumber(mf_TimeLeft));
 	DistanceTraveledScoreUI->SetText(FText::AsNumber(mf_DistanceTraveled));
-	//LapMultiplyerUI->SetText();
+	LapMultiplyerUI->SetText(FText::AsNumber(mi_LapMultiplyer));
 	//NorthRayDistanceUI->SetText();
 	//NorthEastRayDistanceUI->SetText();
 	//EastRayDistanceUI->SetText();
@@ -356,6 +367,33 @@ void AFYPPawn::Tick(float Delta)
 	float RPMToAudioScale = 2500.0f / GetVehicleMovement()->GetEngineMaxRotationSpeed();
 	EngineSoundComponent->SetFloatParameter(EngineAudioRPM, GetVehicleMovement()->GetEngineRotationSpeed()*RPMToAudioScale);
 }
+
+void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AActor* _otherActor, UPrimitiveComponent* _otherComp, int32 _otherBodyIndex, bool _bFromSweep, const FHitResult & _hitResult)
+{
+	UE_LOG(LogTemp, Warning, TEXT("This is the data: %s"), *FString(_otherActor->GetName()));
+	UE_LOG(LogTemp, Warning, TEXT("This is the data: %d"), mi_LapMarkerIndex);
+
+
+	if (_otherActor->GetName() == LapMarkerNames[mi_LapMarkerIndex] && GetVehicleMovement()->GetForwardSpeed() > 1)
+	{	
+		if (mi_LapMarkerIndex == 0)
+		{
+			mi_LapMultiplyer++; 
+			UE_LOG(LogTemp, Warning, TEXT("IT WORKED"));
+		}
+
+		mi_LapMarkerIndex++;
+		if (mi_LapMarkerIndex == 4)
+		{
+			mi_LapMarkerIndex = 0;
+		}
+	}
+	else
+	{
+		mi_LapMarkerIndex = 0;
+	}
+}
+
 
 void AFYPPawn::AiFailed()
 {

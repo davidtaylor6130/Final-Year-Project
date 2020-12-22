@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "WheeledVehicle.h"
+#include <string>
+#include "Components/BoxComponent.h"
 #include "FYP_Car_Body.generated.h"
 
 class UPhysicalMaterial;
@@ -12,6 +14,7 @@ class USpringArmComponent;
 class UTextRenderComponent;
 class UInputComponent;
 class UAudioComponent;
+class UBoxComponent;
 
 UCLASS(config=Game)
 class AFYPPawn : public AWheeledVehicle
@@ -96,7 +99,7 @@ public:
 	FORCEINLINE UAudioComponent* GetEngineSoundComponent() const { return EngineSoundComponent; }
 
 
-private:
+public:
 	//-  ALL AI CODE NEEDED -//
 	//- CODE BY DAVID TAYLOR -//
 
@@ -114,9 +117,19 @@ private:
 		UTextRenderComponent* DistanceTraveledScoreUI;
 		float mf_DistanceTraveled;
 
+		//- Var and Functions for Lap Multiplyer -//
+		/** Variables **/
 		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 		UTextRenderComponent* LapMultiplyerUI;
+		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UBoxComponent* mp_collider;
 		int mi_LapMultiplyer;
+		FString LapMarkerNames[4];
+		int mi_LapMarkerIndex;
+
+		/** Functions **/
+		UFUNCTION()
+		void LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AActor* _otherActor, UPrimitiveComponent* _otherComp, int32 _otherBodyIndex, bool _bFromSweep, const FHitResult & _hitResult);
 
 		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 		UTextRenderComponent* NorthRayDistanceUI;
