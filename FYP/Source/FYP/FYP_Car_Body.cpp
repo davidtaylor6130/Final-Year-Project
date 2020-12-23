@@ -39,13 +39,6 @@ AFYPPawn::AFYPPawn()
 	GetMesh()->SetAnimationMode(EAnimationMode::AnimationBlueprint);
 	GetMesh()->SetAnimInstanceClass(AnimBPClass.Class);
 
-	// Setup friction materials
-	static ConstructorHelpers::FObjectFinder<UPhysicalMaterial> SlipperyMat(TEXT("/Game/VehicleAdv/PhysicsMaterials/Slippery.Slippery"));
-	SlipperyMaterial = SlipperyMat.Object;
-
-	static ConstructorHelpers::FObjectFinder<UPhysicalMaterial> NonSlipperyMat(TEXT("/Game/VehicleAdv/PhysicsMaterials/NonSlippery.NonSlippery"));
-	NonSlipperyMaterial = NonSlipperyMat.Object;
-
 	UWheeledVehicleMovementComponent4W* Vehicle4W = CastChecked<UWheeledVehicleMovementComponent4W>(GetVehicleMovement());
 
 	check(Vehicle4W->WheelSetups.Num() == 4);
@@ -132,20 +125,7 @@ AFYPPawn::AFYPPawn()
 	Camera->bUsePawnControlRotation = false;
 	Camera->FieldOfView = 90.f;
 
-	// In car HUD
-	// Create text render component for in car speed display
-	InCarSpeed = CreateDefaultSubobject<UTextRenderComponent>(TEXT("IncarSpeed"));
-	InCarSpeed->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
-	InCarSpeed->SetRelativeLocation(FVector(35.0f, -6.0f, 20.0f));
-	InCarSpeed->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
-	InCarSpeed->SetupAttachment(GetMesh());
 
-	// Create text render component for in car gear display
-	InCarGear = CreateDefaultSubobject<UTextRenderComponent>(TEXT("IncarGear"));
-	InCarGear->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
-	InCarGear->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
-	InCarGear->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
-	InCarGear->SetupAttachment(GetMesh());
 
 	// Setup the audio component and allocate it a sound cue
 	static ConstructorHelpers::FObjectFinder<USoundCue> SoundCue(TEXT("/Game/VehicleAdv/Sound/Engine_Loop_Cue.Engine_Loop_Cue"));
@@ -157,88 +137,161 @@ AFYPPawn::AFYPPawn()
 	GearDisplayReverseColor = FColor(255, 0, 0, 255);
 	GearDisplayColor = FColor(255, 255, 255, 255);
 
-	bIsLowFriction = false;
+	// In car HUD
+	// Create text render component for in car speed display
+	InCarSpeed = CreateDefaultSubobject<UTextRenderComponent>(TEXT("IncarSpeed"));
+	InCarSpeed->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	InCarSpeed->SetRelativeLocation(FVector(35.0f, -6.0f, 20.0f));
+	InCarSpeed->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	InCarSpeed->SetupAttachment(Camera);
 
+	// Create text render component for in car gear display
+	InCarGear = CreateDefaultSubobject<UTextRenderComponent>(TEXT("IncarGear"));
+	InCarGear->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	InCarGear->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
+	InCarGear->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	InCarGear->SetupAttachment(Camera);
 
 	//- Custom Additions By David Taylor -//
 
+
+	//- SetUp For UI Elements -//
 	TimeLeft = CreateDefaultSubobject<UTextRenderComponent>(TEXT("TIME LEFT STAIONARY"));
 	TimeLeft->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	TimeLeft->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
 	TimeLeft->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
-	TimeLeft->SetupAttachment(GetMesh());
+	TimeLeft->SetupAttachment(Camera);
 
 	DistanceTraveledScoreUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Distance Traveled"));
 	DistanceTraveledScoreUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	DistanceTraveledScoreUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
 	DistanceTraveledScoreUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
-	DistanceTraveledScoreUI->SetupAttachment(GetMesh());
+	DistanceTraveledScoreUI->SetupAttachment(Camera);
 
 	LapMultiplyerUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Lap Multiplyer"));
 	LapMultiplyerUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	LapMultiplyerUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
 	LapMultiplyerUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
-	LapMultiplyerUI->SetupAttachment(GetMesh());
+	LapMultiplyerUI->SetupAttachment(Camera);
 
 	NorthRayDistanceUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("N"));
 	NorthRayDistanceUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	NorthRayDistanceUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
 	NorthRayDistanceUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
-	NorthRayDistanceUI->SetupAttachment(GetMesh());
+	NorthRayDistanceUI->SetupAttachment(Camera);
 
 	NorthEastRayDistanceUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("NE"));
 	NorthEastRayDistanceUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	NorthEastRayDistanceUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
 	NorthEastRayDistanceUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
-	NorthEastRayDistanceUI->SetupAttachment(GetMesh());
+	NorthEastRayDistanceUI->SetupAttachment(Camera);
 
 	EastRayDistanceUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("E"));
 	EastRayDistanceUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	EastRayDistanceUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
 	EastRayDistanceUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
-	EastRayDistanceUI->SetupAttachment(GetMesh());
+	EastRayDistanceUI->SetupAttachment(Camera);
 
 	SouthEastRayDistanceUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("SE"));
 	SouthEastRayDistanceUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	SouthEastRayDistanceUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
 	SouthEastRayDistanceUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
-	SouthEastRayDistanceUI->SetupAttachment(GetMesh());
+	SouthEastRayDistanceUI->SetupAttachment(Camera);
 
 	SouthRayDistanceUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("S"));
 	SouthRayDistanceUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	SouthRayDistanceUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
 	SouthRayDistanceUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
-	SouthRayDistanceUI->SetupAttachment(GetMesh());
+	SouthRayDistanceUI->SetupAttachment(Camera);
 
 	SouthWestRayDistanceUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("SW"));
 	SouthWestRayDistanceUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	SouthWestRayDistanceUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
 	SouthWestRayDistanceUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
-	SouthWestRayDistanceUI->SetupAttachment(GetMesh());
+	SouthWestRayDistanceUI->SetupAttachment(Camera);
 
 	WestRayDistanceUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("W"));
 	WestRayDistanceUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	WestRayDistanceUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
 	WestRayDistanceUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
-	WestRayDistanceUI->SetupAttachment(GetMesh());
+	WestRayDistanceUI->SetupAttachment(Camera);
 
 	NorthWestRayDistanceUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("NW"));
 	NorthWestRayDistanceUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	NorthWestRayDistanceUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
 	NorthWestRayDistanceUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
-	NorthWestRayDistanceUI->SetupAttachment(GetMesh());
+	NorthWestRayDistanceUI->SetupAttachment(Camera);
 
+
+	//- Setup for Car Collider -//
 	mp_collider = CreateDefaultSubobject<UBoxComponent>(TEXT("mp_collider"));
 	mp_collider->SetCollisionProfileName(TEXT("Trigger"));
 	mp_collider->SetupAttachment(GetMesh());
 	mp_collider->OnComponentBeginOverlap.AddDynamic(this, &AFYPPawn::LapMarkerCollider);
+
+
+	//- SetUp for Car RayCasts-//
+	North = CreateDefaultSubobject<USphereComponent>(TEXT("NorthStartLocation"));
+	North->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	North->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
+	North->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	North->SetupAttachment(GetMesh());
+	Casts[0].StartPoint = North;
+
+	NorthEast = CreateDefaultSubobject<USphereComponent>(TEXT("NorthEastStartLocation"));
+	NorthEast->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	NorthEast->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
+	NorthEast->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	NorthEast->SetupAttachment(GetMesh());
+	Casts[1].StartPoint = NorthEast;
+
+	East = CreateDefaultSubobject<USphereComponent>(TEXT("EastStartLocation"));
+	East->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	East->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
+	East->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	East->SetupAttachment(GetMesh());
+	Casts[2].StartPoint = East;
+
+	SouthEast = CreateDefaultSubobject<USphereComponent>(TEXT("SouthEastStartLocation"));
+	SouthEast->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	SouthEast->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
+	SouthEast->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	SouthEast->SetupAttachment(GetMesh());
+	Casts[3].StartPoint = SouthEast;
+
+	South = CreateDefaultSubobject<USphereComponent>(TEXT("SouthStartLocation"));
+	South->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	South->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
+	South->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	South->SetupAttachment(GetMesh());
+	Casts[4].StartPoint = South;
+
+	SouthWest = CreateDefaultSubobject<USphereComponent>(TEXT("SouthWestStartLocation"));
+	SouthWest->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	SouthWest->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
+	SouthWest->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	SouthWest->SetupAttachment(GetMesh());
+	Casts[5].StartPoint = SouthWest;
+
+	West = CreateDefaultSubobject<USphereComponent>(TEXT("WestStartLocation"));
+	West->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	West->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
+	West->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	West->SetupAttachment(GetMesh());
+	Casts[6].StartPoint = West;
+
+	NorthWest = CreateDefaultSubobject<USphereComponent>(TEXT("NorthWestStartLocation"));
+	NorthWest->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	NorthWest->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
+	NorthWest->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	NorthWest->SetupAttachment(GetMesh());
+	Casts[7].StartPoint = NorthWest;
 
 	mf_DistanceTraveled = 0.036f;
 	LapMarkerNames[0] = "LapMarker1";
 	LapMarkerNames[1] = "LapMarker2";
 	LapMarkerNames[2] = "LapMarker3";
 	LapMarkerNames[3] = "LapMarker4";
-	mi_LapMarkerIndex = 0;
 }
 
 void AFYPPawn::BeginPlay()
@@ -290,6 +343,16 @@ void AFYPPawn::Tick(float Delta)
 {
 	Super::Tick(Delta);
 
+	for (int i = 0; i < 8; i++)
+	{
+		Casts[i].Start = Casts[i].StartPoint->GetComponentLocation();
+		Casts[i].ForwardVector = Casts[i].StartPoint->GetForwardVector();
+		Casts[i].End = Casts[i].Start + (Casts[i].ForwardVector * 1000);
+
+		DrawDebugLine(GetWorld(), Casts[i].Start, Casts[i].End, FColor::Red, false, 0.01f, 0, 2);
+		GetWorld()->LineTraceSingleByChannel(Casts[i].OutHit, Casts[i].Start, Casts[i].End, ECC_Visibility, Casts[i].CollisionParams);
+	}
+
 	// Update Hud
 	//- Calculations for Speed And Gear -//
 		float KPH = FMath::Abs(GetVehicleMovement()->GetForwardSpeed()) * 0.036f;
@@ -297,12 +360,12 @@ void AFYPPawn::Tick(float Delta)
 		int32 Gear = GetVehicleMovement()->GetCurrentGear();
 
 		//- Creating Strings and Setting Speed String -//
-		FText GearDisplayString, SpeedDisplayString = FText::Format(LOCTEXT("SpeedFormat", "{0} km/h"), FText::AsNumber(KPH_int));
+		FText GearDisplayString, SpeedDisplayString = FText::Format(LOCTEXT("SpeedFormat", "Speed: {0} km/h"), FText::AsNumber(KPH_int));
 
 		if (KPH < 1)
-			GearDisplayString = FText(LOCTEXT("ReverseGear", "N"));
+			GearDisplayString = FText(LOCTEXT("ReverseGear", "Gear: N"));
 		else
-			GearDisplayString = (Gear == -1) ? LOCTEXT("R", "R") : FText::AsNumber(Gear);
+			GearDisplayString = (Gear == -1) ? LOCTEXT("Gear: R", "Gear: R") : FText::Format(LOCTEXT("Gear: 1", "Gear: {0}"),Gear);
 
 	//- Calculations for Time Left -//
 		
@@ -321,45 +384,23 @@ void AFYPPawn::Tick(float Delta)
 		}
 
 	//- Calculations for Distance Traveled -//
-	
-		mf_DistanceTraveled += (GetVehicleMovement()->GetForwardSpeed() * 0.036f) * Delta;
-
-	//- Calculations for LapMultiplayer -//
-
-
-
-	//- Calculations for NorthRayDistance -//
-	
-	//- Calculations for NorthEastRayDistance -//
-	
-	//- Calculations for East Ray Distance -//
-	
-	//- Calculations for South East Ray Distance -//
-	
-	//- Calculations for South Ray Distance -//
-	
-	//- Calculations for South West Ray Distance -//
-	
-	//- Calculations for West Ray Distance -//
-
-	//- Calculations for North West Distance -//
-
+	mf_DistanceTraveled += (GetVehicleMovement()->GetForwardSpeed() * 0.036f) * Delta;
 
 	//- Setting Each UI Elements To Needed Text -//
 	InCarSpeed->SetText(SpeedDisplayString);
 	InCarGear->SetText(GearDisplayString);
 
-	TimeLeft->SetText(FText::AsNumber(mf_TimeLeft));
-	DistanceTraveledScoreUI->SetText(FText::AsNumber(mf_DistanceTraveled));
-	LapMultiplyerUI->SetText(FText::AsNumber(mi_LapMultiplyer));
-	//NorthRayDistanceUI->SetText();
-	//NorthEastRayDistanceUI->SetText();
-	//EastRayDistanceUI->SetText();
-	//SouthEastRayDistanceUI->SetText();
-	//SouthRayDistanceUI->SetText();
-	//SouthWestRayDistanceUI->SetText();
-	//WestRayDistanceUI->SetText();
-	//NorthWestRayDistanceUI->SetText();
+	TimeLeft->SetText(FText::Format(LOCTEXT("Time Stationary: ", "Time Stationary: {0}"), mf_TimeLeft));
+	DistanceTraveledScoreUI->SetText(FText::Format(LOCTEXT("Dist Traveled: ", "Dist Traveled: {0}"), mf_DistanceTraveled));
+	LapMultiplyerUI->SetText(FText::Format(LOCTEXT("Laps: ", "Laps: {0}"), mi_LapMultiplyer));
+	NorthRayDistanceUI->SetText(FText::Format(LOCTEXT("N: ", "N: {0}"), Casts[0].OutHit.Distance));
+	NorthEastRayDistanceUI->SetText(FText::Format(LOCTEXT("NE: ", "NE: {0}"), Casts[1].OutHit.Distance));
+	EastRayDistanceUI->SetText(FText::Format(LOCTEXT("E: ", "E: {0}"), Casts[2].OutHit.Distance));
+	SouthEastRayDistanceUI->SetText(FText::Format(LOCTEXT("SE: ", "SE: {0}"), Casts[3].OutHit.Distance));
+	SouthRayDistanceUI->SetText(FText::Format(LOCTEXT("S: ", "S: {0}"), Casts[4].OutHit.Distance));
+	SouthWestRayDistanceUI->SetText(FText::Format(LOCTEXT("SW: ", "SW: {0}"), Casts[5].OutHit.Distance));
+	WestRayDistanceUI->SetText(FText::Format(LOCTEXT("W: ", "W: {0}"), Casts[6].OutHit.Distance));
+	NorthWestRayDistanceUI->SetText(FText::Format(LOCTEXT("NW: ", "NW: {0}"), Casts[7].OutHit.Distance));
 
 
 
@@ -370,30 +411,32 @@ void AFYPPawn::Tick(float Delta)
 
 void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AActor* _otherActor, UPrimitiveComponent* _otherComp, int32 _otherBodyIndex, bool _bFromSweep, const FHitResult & _hitResult)
 {
-	UE_LOG(LogTemp, Warning, TEXT("This is the data: %s"), *FString(_otherActor->GetName()));
-	UE_LOG(LogTemp, Warning, TEXT("This is the data: %d"), mi_LapMarkerIndex);
+	LapMarkerHistory[mi_HistoryCount] = _otherActor->GetName();
+	mi_HistoryCount++;
 
-
-	if (_otherActor->GetName() == LapMarkerNames[mi_LapMarkerIndex] && GetVehicleMovement()->GetForwardSpeed() > 1)
-	{	
-		if (mi_LapMarkerIndex == 0)
-		{
-			mi_LapMultiplyer++; 
-			UE_LOG(LogTemp, Warning, TEXT("IT WORKED"));
-		}
-
-		mi_LapMarkerIndex++;
-		if (mi_LapMarkerIndex == 4)
-		{
-			mi_LapMarkerIndex = 0;
-		}
-	}
-	else
+	if (_otherActor->GetName() == LapMarkerNames[0])
 	{
-		mi_LapMarkerIndex = 0;
-	}
-}
+		LapMarkerHistory[0] = LapMarkerNames[0];
+		mi_HistoryCount = 1;
 
+		UE_LOG(LogTemp, Warning, TEXT("History Reset"));
+	}
+	else if (mi_HistoryCount == 4)
+	{
+		if (LapMarkerHistory[0] == LapMarkerNames[0] &&
+			LapMarkerHistory[1] == LapMarkerNames[1] &&
+			LapMarkerHistory[2] == LapMarkerNames[2] &&
+			LapMarkerHistory[3] == LapMarkerNames[3])
+		{
+			mi_LapMultiplyer++;
+		}
+
+		mi_HistoryCount = 0;
+	}
+	
+	UE_LOG(LogTemp, Warning, TEXT("LapMakerName : %s"), *FString(_otherActor->GetName()));
+	UE_LOG(LogTemp, Warning, TEXT("Current Location in history array: %d"), mi_HistoryCount);
+}
 
 void AFYPPawn::AiFailed()
 {

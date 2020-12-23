@@ -76,9 +76,15 @@
     <ClInclude Include="..\..\Source\FYP\TopViewCameraControler.h">
       <Filter>Source\FYP</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\FYP\CarRayCasts.h">
+      <Filter>Source\FYP</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\FYP\TopViewCameraControler.cpp">
+      <Filter>Source\FYP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FYP\CarRayCasts.cpp">
       <Filter>Source\FYP</Filter>
     </ClCompile>
   </ItemGroup>

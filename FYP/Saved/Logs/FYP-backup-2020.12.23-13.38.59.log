@@ -1,0 +1,1089 @@
+﻿Log file open, 12/23/20 13:16:33
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: FYP
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.091611
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin RawInput
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.23-CL-9631420
+LogInit: Engine Version: 4.23.1-9631420+++UE4+Release-4.23
+LogInit: Compatible Engine Version: 4.23.0-8386587+++UE4+Release-4.23
+LogInit: Net CL: 8386587
+LogInit: OS: Windows 10 (Release 2009) (), CPU:        Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz, GPU: NVIDIA GeForce RTX 2060 SUPER
+LogInit: Compiled (64-bit): Oct 18 2019 02:07:44
+LogInit: Compiled with Visual C++: 19.16.27030.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.23
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.23/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 23
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 3
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 34
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 35
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 31
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 11
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 27
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 6
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 9
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.12.23-13.16.34:156][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.12.23-13.16.34:156][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.MobileHDR:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.Mobile.DisableVertexFog:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxMobileCascades:2]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.MobileMSAA:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.Mobile.UseLegacyShadingModel:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.Mobile.UseHWsRGBEncoding:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.Mobile.AllowDitheredLODTransition:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.Mobile.AllowSoftwareOcclusion:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DiscardUnusedQuality:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.AllowOcclusionQueries:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForLights:0.030000]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForDepthPrepass:0.030000]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForCSMDepth:0.010000]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.PrecomputedVisibilityWarning:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.TextureStreaming:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[Compat.UseDXT5NormalMaps:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.VirtualTextures:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.VirtualTexturedLightmaps:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.VT.TileSize:128]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.VT.TileBorderSize:4]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.vt.FeedbackFactor:16]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.VT.EnableCompressZlib:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.VT.EnableCompressCrunch:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.ClearCoatNormal:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.ReflectionCaptureResolution:128]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.ReflectionEnvironmentLightmapMixBasedOnRoughness:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.ForwardShading:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.VertexFoggingForOpaque:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.NormalMapsForStaticLighting:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.GenerateMeshDistanceFields:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.EightBit:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.GenerateLandscapeGIData:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.Compress:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.TessellationAdaptivePixelsPerTriangle:48.000000]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.TranslucentSortPolicy:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.CustomDepth:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.CustomDepthTemporalAAJitter:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.PostProcessing.PropagateAlpha:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DefaultFeature.Bloom:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Method:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.UsePreExposure:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.EyeAdaptation.EditorOnly:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DefaultFeature.MotionBlur:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DefaultFeature.LensFlare:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.TemporalAA.Upsampling:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DefaultFeature.AntiAliasing:0]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DefaultFeature.LightUnits:1]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.DefaultBackBufferPixelFormat:4]]
+[2020.12.23-13.16.34:157][  0]LogConfig: Setting CVar [[r.Shadow.UnbuiltPreviewInGame:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.StencilForLODDither:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.EarlyZPass:3]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.EarlyZPassOnlyMaterialMasking:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.DBuffer:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.ClearSceneMethod:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.BasePassOutputsVelocity:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.SelectiveBasePassOutputs:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeX:1024]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeY:1024]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.AllowGlobalClipPlane:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.GBufferFormat:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.MorphTarget.Mode:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[vr.InstancedStereo:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[vr.MultiView:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[vr.MobileMultiView:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[vr.MobileMultiView.Direct:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[vr.RoundRobinOcclusion:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[vr.ODSCapture:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.WireframeCullThreshold:5.000000]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.RayTracing:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.SupportStationarySkylight:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.SupportLowQualityLightmaps:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.SupportPointLightWholeSceneShadows:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.SupportAtmosphericFog:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.SkinCache.CompileShaders:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.Mobile.EnableStaticAndCSMShadowReceivers:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableLightCSMShaderCulling:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.Mobile.AllowDistanceFieldShadows:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.Mobile.AllowMovableDirectionalLights:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.MobileNumDynamicPointLights:4]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.MobileDynamicPointLightsUseStaticBranch:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableSpotlights:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.SkinCache.SceneMemoryLimitInMB:128.000000]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.GPUSkin.Limit2BoneInfluences:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.SupportDepthOnlyIndexBuffers:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.SupportReversedIndexBuffers:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[r.SupportMaterialLayers:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.23-13.16.34:158][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.12.23-13.16.34:158][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.12.23-13.16.34:159][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.12.23-13.16.34:159][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.12.23-13.16.34:159][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
+[2020.12.23-13.16.34:159][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.12.23-13.16.34:159][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.12.23-13.16.34:159][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.12.23-13.16.34:159][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.12.23-13.16.34:159][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.12.23-13.16.34:159][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.12.23-13.16.34:159][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.23-13.16.34:159][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.23-13.16.34:161][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:161][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.12.23-13.16.34:161][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.12.23-13.16.34:161][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:161][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.12.23-13.16.34:161][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.12.23-13.16.34:162][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.12.23-13.16.34:163][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.12.23-13.16.34:163][  0]LogInit: Selected Device Profile: [Windows]
+[2020.12.23-13.16.34:163][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.12.23-13.16.34:167][  0]LogHAL: Display: Platform has ~ 16 GB [17129328640 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.12.23-13.16.34:167][  0]LogInit: Going up to parent DeviceProfile []
+[2020.12.23-13.16.34:167][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.12.23-13.16.34:167][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.12.23-13.16.34:168][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.23-13.16.34:168][  0]LogInit: Computer: DESKTOP-070UMBJ
+[2020.12.23-13.16.34:168][  0]LogInit: User: david
+[2020.12.23-13.16.34:168][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.12.23-13.16.34:168][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.12.23-13.16.34:169][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2020.12.23-13.16.34:169][  0]LogMemory: Platform Memory Stats for Windows
+[2020.12.23-13.16.34:169][  0]LogMemory: Process Physical Memory: 100.83 MB used, 100.84 MB peak
+[2020.12.23-13.16.34:169][  0]LogMemory: Process Virtual Memory: 87.82 MB used, 87.82 MB peak
+[2020.12.23-13.16.34:169][  0]LogMemory: Physical Memory: 5665.26 MB used,  10670.54 MB free, 16335.80 MB total
+[2020.12.23-13.16.34:169][  0]LogMemory: Virtual Memory: 4645.45 MB used,  134213080.00 MB free, 134217728.00 MB total
+[2020.12.23-13.16.34:171][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.12.23-13.16.34:215][  0]LogInit: Using OS detected language (en-GB).
+[2020.12.23-13.16.34:215][  0]LogInit: Using OS detected locale (en-GB).
+[2020.12.23-13.16.34:216][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2020.12.23-13.16.34:425][  0]LogInit: Setting process to per monitor DPI aware
+[2020.12.23-13.16.34:456][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.12.23-13.16.34:456][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.12.23-13.16.34:645][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.12.23-13.16.34:646][  0]LogD3D11RHI: D3D11 adapters:
+[2020.12.23-13.16.34:783][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060 SUPER' (Feature Level 11_0)
+[2020.12.23-13.16.34:783][  0]LogD3D11RHI:       8031/0/8167 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2020.12.23-13.16.34:785][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.12.23-13.16.34:785][  0]LogD3D11RHI:       0/0/8167 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.12.23-13.16.34:785][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.12.23-13.16.34:791][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.12.23-13.16.34:792][  0]LogD3D11RHI:     GPU DeviceId: 0x1f06 (for the marketing name, search the web for "GPU Device Id")
+[2020.12.23-13.16.34:792][  0]LogWindows: EnumDisplayDevices:
+[2020.12.23-13.16.34:792][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2060 SUPER' (P:1 D:1)
+[2020.12.23-13.16.34:792][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2060 SUPER' (P:0 D:0)
+[2020.12.23-13.16.34:792][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2060 SUPER' (P:0 D:0)
+[2020.12.23-13.16.34:793][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060 SUPER' (P:0 D:0)
+[2020.12.23-13.16.34:793][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.12.23-13.16.34:793][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060 SUPER
+[2020.12.23-13.16.34:793][  0]LogD3D11RHI:   Driver Version: 460.89 (internal:27.21.14.6089, unified:460.89)
+[2020.12.23-13.16.34:793][  0]LogD3D11RHI:      Driver Date: 12-11-2020
+[2020.12.23-13.16.34:793][  0]LogRHI: Texture pool is 5621 MB (70% of 8031 MB)
+[2020.12.23-13.16.34:900][  0]LogD3D11RHI: Async texture creation enabled
+[2020.12.23-13.16.34:930][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.12.23-13.16.35:255][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
+[2020.12.23-13.16.35:266][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
+[2020.12.23-13.16.35:276][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
+[2020.12.23-13.16.35:287][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
+[2020.12.23-13.16.35:298][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
+[2020.12.23-13.16.35:309][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
+[2020.12.23-13.16.35:320][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
+[2020.12.23-13.16.35:331][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
+[2020.12.23-13.16.35:336][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
+[2020.12.23-13.16.35:377][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
+[2020.12.23-13.16.35:379][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
+[2020.12.23-13.16.35:401][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
+[2020.12.23-13.16.35:401][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
+[2020.12.23-13.16.35:419][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
+[2020.12.23-13.16.35:419][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
+[2020.12.23-13.16.35:428][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
+[2020.12.23-13.16.35:437][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
+[2020.12.23-13.16.35:446][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
+[2020.12.23-13.16.35:456][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
+[2020.12.23-13.16.35:488][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
+[2020.12.23-13.16.35:488][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
+[2020.12.23-13.16.35:488][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.12.23-13.16.35:498][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.12.23-13.16.35:561][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/Intermediate/Shaders/WorkingDirectory/8772/).
+[2020.12.23-13.16.35:561][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/david/AppData/Local/Temp/UnrealShaderWorkingDir/924FCAED4A7E900AB7178EB64A7E3B75/'.
+[2020.12.23-13.16.35:564][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.12.23-13.16.35:564][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.12.23-13.16.35:564][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.12.23-13.16.36:335][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.12.23-13.16.36:403][  0]LogDerivedDataCache: Loaded boot cache 0.07s 75MB C:/Users/david/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc.
+[2020.12.23-13.16.36:403][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/david/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc
+[2020.12.23-13.16.36:403][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.12.23-13.16.36:403][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.12.23-13.16.36:403][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.12.23-13.16.36:403][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.12.23-13.16.36:417][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.12.23-13.16.36:417][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.12.23-13.16.36:417][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.12.23-13.16.36:419][  0]LogDerivedDataCache: Using Local data cache path C:/Users/david/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.12.23-13.16.36:419][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.12.23-13.16.36:419][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.12.23-13.16.36:446][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.12.23-13.16.36:449][  0]LogSlate: Using FreeType 2.6.0
+[2020.12.23-13.16.36:450][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.12.23-13.16.36:514][  0]LogAssetRegistry: FAssetRegistry took 0.0026 seconds to start up
+[2020.12.23-13.16.36:860][  0]LogInit: Selected Device Profile: [Windows]
+[2020.12.23-13.16.37:045][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.12.23-13.16.37:045][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.12.23-13.16.37:045][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.12.23-13.16.37:045][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.12.23-13.16.37:045][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.12.23-13.16.37:056][  0]LogNetVersion: FYP 1.0.0, NetCL: 8386587, EngineNetVer: 11, GameNetVer: 0 (Checksum: 2864843675)
+[2020.12.23-13.16.37:542][  0]LogPackageLocalizationCache: Processed 12 localized package path(s) for 1 prioritized culture(s) in 0.056615 seconds
+[2020.12.23-13.16.37:551][  0]LogUObjectArray: 43444 objects as part of root set at end of initial load.
+[2020.12.23-13.16.37:551][  0]LogUObjectAllocator: 7548648 out of 0 bytes used by permanent object pool.
+[2020.12.23-13.16.37:551][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.12.23-13.16.38:506][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.12.23-13.16.38:510][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.12.23-13.16.38:709][  0]SourceControl: Source control is disabled
+[2020.12.23-13.16.38:709][  0]SourceControl: Source control is disabled
+[2020.12.23-13.16.38:711][  0]SourceControl: Source control is disabled
+[2020.12.23-13.16.38:712][  0]SourceControl: Source control is disabled
+[2020.12.23-13.16.38:818][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.12.23-13.16.38:946][  0]LogOcInput: OculusInput pre-init called
+[2020.12.23-13.16.38:955][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.12.23-13.16.38:955][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.12.23-13.16.39:032][  0]LogEngine: Initializing Engine...
+[2020.12.23-13.16.39:033][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.12.23-13.16.39:034][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.12.23-13.16.39:303][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.12.23-13.16.39:320][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.12.23-13.16.39:350][  0]LogInit: XAudio2 using 'LG ULTRAWIDE (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.12.23-13.16.39:380][  0]LogInit: FAudioDevice initialized.
+[2020.12.23-13.16.39:380][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.12.23-13.16.39:474][  0]LogDerivedDataCache: Saved boot cache 0.09s 75MB C:/Users/david/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc.
+[2020.12.23-13.16.39:479][  0]LogInit: Texture streaming: Enabled
+[2020.12.23-13.16.39:500][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.12.23-13.16.39:500][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.12.23-13.16.39:501][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.12.23-13.16.39:560][  0]LogInit: Transaction tracking system initialized
+[2020.12.23-13.16.39:598][  0]BlueprintLog: New page: Editor Load
+[2020.12.23-13.16.39:689][  0]LocalizationService: Localization service is disabled
+[2020.12.23-13.16.39:962][  0]LogFileCache: Scanning file cache for directory 'C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Content/' took 0.00s
+[2020.12.23-13.16.39:962][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.12.23-13.16.39:962][  0]LogCook: Display: Mobile HDR setting 1
+[2020.12.23-13.16.40:167][  0]SourceControl: Source control is disabled
+[2020.12.23-13.16.40:168][  0]Cmd: MAP LOAD FILE="../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/Content/VehicleAdvCPP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.12.23-13.16.40:168][  0]LightingResults: New page: Lighting Build
+[2020.12.23-13.16.40:171][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.12.23-13.16.40:171][  0]MapCheck: New page: Map Check
+[2020.12.23-13.16.40:171][  0]LightingResults: New page: Lighting Build
+[2020.12.23-13.16.40:195][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2020.12.23-13.16.40:274][  0]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2020.12.23-13.16.40:297][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.12.23-13.16.40:325][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2020.12.23-13.16.40:325][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.12.23-13.16.40:326][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.259ms to complete.
+[2020.12.23-13.16.40:326][  0]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 0.158
+[2020.12.23-13.16.40:450][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.23-13.16.40:459][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.23-13.16.40:469][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.23-13.16.40:478][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.23-13.16.40:485][  0]LogCollectionManager: Loaded 0 collections in 0.002074 seconds
+[2020.12.23-13.16.40:493][  0]LogFileCache: Scanning file cache for directory 'C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Collections/' took 0.00s
+[2020.12.23-13.16.40:493][  0]LogFileCache: Scanning file cache for directory 'C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Content/Developers/david/Collections/' took 0.00s
+[2020.12.23-13.16.40:493][  0]LogFileCache: Scanning file cache for directory 'C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Content/Collections/' took 0.00s
+[2020.12.23-13.16.40:493][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2020.12.23-13.16.40:503][  0]LogContentBrowser: Native class hierarchy populated in 0.0101 seconds. Added 2872 classes and 687 folders.
+[2020.12.23-13.16.40:513][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2020.12.23-13.16.40:559][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.12.23-13.16.40:587][  0]LogSlate: Took 0.000154 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.12.23-13.16.40:591][  0]LogSlate: Took 0.000159 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.12.23-13.16.40:594][  0]LogSlate: Took 0.000177 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.12.23-13.16.40:677][  0]LogRenderer: Reallocating scene render targets to support 1684x608 Format 10 NumSamples 1 (Frame:1).
+[2020.12.23-13.16.40:790][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.12.23-13.16.40:790][  0]LogLoad: (Engine Initialization) Total time: 8.01 seconds
+[2020.12.23-13.16.40:791][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.12.23-13.16.40:805][  0]LogRawInputWindows: Warning: Found device 0 devices
+[2020.12.23-13.16.40:805][  0]LogRawInputWindows: Warning: Found device 0 devices
+[2020.12.23-13.16.40:805][  0]LogRawInputWindows: Warning: Device was registered succesfully but not connected (Usage:4 UsagePage:1)
+[2020.12.23-13.16.40:805][  0]LogRawInputWindows: Warning: Found device 1 devices
+[2020.12.23-13.16.40:805][  0]LogRawInputWindows: Warning: Device was registered succesfully but not connected (Usage:5 UsagePage:1)
+[2020.12.23-13.16.40:848][  0]LogAssetRegistry: Asset discovery search completed in 4.3349 seconds
+[2020.12.23-13.16.40:852][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000005 seconds (found 0 objects)
+[2020.12.23-13.16.40:852][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000100 seconds (updated 0 objects)
+[2020.12.23-13.16.40:854][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.12.23-13.16.40:897][  0]LogSlate: Took 0.000228 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.12.23-13.16.44:283][392]LogEditorViewport: Clicking on Actor (LMB): FYPPawn (TP_VehicleAdvPawn5)
+[2020.12.23-13.16.45:829][523]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.16.50:852][ 74]LogSlate: Took 0.000175 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.12.23-13.20.45:062][437]Candidate modules for hot reload:
+[2020.12.23-13.20.45:062][437]  FYP
+[2020.12.23-13.20.45:062][437]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.23/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=FYP,2409 Win64 Development -TargetType=Editor -Project="C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/FYP.uproject" "C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/FYP.uproject"  -IgnoreJunk]
+[2020.12.23-13.20.45:064][437]Warning: Starting HotReload took  0.0s.
+[2020.12.23-13.21.47:318][ 48]CompilerResultsLog: New page: Compilation - 23 Dec 2020 13:21:47
+[2020.12.23-13.21.47:319][ 48]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\david\Documents\GitHub\Final-Year-Project).
+[2020.12.23-13.21.47:319][ 48]CompilerResultsLog: Parsing headers for FYPEditor
+[2020.12.23-13.21.47:319][ 48]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\FYP.uproject" "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\FYPEditor\Development\FYPEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2020.12.23-13.21.47:319][ 48]CompilerResultsLog: Reflection code generated for FYPEditor in 9.7365405 seconds
+[2020.12.23-13.21.47:319][ 48]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog: Building 8 actions with 4 processes...
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:   [1/8] FYP.init.gen.cpp
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:   [2/8] FYP_Car_Body.gen.cpp
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(139) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(139) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(139) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(144) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(144) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(144) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(149) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(149) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(149) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(154) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(154) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(154) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(159) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(159) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(159) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(164) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(164) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(164) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(169) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:320][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(169) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(169) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(174) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(174) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(174) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(268) : error C2039: 'NorthWestStartLocation': is not a member of 'AFYPPawn'
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(20): note: see declaration of 'AFYPPawn'
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(268) : error C2618: illegal member designator in offsetof
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(268): note: offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(286) : error C2039: 'WestStartLocation': is not a member of 'AFYPPawn'
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(20): note: see declaration of 'AFYPPawn'
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(286) : error C2618: illegal member designator in offsetof
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(286): note: offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(304) : error C2039: 'SouthWestStartLocation': is not a member of 'AFYPPawn'
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(20): note: see declaration of 'AFYPPawn'
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(304) : error C2618: illegal member designator in offsetof
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(304): note: offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(322) : error C2039: 'SouthStartLocation': is not a member of 'AFYPPawn'
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(20): note: see declaration of 'AFYPPawn'
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(322) : error C2618: illegal member designator in offsetof
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(322): note: offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(340) : error C2039: 'SouthEastStartLocation': is not a member of 'AFYPPawn'
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(20): note: see declaration of 'AFYPPawn'
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(340) : error C2618: illegal member designator in offsetof
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(340): note: offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
+[2020.12.23-13.21.47:321][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(358) : error C2039: 'EastStartLocation': is not a member of 'AFYPPawn'
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(20): note: see declaration of 'AFYPPawn'
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(358) : error C2618: illegal member designator in offsetof
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(358): note: offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(376) : error C2039: 'NorthEastStartLocation': is not a member of 'AFYPPawn'
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(20): note: see declaration of 'AFYPPawn'
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(376) : error C2618: illegal member designator in offsetof
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(376): note: offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(394) : error C2039: 'NorthStartLocation': is not a member of 'AFYPPawn'
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP/FYP_Car_Body.h(20): note: see declaration of 'AFYPPawn'
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(394) : error C2618: illegal member designator in offsetof
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:   C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Inc\FYP\FYP_Car_Body.gen.cpp(394): note: offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:   [3/8] FYP_Car_Body.cpp
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(139) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(139) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(139) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(144) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(144) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(144) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(149) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(149) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:322][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(149) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(154) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(154) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(154) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(159) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(159) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(159) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(164) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(164) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(164) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(169) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(169) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(169) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(174) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(174) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(174) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP\FYP_Car_Body.cpp(238) : error C2065: 'NorthStartLocation': undeclared identifier
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP\FYP_Car_Body.cpp(238) : error C2065: 'USphereComponent': undeclared identifier
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP\FYP_Car_Body.cpp(238) : error C2672: 'UObject::CreateDefaultSubobject': no matching overloaded function found
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP\FYP_Car_Body.cpp(238) : error C2974: 'UObject::CreateDefaultSubobject': invalid template argument for 'TReturnType', type expected
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\CoreUObject\Public\UObject/Object.h(118): note: see declaration of 'UObject::CreateDefaultSubobject'
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:   [4/8] FYPGameMode.cpp
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(139) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:323][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(139) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(139) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(144) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(144) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(144) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(149) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(149) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(149) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(154) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(154) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(154) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(159) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(159) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(159) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(164) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(164) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(164) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(169) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(169) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(169) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:324][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(174) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(174) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(174) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:   [5/8] FYP_Car_Hud.cpp
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(139) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(139) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(139) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(144) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(144) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(144) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(149) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(149) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(149) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(154) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(154) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(154) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(159) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(159) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(159) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(164) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:325][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(164) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:326][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(164) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:326][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(169) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:326][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(169) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:326][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(169) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:326][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(174) : error C2143: syntax error: missing ';' before '*'
+[2020.12.23-13.21.47:326][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(174) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2020.12.23-13.21.47:326][ 48]CompilerResultsLog:    c:\users\david\documents\github\final-year-project\fyp\source\fyp\FYP_Car_Body.h(174) : error C2238: unexpected token(s) preceding ';'
+[2020.12.23-13.21.47:326][ 48]LogMainFrame: MainFrame: Module compiling took 62.268 seconds
+[2020.12.23-13.21.47:326][ 48]Warning: HotReload failed, recompile failed
+[2020.12.23-13.21.49:324][233]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.21.51:505][440]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.22.36:336][854]Candidate modules for hot reload:
+[2020.12.23-13.22.36:336][854]  FYP
+[2020.12.23-13.22.36:336][854]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.23/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=FYP,8543 Win64 Development -TargetType=Editor -Project="C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/FYP.uproject" "C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/FYP.uproject"  -IgnoreJunk]
+[2020.12.23-13.22.36:338][854]Warning: Starting HotReload took  0.0s.
+[2020.12.23-13.23.50:956][786]CompilerResultsLog: New page: Compilation - 23 Dec 2020 13:23:50
+[2020.12.23-13.23.50:957][786]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\david\Documents\GitHub\Final-Year-Project).
+[2020.12.23-13.23.50:957][786]CompilerResultsLog: Parsing headers for FYPEditor
+[2020.12.23-13.23.50:957][786]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\FYP.uproject" "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\FYPEditor\Development\FYPEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2020.12.23-13.23.50:957][786]CompilerResultsLog: Reflection code generated for FYPEditor in 9.774776 seconds
+[2020.12.23-13.23.50:957][786]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.12.23-13.23.50:957][786]CompilerResultsLog: Building 7 actions with 4 processes...
+[2020.12.23-13.23.50:957][786]CompilerResultsLog:   [1/7] FYP_Car_Body.gen.cpp
+[2020.12.23-13.23.50:957][786]CompilerResultsLog:   [2/7] FYPGameMode.cpp
+[2020.12.23-13.23.50:957][786]CompilerResultsLog:   [3/7] FYP_Car_Body.cpp
+[2020.12.23-13.23.50:957][786]CompilerResultsLog:   [4/7] FYP_Car_Hud.cpp
+[2020.12.23-13.23.50:957][786]CompilerResultsLog:   [5/7] UE4Editor-FYP-8543.lib
+[2020.12.23-13.23.50:957][786]CompilerResultsLog:      Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-8543.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-8543.exp
+[2020.12.23-13.23.50:957][786]CompilerResultsLog:   [6/7] UE4Editor-FYP-8543.dll
+[2020.12.23-13.23.50:957][786]CompilerResultsLog:      Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-8543.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-8543.suppressed.exp
+[2020.12.23-13.23.50:957][786]CompilerResultsLog:   [7/7] FYPEditor.target
+[2020.12.23-13.23.50:957][786]CompilerResultsLog: Total time in Parallel executor: 62.55 seconds
+[2020.12.23-13.23.50:957][786]CompilerResultsLog: Total execution time: 74.45 seconds
+[2020.12.23-13.23.50:957][786]LogMainFrame: MainFrame: Module compiling took 74.625 seconds
+[2020.12.23-13.23.50:982][786]LogUObjectHash: Compacting FUObjectHashTables data took   1.99ms
+[2020.12.23-13.23.51:005][786]LogClass: Could not find existing class FYPPawn in package /Script/FYP for HotReload, assuming new class
+[2020.12.23-13.23.51:005][786]LogClass: Function LapMarkerCollider is new.
+[2020.12.23-13.23.51:012][786]LogHotReload: Re-instancing FYPGameMode after hot-reload.
+[2020.12.23-13.23.51:127][786]LogHotReload: Re-instancing FYPPawn after hot-reload.
+[2020.12.23-13.23.51:251][786]LogContentBrowser: Native class hierarchy updated for 'FYP' in 0.0005 seconds. Added 6 classes and 2 folders.
+[2020.12.23-13.23.51:253][786]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.12.23-13.23.51:327][786]LogUObjectHash: Compacting FUObjectHashTables data took   2.10ms
+[2020.12.23-13.23.51:342][786]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 2872 classes and 687 folders.
+[2020.12.23-13.23.51:344][786]Display: HotReload took 75.0s.
+[2020.12.23-13.23.58:279][471]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.23-13.23.58:298][471]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.23.58:298][471]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.23-13.23.58:298][471]PIE: New page: PIE session: VehicleAdvExampleMap (23 Dec 2020 13:23:58)
+[2020.12.23-13.23.58:299][471]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.12.23-13.23.58:300][471]LogPlayLevel: Creating play world package: /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2020.12.23-13.23.58:331][471]LogPlayLevel: PIE: StaticDuplicateObject took: (0.030267s)
+[2020.12.23-13.23.58:332][471]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2020.12.23-13.23.58:332][471]LogPlayLevel: PIE: World Init took: (0.001199s)
+[2020.12.23-13.23.58:332][471]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.031841s)
+[2020.12.23-13.23.58:356][471]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2020.12.23-13.23.58:376][471]LogInit: XAudio2 using 'LG ULTRAWIDE (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.12.23-13.23.58:403][471]LogInit: FAudioDevice initialized.
+[2020.12.23-13.23.58:413][471]LogLoad: Game class is 'FYPGameMode'
+[2020.12.23-13.23.58:421][471]LogWorld: Bringing World /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2020.12.23-13.23.58
+[2020.12.23-13.23.58:422][471]LogWorld: Bringing up level for play took: 0.005738
+[2020.12.23-13.23.58:422][471]LogOnline: OSS: Creating online subsystem instance for: :Context_1
+[2020.12.23-13.23.58:457][471]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
+[2020.12.23-13.23.58:458][471]PIE: Play in editor start time for /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.706
+[2020.12.23-13.23.58:458][471]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.24.00:860][749]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.24.00:860][749]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.23-13.24.00:860][749]LogWorld: BeginTearingDown for /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2020.12.23-13.24.00:860][749]LogWorld: UWorld::CleanupWorld for VehicleAdvExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.23-13.24.00:868][749]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.23-13.24.00:868][749]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.24.00:896][749]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.23-13.24.00:899][749]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2020.12.23-13.24.00:962][753]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2020.12.23-13.24.08:078][569]LogEditorViewport: Clicking on Actor (LMB): FYPPawn (TP_VehicleAdvPawn5)
+[2020.12.23-13.24.09:694][718]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.24.32:959][889]Cmd: POLY SELECT ADJACENT WALLS
+[2020.12.23-13.24.49:084][349]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.24.59:989][399]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.25.41:624][386]LogEditorSessionSummary: EditorSessionSummary sent report. Type=Shutdown, SessionId={75F5C4C9-4493-6E8E-E566-7AA65C8176CC}
+[2020.12.23-13.26.09:948][ 79]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.26.35:087][535]LogEditorViewport: Clicking on Component (LMB): SkeletalMeshComponent (VehicleMesh)
+[2020.12.23-13.26.36:482][666]LogEditorViewport: Clicking on Component (LMB): SphereComponent (NorthStartLocation)
+[2020.12.23-13.26.41:625][172]LogEditorSessionSummary: EditorSessionSummary sent report. Type=Shutdown, SessionId={7F2231BB-4B49-D840-7722-02A496DA4AE3}
+[2020.12.23-13.26.47:922][760]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.26.47:964][765]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.23-13.26.47:979][765]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.26.47:980][765]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.23-13.26.47:980][765]PIE: New page: PIE session: VehicleAdvExampleMap (23 Dec 2020 13:26:47)
+[2020.12.23-13.26.47:980][765]LogPlayLevel: Creating play world package: /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2020.12.23-13.26.48:009][765]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028870s)
+[2020.12.23-13.26.48:010][765]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2020.12.23-13.26.48:010][765]LogPlayLevel: PIE: World Init took: (0.001132s)
+[2020.12.23-13.26.48:010][765]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.030193s)
+[2020.12.23-13.26.48:034][765]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2020.12.23-13.26.48:052][765]LogInit: XAudio2 using 'LG ULTRAWIDE (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.12.23-13.26.48:064][765]LogInit: FAudioDevice initialized.
+[2020.12.23-13.26.48:074][765]LogLoad: Game class is 'FYPGameMode'
+[2020.12.23-13.26.48:082][765]LogWorld: Bringing World /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2020.12.23-13.26.48
+[2020.12.23-13.26.48:082][765]LogWorld: Bringing up level for play took: 0.005768
+[2020.12.23-13.26.48:082][765]LogOnline: OSS: Creating online subsystem instance for: :Context_3
+[2020.12.23-13.26.48:085][765]PIE: Play in editor start time for /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.922
+[2020.12.23-13.26.48:085][765]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.26.54:989][573]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2020.12.23-13.27.08:304][ 12]LogEditorViewport: Clicking on Actor (LMB): FYPPawn (TP_VehicleAdvPawn5)
+[2020.12.23-13.27.11:061][133]LogEditorViewport: Clicking on Actor (LMB): FYPPawn (TP_VehicleAdvPawn5)
+[2020.12.23-13.27.11:686][160]LogEditorViewport: Clicking on Actor (LMB): FYPPawn (TP_VehicleAdvPawn5)
+[2020.12.23-13.27.11:738][161]LogEditorViewport: Clicking on Component (LMB): TextRenderComponent (NW)
+[2020.12.23-13.27.16:774][534]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.27.16:826][539]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.27.16:827][539]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.23-13.27.16:827][539]LogWorld: BeginTearingDown for /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2020.12.23-13.27.16:829][539]LogWorld: UWorld::CleanupWorld for VehicleAdvExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.23-13.27.16:841][539]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.23-13.27.16:841][539]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.27.16:869][539]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.23-13.27.16:873][539]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2020.12.23-13.27.16:940][541]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2020.12.23-13.27.37:983][242]LogSlate: Took 0.000218 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.12.23-13.27.47:093][269]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2020.12.23-13.27.47:327][269]LogSavePackage: Moving '../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/VehicleAdvExampleMap_Auto1302E290646D2E14D636B0E8FBB38CF4E.tmp' to '../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Autosaves/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap_Auto1.umap'
+[2020.12.23-13.27.47:332][269]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap' took 0.265
+[2020.12.23-13.27.47:332][269]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.265
+[2020.12.23-13.29.54:704][674]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.29.54:791][683]Candidate modules for hot reload:
+[2020.12.23-13.29.54:791][683]  FYP
+[2020.12.23-13.29.54:792][683]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.23/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=FYP,35 Win64 Development -TargetType=Editor -Project="C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/FYP.uproject" "C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/FYP.uproject"  -IgnoreJunk]
+[2020.12.23-13.29.54:794][683]Warning: Starting HotReload took  0.0s.
+[2020.12.23-13.30.16:294][912]CompilerResultsLog: New page: Compilation - 23 Dec 2020 13:30:16
+[2020.12.23-13.30.16:295][912]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\david\Documents\GitHub\Final-Year-Project).
+[2020.12.23-13.30.16:295][912]CompilerResultsLog: Parsing headers for FYPEditor
+[2020.12.23-13.30.16:295][912]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\FYP.uproject" "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\FYPEditor\Development\FYPEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2020.12.23-13.30.16:295][912]CompilerResultsLog: Reflection code generated for FYPEditor in 8.2768123 seconds
+[2020.12.23-13.30.16:295][912]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.12.23-13.30.16:295][912]CompilerResultsLog: Building 4 actions with 4 processes...
+[2020.12.23-13.30.16:295][912]CompilerResultsLog:   [1/4] FYP_Car_Body.cpp
+[2020.12.23-13.30.16:295][912]CompilerResultsLog:   [2/4] UE4Editor-FYP-0035.lib
+[2020.12.23-13.30.16:295][912]CompilerResultsLog:      Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0035.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0035.exp
+[2020.12.23-13.30.16:295][912]CompilerResultsLog:   [3/4] UE4Editor-FYP-0035.dll
+[2020.12.23-13.30.16:295][912]CompilerResultsLog:      Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0035.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0035.suppressed.exp
+[2020.12.23-13.30.16:295][912]CompilerResultsLog:   [4/4] FYPEditor.target
+[2020.12.23-13.30.16:295][912]CompilerResultsLog: Total time in Parallel executor: 11.03 seconds
+[2020.12.23-13.30.16:295][912]CompilerResultsLog: Total execution time: 21.35 seconds
+[2020.12.23-13.30.16:295][912]LogMainFrame: MainFrame: Module compiling took 21.508 seconds
+[2020.12.23-13.30.16:320][912]LogUObjectHash: Compacting FUObjectHashTables data took   2.66ms
+[2020.12.23-13.30.16:335][912]LogContentBrowser: Native class hierarchy populated in 0.0101 seconds. Added 2872 classes and 687 folders.
+[2020.12.23-13.30.16:336][912]Display: HotReload took 21.6s.
+[2020.12.23-13.31.23:004][976]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.31.23:074][983]Candidate modules for hot reload:
+[2020.12.23-13.31.23:074][983]  FYP
+[2020.12.23-13.31.23:074][983]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.23/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=FYP,8414 Win64 Development -TargetType=Editor -Project="C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/FYP.uproject" "C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/FYP.uproject"  -IgnoreJunk]
+[2020.12.23-13.31.23:076][983]Warning: Starting HotReload took  0.0s.
+[2020.12.23-13.31.39:727][304]CompilerResultsLog: New page: Compilation - 23 Dec 2020 13:31:39
+[2020.12.23-13.31.39:727][304]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\david\Documents\GitHub\Final-Year-Project).
+[2020.12.23-13.31.39:727][304]CompilerResultsLog: Parsing headers for FYPEditor
+[2020.12.23-13.31.39:727][304]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\FYP.uproject" "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\FYPEditor\Development\FYPEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2020.12.23-13.31.39:727][304]CompilerResultsLog: Reflection code generated for FYPEditor in 9.6570727 seconds
+[2020.12.23-13.31.39:727][304]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.12.23-13.31.39:727][304]CompilerResultsLog: Building 4 actions with 4 processes...
+[2020.12.23-13.31.39:727][304]CompilerResultsLog:   [1/4] FYP_Car_Body.cpp
+[2020.12.23-13.31.39:727][304]CompilerResultsLog:    C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Source\FYP\FYP_Car_Body.cpp(310) : error C3861: 'DrawDebugLine': identifier not found
+[2020.12.23-13.31.39:727][304]LogMainFrame: MainFrame: Module compiling took 16.657 seconds
+[2020.12.23-13.31.39:728][304]Warning: HotReload failed, recompile failed
+[2020.12.23-13.31.56:579][779]Candidate modules for hot reload:
+[2020.12.23-13.31.56:579][779]  FYP
+[2020.12.23-13.31.56:579][779]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.23/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=FYP,744 Win64 Development -TargetType=Editor -Project="C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/FYP.uproject" "C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/FYP.uproject"  -IgnoreJunk]
+[2020.12.23-13.31.56:581][779]Warning: Starting HotReload took  0.0s.
+[2020.12.23-13.33.22:746][335]CompilerResultsLog: New page: Compilation - 23 Dec 2020 13:33:22
+[2020.12.23-13.33.22:747][335]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\david\Documents\GitHub\Final-Year-Project).
+[2020.12.23-13.33.22:747][335]CompilerResultsLog: Parsing headers for FYPEditor
+[2020.12.23-13.33.22:747][335]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\FYP.uproject" "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\FYPEditor\Development\FYPEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2020.12.23-13.33.22:747][335]CompilerResultsLog: Reflection code generated for FYPEditor in 10.7048482 seconds
+[2020.12.23-13.33.22:747][335]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.12.23-13.33.22:747][335]CompilerResultsLog: Building 7 actions with 4 processes...
+[2020.12.23-13.33.22:747][335]CompilerResultsLog:   [1/7] FYP_Car_Body.gen.cpp
+[2020.12.23-13.33.22:747][335]CompilerResultsLog:   [2/7] FYPGameMode.cpp
+[2020.12.23-13.33.22:747][335]CompilerResultsLog:   [3/7] FYP_Car_Body.cpp
+[2020.12.23-13.33.22:747][335]CompilerResultsLog:   [4/7] FYP_Car_Hud.cpp
+[2020.12.23-13.33.22:747][335]CompilerResultsLog:   [5/7] UE4Editor-FYP-0744.lib
+[2020.12.23-13.33.22:747][335]CompilerResultsLog:      Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0744.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0744.exp
+[2020.12.23-13.33.22:747][335]CompilerResultsLog:   [6/7] UE4Editor-FYP-0744.dll
+[2020.12.23-13.33.22:747][335]CompilerResultsLog:      Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0744.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0744.suppressed.exp
+[2020.12.23-13.33.22:747][335]CompilerResultsLog:   [7/7] FYPEditor.target
+[2020.12.23-13.33.22:747][335]CompilerResultsLog: Total time in Parallel executor: 70.62 seconds
+[2020.12.23-13.33.22:747][335]CompilerResultsLog: Total execution time: 85.95 seconds
+[2020.12.23-13.33.22:747][335]LogMainFrame: MainFrame: Module compiling took 86.172 seconds
+[2020.12.23-13.33.22:770][335]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2020.12.23-13.33.22:786][335]LogContentBrowser: Native class hierarchy populated in 0.0104 seconds. Added 2872 classes and 687 folders.
+[2020.12.23-13.33.22:786][335]Display: HotReload took 86.2s.
+[2020.12.23-13.33.26:208][644]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.23-13.33.26:226][644]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.33.26:226][644]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.23-13.33.26:226][644]PIE: New page: PIE session: VehicleAdvExampleMap (23 Dec 2020 13:33:26)
+[2020.12.23-13.33.26:226][644]LogPlayLevel: Creating play world package: /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2020.12.23-13.33.26:259][644]LogPlayLevel: PIE: StaticDuplicateObject took: (0.032383s)
+[2020.12.23-13.33.26:260][644]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2020.12.23-13.33.26:260][644]LogPlayLevel: PIE: World Init took: (0.001333s)
+[2020.12.23-13.33.26:260][644]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.033920s)
+[2020.12.23-13.33.26:284][644]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2020.12.23-13.33.26:303][644]LogInit: XAudio2 using 'LG ULTRAWIDE (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.12.23-13.33.26:315][644]LogInit: FAudioDevice initialized.
+[2020.12.23-13.33.26:326][644]LogLoad: Game class is 'FYPGameMode'
+[2020.12.23-13.33.26:334][644]LogWorld: Bringing World /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2020.12.23-13.33.26
+[2020.12.23-13.33.26:334][644]LogWorld: Bringing up level for play took: 0.005672
+[2020.12.23-13.33.26:335][644]LogOnline: OSS: Creating online subsystem instance for: :Context_4
+[2020.12.23-13.33.26:337][644]PIE: Play in editor start time for /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.826
+[2020.12.23-13.33.26:337][644]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.33.33:181][445]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2020.12.23-13.33.37:421][947]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2020.12.23-13.33.43:246][539]LogEditorViewport: Clicking on Actor (LMB): FYPPawn (TP_VehicleAdvPawn5)
+[2020.12.23-13.33.44:030][558]LogEditorViewport: Clicking on Actor (LMB): FYPPawn (TP_VehicleAdvPawn5)
+[2020.12.23-13.33.44:586][581]LogEditorViewport: Clicking on Actor (LMB): FYPPawn (TP_VehicleAdvPawn5)
+[2020.12.23-13.33.45:123][605]LogEditorViewport: Clicking on Actor (LMB): FYPPawn (TP_VehicleAdvPawn5)
+[2020.12.23-13.34.24:006][968]Cmd: POLY SELECT ALL
+[2020.12.23-13.34.25:126][ 90]Cmd: POLY SELECT MEMORY UNION
+[2020.12.23-13.34.36:351][335]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.34.36:352][335]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.23-13.34.36:352][335]LogWorld: BeginTearingDown for /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2020.12.23-13.34.36:354][335]LogWorld: UWorld::CleanupWorld for VehicleAdvExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.23-13.34.36:372][335]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.23-13.34.36:372][335]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.34.36:400][335]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.23-13.34.36:404][335]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2020.12.23-13.34.36:441][336]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2020.12.23-13.34.59:811][ 70]LogEditorViewport: Clicking on Actor (LMB): FYPPawn (TP_VehicleAdvPawn5)
+[2020.12.23-13.35.00:540][132]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (AV_straight_full_66)
+[2020.12.23-13.35.54:164][935]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.36.10:333][407]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.36.42:613][362]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.23-13.36.42:617][362]LogSlate: Took 0.000267 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2020.12.23-13.38.03:038][753]Candidate modules for hot reload:
+[2020.12.23-13.38.03:038][753]  FYP
+[2020.12.23-13.38.03:038][753]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.23/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=FYP,9572 Win64 Development -TargetType=Editor -Project="C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/FYP.uproject" "C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/FYP.uproject"  -IgnoreJunk]
+[2020.12.23-13.38.03:040][753]Warning: Starting HotReload took  0.0s.
+[2020.12.23-13.38.17:337][869]CompilerResultsLog: New page: Compilation - 23 Dec 2020 13:38:17
+[2020.12.23-13.38.17:338][869]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\david\Documents\GitHub\Final-Year-Project).
+[2020.12.23-13.38.17:338][869]CompilerResultsLog: Parsing headers for FYPEditor
+[2020.12.23-13.38.17:338][869]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\FYP.uproject" "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\FYPEditor\Development\FYPEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2020.12.23-13.38.17:338][869]CompilerResultsLog: Reflection code generated for FYPEditor in 7.4409512 seconds
+[2020.12.23-13.38.17:339][869]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.12.23-13.38.17:339][869]CompilerResultsLog: Building 4 actions with 4 processes...
+[2020.12.23-13.38.17:339][869]CompilerResultsLog:   [1/4] FYP_Car_Body.cpp
+[2020.12.23-13.38.17:339][869]CompilerResultsLog:   [2/4] UE4Editor-FYP-9572.lib
+[2020.12.23-13.38.17:339][869]CompilerResultsLog:      Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-9572.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-9572.exp
+[2020.12.23-13.38.17:340][869]CompilerResultsLog:   [3/4] UE4Editor-FYP-9572.dll
+[2020.12.23-13.38.17:340][869]CompilerResultsLog:      Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-9572.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-9572.suppressed.exp
+[2020.12.23-13.38.17:340][869]CompilerResultsLog:   [4/4] FYPEditor.target
+[2020.12.23-13.38.17:340][869]CompilerResultsLog: Total time in Parallel executor: 4.69 seconds
+[2020.12.23-13.38.17:340][869]CompilerResultsLog: Total execution time: 14.04 seconds
+[2020.12.23-13.38.17:341][869]LogMainFrame: MainFrame: Module compiling took 14.306 seconds
+[2020.12.23-13.38.17:369][869]LogUObjectHash: Compacting FUObjectHashTables data took   2.14ms
+[2020.12.23-13.38.17:408][869]LogHotReload: Re-instancing FYPPawn after hot-reload.
+[2020.12.23-13.38.17:548][869]LogContentBrowser: Native class hierarchy updated for 'FYP' in 0.0005 seconds. Added 6 classes and 2 folders.
+[2020.12.23-13.38.17:551][869]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2020.12.23-13.38.17:621][869]LogUObjectHash: Compacting FUObjectHashTables data took   2.20ms
+[2020.12.23-13.38.17:637][869]LogContentBrowser: Native class hierarchy populated in 0.0100 seconds. Added 2872 classes and 687 folders.
+[2020.12.23-13.38.17:637][869]Display: HotReload took 14.6s.
+[2020.12.23-13.38.49:710][906]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.23-13.38.49:730][906]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.38.49:731][906]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.23-13.38.49:731][906]PIE: New page: PIE session: VehicleAdvExampleMap (23 Dec 2020 13:38:49)
+[2020.12.23-13.38.49:731][906]LogPlayLevel: Creating play world package: /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2020.12.23-13.38.49:760][906]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028653s)
+[2020.12.23-13.38.49:761][906]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2020.12.23-13.38.49:762][906]LogPlayLevel: PIE: World Init took: (0.001288s)
+[2020.12.23-13.38.49:762][906]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.030479s)
+[2020.12.23-13.38.49:786][906]LogUObjectHash: Compacting FUObjectHashTables data took   1.90ms
+[2020.12.23-13.38.49:805][906]LogInit: XAudio2 using 'LG ULTRAWIDE (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.12.23-13.38.49:817][906]LogInit: FAudioDevice initialized.
+[2020.12.23-13.38.49:826][906]LogLoad: Game class is 'FYPGameMode'
+[2020.12.23-13.38.49:834][906]LogWorld: Bringing World /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2020.12.23-13.38.49
+[2020.12.23-13.38.49:835][906]LogWorld: Bringing up level for play took: 0.005940
+[2020.12.23-13.38.49:835][906]LogOnline: OSS: Creating online subsystem instance for: :Context_5
+[2020.12.23-13.38.49:837][906]PIE: Play in editor start time for /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.675
+[2020.12.23-13.38.49:838][906]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.23-13.38.59:303][769]LogWindows: Error: === Critical error: ===
+[2020.12.23-13.38.59:303][769]LogWindows: Error: 
+[2020.12.23-13.38.59:303][769]LogWindows: Error: Fatal error!
+[2020.12.23-13.38.59:303][769]LogWindows: Error: 
+[2020.12.23-13.38.59:303][769]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x00000018
+[2020.12.23-13.38.59:303][769]LogWindows: Error: 
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb000da618 UE4Editor-FYP-9572.dll!AFYPPawn::Tick() [c:\users\david\documents\github\final-year-project\fyp\source\fyp\fyp_car_body.cpp:319]
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb28042562 UE4Editor-Engine.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb280096f1 UE4Editor-Engine.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb290a64d3 UE4Editor-Engine.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb290b3757 UE4Editor-Engine.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb2ac54e4a UE4Editor-Core.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb2ac551f3 UE4Editor-Core.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb2ac651f9 UE4Editor-Core.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb290d2b50 UE4Editor-Engine.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb290d8a82 UE4Editor-Engine.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb288cd6ef UE4Editor-Engine.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb288d8808 UE4Editor-Engine.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb2624e00b UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb26aa5296 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ff66e697b0a UE4Editor.exe!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ff66e6aa91c UE4Editor.exe!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ff66e6aa9fa UE4Editor.exe!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ff66e6bb92c UE4Editor.exe!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ff66e6be60e UE4Editor.exe!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb7f8b7034 KERNEL32.DLL!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: [Callstack] 0x00007ffb7fe5d0d1 ntdll.dll!UnknownFunction []
+[2020.12.23-13.38.59:303][769]LogWindows: Error: 
+[2020.12.23-13.38.59:332][769]LogExit: Executing StaticShutdownAfterError
+[2020.12.23-13.38.59:335][769]LogWindows: FPlatformMisc::RequestExit(1)
+[2020.12.23-13.38.59:388][769]Log file closed, 12/23/20 13:38:59

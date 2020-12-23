@@ -364,7 +364,9 @@
     <NMakeOutput>..\..\Binaries\HTML5\FYP-HTML5-Shipping.js</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\FYP\CarRayCasts.cpp" />
     <ClCompile Include="..\..\Source\FYP\TopViewCameraControler.cpp" />
+    <ClInclude Include="..\..\Source\FYP\CarRayCasts.h" />
     <ClInclude Include="..\..\Source\FYP\TopViewCameraControler.h" />
     <None Include="..\..\FYP.uproject" />
     <None Include="..\..\Source\FYP.Target.cs" />

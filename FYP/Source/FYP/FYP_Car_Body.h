@@ -6,6 +6,8 @@
 #include "WheeledVehicle.h"
 #include <string>
 #include "Components/BoxComponent.h"
+#include "Components/SphereComponent.h"
+#include "DrawDebugHelpers.h"
 #include "FYP_Car_Body.generated.h"
 
 class UPhysicalMaterial;
@@ -15,6 +17,17 @@ class UTextRenderComponent;
 class UInputComponent;
 class UAudioComponent;
 class UBoxComponent;
+
+struct RayCastInfo
+{
+	USphereComponent* StartPoint;
+
+	FCollisionQueryParams CollisionParams;
+	FHitResult OutHit;
+	FVector Start;
+	FVector ForwardVector;
+	FVector End;
+};
 
 UCLASS(config=Game)
 class AFYPPawn : public AWheeledVehicle
@@ -58,6 +71,7 @@ public:
 
 	// Begin Actor interface
 	virtual void Tick(float Delta) override;
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -75,17 +89,6 @@ public:
 	static const FName LookRightBinding;
 	static const FName EngineAudioRPM;
 
-private:
-	/** Update the gear and speed strings */
-	void UpdateSpeedAndGearHUD();
-	/* Are we on a 'slippery' surface */
-	bool bIsLowFriction;
-	/** Slippery Material instance */
-	UPhysicalMaterial* SlipperyMaterial;
-	/** Non Slippery Material instance */
-	UPhysicalMaterial* NonSlipperyMaterial;
-
-
 public:
 	/** Returns SpringArm subobject **/
 	FORCEINLINE USpringArmComponent* GetSpringArm() const { return SpringArm; }
@@ -100,68 +103,68 @@ public:
 
 
 public:
-	//-  ALL AI CODE NEEDED -//
-	//- CODE BY DAVID TAYLOR -//
+	//- Code Below By David Taylor -//
 
-	//- ALtering Input Method -//
-		/** Update to check user inputs **/
-		void CheckKeyPresses();
+	//- Needed Elements To Track if AI Isnt Moving -//
+	float mf_TimeLeft;
+
+	//- Needed Elements To Track Distance Moved -//
+	float mf_DistanceTraveled;
+
+	//- Required Elements For Tracking Compleated Laps -//
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UBoxComponent* mp_collider;
+	UFUNCTION()
+	void LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AActor* _otherActor, UPrimitiveComponent* _otherComp, int32 _otherBodyIndex, bool _bFromSweep, const FHitResult & _hitResult);
+	int mi_LapMultiplyer;
+	int mi_HistoryCount;
+	FString LapMarkerNames[4];
+	FString LapMarkerHistory[4];
+
+	//- Required Data For Car RayCasts -//
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USphereComponent* North;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USphereComponent* NorthEast;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USphereComponent* East;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USphereComponent* SouthEast;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USphereComponent* South;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USphereComponent* SouthWest;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USphereComponent* West;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USphereComponent* NorthWest;
+	RayCastInfo Casts[8];
+
+	//- Decliration Of UI Elements -//	
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UTextRenderComponent* TimeLeft;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UTextRenderComponent* DistanceTraveledScoreUI;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UTextRenderComponent* LapMultiplyerUI;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UTextRenderComponent* NorthRayDistanceUI;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UTextRenderComponent* NorthEastRayDistanceUI;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UTextRenderComponent* EastRayDistanceUI;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UTextRenderComponent* SouthEastRayDistanceUI;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UTextRenderComponent* SouthRayDistanceUI;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UTextRenderComponent* SouthWestRayDistanceUI;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UTextRenderComponent* WestRayDistanceUI;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UTextRenderComponent* NorthWestRayDistanceUI;
 	
-	//- New Features -//
-		//- UI Elements For AI -//
-		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UTextRenderComponent* TimeLeft;
-		float mf_TimeLeft;
-
-		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UTextRenderComponent* DistanceTraveledScoreUI;
-		float mf_DistanceTraveled;
-
-		//- Var and Functions for Lap Multiplyer -//
-		/** Variables **/
-		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UTextRenderComponent* LapMultiplyerUI;
-		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UBoxComponent* mp_collider;
-		int mi_LapMultiplyer;
-		FString LapMarkerNames[4];
-		int mi_LapMarkerIndex;
-
-		/** Functions **/
-		UFUNCTION()
-		void LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AActor* _otherActor, UPrimitiveComponent* _otherComp, int32 _otherBodyIndex, bool _bFromSweep, const FHitResult & _hitResult);
-
-		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UTextRenderComponent* NorthRayDistanceUI;
-
-
-		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UTextRenderComponent* NorthEastRayDistanceUI;
-
-
-		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UTextRenderComponent* EastRayDistanceUI;
-
-
-		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UTextRenderComponent* SouthEastRayDistanceUI;
-
-
-		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UTextRenderComponent* SouthRayDistanceUI;
-
-
-		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UTextRenderComponent* SouthWestRayDistanceUI;
-
-
-		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UTextRenderComponent* WestRayDistanceUI;
-
-		UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		UTextRenderComponent* NorthWestRayDistanceUI;
-	
-		//- eath Functions -//
-			void AiFailed();
+	//- Death Functions -//
+	void AiFailed();
 
 };
