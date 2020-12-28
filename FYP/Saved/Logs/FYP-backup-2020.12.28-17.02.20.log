@@ -1,0 +1,2122 @@
+﻿Log file open, 12/28/20 16:57:53
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: FYP
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.093017
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin RawInput
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin SocketIOClient
+LogPluginManager: Mounting plugin TensorFlow
+LogPluginManager: Mounting plugin UnrealEnginePython
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.23-CL-9631420
+LogInit: Engine Version: 4.23.1-9631420+++UE4+Release-4.23
+LogInit: Compatible Engine Version: 4.23.0-8386587+++UE4+Release-4.23
+LogInit: Net CL: 8386587
+LogInit: OS: Windows 10 (Release 2009) (), CPU:        Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz, GPU: NVIDIA GeForce RTX 2060 SUPER
+LogInit: Compiled (64-bit): Oct 18 2019 02:07:44
+LogInit: Compiled with Visual C++: 19.16.27030.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.23
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.23/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 23
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 3
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 34
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 35
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 31
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 11
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 27
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 6
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 9
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.MobileHDR:1]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.Mobile.DisableVertexFog:1]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxMobileCascades:2]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.MobileMSAA:1]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.Mobile.UseLegacyShadingModel:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.Mobile.UseHWsRGBEncoding:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.Mobile.AllowDitheredLODTransition:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.Mobile.AllowSoftwareOcclusion:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.DiscardUnusedQuality:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.AllowOcclusionQueries:1]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForLights:0.030000]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForDepthPrepass:0.030000]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForCSMDepth:0.010000]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.PrecomputedVisibilityWarning:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.TextureStreaming:1]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[Compat.UseDXT5NormalMaps:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.VirtualTextures:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.VirtualTexturedLightmaps:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.VT.TileSize:128]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.VT.TileBorderSize:4]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.vt.FeedbackFactor:16]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.VT.EnableCompressZlib:1]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.VT.EnableCompressCrunch:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.ClearCoatNormal:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.ReflectionCaptureResolution:128]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.ReflectionEnvironmentLightmapMixBasedOnRoughness:1]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.ForwardShading:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.VertexFoggingForOpaque:1]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:1]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.NormalMapsForStaticLighting:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.GenerateMeshDistanceFields:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.EightBit:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.GenerateLandscapeGIData:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.Compress:0]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.TessellationAdaptivePixelsPerTriangle:48.000000]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:1]]
+[2020.12.28-16.57.54:029][  0]LogConfig: Setting CVar [[r.TranslucentSortPolicy:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.CustomDepth:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.CustomDepthTemporalAAJitter:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.PostProcessing.PropagateAlpha:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.DefaultFeature.Bloom:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Method:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.UsePreExposure:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.EyeAdaptation.EditorOnly:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.DefaultFeature.MotionBlur:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.DefaultFeature.LensFlare:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.TemporalAA.Upsampling:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.DefaultFeature.AntiAliasing:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.DefaultFeature.LightUnits:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.DefaultBackBufferPixelFormat:4]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.Shadow.UnbuiltPreviewInGame:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.StencilForLODDither:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.EarlyZPass:3]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.EarlyZPassOnlyMaterialMasking:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.DBuffer:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.ClearSceneMethod:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.BasePassOutputsVelocity:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.SelectiveBasePassOutputs:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeX:1024]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeY:1024]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.AllowGlobalClipPlane:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.GBufferFormat:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.MorphTarget.Mode:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[vr.InstancedStereo:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[vr.MultiView:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[vr.MobileMultiView:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[vr.MobileMultiView.Direct:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[vr.RoundRobinOcclusion:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[vr.ODSCapture:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.WireframeCullThreshold:5.000000]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.RayTracing:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.SupportStationarySkylight:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.SupportLowQualityLightmaps:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.SupportPointLightWholeSceneShadows:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.SupportAtmosphericFog:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.SkinCache.CompileShaders:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.Mobile.EnableStaticAndCSMShadowReceivers:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableLightCSMShaderCulling:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.Mobile.AllowDistanceFieldShadows:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.Mobile.AllowMovableDirectionalLights:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.MobileNumDynamicPointLights:4]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.MobileDynamicPointLightsUseStaticBranch:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableSpotlights:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.SkinCache.SceneMemoryLimitInMB:128.000000]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.GPUSkin.Limit2BoneInfluences:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.SupportDepthOnlyIndexBuffers:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.SupportReversedIndexBuffers:1]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Setting CVar [[r.SupportMaterialLayers:0]]
+[2020.12.28-16.57.54:030][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.28-16.57.54:031][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.12.28-16.57.54:031][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.28-16.57.54:031][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.28-16.57.54:034][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.12.28-16.57.54:034][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.12.28-16.57.54:035][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.12.28-16.57.54:035][  0]LogInit: Selected Device Profile: [Windows]
+[2020.12.28-16.57.54:035][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.12.28-16.57.54:039][  0]LogHAL: Display: Platform has ~ 16 GB [17129328640 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.12.28-16.57.54:039][  0]LogInit: Going up to parent DeviceProfile []
+[2020.12.28-16.57.54:039][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.12.28-16.57.54:039][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.12.28-16.57.54:040][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Scalability.ini]
+[2020.12.28-16.57.54:040][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.12.28-16.57.54:041][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.12.28-16.57.54:041][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.12.28-16.57.54:041][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.12.28-16.57.54:041][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.12.28-16.57.54:041][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Config/Windows/Engine.ini]
+[2020.12.28-16.57.54:041][  0]LogInit: Computer: DESKTOP-070UMBJ
+[2020.12.28-16.57.54:041][  0]LogInit: User: david
+[2020.12.28-16.57.54:041][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.12.28-16.57.54:041][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.12.28-16.57.54:041][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2020.12.28-16.57.54:041][  0]LogMemory: Platform Memory Stats for Windows
+[2020.12.28-16.57.54:041][  0]LogMemory: Process Physical Memory: 101.07 MB used, 101.07 MB peak
+[2020.12.28-16.57.54:041][  0]LogMemory: Process Virtual Memory: 87.87 MB used, 87.87 MB peak
+[2020.12.28-16.57.54:041][  0]LogMemory: Physical Memory: 5864.69 MB used,  10471.11 MB free, 16335.80 MB total
+[2020.12.28-16.57.54:041][  0]LogMemory: Virtual Memory: 4645.45 MB used,  134213080.00 MB free, 134217728.00 MB total
+[2020.12.28-16.57.54:044][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.12.28-16.57.54:088][  0]LogInit: Using OS detected language (en-GB).
+[2020.12.28-16.57.54:088][  0]LogInit: Using OS detected locale (en-GB).
+[2020.12.28-16.57.54:089][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2020.12.28-16.57.54:291][  0]LogInit: Setting process to per monitor DPI aware
+[2020.12.28-16.57.54:328][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.12.28-16.57.54:329][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.12.28-16.57.54:516][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.12.28-16.57.54:516][  0]LogD3D11RHI: D3D11 adapters:
+[2020.12.28-16.57.54:642][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060 SUPER' (Feature Level 11_0)
+[2020.12.28-16.57.54:642][  0]LogD3D11RHI:       8031/0/8167 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2020.12.28-16.57.54:644][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.12.28-16.57.54:644][  0]LogD3D11RHI:       0/0/8167 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.12.28-16.57.54:644][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.12.28-16.57.54:651][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.12.28-16.57.54:651][  0]LogD3D11RHI:     GPU DeviceId: 0x1f06 (for the marketing name, search the web for "GPU Device Id")
+[2020.12.28-16.57.54:651][  0]LogWindows: EnumDisplayDevices:
+[2020.12.28-16.57.54:651][  0]LogWindows:    0. 'NVIDIA GeForce RTX 2060 SUPER' (P:1 D:1)
+[2020.12.28-16.57.54:651][  0]LogWindows:    1. 'NVIDIA GeForce RTX 2060 SUPER' (P:0 D:0)
+[2020.12.28-16.57.54:652][  0]LogWindows:    2. 'NVIDIA GeForce RTX 2060 SUPER' (P:0 D:0)
+[2020.12.28-16.57.54:652][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060 SUPER' (P:0 D:0)
+[2020.12.28-16.57.54:652][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.12.28-16.57.54:652][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060 SUPER
+[2020.12.28-16.57.54:652][  0]LogD3D11RHI:   Driver Version: 460.89 (internal:27.21.14.6089, unified:460.89)
+[2020.12.28-16.57.54:652][  0]LogD3D11RHI:      Driver Date: 12-11-2020
+[2020.12.28-16.57.54:652][  0]LogRHI: Texture pool is 5621 MB (70% of 8031 MB)
+[2020.12.28-16.57.54:761][  0]LogD3D11RHI: Async texture creation enabled
+[2020.12.28-16.57.54:779][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.12.28-16.57.55:105][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
+[2020.12.28-16.57.55:116][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
+[2020.12.28-16.57.55:127][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
+[2020.12.28-16.57.55:138][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
+[2020.12.28-16.57.55:149][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
+[2020.12.28-16.57.55:160][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
+[2020.12.28-16.57.55:171][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
+[2020.12.28-16.57.55:181][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
+[2020.12.28-16.57.55:187][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
+[2020.12.28-16.57.55:225][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
+[2020.12.28-16.57.55:227][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
+[2020.12.28-16.57.55:248][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
+[2020.12.28-16.57.55:248][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
+[2020.12.28-16.57.55:266][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
+[2020.12.28-16.57.55:266][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
+[2020.12.28-16.57.55:275][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
+[2020.12.28-16.57.55:284][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
+[2020.12.28-16.57.55:292][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
+[2020.12.28-16.57.55:302][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
+[2020.12.28-16.57.55:332][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
+[2020.12.28-16.57.55:332][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
+[2020.12.28-16.57.55:333][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.12.28-16.57.55:344][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.12.28-16.57.55:411][  0]LogShaderCompilers: Guid format shader working directory is -24 characters bigger than the processId version (../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/Intermediate/Shaders/WorkingDirectory/14660/).
+[2020.12.28-16.57.55:412][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/david/AppData/Local/Temp/UnrealShaderWorkingDir/3F0A56D8468BA3659816DA8C2BD1B5C9/'.
+[2020.12.28-16.57.55:414][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.12.28-16.57.55:415][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.12.28-16.57.55:415][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.12.28-16.57.56:171][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.12.28-16.57.56:227][  0]LogDerivedDataCache: Loaded boot cache 0.06s 73MB C:/Users/david/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc.
+[2020.12.28-16.57.56:227][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/david/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc
+[2020.12.28-16.57.56:227][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.12.28-16.57.56:227][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.12.28-16.57.56:227][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.12.28-16.57.56:227][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.12.28-16.57.56:241][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.12.28-16.57.56:242][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.12.28-16.57.56:242][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.12.28-16.57.56:243][  0]LogDerivedDataCache: Using Local data cache path C:/Users/david/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.12.28-16.57.56:243][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.12.28-16.57.56:243][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.12.28-16.57.56:270][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.12.28-16.57.56:274][  0]LogSlate: Using FreeType 2.6.0
+[2020.12.28-16.57.56:274][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.12.28-16.57.56:339][  0]LogAssetRegistry: FAssetRegistry took 0.0026 seconds to start up
+[2020.12.28-16.57.56:693][  0]LogInit: Selected Device Profile: [Windows]
+[2020.12.28-16.57.56:889][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.12.28-16.57.56:889][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.12.28-16.57.56:889][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.12.28-16.57.56:889][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.12.28-16.57.56:889][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.12.28-16.57.56:901][  0]LogNetVersion: FYP 1.0.0, NetCL: 8386587, EngineNetVer: 11, GameNetVer: 0 (Checksum: 2864843675)
+[2020.12.28-16.57.57:394][  0]LogPackageLocalizationCache: Processed 14 localized package path(s) for 1 prioritized culture(s) in 0.062835 seconds
+[2020.12.28-16.57.57:402][  0]LogUObjectArray: 43444 objects as part of root set at end of initial load.
+[2020.12.28-16.57.57:402][  0]LogUObjectAllocator: 7548648 out of 0 bytes used by permanent object pool.
+[2020.12.28-16.57.57:402][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.12.28-16.57.58:376][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.12.28-16.57.58:380][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.12.28-16.57.58:835][  0]LogPython: Python Scripts search path: ../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/Content/Scripts
+[2020.12.28-16.57.58:835][  0]LogPython: Python Scripts search path: ../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/Plugins/tensorflow-ue4/Content/Scripts
+[2020.12.28-16.57.58:835][  0]LogPython: Python Scripts search path: ../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/Plugins/UnrealEnginePython/Content/Scripts
+[2020.12.28-16.57.58:835][  0]LogPython: Python Scripts search path: ../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/Plugins/UnrealEnginePython
+[2020.12.28-16.57.58:835][  0]LogPython: Python VM initialized: 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)]
+[2020.12.28-16.57.59:022][  0]LogPython: upystartup::Checking pip location on startup
+[2020.12.28-16.57.59:022][  0]LogPython: 
+
+[2020.12.28-16.57.59:022][  0]LogPython: upystartup::stored loc: C:/Users/david/Documents/Unreal Projects/tensorflow-ue4-examples/Plugins/UnrealEnginePython/Binaries/Win64/Scripts
+[2020.12.28-16.57.59:022][  0]LogPython: 
+
+[2020.12.28-16.57.59:022][  0]LogPython: upystartup::correct loc: C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Plugins/UnrealEnginePython/Binaries/Win64/Scripts
+[2020.12.28-16.57.59:022][  0]LogPython: 
+
+[2020.12.28-16.57.59:022][  0]LogPython: upystartup::Pip installation directory is stale, re-installing.
+[2020.12.28-16.57.59:022][  0]LogPython: 
+
+[2020.12.28-16.57.59:023][  0]LogPython: removing old: C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Plugins/UnrealEnginePython/Binaries/Win64/Lib/site-packages/pip-20.2.4.dist-info
+[2020.12.28-16.57.59:023][  0]LogPython: 
+
+[2020.12.28-16.57.59:023][  0]LogPython: Started cmd <cd /d "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Binaries\Win64" & rmdir /S /Q "C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Plugins/UnrealEnginePython/Binaries/Win64/Lib/site-packages/pip-20.2.4.dist-info">
+[2020.12.28-16.57.59:071][  0]LogPython: cmd Result: 
+[2020.12.28-16.57.59:071][  0]LogPython: 
+[2020.12.28-16.57.59:072][  0]LogPython: C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Plugins/UnrealEnginePython/Binaries/Win64/get-pip.py
+[2020.12.28-16.57.59:072][  0]LogPython: 
+
+[2020.12.28-16.57.59:072][  0]LogPython: Installing pip...
+[2020.12.28-16.57.59:072][  0]LogPython: 
+
+[2020.12.28-16.58.14:498][  0]LogPython: 
+C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Binaries\Win64>echo Getting pip... 
+Getting pip...
+
+C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Binaries\Win64>python get-pip.py 
+Collecting pip
+  Using cached https://files.pythonhosted.org/packages/54/eb/4a3642e971f404d69d4f6fa3885559d67562801b99d7592487f1ecc4e017/pip-20.3.3-py2.py3-none-any.whl
+Installing collected packages: pip
+Successfully installed pip-20.3.3
+
+C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Binaries\Win64>Scripts\pip install -U -I pip 
+Collecting pip
+  Using cached pip-20.3.3-py2.py3-none-any.whl (1.5 MB)
+Installing collected packages: pip
+  WARNING: Failed to write executable - trying to use .deleteme logic
+  WARNING: The scripts pip.exe, pip3.6.exe and pip3.exe are installed in 'c:\users\david\documents\github\final-year-project\fyp\plugins\unrealenginepython\binaries\win64\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed pip-20.3.3
+[2020.12.28-16.58.14:507][  0]LogPython: upystartup::updated pip.exe location in <C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Plugins/UnrealEnginePython/Content/Scripts/upyconfig.json>
+[2020.12.28-16.58.14:507][  0]LogPython: 
+
+[2020.12.28-16.58.14:512][  0]LogPython: upystartup::system paths normalized.
+[2020.12.28-16.58.14:512][  0]LogPython: 
+
+[2020.12.28-16.58.14:512][  0]LogPython: upystartup::project doesn't use a upymodule.json file.
+[2020.12.28-16.58.14:513][  0]LogPython: 
+
+[2020.12.28-16.58.14:515][  0]LogPython: ue_site Python module not found
+[2020.12.28-16.58.14:735][  0]SourceControl: Source control is disabled
+[2020.12.28-16.58.14:735][  0]SourceControl: Source control is disabled
+[2020.12.28-16.58.14:737][  0]SourceControl: Source control is disabled
+[2020.12.28-16.58.14:738][  0]SourceControl: Source control is disabled
+[2020.12.28-16.58.14:853][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.12.28-16.58.14:995][  0]LogOcInput: OculusInput pre-init called
+[2020.12.28-16.58.15:004][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.12.28-16.58.15:004][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.12.28-16.58.15:071][  0]LogPython: Added TensorFlow Plugin Content/Scripts (C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Plugins/tensorflow-ue4/Content/Scripts) to sys.path
+[2020.12.28-16.58.15:091][  0]LogPython: upymodule_importer::Resolving upymodule dependencies for tensorflow-ue4
+[2020.12.28-16.58.15:899][  0]LogPython: upymodule_importer::tensorflow-gpu 1.12.0 installed? True
+[2020.12.28-16.58.15:899][  0]LogPython: upymodule_importer::h5py 2.7.0 installed? True
+[2020.12.28-16.58.15:899][  0]LogPython: upymodule_importer::2 tensorflow-ue4 upymodule dependencies resolved (if installation in progress, more async output will stream)
+[2020.12.28-16.58.15:899][  0]LogPython: TensorFlow Plugin upymodule.json parsed
+[2020.12.28-16.58.16:097][  0]LogEngine: Initializing Engine...
+[2020.12.28-16.58.16:098][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.12.28-16.58.16:099][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.12.28-16.58.16:362][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.12.28-16.58.16:380][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.12.28-16.58.16:407][  0]LogInit: XAudio2 using 'LG ULTRAWIDE (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.12.28-16.58.16:438][  0]LogInit: FAudioDevice initialized.
+[2020.12.28-16.58.16:438][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.12.28-16.58.17:253][  0]LogDerivedDataCache: Saved boot cache 0.82s 75MB C:/Users/david/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc.
+[2020.12.28-16.58.17:272][  0]LogInit: Texture streaming: Enabled
+[2020.12.28-16.58.17:297][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.12.28-16.58.17:297][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.12.28-16.58.17:298][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.12.28-16.58.17:370][  0]LogInit: Transaction tracking system initialized
+[2020.12.28-16.58.17:410][  0]BlueprintLog: New page: Editor Load
+[2020.12.28-16.58.17:504][  0]LocalizationService: Localization service is disabled
+[2020.12.28-16.58.17:781][  0]LogFileCache: Scanning file cache for directory 'C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Content/' took 0.01s
+[2020.12.28-16.58.17:781][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.12.28-16.58.17:781][  0]LogCook: Display: Mobile HDR setting 1
+[2020.12.28-16.58.17:990][  0]SourceControl: Source control is disabled
+[2020.12.28-16.58.17:990][  0]Cmd: MAP LOAD FILE="../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/Content/VehicleAdvCPP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.12.28-16.58.17:991][  0]LightingResults: New page: Lighting Build
+[2020.12.28-16.58.17:994][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.12.28-16.58.17:994][  0]MapCheck: New page: Map Check
+[2020.12.28-16.58.17:994][  0]LightingResults: New page: Lighting Build
+[2020.12.28-16.58.18:021][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.58ms
+[2020.12.28-16.58.18:102][  0]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2020.12.28-16.58.18:116][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.12.28-16.58.18:147][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2020.12.28-16.58.18:147][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.12.28-16.58.18:147][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.23ms to complete.
+[2020.12.28-16.58.18:147][  0]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 0.157
+[2020.12.28-16.58.18:295][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.28-16.58.18:304][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.28-16.58.18:314][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.28-16.58.18:323][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.28-16.58.18:331][  0]LogCollectionManager: Loaded 0 collections in 0.002257 seconds
+[2020.12.28-16.58.18:340][  0]LogFileCache: Scanning file cache for directory 'C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Saved/Collections/' took 0.00s
+[2020.12.28-16.58.18:340][  0]LogFileCache: Scanning file cache for directory 'C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Content/Developers/david/Collections/' took 0.00s
+[2020.12.28-16.58.18:340][  0]LogFileCache: Scanning file cache for directory 'C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Content/Collections/' took 0.00s
+[2020.12.28-16.58.18:340][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2020.12.28-16.58.18:350][  0]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2905 classes and 708 folders.
+[2020.12.28-16.58.18:361][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.12.28-16.58.18:409][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.12.28-16.58.18:511][  0]LogSlate: Took 0.000147 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.12.28-16.58.18:513][  0]LogSlate: Took 0.000145 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.12.28-16.58.18:522][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2020.12.28-16.58.18:523][  0]LogLoad: (Engine Initialization) Total time: 26.40 seconds
+[2020.12.28-16.58.18:523][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.12.28-16.58.18:538][  0]LogRawInputWindows: Warning: Found device 0 devices
+[2020.12.28-16.58.18:538][  0]LogRawInputWindows: Warning: Found device 0 devices
+[2020.12.28-16.58.18:538][  0]LogRawInputWindows: Warning: Device was registered succesfully but not connected (Usage:4 UsagePage:1)
+[2020.12.28-16.58.18:539][  0]LogRawInputWindows: Warning: Found device 1 devices
+[2020.12.28-16.58.18:539][  0]LogRawInputWindows: Warning: Device was registered succesfully but not connected (Usage:5 UsagePage:1)
+[2020.12.28-16.58.18:588][  0]LogAssetRegistry: Asset discovery search completed in 22.2487 seconds
+[2020.12.28-16.58.18:592][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000005 seconds (found 0 objects)
+[2020.12.28-16.58.18:592][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000113 seconds (updated 0 objects)
+[2020.12.28-16.58.18:593][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.12.28-16.58.18:606][  0]LogSlate: Took 0.000179 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2020.12.28-16.58.18:727][  1]LogRenderer: Reallocating scene render targets to support 836x388 Format 10 NumSamples 1 (Frame:1).
+[2020.12.28-16.58.18:729][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Content/' took 0.19s
+[2020.12.28-16.58.18:820][  2]LogDirectoryWatcher: A directory notification failed for 'C:/Users/david/Documents/GitHub/Final-Year-Project/FYP/Plugins/UnrealEnginePython/Binaries/Win64' because it was empty or there was a buffer overflow. Attemping another request...
+[2020.12.28-16.58.21:357][301]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.28-16.58.21:452][310]LogRenderer: Reallocating scene render targets to support 1684x608 Format 10 NumSamples 1 (Frame:303).
+[2020.12.28-16.58.30:487][382]LogSlate: Took 0.000238 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.12.28-16.58.31:660][509]LogSlate: Took 0.000246 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.12.28-16.58.39:236][406]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.28-16.58.39:253][406]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.28-16.58.39:254][406]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.28-16.58.39:256][406]PIE: New page: PIE session: VehicleAdvExampleMap (28 Dec 2020 16:58:39)
+[2020.12.28-16.58.39:257][406]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.12.28-16.58.39:258][406]LogPlayLevel: Creating play world package: /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2020.12.28-16.58.39:288][406]LogPlayLevel: PIE: StaticDuplicateObject took: (0.029279s)
+[2020.12.28-16.58.39:290][406]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2020.12.28-16.58.39:290][406]LogPlayLevel: PIE: World Init took: (0.001659s)
+[2020.12.28-16.58.39:290][406]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.031868s)
+[2020.12.28-16.58.39:315][406]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2020.12.28-16.58.39:337][406]LogInit: XAudio2 using 'LG ULTRAWIDE (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.12.28-16.58.39:349][406]LogInit: FAudioDevice initialized.
+[2020.12.28-16.58.39:358][406]LogLoad: Game class is 'FYPGameMode'
+[2020.12.28-16.58.39:369][406]LogWorld: Bringing World /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2020.12.28-16.58.39
+[2020.12.28-16.58.39:375][406]LogWorld: Bringing up level for play took: 0.012856
+[2020.12.28-16.58.39:375][406]LogOnline: OSS: Creating online subsystem instance for: :Context_1
+[2020.12.28-16.58.39:387][406]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
+[2020.12.28-16.58.39:388][406]PIE: Play in editor start time for /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.775
+[2020.12.28-16.58.39:389][406]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.28-16.58.39:390][406]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:391][406]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:454][407]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:454][407]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:466][408]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:466][408]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:476][409]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:477][409]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:486][410]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:487][410]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:495][411]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:495][411]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:505][412]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:505][412]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:513][413]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:513][413]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:522][414]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:522][414]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:531][415]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:531][415]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:541][416]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:541][416]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:550][417]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:550][417]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:559][418]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:559][418]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:568][419]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:568][419]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:577][420]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:577][420]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:585][421]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:586][421]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:597][422]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:597][422]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:607][423]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:607][423]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:616][424]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:617][424]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:625][425]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:625][425]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:634][426]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:634][426]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:643][427]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:643][427]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:652][428]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:652][428]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:661][429]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:661][429]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:670][430]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:670][430]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:679][431]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:679][431]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:688][432]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:688][432]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:697][433]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:697][433]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:706][434]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:706][434]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:715][435]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:715][435]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:723][436]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:725][436]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:732][437]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:732][437]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:741][438]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:741][438]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:750][439]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:750][439]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:758][440]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:759][440]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:767][441]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:767][441]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:775][442]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:776][442]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:785][443]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:785][443]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:793][444]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:794][444]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:802][445]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:803][445]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:811][446]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:811][446]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:819][447]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:820][447]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:828][448]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:828][448]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:837][449]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:837][449]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:845][450]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:846][450]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:854][451]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:854][451]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:862][452]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.39:863][452]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:872][453]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:873][453]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:881][454]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:881][454]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:891][455]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:891][455]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:900][456]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:900][456]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:908][457]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:908][457]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:917][458]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:917][458]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:925][459]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:926][459]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:934][460]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:934][460]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:942][461]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:942][461]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:951][462]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:951][462]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:959][463]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:960][463]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:968][464]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:968][464]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:977][465]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:977][465]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:986][466]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:986][466]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.39:994][467]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.39:995][467]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:003][468]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:004][468]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:012][469]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:012][469]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:021][470]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:022][470]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:030][471]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:030][471]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:039][472]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:039][472]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:047][473]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:048][473]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:057][474]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:057][474]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:065][475]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:066][475]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:075][476]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:075][476]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:084][477]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:084][477]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:093][478]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:093][478]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:102][479]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:102][479]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:111][480]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:111][480]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:120][481]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:120][481]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:128][482]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:128][482]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:137][483]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:138][483]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:146][484]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:146][484]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:155][485]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:156][485]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:164][486]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:164][486]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:174][487]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:174][487]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:182][488]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:183][488]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:192][489]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:192][489]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:201][490]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:201][490]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:210][491]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:210][491]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:219][492]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:220][492]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:228][493]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:228][493]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:237][494]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:238][494]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:246][495]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:247][495]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:255][496]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:256][496]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:264][497]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:264][497]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:274][498]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:274][498]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:283][499]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:283][499]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:292][500]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:293][500]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:302][501]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:302][501]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:311][502]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:311][502]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:320][503]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:320][503]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:329][504]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:329][504]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:338][505]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:339][505]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:347][506]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:347][506]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:356][507]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:356][507]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:364][508]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:364][508]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:373][509]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:373][509]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:382][510]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:382][510]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:391][511]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:391][511]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:399][512]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:399][512]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:408][513]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:408][513]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:416][514]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:417][514]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:425][515]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:425][515]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:434][516]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:434][516]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:443][517]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:443][517]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:452][518]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:452][518]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:460][519]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:460][519]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:469][520]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:469][520]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:477][521]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:478][521]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:486][522]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:486][522]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.40:495][523]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:496][523]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:504][524]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:504][524]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:513][525]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:513][525]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:522][526]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:522][526]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:530][527]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:530][527]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:539][528]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:539][528]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:548][529]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:548][529]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:556][530]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:556][530]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:565][531]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:565][531]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:574][532]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:574][532]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:583][533]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:583][533]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:592][534]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:592][534]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:600][535]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:601][535]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:609][536]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:610][536]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:618][537]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:619][537]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:627][538]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:627][538]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:635][539]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:636][539]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:644][540]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:644][540]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:652][541]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:653][541]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:661][542]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:662][542]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:671][543]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:671][543]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.40:680][544]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:680][544]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:689][545]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:689][545]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:697][546]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:698][546]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:707][547]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:707][547]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:715][548]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:716][548]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:724][549]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:724][549]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:732][550]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:733][550]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:741][551]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:741][551]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:750][552]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:750][552]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:759][553]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:759][553]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:767][554]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:767][554]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:776][555]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:776][555]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:785][556]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:785][556]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:793][557]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:794][557]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:802][558]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:802][558]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:811][559]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:811][559]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:820][560]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:820][560]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:829][561]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:829][561]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:837][562]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:838][562]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:846][563]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:846][563]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:854][564]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:855][564]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:863][565]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:863][565]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:872][566]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:872][566]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:881][567]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:881][567]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:890][568]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:890][568]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:898][569]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:898][569]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:907][570]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:907][570]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:915][571]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:916][571]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:924][572]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:924][572]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:933][573]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:933][573]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:942][574]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:942][574]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:951][575]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:951][575]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:959][576]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:960][576]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:968][577]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:969][577]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:977][578]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:977][578]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:987][579]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:987][579]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.40:995][580]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.40:996][580]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:004][581]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:005][581]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:013][582]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:013][582]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:022][583]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:022][583]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:030][584]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:030][584]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:039][585]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:039][585]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:048][586]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:048][586]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:057][587]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:057][587]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:066][588]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:066][588]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:074][589]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:075][589]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:083][590]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:084][590]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:092][591]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:092][591]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:101][592]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:101][592]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:110][593]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:110][593]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:119][594]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:119][594]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:128][595]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:128][595]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:137][596]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:137][596]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:145][597]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:146][597]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:155][598]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:155][598]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:164][599]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:164][599]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:173][600]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:173][600]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:182][601]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:182][601]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:190][602]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:191][602]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:199][603]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:199][603]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:208][604]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:208][604]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:216][605]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:216][605]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:224][606]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:225][606]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:233][607]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:234][607]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:242][608]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:242][608]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:251][609]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:251][609]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:260][610]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:260][610]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:269][611]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:269][611]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:277][612]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:278][612]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:286][613]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:287][613]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:295][614]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:295][614]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:304][615]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:304][615]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:312][616]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:312][616]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:321][617]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:321][617]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:329][618]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:329][618]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:349][619]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:349][619]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:359][620]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:359][620]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:367][621]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:367][621]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:376][622]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:376][622]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:385][623]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:385][623]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:394][624]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:394][624]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:402][625]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:403][625]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:411][626]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:411][626]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:421][627]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:421][627]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:429][628]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:430][628]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:439][629]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:439][629]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:447][630]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:447][630]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:456][631]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:456][631]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:464][632]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:465][632]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:474][633]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:474][633]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:483][634]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:483][634]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:491][635]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:492][635]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:500][636]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:500][636]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:509][637]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:509][637]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:517][638]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:518][638]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:527][639]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:527][639]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:535][640]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:535][640]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:544][641]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:544][641]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:552][642]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:552][642]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:561][643]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:561][643]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:569][644]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:570][644]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:578][645]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:578][645]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:587][646]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:587][646]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:596][647]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:596][647]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:605][648]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:605][648]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:613][649]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:613][649]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:622][650]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:623][650]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:631][651]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:631][651]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:640][652]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:640][652]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:649][653]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:649][653]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.41:658][654]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:658][654]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:666][655]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:666][655]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:675][656]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:675][656]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:684][657]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:684][657]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:693][658]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:693][658]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:702][659]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:702][659]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:710][660]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:711][660]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:719][661]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:720][661]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:728][662]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:728][662]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:737][663]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:737][663]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:745][664]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:745][664]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:754][665]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:754][665]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:762][666]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:762][666]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:771][667]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:771][667]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:779][668]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:780][668]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:788][669]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:789][669]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:797][670]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:797][670]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:806][671]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:806][671]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:814][672]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:815][672]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:824][673]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:824][673]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:832][674]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:832][674]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:841][675]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:841][675]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:850][676]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:850][676]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:859][677]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:859][677]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:867][678]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:867][678]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:876][679]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:876][679]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:885][680]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:885][680]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:894][681]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:894][681]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:903][682]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:903][682]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:912][683]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:912][683]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:921][684]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:921][684]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:929][685]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:929][685]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:939][686]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:939][686]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:947][687]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:948][687]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:957][688]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:957][688]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:966][689]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:966][689]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:975][690]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:975][690]LogTemp: Warning: Left/Right : 0.000000
+[2020.12.28-16.58.41:984][691]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:984][691]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.41:993][692]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.41:993][692]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:002][693]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:002][693]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:011][694]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:011][694]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:021][695]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:021][695]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:030][696]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:030][696]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:039][697]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:039][697]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:048][698]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:048][698]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:057][699]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:057][699]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:066][700]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:066][700]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:075][701]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:076][701]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:084][702]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:085][702]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:093][703]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:093][703]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:102][704]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:102][704]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:111][705]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:111][705]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:121][706]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:121][706]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:130][707]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:130][707]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:139][708]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:140][708]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:148][709]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:148][709]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:157][710]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:158][710]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:167][711]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:168][711]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:176][712]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:177][712]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:187][713]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:187][713]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:195][714]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:196][714]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:205][715]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:205][715]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:214][716]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:214][716]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:223][717]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:223][717]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:232][718]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:232][718]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:241][719]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:241][719]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:251][720]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:252][720]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:260][721]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:261][721]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:270][722]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:270][722]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:279][723]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:279][723]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:288][724]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:289][724]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:297][725]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:297][725]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:306][726]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:307][726]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:315][727]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:315][727]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:325][728]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:325][728]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:334][729]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:334][729]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:343][730]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:343][730]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:352][731]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:353][731]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:362][732]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:362][732]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:372][733]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:372][733]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:380][734]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:381][734]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:390][735]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:390][735]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:399][736]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:399][736]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:408][737]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:408][737]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:417][738]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:417][738]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:426][739]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:426][739]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:436][740]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:436][740]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:445][741]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:445][741]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:454][742]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:454][742]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:463][743]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:463][743]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:472][744]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:472][744]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:481][745]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:481][745]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:491][746]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:491][746]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:500][747]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:501][747]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:510][748]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:510][748]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:519][749]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:519][749]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:528][750]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:528][750]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:538][751]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:538][751]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:547][752]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:547][752]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:558][753]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:558][753]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:566][754]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:567][754]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:575][755]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:575][755]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:584][756]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:584][756]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:594][757]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:594][757]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:602][758]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:603][758]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:611][759]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:612][759]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:621][760]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:621][760]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:629][761]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:630][761]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:639][762]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:639][762]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:647][763]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:647][763]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:657][764]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:657][764]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:665][765]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:665][765]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:674][766]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:675][766]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:683][767]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:684][767]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:697][768]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:697][768]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:706][769]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:706][769]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:715][770]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:715][770]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:724][771]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:724][771]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:733][772]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:734][772]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:742][773]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:743][773]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:752][774]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:752][774]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:761][775]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:761][775]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:770][776]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:770][776]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:779][777]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:779][777]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:789][778]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:789][778]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:798][779]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:798][779]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:807][780]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:808][780]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:816][781]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:816][781]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:825][782]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:825][782]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:834][783]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:834][783]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:843][784]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:844][784]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:853][785]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:853][785]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:861][786]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:862][786]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:870][787]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:871][787]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:879][788]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:879][788]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:888][789]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:889][789]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:897][790]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:897][790]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:906][791]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:906][791]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:915][792]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:915][792]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:924][793]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:924][793]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:933][794]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:933][794]LogTemp: Warning: Left/Right : 1.000000
+[2020.12.28-16.58.42:942][795]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:942][795]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:951][796]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:951][796]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:960][797]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:960][797]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:969][798]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:969][798]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:978][799]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:978][799]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:987][800]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:987][800]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.42:996][801]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.42:996][801]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:004][802]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:005][802]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:013][803]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:013][803]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:022][804]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:023][804]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:032][805]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:032][805]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:041][806]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:041][806]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:050][807]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:050][807]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:059][808]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:059][808]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:067][809]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:068][809]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:077][810]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:077][810]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:086][811]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:086][811]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:094][812]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:095][812]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:103][813]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:104][813]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:112][814]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:112][814]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:121][815]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:122][815]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:130][816]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:130][816]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:139][817]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:139][817]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:148][818]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:148][818]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:157][819]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:157][819]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:166][820]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:166][820]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:175][821]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:175][821]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:185][822]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:185][822]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:195][823]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:196][823]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:205][824]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:206][824]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:215][825]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:215][825]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:225][826]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:225][826]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:234][827]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:234][827]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:244][828]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:244][828]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:253][829]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:254][829]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:263][830]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:263][830]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:272][831]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:273][831]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:282][832]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:282][832]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:292][833]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:292][833]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:301][834]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:302][834]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:311][835]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:311][835]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:320][836]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:320][836]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:329][837]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:329][837]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:338][838]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:339][838]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:347][839]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:347][839]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:357][840]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:357][840]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:367][841]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:367][841]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:376][842]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:376][842]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:386][843]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:386][843]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:395][844]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:396][844]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:405][845]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:405][845]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:414][846]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:414][846]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:424][847]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:424][847]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:432][848]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:433][848]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:441][849]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:442][849]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:451][850]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:451][850]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:460][851]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:460][851]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:469][852]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:469][852]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:478][853]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:478][853]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:487][854]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:487][854]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:495][855]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:496][855]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:504][856]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:505][856]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:513][857]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:513][857]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:523][858]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:523][858]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:531][859]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:532][859]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:541][860]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:541][860]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:549][861]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:549][861]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:558][862]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:559][862]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:567][863]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:567][863]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:576][864]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:576][864]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:585][865]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:585][865]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:594][866]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:594][866]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:603][867]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:603][867]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:611][868]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:612][868]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:620][869]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:620][869]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:629][870]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:629][870]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:638][871]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:638][871]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:647][872]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:647][872]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:656][873]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:656][873]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:665][874]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:665][874]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:674][875]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:674][875]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:683][876]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:683][876]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:692][877]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:692][877]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:701][878]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:701][878]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:710][879]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:710][879]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:719][880]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:719][880]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:727][881]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:727][881]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:736][882]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:736][882]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:745][883]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:745][883]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:754][884]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:754][884]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:762][885]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:762][885]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:771][886]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:771][886]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:780][887]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:780][887]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:789][888]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:789][888]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:798][889]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:798][889]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:806][890]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:807][890]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:815][891]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:815][891]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:824][892]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:824][892]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:833][893]LogTemp: Warning: Forward/Backword : 1.000000
+[2020.12.28-16.58.43:833][893]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:842][894]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:842][894]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:851][895]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:851][895]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:860][896]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:860][896]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:869][897]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:869][897]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:878][898]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:878][898]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:887][899]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:887][899]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:896][900]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:896][900]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:905][901]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:905][901]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:914][902]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:914][902]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:922][903]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:923][903]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:931][904]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:931][904]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:941][905]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:941][905]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:949][906]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:950][906]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:959][907]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:959][907]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:968][908]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:968][908]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:977][909]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:977][909]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:987][910]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:987][910]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:996][911]LogTemp: Warning: Forward/Backword : 0.500000
+[2020.12.28-16.58.43:997][911]LogTemp: Warning: Left/Right : 0.500000
+[2020.12.28-16.58.43:999][911]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.28-16.58.44:002][911]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.28-16.58.44:003][911]LogWorld: BeginTearingDown for /Game/VehicleAdvCPP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2020.12.28-16.58.44:003][911]LogWorld: UWorld::CleanupWorld for VehicleAdvExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.28-16.58.44:013][911]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.28-16.58.44:014][911]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvCPP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2020.12.28-16.58.44:044][911]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.28-16.58.44:048][911]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2020.12.28-16.58.44:120][913]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2020.12.28-17.01.17:054][517]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.12.28-17.01.19:386][523]LogEditorSessionSummary: EditorSessionSummary sent report. Type=Shutdown, SessionId={9FE18A27-41BF-479C-05DC-D2942776DCBC}
+[2020.12.28-17.02.17:186][845]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2020.12.28-17.02.17:266][845]LogSlate: Window 'FYP - Unreal Editor' being destroyed
+[2020.12.28-17.02.17:267][845]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2020.12.28-17.02.17:341][845]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/' was aborted.
+[2020.12.28-17.02.17:341][845]LogDirectoryWatcher: A directory notification for '../../../../../../Users/david/Documents/GitHub/Final-Year-Project/FYP/Plugins/' was aborted.
+[2020.12.28-17.02.17:406][846]Cmd: QUIT_EDITOR
+[2020.12.28-17.02.17:805][846]LogExit: Preparing to exit.
+[2020.12.28-17.02.18:540][846]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2020.12.28-17.02.18:552][846]LogExit: Editor shut down
+[2020.12.28-17.02.18:552][846]LogExit: Transaction tracking system shut down
+[2020.12.28-17.02.18:681][846]LogExit: Object subsystem successfully closed.
+[2020.12.28-17.02.18:699][846]LogShaderCompilers: Display: Shaders left to compile 0
+[2020.12.28-17.02.18:732][846]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (698)
+[2020.12.28-17.02.18:732][846]LogModuleManager: Shutting down and abandoning module Voice (696)
+[2020.12.28-17.02.18:732][846]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (694)
+[2020.12.28-17.02.18:732][846]LogModuleManager: Shutting down and abandoning module AddContentDialog (692)
+[2020.12.28-17.02.18:732][846]LogModuleManager: Shutting down and abandoning module WidgetCarousel (691)
+[2020.12.28-17.02.18:732][846]LogModuleManager: Shutting down and abandoning module EditorWidgets (688)
+[2020.12.28-17.02.18:732][846]LogModuleManager: Shutting down and abandoning module CollectionManager (686)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module SceneOutliner (684)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module StatsViewer (682)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (680)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module FoliageEdit (678)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module LandscapeEditor (676)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module MeshPaintMode (674)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (672)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module ActorPickerMode (670)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module GeometryMode (668)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module TextureAlignMode (666)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module BspMode (664)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (662)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (660)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module AutomationWorker (658)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module OculusMR (656)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (654)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (652)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (650)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module PlacementMode (649)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module MaterialEditor (648)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (644)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (642)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (640)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (638)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (636)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module WebMMedia (634)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (632)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (630)
+[2020.12.28-17.02.18:733][846]LogModuleManager: Shutting down and abandoning module SequenceRecorder (629)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (626)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (624)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (622)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (620)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (618)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (616)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (614)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (612)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (610)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (608)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (606)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module CharacterAI (604)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module SmartSnapping (602)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module SessionServices (600)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module MeshPaint (598)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module ViewportSnapping (596)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module ViewportInteraction (594)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module ClothPainter (592)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (591)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module LogVisualizer (588)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module IntroTutorials (586)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (585)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (582)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (580)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (578)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (576)
+[2020.12.28-17.02.18:734][846]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (575)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (572)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (570)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (568)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (566)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (564)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module InputBindingEditor (562)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module MergeActors (560)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (558)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module LocalizationService (557)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module HardwareTargeting (554)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (552)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module UndoHistory (550)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module XmlParser (548)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module Blutility (546)
+[2020.12.28-17.02.19:697][846]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (544)
+[2020.12.28-17.02.19:698][846]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (543)
+[2020.12.28-17.02.19:698][846]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (540)
+[2020.12.28-17.02.19:698][846]LogModuleManager: Shutting down and abandoning module SettingsEditor (538)
+[2020.12.28-17.02.19:698][846]LogModuleManager: Shutting down and abandoning module ProjectLauncher (536)
+[2020.12.28-17.02.19:698][846]LogModuleManager: Shutting down and abandoning module SessionFrontend (534)
+[2020.12.28-17.02.19:698][846]LogModuleManager: Shutting down and abandoning module ProfilerClient (532)
+[2020.12.28-17.02.19:698][846]LogModuleManager: Shutting down and abandoning module DeviceManager (530)
+[2020.12.28-17.02.19:698][846]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (529)
+[2020.12.28-17.02.19:731][846]LogModuleManager: Shutting down and abandoning module AutomationController (526)
+[2020.12.28-17.02.19:731][846]LogModuleManager: Shutting down and abandoning module AutomationWindow (524)
+[2020.12.28-17.02.19:731][846]LogModuleManager: Shutting down and abandoning module Layers (522)
+[2020.12.28-17.02.19:731][846]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (520)
+[2020.12.28-17.02.19:731][846]LogModuleManager: Shutting down and abandoning module DetailCustomizations (518)
+[2020.12.28-17.02.19:731][846]LogModuleManager: Shutting down and abandoning module PackagesDialog (516)
+[2020.12.28-17.02.19:731][846]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (514)
+[2020.12.28-17.02.19:731][846]LogModuleManager: Shutting down and abandoning module Persona (512)
+[2020.12.28-17.02.19:731][846]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (511)
+[2020.12.28-17.02.19:731][846]LogModuleManager: Shutting down and abandoning module AnimGraph (509)
+[2020.12.28-17.02.19:732][846]LogModuleManager: Shutting down and abandoning module Kismet (506)
+[2020.12.28-17.02.19:732][846]LogModuleManager: Shutting down and abandoning module KismetWidgets (505)
+[2020.12.28-17.02.19:732][846]LogModuleManager: Shutting down and abandoning module GraphEditor (502)
+[2020.12.28-17.02.19:732][846]LogModuleManager: Shutting down and abandoning module StructViewer (500)
+[2020.12.28-17.02.19:732][846]LogModuleManager: Shutting down and abandoning module ClassViewer (498)
+[2020.12.28-17.02.19:732][846]LogModuleManager: Shutting down and abandoning module Toolbox (496)
+[2020.12.28-17.02.19:732][846]LogModuleManager: Shutting down and abandoning module DesktopPlatform (495)
+[2020.12.28-17.02.19:732][846]LogModuleManager: Shutting down and abandoning module ModuleUI (492)
+[2020.12.28-17.02.19:732][846]LogModuleManager: Shutting down and abandoning module MovieSceneTools (490)
+[2020.12.28-17.02.19:732][846]LogModuleManager: Shutting down and abandoning module OutputLog (488)
+[2020.12.28-17.02.19:733][846]LogModuleManager: Shutting down and abandoning module GammaUI (486)
+[2020.12.28-17.02.19:733][846]LogModuleManager: Shutting down and abandoning module Documentation (484)
+[2020.12.28-17.02.19:733][846]LogModuleManager: Shutting down and abandoning module LiveCoding (482)
+[2020.12.28-17.02.19:733][846]LogModuleManager: Shutting down and abandoning module LevelSequence (480)
+[2020.12.28-17.02.19:734][846]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (478)
+[2020.12.28-17.02.19:734][846]LogModuleManager: Shutting down and abandoning module MovieScene (476)
+[2020.12.28-17.02.19:734][846]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (474)
+[2020.12.28-17.02.19:734][846]LogModuleManager: Shutting down and abandoning module LauncherPlatform (472)
+[2020.12.28-17.02.19:734][846]LogModuleManager: Shutting down and abandoning module AnalyticsET (470)
+[2020.12.28-17.02.19:734][846]LogModuleManager: Shutting down and abandoning module PortalServices (468)
+[2020.12.28-17.02.19:734][846]LogModuleManager: Shutting down and abandoning module PortalRpc (466)
+[2020.12.28-17.02.19:734][846]LogModuleManager: Shutting down and abandoning module MessagingRpc (464)
+[2020.12.28-17.02.19:734][846]LogModuleManager: Shutting down and abandoning module AIModule (462)
+[2020.12.28-17.02.19:734][846]LogModuleManager: Shutting down and abandoning module GameplayDebugger (461)
+[2020.12.28-17.02.19:734][846]LogModuleManager: Shutting down and abandoning module AITestSuite (459)
+[2020.12.28-17.02.19:734][846]LogModuleManager: Shutting down and abandoning module NavigationSystem (457)
+[2020.12.28-17.02.19:734][846]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (454)
+[2020.12.28-17.02.19:740][846]LogModuleManager: Shutting down and abandoning module ProfilerService (452)
+[2020.12.28-17.02.19:985][846]LogModuleManager: Shutting down and abandoning module TaskGraph (450)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module PythonEditor (448)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module PythonConsole (446)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module PythonAutomation (444)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module TFAudioCapture (442)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module TensorFlow (440)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module SIOJEditorPlugin (438)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module SocketIOClient (436)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module ScreenshotTools (434)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module SteamVRController (432)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (430)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (428)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module OculusEditor (426)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module OculusInput (424)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (422)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module EditableMesh (420)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (418)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module CableComponent (416)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module AudioCapture (414)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (412)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (410)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module AppleImageUtils (408)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module AndroidPermission (406)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (404)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (402)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module MediaCompositing (400)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module ImgMedia (398)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (396)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (394)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (392)
+[2020.12.28-17.02.19:986][846]LogModuleManager: Shutting down and abandoning module RawInput (390)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module HTML5Networking (388)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (386)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (384)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module BackChannel (382)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module AutomationUtilsEditor (380)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module AutomationUtils (378)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module AlembicImporter (376)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module AlembicLibrary (375)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module GeometryCache (374)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (373)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module VariantManagerContent (368)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (366)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (364)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module PluginBrowser (362)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (360)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (358)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module CurveEditorTools (356)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module CurveEditor (355)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (352)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module CryptoKeys (350)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (348)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (346)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module UObjectPlugin (344)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (342)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (340)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module GitSourceControl (338)
+[2020.12.28-17.02.19:987][846]LogModuleManager: Shutting down and abandoning module SourceControl (337)
+[2020.12.28-17.02.19:988][846]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (334)
+[2020.12.28-17.02.19:988][846]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (332)
+[2020.12.28-17.02.19:988][846]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (330)
+[2020.12.28-17.02.19:988][846]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (328)
+[2020.12.28-17.02.19:988][846]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (326)
+[2020.12.28-17.02.19:988][846]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (324)
+[2020.12.28-17.02.19:988][846]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (322)
+[2020.12.28-17.02.19:988][846]LogModuleManager: Shutting down and abandoning module Paper2DEditor (320)
+[2020.12.28-17.02.19:988][846]LogModuleManager: Shutting down and abandoning module FYP (318)
+[2020.12.28-17.02.19:988][846]LogModuleManager: Shutting down and abandoning module UnrealEnginePython (316)
+[2020.12.28-17.02.19:988][846]LogPython: Goodbye Python
+[2020.12.28-17.02.19:993][846]LogModuleManager: Shutting down and abandoning module CoreUtility (314)
+[2020.12.28-17.02.19:994][846]LogModuleManager: Shutting down and abandoning module SocketIOLib (312)
+[2020.12.28-17.02.19:994][846]LogModuleManager: Shutting down and abandoning module SIOJson (310)
+[2020.12.28-17.02.19:994][846]LogModuleManager: Shutting down and abandoning module SignificanceManager (308)
+[2020.12.28-17.02.19:994][846]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (306)
+[2020.12.28-17.02.19:994][846]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (304)
+[2020.12.28-17.02.19:994][846]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (300)
+[2020.12.28-17.02.19:994][846]LogModuleManager: Shutting down and abandoning module ActorSequence (298)
+[2020.12.28-17.02.19:994][846]LogModuleManager: Shutting down and abandoning module UdpMessaging (296)
+[2020.12.28-17.02.20:095][846]LogModuleManager: Shutting down and abandoning module TcpMessaging (294)
+[2020.12.28-17.02.20:196][846]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (292)
+[2020.12.28-17.02.20:196][846]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (290)
+[2020.12.28-17.02.20:196][846]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (288)
+[2020.12.28-17.02.20:196][846]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (286)
+[2020.12.28-17.02.20:196][846]LogModuleManager: Shutting down and abandoning module MagicLeapController (284)
+[2020.12.28-17.02.20:196][846]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2020.12.28-17.02.20:196][846]LogModuleManager: Shutting down and abandoning module MagicLeapAR (282)
+[2020.12.28-17.02.20:196][846]LogModuleManager: Shutting down and abandoning module AugmentedReality (281)
+[2020.12.28-17.02.20:196][846]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (278)
+[2020.12.28-17.02.20:196][846]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (276)
+[2020.12.28-17.02.20:196][846]LogModuleManager: Shutting down and abandoning module FacialAnimation (274)
+[2020.12.28-17.02.20:196][846]LogModuleManager: Shutting down and abandoning module DataValidation (272)
+[2020.12.28-17.02.20:196][846]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (270)
+[2020.12.28-17.02.20:196][846]LogModuleManager: Shutting down and abandoning module LevelEditor (269)
+[2020.12.28-17.02.20:197][846]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (268)
+[2020.12.28-17.02.20:197][846]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (266)
+[2020.12.28-17.02.20:197][846]LogModuleManager: Shutting down and abandoning module MainFrame (264)
+[2020.12.28-17.02.20:197][846]LogModuleManager: Shutting down and abandoning module HotReload (263)
+[2020.12.28-17.02.20:198][846]LogModuleManager: Shutting down and abandoning module ContentBrowser (259)
+[2020.12.28-17.02.20:199][846]LogModuleManager: Shutting down and abandoning module TreeMap (257)
+[2020.12.28-17.02.20:199][846]LogModuleManager: Shutting down and abandoning module AnimationSharing (254)
+[2020.12.28-17.02.20:200][846]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (252)
+[2020.12.28-17.02.20:200][846]LogModuleManager: Shutting down and abandoning module Paper2D (250)
+[2020.12.28-17.02.20:200][846]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (248)
+[2020.12.28-17.02.20:202][846]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (246)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (244)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module PacketHandler (242)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (240)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (238)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module MediaAssets (236)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module Overlay (234)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module OverlayEditor (233)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module VREditor (230)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module StringTableEditor (228)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (226)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (224)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module FunctionalTesting (222)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (220)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (219)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module UMG (216)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module UMGEditor (215)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module Sequencer (214)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module MessageLog (211)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module SlateReflector (206)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module Slate (204)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module LandscapeEditorUtilities (202)
+[2020.12.28-17.02.20:203][846]LogModuleManager: Shutting down and abandoning module EditorStyle (200)
+[2020.12.28-17.02.20:204][846]LogModuleManager: Shutting down and abandoning module UnrealEd (198)
+[2020.12.28-17.02.20:204][846]LogModuleManager: Shutting down and abandoning module MRMesh (196)
+[2020.12.28-17.02.20:204][846]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (194)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (192)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module XAudio2 (190)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module Networking (188)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module Core (186)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module KismetCompiler (184)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module MeshUtilities (182)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (181)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (180)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (179)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (177)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (175)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module MaterialBaking (171)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module NullInstallBundleManager (166)
+[2020.12.28-17.02.20:205][846]LogModuleManager: Shutting down and abandoning module DerivedDataCache (164)
+[2020.12.28-17.02.20:229][846]LogDerivedDataCache: Shutdown
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module XGEController (162)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module TargetPlatform (160)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (159)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (157)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (155)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (153)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (151)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (149)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (147)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (145)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (143)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (141)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module ImageWrapper (140)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (137)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (135)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (133)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (131)
+[2020.12.28-17.02.20:230][846]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (129)
+[2020.12.28-17.02.20:231][846]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (127)
+[2020.12.28-17.02.20:231][846]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (125)
+[2020.12.28-17.02.20:231][846]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (123)
+[2020.12.28-17.02.20:231][846]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (121)
+[2020.12.28-17.02.20:231][846]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (119)
+[2020.12.28-17.02.20:232][846]LogModuleManager: Shutting down and abandoning module Messaging (117)
+[2020.12.28-17.02.20:232][846]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (115)
+[2020.12.28-17.02.20:232][846]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (113)
+[2020.12.28-17.02.20:232][846]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (111)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (109)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (107)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (105)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (103)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (101)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (99)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (97)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (95)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (93)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module InputCore (90)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module Settings (88)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (86)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module PhysXCooking (84)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (82)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (81)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module SteamVR (78)
+[2020.12.28-17.02.20:240][846]LogHMD: Freeing OpenVRDLLHandle.
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module OculusHMD (76)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (74)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (72)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (70)
+[2020.12.28-17.02.20:240][846]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (66)
+[2020.12.28-17.02.20:241][846]LogModuleManager: Shutting down and abandoning module XMPP (61)
+[2020.12.28-17.02.20:241][846]LogModuleManager: Shutting down and abandoning module WebSockets (60)
+[2020.12.28-17.02.20:260][846]LogModuleManager: Shutting down and abandoning module HTTP (57)
+[2020.12.28-17.02.20:260][846]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2020.12.28-17.02.20:260][846]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDC92DF8C-4D94-58B6-54CC-A78D6B366309%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.23.1-9631420%2B%2B%2BUE4%2BRelease-4.23&UserID=9c208459461970151b3e21af27b7bcf3%7Ce3fa17de25344c4b9e8f9f55e5e8e750%7Ce4068873-a721-42dd-bd42-9fd099998fda&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2020.12.28-17.02.20:271][846]LogModuleManager: Shutting down and abandoning module SSL (56)
+[2020.12.28-17.02.20:273][846]LogModuleManager: Shutting down and abandoning module WmfMedia (52)
+[2020.12.28-17.02.20:274][846]LogModuleManager: Shutting down and abandoning module Media (51)
+[2020.12.28-17.02.20:274][846]LogModuleManager: Shutting down and abandoning module MagicLeap (48)
+[2020.12.28-17.02.20:274][846]LogModuleManager: Shutting down and abandoning module DatasmithContent (46)
+[2020.12.28-17.02.20:275][846]LogModuleManager: Shutting down and abandoning module AISupportModule (44)
+[2020.12.28-17.02.20:275][846]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (42)
+[2020.12.28-17.02.20:275][846]LogModuleManager: Shutting down and abandoning module PlatformCrypto (40)
+[2020.12.28-17.02.20:275][846]LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
+[2020.12.28-17.02.20:275][846]LogModuleManager: Shutting down and abandoning module PropertyEditor (37)
+[2020.12.28-17.02.20:275][846]LogModuleManager: Shutting down and abandoning module AudioEditor (34)
+[2020.12.28-17.02.20:275][846]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2020.12.28-17.02.20:275][846]LogModuleManager: Shutting down and abandoning module RenderCore (30)
+[2020.12.28-17.02.20:275][846]LogModuleManager: Shutting down and abandoning module Landscape (28)
+[2020.12.28-17.02.20:275][846]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+[2020.12.28-17.02.20:276][846]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+[2020.12.28-17.02.20:276][846]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+[2020.12.28-17.02.20:276][846]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2020.12.28-17.02.20:276][846]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2020.12.28-17.02.20:276][846]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2020.12.28-17.02.20:276][846]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2020.12.28-17.02.20:276][846]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2020.12.28-17.02.20:276][846]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2020.12.28-17.02.20:276][846]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2020.12.28-17.02.20:276][846]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2020.12.28-17.02.20:276][846]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2020.12.28-17.02.20:276][846]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2020.12.28-17.02.20:277][846]LogD3D11RHI: Shutdown
+[2020.12.28-17.02.20:277][846]LogD3D11RHI: CleanupD3DDevice
+[2020.12.28-17.02.20:277][846]LogRendererCore: FGlobalDynamicReadBuffer::Cleanup()
+[2020.12.28-17.02.20:277][846]LogRendererCore: FGlobalDynamicReadBuffer::Cleanup()
+[2020.12.28-17.02.20:277][846]LogRendererCore: FGlobalDynamicReadBuffer::Cleanup()
+[2020.12.28-17.02.20:343][846]LogD3D11RHI: ~FD3D11DynamicRHI
+[2020.12.28-17.02.20:347][846]LogExit: Exiting.
+[2020.12.28-17.02.20:376][846]Log file closed, 12/28/20 17:02:20
