@@ -344,6 +344,13 @@ void AFYPPawn::Tick(float Delta)
 {
 	Super::Tick(Delta);
 
+	// Pass the engine RPM to the sound component
+	float RPMToAudioScale = 2500.0f / GetVehicleMovement()->GetEngineMaxRotationSpeed();
+	EngineSoundComponent->SetFloatParameter(EngineAudioRPM, GetVehicleMovement()->GetEngineRotationSpeed()*RPMToAudioScale);
+}
+
+void AFYPPawn::UpdateRayCasts()
+{
 	for (int i = 0; i < 8; i++)
 	{
 		Casts[i].Start = Casts[i].StartPoint->GetComponentLocation();
@@ -353,43 +360,49 @@ void AFYPPawn::Tick(float Delta)
 		DrawDebugLine(GetWorld(), Casts[i].Start, Casts[i].End, FColor::Red, false, 0.01f, 0, 2);
 		GetWorld()->LineTraceSingleByChannel(Casts[i].OutHit, Casts[i].Start, Casts[i].End, ECC_Visibility, Casts[i].CollisionParams);
 	}
+}
 
+void AFYPPawn::UpdateCarSpeed(float Delta)
+{
 	// Update Hud
 	//- Calculations for Speed And Gear -//
-		float KPH = FMath::Abs(GetVehicleMovement()->GetForwardSpeed()) * 0.036f;
-		int32 KPH_int = FMath::FloorToInt(KPH);
-		int32 Gear = GetVehicleMovement()->GetCurrentGear();
+	float KPH = FMath::Abs(GetVehicleMovement()->GetForwardSpeed()) * 0.036f;
+	int32 KPH_int = FMath::FloorToInt(KPH);
+	int32 Gear = GetVehicleMovement()->GetCurrentGear();
 
-		//- Creating Strings and Setting Speed String -//
-		FText GearDisplayString, SpeedDisplayString = FText::Format(LOCTEXT("SpeedFormat", "Speed: {0} km/h"), FText::AsNumber(KPH_int));
+	//- Creating Strings and Setting Speed String -//
+	m_SpeedDisplayString = FText::Format(LOCTEXT("SpeedFormat", "Speed: {0} km/h"), FText::AsNumber(KPH_int));
 
-		if (KPH < 1)
-			GearDisplayString = FText(LOCTEXT("ReverseGear", "Gear: N"));
-		else
-			GearDisplayString = (Gear == -1) ? LOCTEXT("Gear: R", "Gear: R") : FText::Format(LOCTEXT("Gear: 1", "Gear: {0}"),Gear);
+	if (KPH < 1)
+		m_GearDisplayString = FText(LOCTEXT("ReverseGear", "Gear: N"));
+	else
+		m_GearDisplayString = (Gear == -1) ? LOCTEXT("Gear: R", "Gear: R") : FText::Format(LOCTEXT("Gear: 1", "Gear: {0}"), Gear);
 
 	//- Calculations for Time Left -//
-		
-		if (KPH < 1)
+
+	if (KPH < 1)
+	{
+		mf_TimeLeft += Delta;
+		if (mf_TimeLeft > 5.0f)
 		{
-			mf_TimeLeft += Delta; 
-			if (mf_TimeLeft > 5.0f)
-			{
-				AiFailed();
-				mf_TimeLeft = 5.0f;
-			}
+			AiFailed();
+			mf_TimeLeft = 5.0f;
 		}
-		else if (mf_TimeLeft > 0)
-		{
-			mf_TimeLeft = 0;
-		}
+	}
+	else if (mf_TimeLeft > 0)
+	{
+		mf_TimeLeft = 0;
+	}
 
 	//- Calculations for Distance Traveled -//
 	mf_DistanceTraveled += (GetVehicleMovement()->GetForwardSpeed() * 0.036f) * Delta;
+}
 
+void AFYPPawn::UpdateUIElements()
+{
 	//- Setting Each UI Elements To Needed Text -//
-	InCarSpeed->SetText(SpeedDisplayString);
-	InCarGear->SetText(GearDisplayString);
+	InCarSpeed->SetText(m_SpeedDisplayString);
+	InCarGear->SetText(m_GearDisplayString);
 
 	TimeLeft->SetText(FText::Format(LOCTEXT("Time Stationary: ", "Time Stationary: {0}"), mf_TimeLeft));
 	DistanceTraveledScoreUI->SetText(FText::Format(LOCTEXT("Dist Traveled: ", "Dist Traveled: {0}"), mf_DistanceTraveled));
@@ -402,12 +415,11 @@ void AFYPPawn::Tick(float Delta)
 	SouthWestRayDistanceUI->SetText(FText::Format(LOCTEXT("SW: ", "SW: {0}"), Casts[5].OutHit.Distance));
 	WestRayDistanceUI->SetText(FText::Format(LOCTEXT("W: ", "W: {0}"), Casts[6].OutHit.Distance));
 	NorthWestRayDistanceUI->SetText(FText::Format(LOCTEXT("NW: ", "NW: {0}"), Casts[7].OutHit.Distance));
+}
 
+void AFYPPawn::InputDataAgmentation()
+{
 
-
-	// Pass the engine RPM to the sound component
-	float RPMToAudioScale = 2500.0f / GetVehicleMovement()->GetEngineMaxRotationSpeed();
-	EngineSoundComponent->SetFloatParameter(EngineAudioRPM, GetVehicleMovement()->GetEngineRotationSpeed()*RPMToAudioScale);
 }
 
 void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AActor* _otherActor, UPrimitiveComponent* _otherComp, int32 _otherBodyIndex, bool _bFromSweep, const FHitResult & _hitResult)

@@ -8,6 +8,7 @@
 #include "Components/BoxComponent.h"
 #include "Components/SphereComponent.h"
 #include "DrawDebugHelpers.h"
+#include "Math/Float32.h"
 #include "FYP_Car_Body.generated.h"
 
 class UPhysicalMaterial;
@@ -17,6 +18,7 @@ class UTextRenderComponent;
 class UInputComponent;
 class UAudioComponent;
 class UBoxComponent;
+class FFloat32;
 
 struct RayCastInfo
 {
@@ -116,8 +118,8 @@ public:
 	UBoxComponent* mp_collider;
 	UFUNCTION()
 	void LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AActor* _otherActor, UPrimitiveComponent* _otherComp, int32 _otherBodyIndex, bool _bFromSweep, const FHitResult & _hitResult);
-	int mi_LapMultiplyer;
-	int mi_HistoryCount;
+	uint32 mi_LapMultiplyer;
+	uint32 mi_HistoryCount;
 	FString LapMarkerNames[4];
 	FString LapMarkerHistory[4];
 
@@ -139,6 +141,11 @@ public:
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	USphereComponent* NorthWest;
 	RayCastInfo Casts[8];
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|CarUpdateFunctions")
+	void UpdateRayCasts();
+
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|CarUpdateFunctions ")
+	void UpdateCarSpeed(float Delta);
 
 	//- Decliration Of UI Elements -//	
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
@@ -163,7 +170,18 @@ public:
 	UTextRenderComponent* WestRayDistanceUI;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UTextRenderComponent* NorthWestRayDistanceUI;
-	
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|CarUpdateFunctions")
+	void UpdateUIElements();
+
+	FText m_GearDisplayString;
+	FText m_SpeedDisplayString;
+
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataPrep")
+	void InputDataAgmentation();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float NInput;
+
 	//- Death Functions -//
 	void AiFailed();
 

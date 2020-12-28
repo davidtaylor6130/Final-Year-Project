@@ -41,6 +41,98 @@
 			"Type": "DynamicLibrary"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/socketio-client-ue4/Binaries/Win64/UE4Editor-SocketIOClient.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/socketio-client-ue4/Binaries/Win64/UE4Editor-SocketIOClient.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/socketio-client-ue4/Binaries/Win64/UE4Editor-SIOJson.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/socketio-client-ue4/Binaries/Win64/UE4Editor-SIOJson.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/socketio-client-ue4/Binaries/Win64/UE4Editor-SocketIOLib.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/socketio-client-ue4/Binaries/Win64/UE4Editor-SocketIOLib.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/socketio-client-ue4/Binaries/Win64/UE4Editor-CoreUtility.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/socketio-client-ue4/Binaries/Win64/UE4Editor-CoreUtility.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/socketio-client-ue4/Binaries/Win64/UE4Editor-SIOJEditorPlugin.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/socketio-client-ue4/Binaries/Win64/UE4Editor-SIOJEditorPlugin.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/Binaries/Win64/UE4Editor-TensorFlow.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/Binaries/Win64/UE4Editor-TensorFlow.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/Binaries/Win64/UE4Editor-TFAudioCapture.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/Binaries/Win64/UE4Editor-TFAudioCapture.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/UE4Editor-UnrealEnginePython.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/UE4Editor-UnrealEnginePython.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/UE4Editor-PythonAutomation.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/UE4Editor-PythonAutomation.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/UE4Editor-PythonConsole.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/UE4Editor-PythonConsole.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/UE4Editor-PythonEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/UE4Editor-PythonEditor.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/MovieScene/LevelSequenceEditor/Binaries/Win64/UE4Editor-LevelSequenceEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -378,10 +470,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/MovieScene/ActorSequence/Binaries/Win64/UE4Editor-ActorSequenceEditor.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/MovieScene/LevelSequenceEditor/Binaries/Win64/UE4Editor-LevelSequenceEditor.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
@@ -1889,6 +1977,10 @@
 			"Type": "DynamicLibrary"
 		},
 		{
+			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-Voice.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-TreeMap.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -1901,8 +1993,8 @@
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-Voice.dll",
-			"Type": "DynamicLibrary"
+			"Path": "$(EngineDir)/Binaries/Win64/libfbxsdk.dll",
+			"Type": "RequiredResource"
 		},
 		{
 			"Path": "$(EngineDir)/Binaries/Win64/dxil.dll",
@@ -1942,6 +2034,22 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Experimental/RawInput/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/socketio-client-ue4/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/MovieScene/LevelSequenceEditor/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -2133,10 +2241,6 @@
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/MovieScene/LevelSequenceEditor/Binaries/Win64/UE4Editor.modules",
-			"Type": "RequiredResource"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2268,6 +2372,22 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Experimental/RawInput/RawInput.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/socketio-client-ue4/SocketIOClient.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/TensorFlow.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/UnrealEnginePython.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/MovieScene/LevelSequenceEditor/LevelSequenceEditor.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -2459,10 +2579,6 @@
 			"Type": "UFS"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/MovieScene/LevelSequenceEditor/LevelSequenceEditor.uplugin",
-			"Type": "UFS"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/MovieScene/MatineeToLevelSequence/MatineeToLevelSequence.uplugin",
 			"Type": "UFS"
 		},
@@ -2637,6 +2753,2762 @@
 		{
 			"Path": "$(EngineDir)/Binaries/ThirdParty/PhysX3/Win64/VS2015/NvClothPROFILE_x64.pdb",
 			"Type": "DebugNonUFS"
+		},
+		{
+			"Path": "$(EngineDir)/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/Content/Scripts/AICar.py",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/Content/Scripts/TensorFlowComponent.py",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/Content/Scripts/TFPluginAPI.py",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/Content/Scripts/upymodule.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/Content/Scripts/__pycache__/TensorFlowComponent.cpython-35.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/Content/Scripts/__pycache__/TensorFlowComponent.cpython-36.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/Content/Scripts/__pycache__/TFPluginAPI.cpython-35.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/tensorflow-ue4/Content/Scripts/__pycache__/TFPluginAPI.cpython-36.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.dll",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/debugtest.py",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/upycmd.py",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/upyconfig.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/upymodule_importer.py",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/upypip.py",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/upystartup.py",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/upythread.py",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/upy_redirect_print.py",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/__pycache__/upycmd.cpython-35.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/__pycache__/upycmd.cpython-36.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/__pycache__/upymodule_importer.cpython-35.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/__pycache__/upymodule_importer.cpython-36.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/__pycache__/upypip.cpython-35.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/__pycache__/upypip.cpython-36.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/__pycache__/upystartup.cpython-35.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/__pycache__/upystartup.cpython-36.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/__pycache__/upythread.cpython-35.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Content/Scripts/__pycache__/upythread.cpython-36.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/get-pip.py",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/InstallPip.bat",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/pyexpat.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python3.dll",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/pythonw.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/select.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/sqlite3.dll",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/unicodedata.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/vcruntime140.dll",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/winsound.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/_asyncio.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/_bz2.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/_ctypes.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/_decimal.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/_elementtree.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/_hashlib.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/_lzma.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/_msi.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/_multiprocessing.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/_overlapped.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/_socket.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/_sqlite3.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/_ssl.pyd",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/abc.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/aifc.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/antigravity.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/argparse.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ast.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asynchat.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncore.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/base64.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/bdb.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/binhex.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/bisect.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/bz2.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/calendar.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/cgi.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/cgitb.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/chunk.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/cmd.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/code.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/codecs.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/codeop.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/colorsys.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/compileall.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/configparser.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/contextlib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/copy.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/copyreg.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/cProfile.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/crypt.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/csv.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/datetime.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/decimal.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/difflib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/dis.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/doctest.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/dummy_threading.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/enum.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/filecmp.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/fileinput.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/fnmatch.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/formatter.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/fractions.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ftplib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/functools.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/genericpath.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/getopt.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/getpass.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/gettext.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/glob.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/gzip.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/hashlib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/heapq.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/hmac.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/imaplib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/imghdr.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/imp.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/inspect.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/io.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ipaddress.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/keyword.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/linecache.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/locale.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lzma.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/macpath.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/macurl2path.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/mailbox.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/mailcap.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/mimetypes.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/modulefinder.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/netrc.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/nntplib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ntpath.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/nturl2path.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/numbers.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/opcode.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/operator.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/optparse.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/os.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/pathlib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/pdb.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/pickle.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/pickletools.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/pipes.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/pkgutil.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/platform.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/plistlib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/poplib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/posixpath.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/pprint.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/profile.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/pstats.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/pty.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/pyclbr.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/pydoc.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/py_compile.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/queue.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/quopri.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/random.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/re.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/reprlib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/rlcompleter.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/runpy.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/sched.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/secrets.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/selectors.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/shelve.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/shlex.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/shutil.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/signal.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/site.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/smtpd.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/smtplib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/sndhdr.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/socket.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/socketserver.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/sre_compile.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/sre_constants.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/sre_parse.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ssl.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/stat.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/statistics.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/string.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/stringprep.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/struct.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/subprocess.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/sunau.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/symbol.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/symtable.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/sysconfig.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/tabnanny.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/tarfile.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/telnetlib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/tempfile.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/textwrap.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/this.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/threading.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/timeit.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/token.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/tokenize.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/trace.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/traceback.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/tracemalloc.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/tty.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/turtle.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/types.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/typing.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/uu.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/uuid.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/warnings.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/wave.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/weakref.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/webbrowser.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xdrlib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/zipapp.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/zipfile.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/_bootlocale.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/_collections_abc.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/_compat_pickle.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/_compression.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/_dummy_thread.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/_markupbase.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/_osx_support.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/_pydecimal.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/_pyio.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/_sitebuiltins.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/_strptime.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/_threading_local.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/_weakrefset.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/__future__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/__phello__.foo.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/base_events.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/base_futures.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/base_subprocess.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/base_tasks.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/compat.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/constants.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/coroutines.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/events.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/futures.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/locks.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/log.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/proactor_events.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/protocols.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/queues.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/selector_events.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/sslproto.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/streams.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/subprocess.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/tasks.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/test_utils.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/transports.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/unix_events.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/windows_events.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/windows_utils.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/asyncio/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/collections/abc.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/collections/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/concurrent/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/concurrent/futures/process.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/concurrent/futures/thread.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/concurrent/futures/_base.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/concurrent/futures/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ctypes/util.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ctypes/wintypes.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ctypes/_endian.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ctypes/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ctypes/macholib/dyld.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ctypes/macholib/dylib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ctypes/macholib/fetch_macholib",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ctypes/macholib/fetch_macholib.bat",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ctypes/macholib/framework.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ctypes/macholib/README.ctypes",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/ctypes/macholib/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/curses/ascii.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/curses/has_key.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/curses/panel.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/curses/textpad.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/curses/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/dbm/dumb.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/dbm/gnu.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/dbm/ndbm.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/dbm/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/archive_util.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/bcppcompiler.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/ccompiler.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/cmd.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/config.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/core.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/cygwinccompiler.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/debug.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/dep_util.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/dir_util.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/dist.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/errors.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/extension.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/fancy_getopt.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/filelist.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/file_util.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/log.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/msvc9compiler.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/msvccompiler.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/README",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/spawn.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/sysconfig.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/text_file.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/unixccompiler.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/util.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/version.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/versionpredicate.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/_msvccompiler.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/bdist.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/bdist_dumb.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/bdist_msi.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/bdist_rpm.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/bdist_wininst.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/build.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/build_clib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/build_ext.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/build_py.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/build_scripts.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/check.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/clean.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/command_template",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/config.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/install.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/install_data.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/install_egg_info.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/install_headers.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/install_lib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/install_scripts.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/register.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/sdist.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/upload.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/distutils/command/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/architecture.rst",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/base64mime.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/charset.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/contentmanager.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/encoders.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/errors.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/feedparser.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/generator.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/header.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/headerregistry.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/iterators.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/message.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/parser.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/policy.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/quoprimime.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/utils.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/_encoded_words.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/_header_value_parser.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/_parseaddr.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/_policybase.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/mime/application.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/mime/audio.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/mime/base.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/mime/image.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/mime/message.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/mime/multipart.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/mime/nonmultipart.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/mime/text.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/email/mime/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/aliases.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/ascii.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/base64_codec.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/big5.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/big5hkscs.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/bz2_codec.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/charmap.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp037.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp1006.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp1026.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp1125.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp1140.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp1250.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp1251.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp1252.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp1253.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp1254.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp1255.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp1256.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp1257.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp1258.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp273.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp424.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp437.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp500.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp65001.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp720.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp737.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp775.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp850.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp852.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp855.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp856.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp857.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp858.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp860.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp861.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp862.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp863.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp864.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp865.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp866.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp869.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp874.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp875.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp932.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp949.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/cp950.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/euc_jisx0213.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/euc_jis_2004.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/euc_jp.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/euc_kr.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/gb18030.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/gb2312.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/gbk.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/hex_codec.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/hp_roman8.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/hz.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/idna.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso2022_jp.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso2022_jp_1.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso2022_jp_2.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso2022_jp_2004.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso2022_jp_3.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso2022_jp_ext.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso2022_kr.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_1.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_10.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_11.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_13.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_14.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_15.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_16.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_2.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_3.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_4.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_5.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_6.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_7.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_8.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/iso8859_9.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/johab.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/koi8_r.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/koi8_t.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/koi8_u.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/kz1048.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/latin_1.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/mac_arabic.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/mac_centeuro.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/mac_croatian.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/mac_cyrillic.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/mac_farsi.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/mac_greek.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/mac_iceland.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/mac_latin2.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/mac_roman.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/mac_romanian.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/mac_turkish.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/mbcs.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/oem.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/palmos.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/ptcp154.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/punycode.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/quopri_codec.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/raw_unicode_escape.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/rot_13.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/shift_jis.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/shift_jisx0213.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/shift_jis_2004.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/tis_620.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/undefined.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/unicode_escape.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/unicode_internal.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/utf_16.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/utf_16_be.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/utf_16_le.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/utf_32.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/utf_32_be.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/utf_32_le.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/utf_7.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/utf_8.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/utf_8_sig.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/uu_codec.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/zlib_codec.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/encodings/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/html/entities.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/html/parser.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/html/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/http/client.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/http/cookiejar.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/http/cookies.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/http/server.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/http/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/importlib/abc.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/importlib/machinery.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/importlib/util.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/importlib/_bootstrap.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/importlib/_bootstrap_external.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/importlib/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/json/decoder.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/json/encoder.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/json/scanner.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/json/tool.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/json/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/btm_matcher.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/btm_utils.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixer_base.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixer_util.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/Grammar.txt",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/Grammar3.6.2.candidate.2.pickle",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/Grammar3.6.2.final.0.pickle",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/Grammar3.6.3.candidate.1.pickle",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/Grammar3.6.3.final.0.pickle",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/Grammar3.6.4.candidate.1.pickle",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/Grammar3.6.4.final.0.pickle",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/main.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/patcomp.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/PatternGrammar.txt",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/PatternGrammar3.6.2.candidate.2.pickle",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/PatternGrammar3.6.2.final.0.pickle",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/PatternGrammar3.6.3.candidate.1.pickle",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/PatternGrammar3.6.3.final.0.pickle",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/PatternGrammar3.6.4.candidate.1.pickle",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/PatternGrammar3.6.4.final.0.pickle",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/pygram.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/pytree.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/refactor.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/__main__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_apply.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_asserts.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_basestring.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_buffer.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_dict.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_except.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_exec.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_execfile.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_exitfunc.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_filter.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_funcattrs.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_future.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_getcwdu.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_has_key.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_idioms.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_import.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_imports.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_imports2.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_input.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_intern.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_isinstance.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_itertools.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_itertools_imports.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_long.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_map.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_metaclass.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_methodattrs.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_ne.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_next.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_nonzero.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_numliterals.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_operator.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_paren.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_print.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_raise.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_raw_input.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_reduce.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_reload.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_renames.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_repr.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_set_literal.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_standarderror.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_sys_exc.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_throw.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_tuple_params.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_types.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_unicode.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_urllib.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_ws_comma.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_xrange.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_xreadlines.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/fix_zip.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/fixes/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/pgen2/conv.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/pgen2/driver.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/pgen2/grammar.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/pgen2/literals.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/pgen2/parse.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/pgen2/pgen.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/pgen2/token.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/pgen2/tokenize.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/lib2to3/pgen2/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/logging/config.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/logging/handlers.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/logging/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/msilib/schema.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/msilib/sequence.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/msilib/text.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/msilib/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/connection.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/context.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/forkserver.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/heap.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/managers.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/pool.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/popen_fork.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/popen_forkserver.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/popen_spawn_posix.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/popen_spawn_win32.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/process.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/queues.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/reduction.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/resource_sharer.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/semaphore_tracker.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/sharedctypes.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/spawn.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/synchronize.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/util.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/dummy/connection.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/multiprocessing/dummy/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/sqlite3/dbapi2.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/sqlite3/dump.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/sqlite3/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/unittest/case.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/unittest/loader.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/unittest/main.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/unittest/mock.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/unittest/result.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/unittest/runner.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/unittest/signals.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/unittest/suite.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/unittest/util.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/unittest/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/unittest/__main__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/urllib/error.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/urllib/parse.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/urllib/request.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/urllib/response.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/urllib/robotparser.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/urllib/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/wsgiref/handlers.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/wsgiref/headers.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/wsgiref/simple_server.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/wsgiref/util.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/wsgiref/validate.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/wsgiref/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/dom/domreg.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/dom/expatbuilder.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/dom/minicompat.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/dom/minidom.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/dom/NodeFilter.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/dom/pulldom.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/dom/xmlbuilder.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/dom/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/etree/cElementTree.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/etree/ElementInclude.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/etree/ElementPath.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/etree/ElementTree.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/etree/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/parsers/expat.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/parsers/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/sax/expatreader.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/sax/handler.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/sax/saxutils.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/sax/xmlreader.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/sax/_exceptions.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xml/sax/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xmlrpc/client.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xmlrpc/server.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/python36.zip/xmlrpc/__init__.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/easy_install-3.6.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/easy_install.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/f2py.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/f2py.py",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/freeze_graph.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/markdown_py.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/pbr.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/pip.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/pip.exe.deleteme",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/pip3.6.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/pip3.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/saved_model_cli.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/tensorboard.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/tflite_convert.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/tf_upgrade_v2.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/toco.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/toco_from_protos.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/unins",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/wheel.exe",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealEnginePython/Binaries/Win64/Scripts/__pycache__/f2py.cpython-36.pyc",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Binaries/Win64/python36.dll",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "$(EngineDir)/Binaries/Win64/libfbxsdk.dll",
+			"Type": "NonUFS"
 		},
 		{
 			"Path": "$(EngineDir)/Binaries/ThirdParty/svn/Win64/apr_crypto_openssl-1.dll",
@@ -3752,10 +6624,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Binaries/ThirdParty/Oculus/OVRPlugin/OVRPlugin/Win64/OVRPlugin.dll",
-			"Type": "NonUFS"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
 			"Type": "NonUFS"
 		},
 		{

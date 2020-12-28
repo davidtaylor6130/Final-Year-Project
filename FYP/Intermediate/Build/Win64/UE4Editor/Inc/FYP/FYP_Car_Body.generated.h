@@ -16,7 +16,40 @@ struct FHitResult;
 #endif
 #define FYP_FYP_Car_Body_generated_h
 
-#define FYP_Source_FYP_FYP_Car_Body_h_35_RPC_WRAPPERS \
+#define FYP_Source_FYP_FYP_Car_Body_h_37_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execInputDataAgmentation) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->InputDataAgmentation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUpdateUIElements) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->UpdateUIElements(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUpdateCarSpeed) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Delta); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->UpdateCarSpeed(Z_Param_Delta); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUpdateRayCasts) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->UpdateRayCasts(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execLapMarkerCollider) \
 	{ \
@@ -33,7 +66,40 @@ struct FHitResult;
 	}
 
 
-#define FYP_Source_FYP_FYP_Car_Body_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FYP_Source_FYP_FYP_Car_Body_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execInputDataAgmentation) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->InputDataAgmentation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUpdateUIElements) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->UpdateUIElements(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUpdateCarSpeed) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Delta); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->UpdateCarSpeed(Z_Param_Delta); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execUpdateRayCasts) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->UpdateRayCasts(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execLapMarkerCollider) \
 	{ \
@@ -50,7 +116,7 @@ struct FHitResult;
 	}
 
 
-#define FYP_Source_FYP_FYP_Car_Body_h_35_INCLASS_NO_PURE_DECLS \
+#define FYP_Source_FYP_FYP_Car_Body_h_37_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFYPPawn(); \
 	friend struct Z_Construct_UClass_AFYPPawn_Statics; \
@@ -59,7 +125,7 @@ public: \
 	DECLARE_SERIALIZER(AFYPPawn)
 
 
-#define FYP_Source_FYP_FYP_Car_Body_h_35_INCLASS \
+#define FYP_Source_FYP_FYP_Car_Body_h_37_INCLASS \
 private: \
 	static void StaticRegisterNativesAFYPPawn(); \
 	friend struct Z_Construct_UClass_AFYPPawn_Statics; \
@@ -68,7 +134,7 @@ public: \
 	DECLARE_SERIALIZER(AFYPPawn)
 
 
-#define FYP_Source_FYP_FYP_Car_Body_h_35_STANDARD_CONSTRUCTORS \
+#define FYP_Source_FYP_FYP_Car_Body_h_37_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFYPPawn(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFYPPawn) \
@@ -81,7 +147,7 @@ private: \
 public:
 
 
-#define FYP_Source_FYP_FYP_Car_Body_h_35_ENHANCED_CONSTRUCTORS \
+#define FYP_Source_FYP_FYP_Car_Body_h_37_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFYPPawn(AFYPPawn&&); \
@@ -92,7 +158,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFYPPawn); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFYPPawn)
 
 
-#define FYP_Source_FYP_FYP_Car_Body_h_35_PRIVATE_PROPERTY_OFFSET \
+#define FYP_Source_FYP_FYP_Car_Body_h_37_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__SpringArm() { return STRUCT_OFFSET(AFYPPawn, SpringArm); } \
 	FORCEINLINE static uint32 __PPO__Camera() { return STRUCT_OFFSET(AFYPPawn, Camera); } \
 	FORCEINLINE static uint32 __PPO__InCarSpeed() { return STRUCT_OFFSET(AFYPPawn, InCarSpeed); } \
@@ -100,25 +166,25 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFYPPawn); \
 	FORCEINLINE static uint32 __PPO__EngineSoundComponent() { return STRUCT_OFFSET(AFYPPawn, EngineSoundComponent); }
 
 
-#define FYP_Source_FYP_FYP_Car_Body_h_32_PROLOG
-#define FYP_Source_FYP_FYP_Car_Body_h_35_GENERATED_BODY_LEGACY \
+#define FYP_Source_FYP_FYP_Car_Body_h_34_PROLOG
+#define FYP_Source_FYP_FYP_Car_Body_h_37_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FYP_Source_FYP_FYP_Car_Body_h_35_PRIVATE_PROPERTY_OFFSET \
-	FYP_Source_FYP_FYP_Car_Body_h_35_RPC_WRAPPERS \
-	FYP_Source_FYP_FYP_Car_Body_h_35_INCLASS \
-	FYP_Source_FYP_FYP_Car_Body_h_35_STANDARD_CONSTRUCTORS \
+	FYP_Source_FYP_FYP_Car_Body_h_37_PRIVATE_PROPERTY_OFFSET \
+	FYP_Source_FYP_FYP_Car_Body_h_37_RPC_WRAPPERS \
+	FYP_Source_FYP_FYP_Car_Body_h_37_INCLASS \
+	FYP_Source_FYP_FYP_Car_Body_h_37_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FYP_Source_FYP_FYP_Car_Body_h_35_GENERATED_BODY \
+#define FYP_Source_FYP_FYP_Car_Body_h_37_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FYP_Source_FYP_FYP_Car_Body_h_35_PRIVATE_PROPERTY_OFFSET \
-	FYP_Source_FYP_FYP_Car_Body_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
-	FYP_Source_FYP_FYP_Car_Body_h_35_INCLASS_NO_PURE_DECLS \
-	FYP_Source_FYP_FYP_Car_Body_h_35_ENHANCED_CONSTRUCTORS \
+	FYP_Source_FYP_FYP_Car_Body_h_37_PRIVATE_PROPERTY_OFFSET \
+	FYP_Source_FYP_FYP_Car_Body_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
+	FYP_Source_FYP_FYP_Car_Body_h_37_INCLASS_NO_PURE_DECLS \
+	FYP_Source_FYP_FYP_Car_Body_h_37_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

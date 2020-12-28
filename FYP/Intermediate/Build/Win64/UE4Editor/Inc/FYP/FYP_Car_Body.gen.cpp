@@ -17,10 +17,14 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 	FYP_API UClass* Z_Construct_UClass_AFYPPawn();
 	PHYSXVEHICLES_API UClass* Z_Construct_UClass_AWheeledVehicle();
 	UPackage* Z_Construct_UPackage__Script_FYP();
+	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_InputDataAgmentation();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_LapMarkerCollider();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed();
+	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_UpdateRayCasts();
+	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_UpdateUIElements();
 	ENGINE_API UClass* Z_Construct_UClass_UTextRenderComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
@@ -33,9 +37,36 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 	{
 		UClass* Class = AFYPPawn::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "InputDataAgmentation", &AFYPPawn::execInputDataAgmentation },
 			{ "LapMarkerCollider", &AFYPPawn::execLapMarkerCollider },
+			{ "UpdateCarSpeed", &AFYPPawn::execUpdateCarSpeed },
+			{ "UpdateRayCasts", &AFYPPawn::execUpdateRayCasts },
+			{ "UpdateUIElements", &AFYPPawn::execUpdateUIElements },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFYPPawn_InputDataAgmentation_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_InputDataAgmentation_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BY DAVID TAYLOR|FUNCTIONS|InputDataPrep" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFYPPawn_InputDataAgmentation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFYPPawn, nullptr, "InputDataAgmentation", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFYPPawn_InputDataAgmentation_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_InputDataAgmentation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFYPPawn_InputDataAgmentation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_InputDataAgmentation_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFYPPawn_LapMarkerCollider_Statics
 	{
@@ -118,6 +149,85 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed_Statics
+	{
+		struct FYPPawn_eventUpdateCarSpeed_Parms
+		{
+			float Delta;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Delta;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed_Statics::NewProp_Delta = { "Delta", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FYPPawn_eventUpdateCarSpeed_Parms, Delta), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed_Statics::NewProp_Delta,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BY DAVID TAYLOR|FUNCTIONS|CarUpdateFunctions" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFYPPawn, nullptr, "UpdateCarSpeed", nullptr, nullptr, sizeof(FYPPawn_eventUpdateCarSpeed_Parms), Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFYPPawn_UpdateRayCasts_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_UpdateRayCasts_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BY DAVID TAYLOR|FUNCTIONS|CarUpdateFunctions" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFYPPawn_UpdateRayCasts_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFYPPawn, nullptr, "UpdateRayCasts", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFYPPawn_UpdateRayCasts_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_UpdateRayCasts_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFYPPawn_UpdateRayCasts()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_UpdateRayCasts_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFYPPawn_UpdateUIElements_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_UpdateUIElements_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BY DAVID TAYLOR|FUNCTIONS|CarUpdateFunctions" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFYPPawn_UpdateUIElements_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFYPPawn, nullptr, "UpdateUIElements", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFYPPawn_UpdateUIElements_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_UpdateUIElements_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFYPPawn_UpdateUIElements()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_UpdateUIElements_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AFYPPawn_NoRegister()
 	{
 		return AFYPPawn::StaticClass();
@@ -129,6 +239,10 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NInput_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_NInput;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NorthWestRayDistanceUI_MetaData[];
 #endif
@@ -246,7 +360,11 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FYP,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFYPPawn_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFYPPawn_InputDataAgmentation, "InputDataAgmentation" }, // 3237922113
 		{ &Z_Construct_UFunction_AFYPPawn_LapMarkerCollider, "LapMarkerCollider" }, // 1252950113
+		{ &Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed, "UpdateCarSpeed" }, // 1439680706
+		{ &Z_Construct_UFunction_AFYPPawn_UpdateRayCasts, "UpdateRayCasts" }, // 1085970886
+		{ &Z_Construct_UFunction_AFYPPawn_UpdateUIElements, "UpdateUIElements" }, // 1748481015
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFYPPawn_Statics::Class_MetaDataParams[] = {
@@ -255,6 +373,13 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		{ "ModuleRelativePath", "FYP_Car_Body.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFYPPawn_Statics::NewProp_NInput_MetaData[] = {
+		{ "Category", "FYPPawn" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFYPPawn_Statics::NewProp_NInput = { "NInput", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFYPPawn, NInput), METADATA_PARAMS(Z_Construct_UClass_AFYPPawn_Statics::NewProp_NInput_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFYPPawn_Statics::NewProp_NInput_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthWestRayDistanceUI_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -515,6 +640,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFYPPawn_Statics::NewProp_SpringArm = { "SpringArm", nullptr, (EPropertyFlags)0x00400000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFYPPawn, SpringArm), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFYPPawn_Statics::NewProp_SpringArm_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFYPPawn_Statics::NewProp_SpringArm_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFYPPawn_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_NInput,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthWestRayDistanceUI,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_WestRayDistanceUI,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_SouthWestRayDistanceUI,
@@ -570,7 +696,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFYPPawn, 2372647606);
+	IMPLEMENT_CLASS(AFYPPawn, 1545661282);
 	template<> FYP_API UClass* StaticClass<AFYPPawn>()
 	{
 		return AFYPPawn::StaticClass();
