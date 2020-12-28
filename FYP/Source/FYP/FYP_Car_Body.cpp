@@ -321,12 +321,13 @@ void AFYPPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputCompo
 void AFYPPawn::MoveForward(float Val)
 {
 	GetVehicleMovementComponent()->SetThrottleInput(Val);
-
+	UE_LOG(LogTemp, Warning, TEXT("Forward/Backword : %f"), ((Val / 2) + 0.5f));
 }
 
 void AFYPPawn::MoveRight(float Val)
 {
 	GetVehicleMovementComponent()->SetSteeringInput(Val);
+	UE_LOG(LogTemp, Warning, TEXT("Left/Right : %f"), ((Val / 2) + 0.5f));
 }
 
 void AFYPPawn::OnHandbrakePressed()
