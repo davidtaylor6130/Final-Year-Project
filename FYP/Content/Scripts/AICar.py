@@ -4,7 +4,7 @@ import unreal_engine as ue
 #from tensorflow import Keras
 from TFPluginAPI import TFPluginAPI
 
-class CarAi(TFPuginAPI):
+class CarAi(TFPluginAPI):
 
     #Simmilar To Constructor 
     #def AiConstructor(self):
