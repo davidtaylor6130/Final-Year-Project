@@ -419,7 +419,14 @@ void AFYPPawn::UpdateUIElements()
 
 void AFYPPawn::InputDataAgmentation()
 {
-
+	mf_NInput = Casts[0].OutHit.Distance / 1000;
+	mf_NEInput = Casts[1].OutHit.Distance / 1000;
+	mf_EInput = Casts[2].OutHit.Distance / 1000;
+	mf_SEInput = Casts[3].OutHit.Distance / 1000;
+	mf_SInput = Casts[4].OutHit.Distance / 1000;
+	mf_SWInput = Casts[5].OutHit.Distance / 1000;
+	mf_WInput = Casts[6].OutHit.Distance / 1000;
+	mf_NWInput = Casts[7].OutHit.Distance / 1000;
 }
 
 void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AActor* _otherActor, UPrimitiveComponent* _otherComp, int32 _otherBodyIndex, bool _bFromSweep, const FHitResult & _hitResult)

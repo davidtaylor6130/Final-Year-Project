@@ -179,8 +179,24 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataPrep")
 	void InputDataAgmentation();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		float NInput;
+	float mf_NInput , mf_NEInput, mf_EInput, mf_SEInput, mf_SInput, mf_SWInput, mf_WInput, mf_NWInput;
+
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
+	float GetNorthInput() { return mf_NInput; }
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
+	float GetNorthEastInput() { return mf_NEInput; }
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
+	float GetEastInput() { return mf_EInput; }
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
+	float GetSouthEastInput() { return mf_SEInput; }
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
+	float GetSouthInput() { return mf_SInput; }
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
+	float GetSouthWestInput() { return mf_SWInput; }
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
+	float GetWestInput() { return mf_WInput; }
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
+	float GetNorthWestInput() { return mf_NWInput; }
 
 	//- Death Functions -//
 	void AiFailed();
