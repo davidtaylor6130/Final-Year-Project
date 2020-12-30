@@ -73,8 +73,8 @@ class CarAi(TFPluginAPI):
     def onJsonInput(self, jsonInput):
         ue.log('MY CODE IS RUNNING')
         result = {}
-        result['Left Right'] = 0
-        result['Forward Back'] = 0
+        result['L/R'] = 1
+        result['F/B'] = 2
         return result
 
     def onBeginTraining(self):
