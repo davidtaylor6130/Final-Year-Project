@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 	FYP_API UClass* Z_Construct_UClass_AFYPPawn();
 	PHYSXVEHICLES_API UClass* Z_Construct_UClass_AWheeledVehicle();
 	UPackage* Z_Construct_UPackage__Script_FYP();
+	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_AICarControl();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetEastInput();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetNorthEastInput();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetNorthInput();
@@ -24,6 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetSouthEastInput();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetSouthInput();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetSouthWestInput();
+	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetUserCarInputs();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetWestInput();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_InputDataAgmentation();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_LapMarkerCollider();
@@ -45,6 +47,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 	{
 		UClass* Class = AFYPPawn::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "AICarControl", &AFYPPawn::execAICarControl },
 			{ "GetEastInput", &AFYPPawn::execGetEastInput },
 			{ "GetNorthEastInput", &AFYPPawn::execGetNorthEastInput },
 			{ "GetNorthInput", &AFYPPawn::execGetNorthInput },
@@ -52,6 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 			{ "GetSouthEastInput", &AFYPPawn::execGetSouthEastInput },
 			{ "GetSouthInput", &AFYPPawn::execGetSouthInput },
 			{ "GetSouthWestInput", &AFYPPawn::execGetSouthWestInput },
+			{ "GetUserCarInputs", &AFYPPawn::execGetUserCarInputs },
 			{ "GetWestInput", &AFYPPawn::execGetWestInput },
 			{ "InputDataAgmentation", &AFYPPawn::execInputDataAgmentation },
 			{ "LapMarkerCollider", &AFYPPawn::execLapMarkerCollider },
@@ -60,6 +64,45 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 			{ "UpdateUIElements", &AFYPPawn::execUpdateUIElements },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFYPPawn_AICarControl_Statics
+	{
+		struct FYPPawn_eventAICarControl_Parms
+		{
+			float LR;
+			float FB;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_FB;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LR;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::NewProp_FB = { "FB", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FYPPawn_eventAICarControl_Parms, FB), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::NewProp_LR = { "LR", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FYPPawn_eventAICarControl_Parms, LR), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::NewProp_FB,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::NewProp_LR,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BY DAVID TAYLOR|FUNCTIONS|CarInputDataUsages" },
+		{ "Comment", "//- Get Input Feedback -//\n" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+		{ "ToolTip", "- Get Input Feedback -" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFYPPawn, nullptr, "AICarControl", nullptr, nullptr, sizeof(FYPPawn_eventAICarControl_Parms), Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFYPPawn_AICarControl()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AFYPPawn_GetEastInput_Statics
 	{
@@ -289,6 +332,31 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_GetSouthWestInput_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFYPPawn_GetUserCarInputs_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_GetUserCarInputs_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BY DAVID TAYLOR|FUNCTIONS|UserInputDataRetreval" },
+		{ "Comment", "//- User Controll of car -//\n" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+		{ "ToolTip", "- User Controll of car -" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFYPPawn_GetUserCarInputs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFYPPawn, nullptr, "GetUserCarInputs", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFYPPawn_GetUserCarInputs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_GetUserCarInputs_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFYPPawn_GetUserCarInputs()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_GetUserCarInputs_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -636,6 +704,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FYP,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFYPPawn_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFYPPawn_AICarControl, "AICarControl" }, // 3065185430
 		{ &Z_Construct_UFunction_AFYPPawn_GetEastInput, "GetEastInput" }, // 1778860635
 		{ &Z_Construct_UFunction_AFYPPawn_GetNorthEastInput, "GetNorthEastInput" }, // 2604597651
 		{ &Z_Construct_UFunction_AFYPPawn_GetNorthInput, "GetNorthInput" }, // 630116705
@@ -643,6 +712,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		{ &Z_Construct_UFunction_AFYPPawn_GetSouthEastInput, "GetSouthEastInput" }, // 1710976476
 		{ &Z_Construct_UFunction_AFYPPawn_GetSouthInput, "GetSouthInput" }, // 1016589291
 		{ &Z_Construct_UFunction_AFYPPawn_GetSouthWestInput, "GetSouthWestInput" }, // 2618735992
+		{ &Z_Construct_UFunction_AFYPPawn_GetUserCarInputs, "GetUserCarInputs" }, // 1291644655
 		{ &Z_Construct_UFunction_AFYPPawn_GetWestInput, "GetWestInput" }, // 993606809
 		{ &Z_Construct_UFunction_AFYPPawn_InputDataAgmentation, "InputDataAgmentation" }, // 3237922113
 		{ &Z_Construct_UFunction_AFYPPawn_LapMarkerCollider, "LapMarkerCollider" }, // 1252950113
@@ -972,7 +1042,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFYPPawn, 3593889008);
+	IMPLEMENT_CLASS(AFYPPawn, 1886510083);
 	template<> FYP_API UClass* StaticClass<AFYPPawn>()
 	{
 		return AFYPPawn::StaticClass();

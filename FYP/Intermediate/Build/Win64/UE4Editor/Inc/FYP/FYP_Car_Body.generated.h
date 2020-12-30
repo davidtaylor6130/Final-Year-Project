@@ -18,6 +18,24 @@ struct FHitResult;
 
 #define FYP_Source_FYP_FYP_Car_Body_h_37_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execAICarControl) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_LR); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_FB); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->AICarControl(Z_Param_LR,Z_Param_FB); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUserCarInputs) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetUserCarInputs(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetNorthWestInput) \
 	{ \
 		P_FINISH; \
@@ -131,6 +149,24 @@ struct FHitResult;
 
 
 #define FYP_Source_FYP_FYP_Car_Body_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execAICarControl) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_LR); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_FB); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->AICarControl(Z_Param_LR,Z_Param_FB); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUserCarInputs) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetUserCarInputs(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetNorthWestInput) \
 	{ \

@@ -21,11 +21,6 @@ class CarAi(TFPluginAPI):
         #Loading the Last Weights Back in
         #self.LoadModel()
 
-    #Contains Neural Network Input and Outputs
-    def AiUpdate():
-        outputs = {0,0}
-        return outputs
-
     #Contains The Optimisation of the weights and calculation of loss score
     def AiDeath():
         self.RunsCompleated += 1
@@ -74,7 +69,7 @@ class CarAi(TFPluginAPI):
         ue.log('MY CODE IS RUNNING')
         result = {}
         result['L/R'] = 1
-        result['F/B'] = 2
+        result['F/B'] = 1
         return result
 
     def onBeginTraining(self):
