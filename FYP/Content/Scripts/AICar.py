@@ -1,24 +1,25 @@
 import tensorflow as tf
 import unreal_engine as ue
+from pathlib import Path
 from TFPluginAPI import TFPluginAPI
 
 class CarAi(TFPluginAPI):
 
     #Simmilar To Constructor 
-    def CarAiConstructor(self):
+    #def CarAiConstructor(self):
         # Declaring Required Variable
-        self.RunsTillSave = 5
-        self.RunsCompleated = 0
-        self.ShutDownActive = False
+        #self.RunsTillSave = 5
+        #self.RunsCompleated = 0
+        #self.ShutDownActive = False
 
         #Building The Neural Network's Structure
-        self.model = tf.keras.models.Sequential()
-        self.model.add(tf.keras.layers.Dense(16, activation='relu', input_shape=(8,)))
-        self.model.add(tf.keras.layers.Dense(16, activation='relu'))
-        self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
+        #self.model = tf.keras.models.Sequential()
+        #self.model.add(tf.keras.layers.Dense(16, activation='relu', input_shape=(8,)))
+        #self.model.add(tf.keras.layers.Dense(16, activation='relu'))
+        #self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
 
         #Loading the Last Weights Back in
-        self.LoadModel()
+        #self.LoadModel()
 
     #Contains Neural Network Input and Outputs
     def AiUpdate():
@@ -39,15 +40,34 @@ class CarAi(TFPluginAPI):
             self.RunsTillSave -= 1
 
     #loads the last save to the network
-    def LoadModel():
-        self.model.load_weights("CurrentWeights.h5")
+    #def LoadModel():
+    #    self.model.load_weights("CurrentWeights.h5")
 
 
 
 
 #//------------------------------------ Python API Functions -----------------------------------//
     def onSetup(self):
-        self.CarAiConstructor(self)
+        # Declaring Required Variable
+        self.RunsTillSave = 5
+        self.RunsCompleated = 0
+        self.ShutDownActive = False
+
+        #Building The Neural Network's Structure
+        self.model = tf.keras.models.Sequential()
+        self.model.add(tf.keras.layers.Dense(16, activation='relu', input_shape=(8,)))
+        self.model.add(tf.keras.layers.Dense(16, activation='relu'))
+        self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
+
+        self.model.summary()
+
+        #Loading the Last Weights Back in
+        path = Path(__file__).parent.absolute()
+        path = str(path) + '/CurrentWeights.h5'
+        self.model.load_weights(path)
+        #self.model.save_weights(path)
+
+        ue.log('-------------------------------------------------------------------------------------------------------------------Saved Weights To: ' + path)
 
     #Parse Json to useable Data
     def onJsonInput(self, jsonInput):
