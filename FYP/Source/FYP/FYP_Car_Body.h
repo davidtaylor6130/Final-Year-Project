@@ -198,9 +198,16 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
 		float GetNorthWestInput() { return mf_NWInput; }
 
+	float mf_Steering = 0.0f, mf_Acceleration = 0.0f; 
+
 	//- User Controll of car -//
-	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|UserInputDataRetreval")
-		void GetUserCarInputs();
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
+		float GetUserCarAcceleration() { return mf_Acceleration;  };
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
+		float GetUserCarSteering() { return mf_Steering; };
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
+		bool InputsPressed() { return (mf_Steering != 0 && mf_Acceleration != 0); };
+
 
 
 	//- Get Input Feedback -//

@@ -304,28 +304,31 @@ void AFYPPawn::BeginPlay()
 
 void AFYPPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
-	//Super::SetupPlayerInputComponent(PlayerInputComponent);
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	//// set up gameplay key bindings
-	//check(PlayerInputComponent);
+	// set up gameplay key bindings
+	check(PlayerInputComponent);
 
-	//PlayerInputComponent->BindAxis("MoveForward", this, &AFYPPawn::MoveForward);
-	//PlayerInputComponent->BindAxis("MoveRight", this, &AFYPPawn::MoveRight);
-	//PlayerInputComponent->BindAxis(LookUpBinding);
-	//PlayerInputComponent->BindAxis(LookRightBinding);
+	PlayerInputComponent->BindAxis("MoveForward", this, &AFYPPawn::MoveForward);
+	PlayerInputComponent->BindAxis("MoveRight", this, &AFYPPawn::MoveRight);
+	PlayerInputComponent->BindAxis(LookUpBinding);
+	PlayerInputComponent->BindAxis(LookRightBinding);
 
-	//PlayerInputComponent->BindAction("Handbrake", IE_Pressed, this, &AFYPPawn::OnHandbrakePressed);
-	//PlayerInputComponent->BindAction("Handbrake", IE_Released, this, &AFYPPawn::OnHandbrakeReleased);
+	PlayerInputComponent->BindAction("Handbrake", IE_Pressed, this, &AFYPPawn::OnHandbrakePressed);
+	PlayerInputComponent->BindAction("Handbrake", IE_Released, this, &AFYPPawn::OnHandbrakeReleased);
 }
+
 
 void AFYPPawn::MoveForward(float Val)
 {
+	mf_Acceleration = Val; 
 	GetVehicleMovementComponent()->SetThrottleInput(Val);
 	UE_LOG(LogTemp, Warning, TEXT("Forward/Backword : %f"), ((Val / 2) + 0.5f));
 }
 
 void AFYPPawn::MoveRight(float Val)
 {
+	mf_Steering = Val;
 	GetVehicleMovementComponent()->SetSteeringInput(Val);
 	UE_LOG(LogTemp, Warning, TEXT("Left/Right : %f"), ((Val / 2) + 0.5f));
 }
@@ -456,11 +459,6 @@ void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AAc
 	
 	UE_LOG(LogTemp, Warning, TEXT("LapMakerName : %s"), *FString(_otherActor->GetName()));
 	UE_LOG(LogTemp, Warning, TEXT("Current Location in history array: %d"), mi_HistoryCount);
-}
-
-void AFYPPawn::GetUserCarInputs()
-{
-
 }
 
 void AFYPPawn::AICarControl(float LR, float FB)

@@ -1,17 +1,262 @@
-﻿  Parsing headers for FYPEditor
-    Running UnrealHeaderTool "C:\Users\david\Documents\Unreal Projects\FYP\FYP.uproject" "C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\FYPEditor\Development\FYPEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for FYPEditor in 7.1218973 seconds
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\david\Documents\GitHub\Final-Year-Project).
+  Waiting for 'git status' command to complete
+  Parsing headers for FYPEditor
+    Running UnrealHeaderTool "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\FYP.uproject" "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\FYPEditor\Development\FYPEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for FYPEditor in 7.5239907 seconds
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 8 actions with 4 processes...
-    [1/8] FYP.init.gen.cpp
-    [2/8] FYP_Car_Body.gen.cpp
-    [3/8] FYPGameMode.cpp
-    [4/8] FYP_Car_Body.cpp
-    [5/8] FYP_Car_Hud.cpp
-    [6/8] UE4Editor-FYP-0020.lib
-       Creating library C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0020.lib and object C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0020.exp
-    [7/8] UE4Editor-FYP-0020.dll
-       Creating library C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0020.suppressed.lib and object C:\Users\david\Documents\Unreal Projects\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0020.suppressed.exp
-    [8/8] FYPEditor.target
-  Total time in Parallel executor: 13.00 seconds
-  Total execution time: 21.06 seconds
+  Building 15 actions with 4 processes...
+    [1/15] UE4Editor-UnrealEnginePython-0007.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\UnrealEnginePython\UE4Editor-UnrealEnginePython-0007.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\UnrealEnginePython\UE4Editor-UnrealEnginePython-0007.exp
+    [2/15] UE4Editor-SIOJEditorPlugin-0007.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJEditorPlugin\UE4Editor-SIOJEditorPlugin-0007.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJEditorPlugin\UE4Editor-SIOJEditorPlugin-0007.suppressed.exp
+Module.SIOJEditorPlugin.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+Module.SIOJEditorPlugin.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+    [3/15] UE4Editor-FYP-0007.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0007.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0007.suppressed.exp
+    [4/15] UE4Editor-PythonAutomation-0007.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonAutomation\UE4Editor-PythonAutomation-0007.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonAutomation\UE4Editor-PythonAutomation-0007.suppressed.exp
+PythonAutomationModule.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFAutomationEditorCommonUtils.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+    [5/15] UE4Editor-SocketIOLib-0007.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOLib\UE4Editor-SocketIOLib-0007.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOLib\UE4Editor-SocketIOLib-0007.suppressed.exp
+Module.SocketIOLib.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+    [6/15] UE4Editor-FYP-0007.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0007.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0007.exp
+    [7/15] UE4Editor-PythonEditor-0007.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonEditor\UE4Editor-PythonEditor-0007.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonEditor\UE4Editor-PythonEditor-0007.exp
+    [8/15] UE4Editor-PythonConsole-0007.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonConsole\UE4Editor-PythonConsole-0007.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonConsole\UE4Editor-PythonConsole-0007.exp
+    [9/15] UE4Editor-SIOJEditorPlugin-0007.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJEditorPlugin\UE4Editor-SIOJEditorPlugin-0007.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJEditorPlugin\UE4Editor-SIOJEditorPlugin-0007.exp
+    [10/15] UE4Editor-PythonAutomation-0007.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonAutomation\UE4Editor-PythonAutomation-0007.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonAutomation\UE4Editor-PythonAutomation-0007.exp
+    [11/15] UE4Editor-SocketIOLib-0007.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOLib\UE4Editor-SocketIOLib-0007.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOLib\UE4Editor-SocketIOLib-0007.exp
+    [12/15] UE4Editor-PythonConsole-0007.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonConsole\UE4Editor-PythonConsole-0007.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonConsole\UE4Editor-PythonConsole-0007.suppressed.exp
+PyFbxFactory.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonConsoleModule.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonScriptFactory.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+SPythonConsole.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+SPythonLog.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyFactory.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyFbxFactory.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonConsole.init.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonScriptFactory.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+    [13/15] UE4Editor-PythonEditor-0007.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonEditor\UE4Editor-PythonEditor-0007.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonEditor\UE4Editor-PythonEditor-0007.suppressed.exp
+DirectoryScanner.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PYRichTextSyntaxHighlighterTextLayoutMarshaller.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonEditorCustomization.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonEditorStyle.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProject.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProjectEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProjectEditorCommands.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProjectEditorToolbar.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProjectItem.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonSyntaxTokenizer.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+SProjectViewItem.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+SPythonEditableText.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+SPythonEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+SPythonProjectEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+WhiteSpaceTextRun.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonEditor.init.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonEditorCustomization.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProject.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProjectItem.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+    [14/15] UE4Editor-UnrealEnginePython-0007.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\UnrealEnginePython\UE4Editor-UnrealEnginePython-0007.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\UnrealEnginePython\UE4Editor-UnrealEnginePython-0007.suppressed.exp
+UEPyMovements.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFFoliageInstance.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFPointerEvent.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyHUD.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyEdGraph.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySGridPanel.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyVisualLogger.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySSpacer.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyNavigation.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFFrameNumber.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFSlateIcon.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyNativeWidgetHost.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySHeaderRow.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UnrealEnginePython.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySSplitter.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyObject.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyEdGraphPin.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFHitResult.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFSlateStyleSet.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyPawn.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySHorizontalBox.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PipConsoleManager.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySTableViewBase.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyPackage.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyICollectionManager.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFLinearColor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFTabManager.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonBlueprintFunctionLibrary.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySImage.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyActor.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySTextBlock.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyPawn.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyIConsoleManager.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFMorphTargetDelta.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFTabSpawnerEntry.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonComponent.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySlate.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyCharacter.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySTreeView.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyPhysics.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFbxImporter.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFObjectThumbnail.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFToolBarBuilder.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonDelegate.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySLeafWidget.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyCommandlet.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySVectorInputBox.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyPlayer.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFbxIOSettings.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFPythonOutputDevice.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyIDetailsView.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonFunction.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySLevelViewport.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyHUD.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySVerticalBox.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySequencer.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFbxManager.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFQuat.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyIStructureDetailsView.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonHouseKeeper.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySListView.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyNativeWidgetHost.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySViewport.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySkeletal.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFbxMesh.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFRandomStream.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySAssetDropTarget.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonScript.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySMultiLineEditableText.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyPawn.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySWidget.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySpline.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFbxNode.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFRawAnimSequenceTrack.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySBorder.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonSmartDelegate.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySNodePanel.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonBlueprintFunctionLibrary.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySWindow.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyStaticMesh.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFbxObject.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFRawMesh.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySBox.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyUserWidget.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySNumericEntryBox.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonClass.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFSlateApplication.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyTexture.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFbxPose.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFRotator.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySBoxPanel.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyAssetUserData.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySObjectPropertyEntryBox.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonComponent.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyActor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyTraceAndSweep.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFbxProperty.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFSlowTask.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySButton.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyCallable.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySOverlay.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonDelegate.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyAnimSequence.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyTransform.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFbxScene.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFSocket.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySCanvas.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySPanel.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonFunction.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyAttaching.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyUserDefinedStruct.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyIHttpBase.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFSoftSkinVertex.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySCheckBox.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyEngine.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySProgressBar.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonScript.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyAudio.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyViewport.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyIHttpRequest.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFStringAssetReference.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySColorBlock.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyEnumsImporter.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySPythonComboBox.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyUserWidget.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyCapture.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyWidget.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyIHttpResponse.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFTransform.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySCompoundWidget.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyIPlugin.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySPythonEditorViewport.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UnrealEnginePython.init.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyController.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyWidgetComponent.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFMaterialEditorUtilities.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFVector.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySDirectoryPicker.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyLambda.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySPythonListView.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyDataTable.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyWorld.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFCharacterEvent.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFVector2D.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySDockTab.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyModule.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySPythonMultiColumnTableRow.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyExporter.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyIVoiceCapture.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFGeometry.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFViewportClient.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySDropTarget.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySubclassing.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySPythonShelf.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFoliage.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyESlateEnums.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFInputEvent.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyIAssetEditorInstance.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySEditableTextBox.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyTicker.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySPythonTreeView.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyHUD.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFARFilter.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFKeyEvent.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PipConsoleManager.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySEditorViewport.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyTimer.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySPythonWidget.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyInput.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFAssetData.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFMenuBuilder.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyActor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySFilePathPicker.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyUClassesImporter.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySRotatorInputBox.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyLandscape.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFColor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFModifierKeysState.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyCharacter.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySGraphEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyUScriptStruct.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySScrollBox.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyMaterial.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFEditorViewportClient.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFPaintContext.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PyCommandlet.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySGraphPanel.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyUStructsImporter.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySSlider.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+    [15/15] FYPEditor.target
+  Total time in Parallel executor: 11.53 seconds
+  Total execution time: 32.36 seconds

@@ -25,9 +25,11 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetSouthEastInput();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetSouthInput();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetSouthWestInput();
-	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetUserCarInputs();
+	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration();
+	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetUserCarSteering();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetWestInput();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_InputDataAgmentation();
+	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_InputsPressed();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_LapMarkerCollider();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
@@ -55,9 +57,11 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 			{ "GetSouthEastInput", &AFYPPawn::execGetSouthEastInput },
 			{ "GetSouthInput", &AFYPPawn::execGetSouthInput },
 			{ "GetSouthWestInput", &AFYPPawn::execGetSouthWestInput },
-			{ "GetUserCarInputs", &AFYPPawn::execGetUserCarInputs },
+			{ "GetUserCarAcceleration", &AFYPPawn::execGetUserCarAcceleration },
+			{ "GetUserCarSteering", &AFYPPawn::execGetUserCarSteering },
 			{ "GetWestInput", &AFYPPawn::execGetWestInput },
 			{ "InputDataAgmentation", &AFYPPawn::execInputDataAgmentation },
+			{ "InputsPressed", &AFYPPawn::execInputsPressed },
 			{ "LapMarkerCollider", &AFYPPawn::execLapMarkerCollider },
 			{ "UpdateCarSpeed", &AFYPPawn::execUpdateCarSpeed },
 			{ "UpdateRayCasts", &AFYPPawn::execUpdateRayCasts },
@@ -335,28 +339,71 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AFYPPawn_GetUserCarInputs_Statics
+	struct Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration_Statics
 	{
+		struct FYPPawn_eventGetUserCarAcceleration_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FYPPawn_eventGetUserCarAcceleration_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration_Statics::NewProp_ReturnValue,
+	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_GetUserCarInputs_Statics::Function_MetaDataParams[] = {
-		{ "Category", "BY DAVID TAYLOR|FUNCTIONS|UserInputDataRetreval" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval" },
 		{ "Comment", "//- User Controll of car -//\n" },
 		{ "ModuleRelativePath", "FYP_Car_Body.h" },
 		{ "ToolTip", "- User Controll of car -" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFYPPawn_GetUserCarInputs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFYPPawn, nullptr, "GetUserCarInputs", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFYPPawn_GetUserCarInputs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_GetUserCarInputs_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AFYPPawn_GetUserCarInputs()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFYPPawn, nullptr, "GetUserCarAcceleration", nullptr, nullptr, sizeof(FYPPawn_eventGetUserCarAcceleration_Parms), Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_GetUserCarInputs_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFYPPawn_GetUserCarSteering_Statics
+	{
+		struct FYPPawn_eventGetUserCarSteering_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFYPPawn_GetUserCarSteering_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FYPPawn_eventGetUserCarSteering_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFYPPawn_GetUserCarSteering_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFYPPawn_GetUserCarSteering_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_GetUserCarSteering_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFYPPawn_GetUserCarSteering_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFYPPawn, nullptr, "GetUserCarSteering", nullptr, nullptr, sizeof(FYPPawn_eventGetUserCarSteering_Parms), Z_Construct_UFunction_AFYPPawn_GetUserCarSteering_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_GetUserCarSteering_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFYPPawn_GetUserCarSteering_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_GetUserCarSteering_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFYPPawn_GetUserCarSteering()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_GetUserCarSteering_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -413,6 +460,44 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_InputDataAgmentation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFYPPawn_InputsPressed_Statics
+	{
+		struct FYPPawn_eventInputsPressed_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFYPPawn_InputsPressed_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FYPPawn_eventInputsPressed_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFYPPawn_InputsPressed_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FYPPawn_eventInputsPressed_Parms), &Z_Construct_UFunction_AFYPPawn_InputsPressed_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFYPPawn_InputsPressed_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFYPPawn_InputsPressed_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_InputsPressed_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFYPPawn_InputsPressed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFYPPawn, nullptr, "InputsPressed", nullptr, nullptr, sizeof(FYPPawn_eventInputsPressed_Parms), Z_Construct_UFunction_AFYPPawn_InputsPressed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_InputsPressed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFYPPawn_InputsPressed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_InputsPressed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFYPPawn_InputsPressed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_InputsPressed_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -712,9 +797,11 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		{ &Z_Construct_UFunction_AFYPPawn_GetSouthEastInput, "GetSouthEastInput" }, // 1710976476
 		{ &Z_Construct_UFunction_AFYPPawn_GetSouthInput, "GetSouthInput" }, // 1016589291
 		{ &Z_Construct_UFunction_AFYPPawn_GetSouthWestInput, "GetSouthWestInput" }, // 2618735992
-		{ &Z_Construct_UFunction_AFYPPawn_GetUserCarInputs, "GetUserCarInputs" }, // 1291644655
+		{ &Z_Construct_UFunction_AFYPPawn_GetUserCarAcceleration, "GetUserCarAcceleration" }, // 680294571
+		{ &Z_Construct_UFunction_AFYPPawn_GetUserCarSteering, "GetUserCarSteering" }, // 2329665758
 		{ &Z_Construct_UFunction_AFYPPawn_GetWestInput, "GetWestInput" }, // 993606809
 		{ &Z_Construct_UFunction_AFYPPawn_InputDataAgmentation, "InputDataAgmentation" }, // 3237922113
+		{ &Z_Construct_UFunction_AFYPPawn_InputsPressed, "InputsPressed" }, // 24485081
 		{ &Z_Construct_UFunction_AFYPPawn_LapMarkerCollider, "LapMarkerCollider" }, // 1252950113
 		{ &Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed, "UpdateCarSpeed" }, // 1439680706
 		{ &Z_Construct_UFunction_AFYPPawn_UpdateRayCasts, "UpdateRayCasts" }, // 1085970886
@@ -1042,7 +1129,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFYPPawn, 1886510083);
+	IMPLEMENT_CLASS(AFYPPawn, 126299559);
 	template<> FYP_API UClass* StaticClass<AFYPPawn>()
 	{
 		return AFYPPawn::StaticClass();

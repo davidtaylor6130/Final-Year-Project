@@ -28,11 +28,27 @@ struct FHitResult;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetUserCarInputs) \
+	DECLARE_FUNCTION(execInputsPressed) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GetUserCarInputs(); \
+		*(bool*)Z_Param__Result=P_THIS->InputsPressed(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUserCarSteering) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetUserCarSteering(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUserCarAcceleration) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetUserCarAcceleration(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -160,11 +176,27 @@ struct FHitResult;
 		P_NATIVE_END; \
 	} \
  \
-	DECLARE_FUNCTION(execGetUserCarInputs) \
+	DECLARE_FUNCTION(execInputsPressed) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->GetUserCarInputs(); \
+		*(bool*)Z_Param__Result=P_THIS->InputsPressed(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUserCarSteering) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetUserCarSteering(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetUserCarAcceleration) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetUserCarAcceleration(); \
 		P_NATIVE_END; \
 	} \
  \
