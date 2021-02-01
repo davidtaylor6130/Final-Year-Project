@@ -323,14 +323,14 @@ void AFYPPawn::MoveForward(float Val)
 {
 	mf_Acceleration = Val; 
 	GetVehicleMovementComponent()->SetThrottleInput(Val);
-	UE_LOG(LogTemp, Warning, TEXT("Forward/Backword : %f"), ((Val / 2) + 0.5f));
+	//UE_LOG(LogTemp, Warning, TEXT("Forward/Backword : %f"), ((Val / 2) + 0.5f));
 }
 
 void AFYPPawn::MoveRight(float Val)
 {
 	mf_Steering = Val;
 	GetVehicleMovementComponent()->SetSteeringInput(Val);
-	UE_LOG(LogTemp, Warning, TEXT("Left/Right : %f"), ((Val / 2) + 0.5f));
+	//UE_LOG(LogTemp, Warning, TEXT("Left/Right : %f"), ((Val / 2) + 0.5f));
 }
 
 void AFYPPawn::OnHandbrakePressed()
@@ -442,7 +442,7 @@ void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AAc
 		LapMarkerHistory[0] = LapMarkerNames[0];
 		mi_HistoryCount = 1;
 
-		UE_LOG(LogTemp, Warning, TEXT("History Reset"));
+		//UE_LOG(LogTemp, Warning, TEXT("History Reset"));
 	}
 	else if (mi_HistoryCount == 4)
 	{
@@ -457,8 +457,8 @@ void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AAc
 		mi_HistoryCount = 0;
 	}
 	
-	UE_LOG(LogTemp, Warning, TEXT("LapMakerName : %s"), *FString(_otherActor->GetName()));
-	UE_LOG(LogTemp, Warning, TEXT("Current Location in history array: %d"), mi_HistoryCount);
+	//UE_LOG(LogTemp, Warning, TEXT("LapMakerName : %s"), *FString(_otherActor->GetName()));
+	//UE_LOG(LogTemp, Warning, TEXT("Current Location in history array: %d"), mi_HistoryCount);
 }
 
 void AFYPPawn::AICarControl(float LR, float FB)

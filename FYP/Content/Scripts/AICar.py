@@ -1,6 +1,7 @@
 import tensorflow as tf
 import unreal_engine as ue
 import json as json
+import numpy as np
 
 from pathlib import Path
 from TFPluginAPI import TFPluginAPI
@@ -34,21 +35,43 @@ class CarAi(TFPluginAPI):
         self.RunsCompleated = 0
         self.ShutDownActive = False
 
+        ue.log("Var Setup")
+
         # Recording To Json
         self.recordedData = {}
         temp = Path(__file__).parent.absolute()
         self.pathToFile = str( temp )
 
-        #Training 
-        f = open ('data.json', "r") 
-        # Reading from file 
+        ue.log("Got Path")
+
+        #Training initlization
+        trainingData = np.zeros((1070 , 8))
+        trainingLables = np.zeros((1070, 2))
+
+        ue.log("Is Initilized")
+
+        #open and read json data
+        f = open (self.pathToFile + '/DataRecorded1.json', "r")
         data = json.loads(f.read()) 
-        # Iterating through the json 
-        for i in 1070: 
-            a
-  
-        # Closing file 
-        f.close() 
+        f.close()
+
+        ue.log("File Loaded")
+
+        # Iterating through the json and formatting json to just feelers 
+        for i in range(1070): 
+            trainingData[i][0] = data[str(i)]['North']
+            trainingData[i][1] = data[str(i)]['NorthEast']
+            trainingData[i][2] = data[str(i)]['East']
+            trainingData[i][3] = data[str(i)]['SouthEast']
+            trainingData[i][4] = data[str(i)]['South']
+            trainingData[i][5] = data[str(i)]['SouthWest']
+            trainingData[i][6] = data[str(i)]['West']
+            trainingData[i][7] = data[str(i)]['NorthWest']
+
+            trainingLables[i][0] = data[str(i)]['Acceleration']
+            trainingLables[i][1] = data[str(i)]['Steering']
+            
+        ue.log("Is trainingData Constructed")
 
         #Building The Neural Network's Structure
         self.model = tf.keras.models.Sequential()
@@ -57,9 +80,21 @@ class CarAi(TFPluginAPI):
         self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
         self.model.summary()
 
+        ue.log("Is Constructed")
+
+        self.model.compile(optimizer='rmsprop',
+                  loss='binary_crossentropy',
+                  metrics=['accuracy'])
+
+        ue.log("Is Complie")
+
+        self.model.fit(trainingData, trainingLables, epochs=20, batch_size=512, validation_data=(trainingData, trainingLables))
+
+        ue.log("Is Fit")
+
         #Loading the Last Weights Back in
-        self.model.load_weights(self.pathToFile + '/CurrentWeights.h5')
-        #self.model.save_weights(path)
+        #self.model.load_weights(self.pathToFile + '/CurrentWeights.h5')
+        self.model.save_weights(self.pathToFile + '/CurrentWeights.h5')
 
     #Parse Json to useable Data
     def onJsonInput(self, jsonInput):
@@ -72,17 +107,34 @@ class CarAi(TFPluginAPI):
 
         #Split into two elements to Data Recording and Ai Driving
         if (jsonInput['RecordingData'] == 'True') :
-            
-
             #Open file and add this frames data
             with open(self.pathToFile + '/DataRecorded1.json', 'w') as outfile:
                 json.dump(self.recordedData, outfile, indent=4)
             return
         else:
-            ue.log('MY CODE IS RUNNING')
+            #ue.log('MY CODE IS RUNNING')
             result = {}
             result['LR'] = 0.5
             result['FB'] = 1
+
+            inData = [] * 8
+            inData[0] = float(jsonInput['North'])
+            inData[1] = float(jsonInput['NorthEast'])
+            inData[2] = float(jsonInput['East'])
+            inData[3] = float(jsonInput['SouthEast'])
+            inData[4] = float(jsonInput['South'])
+            inData[5] = float(jsonInput['SouthWest'])
+            inData[6] = float(jsonInput['West'])
+            inData[7] = float(jsonInput['NorthWest'])
+
+            #temp = self.model.predict(inData);
+            temp = self.model.predict({0,0,0,0,0,0,0,0});
+
+            result['FB'] = temp[0]
+            result['LR'] = temp[1]
+
+            ue.log("Is Predicted")
+
             return result
 
 
