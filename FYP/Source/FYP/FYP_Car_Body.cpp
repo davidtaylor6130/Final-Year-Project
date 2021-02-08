@@ -430,6 +430,7 @@ void AFYPPawn::InputDataAgmentation()
 	mf_SWInput = Casts[5].OutHit.Distance / 1000;
 	mf_WInput = Casts[6].OutHit.Distance / 1000;
 	mf_NWInput = Casts[7].OutHit.Distance / 1000;
+	UE_LOG(LogTemp, Warning, TEXT("Format Format"));
 }
 
 void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AActor* _otherActor, UPrimitiveComponent* _otherComp, int32 _otherBodyIndex, bool _bFromSweep, const FHitResult & _hitResult)
@@ -463,8 +464,13 @@ void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AAc
 
 void AFYPPawn::AICarControl(float LR, float FB)
 {
-	GetVehicleMovementComponent()->SetSteeringInput(LR);
-	GetVehicleMovementComponent()->SetThrottleInput(FB);
+	UE_LOG(LogTemp, Warning, TEXT("CURRENT STEERING RUNNING"));
+
+	float Accsel = ((FB + FB) - 1);
+	float Steer = ((LR + LR) - 1);
+
+	GetVehicleMovementComponent()->SetSteeringInput(Steer);
+	GetVehicleMovementComponent()->SetThrottleInput(Accsel);
 }
 
 void AFYPPawn::AiFailed()

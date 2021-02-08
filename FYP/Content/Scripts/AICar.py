@@ -75,7 +75,7 @@ class CarAi(TFPluginAPI):
 
         #Building The Neural Network's Structure
         self.model = tf.keras.models.Sequential()
-        self.model.add(tf.keras.layers.Dense(16, activation='relu', input_shape=(8,)))
+        self.model.add(tf.keras.layers.Dense(8, activation='relu', input_shape=(8,)))
         self.model.add(tf.keras.layers.Dense(16, activation='relu'))
         self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
         self.model.summary()
@@ -117,23 +117,48 @@ class CarAi(TFPluginAPI):
             result['LR'] = 0.5
             result['FB'] = 1
 
-            inData = [] * 8
-            inData[0] = float(jsonInput['North'])
-            inData[1] = float(jsonInput['NorthEast'])
-            inData[2] = float(jsonInput['East'])
-            inData[3] = float(jsonInput['SouthEast'])
-            inData[4] = float(jsonInput['South'])
-            inData[5] = float(jsonInput['SouthWest'])
-            inData[6] = float(jsonInput['West'])
-            inData[7] = float(jsonInput['NorthWest'])
+            Data = np.zeros((1, 8))
+            Data[0][0] = float(jsonInput['North'])
+            Data[0][1] = float(jsonInput['NorthEast'])
+            Data[0][2] = float(jsonInput['East'])
+            Data[0][3] = float(jsonInput['SouthEast'])
+            Data[0][4] = float(jsonInput['South'])
+            Data[0][5] = float(jsonInput['SouthWest'])
+            Data[0][6] = float(jsonInput['West'])
+            Data[0][7] = float(jsonInput['NorthWest'])
 
-            #temp = self.model.predict(inData);
-            temp = self.model.predict({0,0,0,0,0,0,0,0});
+            #inData = np.array([
+            #    [float(jsonInput['North'])],
+            #    [float(jsonInput['NorthEast'])],
+            #    [float(jsonInput['East'])],
+            #    [float(jsonInput['SouthEast'])],
+            #    [float(jsonInput['South'])],
+            #    [float(jsonInput['SouthWest'])],
+            #    [float(jsonInput['West'])],
+            #    [float(jsonInput['NorthWest'])]])
+            
+            #inData.append(float(jsonInput['North']))
+            #inData.append(float(jsonInput['NorthEast']))
+            #inData.append(float(jsonInput['East']))
+            #inData.append(float(jsonInput['SouthEast']))
+            #inData.append(float(jsonInput['South']))
+            #inData.append(float(jsonInput['SouthWest']))
+            #inData.append(float(jsonInput['West']))
+            #inData.append(float(jsonInput['NorthWest']))
 
-            result['FB'] = temp[0]
-            result['LR'] = temp[1]
+            #a = np.array(inData)
 
-            ue.log("Is Predicted")
+            #self.model.predict(inData)
+            #temp = self.model.predict(a)
+
+            temp = self.model.predict(Data)
+
+            #ue.log(temp)
+
+            result['FB'] = float(temp[0][0])
+            result['LR'] = float(temp[0][1])
+
+            ue.log(result)
 
             return result
 
