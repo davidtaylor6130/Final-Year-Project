@@ -59,17 +59,17 @@ class CarAi(TFPluginAPI):
 
         # Iterating through the json and formatting json to just feelers 
         for i in range(1070): 
-            trainingData[i][0] = float(data[str(i)]['North'])
-            trainingData[i][1] = float(data[str(i)]['NorthEast'])
-            trainingData[i][2] = float(data[str(i)]['East'])
-            trainingData[i][3] = float(data[str(i)]['SouthEast'])
-            trainingData[i][4] = float(data[str(i)]['South'])
-            trainingData[i][5] = float(data[str(i)]['SouthWest'])
-            trainingData[i][6] = float(data[str(i)]['West'])
-            trainingData[i][7] = float(data[str(i)]['NorthWest'])
+            trainingData[i][0] = data[str(i)]['North']
+            trainingData[i][1] = data[str(i)]['NorthEast']
+            trainingData[i][2] = data[str(i)]['East']
+            trainingData[i][3] = data[str(i)]['SouthEast']
+            trainingData[i][4] = data[str(i)]['South']
+            trainingData[i][5] = data[str(i)]['SouthWest']
+            trainingData[i][6] = data[str(i)]['West']
+            trainingData[i][7] = data[str(i)]['NorthWest']
 
-            trainingLables[i][0] = float(data[str(i)]['Acceleration'])
-            trainingLables[i][1] = float(data[str(i)]['Steering'])
+            trainingLables[i][0] = data[str(i)]['Acceleration']
+            trainingLables[i][1] = data[str(i)]['Steering']
             
         ue.log("Is trainingData Constructed")
 
@@ -77,7 +77,6 @@ class CarAi(TFPluginAPI):
         self.model = tf.keras.models.Sequential()
         self.model.add(tf.keras.layers.Dense(8, activation='relu', input_shape=(8,)))
         self.model.add(tf.keras.layers.Dense(16, activation='relu'))
-        
         self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
         self.model.summary()
 
@@ -89,13 +88,13 @@ class CarAi(TFPluginAPI):
 
         ue.log("Is Complie")
 
-        #self.model.fit(trainingData, trainingLables, epochs=1024, batch_size=128, validation_data=(trainingData, trainingLables))
+        self.model.fit(trainingData, trainingLables, epochs=20, batch_size=512, validation_data=(trainingData, trainingLables))
 
         ue.log("Is Fit")
 
         #Loading the Last Weights Back in
-        self.model.load_weights(self.pathToFile + '/CurrentWeights.h5')
-        #self.model.save_weights(self.pathToFile + '/CurrentWeights.h5')
+        #self.model.load_weights(self.pathToFile + '/CurrentWeights.h5')
+        self.model.save_weights(self.pathToFile + '/CurrentWeights.h5')
 
     #Parse Json to useable Data
     def onJsonInput(self, jsonInput):
@@ -113,6 +112,7 @@ class CarAi(TFPluginAPI):
                 json.dump(self.recordedData, outfile, indent=4)
             return
         else:
+            #ue.log('MY CODE IS RUNNING')
             result = {}
             result['LR'] = 0.5
             result['FB'] = 1
@@ -127,10 +127,38 @@ class CarAi(TFPluginAPI):
             Data[0][6] = float(jsonInput['West'])
             Data[0][7] = float(jsonInput['NorthWest'])
 
+            #inData = np.array([
+            #    [float(jsonInput['North'])],
+            #    [float(jsonInput['NorthEast'])],
+            #    [float(jsonInput['East'])],
+            #    [float(jsonInput['SouthEast'])],
+            #    [float(jsonInput['South'])],
+            #    [float(jsonInput['SouthWest'])],
+            #    [float(jsonInput['West'])],
+            #    [float(jsonInput['NorthWest'])]])
+            
+            #inData.append(float(jsonInput['North']))
+            #inData.append(float(jsonInput['NorthEast']))
+            #inData.append(float(jsonInput['East']))
+            #inData.append(float(jsonInput['SouthEast']))
+            #inData.append(float(jsonInput['South']))
+            #inData.append(float(jsonInput['SouthWest']))
+            #inData.append(float(jsonInput['West']))
+            #inData.append(float(jsonInput['NorthWest']))
+
+            #a = np.array(inData)
+
+            #self.model.predict(inData)
+            #temp = self.model.predict(a)
+
             temp = self.model.predict(Data)
+
+            #ue.log(temp)
 
             result['FB'] = float(temp[0][0])
             result['LR'] = float(temp[0][1])
+
+            ue.log(result)
 
             return result
 
