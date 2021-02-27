@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetNorthEastInput();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetNorthInput();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetNorthWestInput();
+	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetScore();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetSouthEastInput();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetSouthInput();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetSouthWestInput();
@@ -30,10 +31,12 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_GetWestInput();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_InputDataAgmentation();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_InputsPressed();
+	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_IsAiAlive();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_LapMarkerCollider();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_ResetCar();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_UpdateRayCasts();
 	FYP_API UFunction* Z_Construct_UFunction_AFYPPawn_UpdateUIElements();
@@ -54,6 +57,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 			{ "GetNorthEastInput", &AFYPPawn::execGetNorthEastInput },
 			{ "GetNorthInput", &AFYPPawn::execGetNorthInput },
 			{ "GetNorthWestInput", &AFYPPawn::execGetNorthWestInput },
+			{ "GetScore", &AFYPPawn::execGetScore },
 			{ "GetSouthEastInput", &AFYPPawn::execGetSouthEastInput },
 			{ "GetSouthInput", &AFYPPawn::execGetSouthInput },
 			{ "GetSouthWestInput", &AFYPPawn::execGetSouthWestInput },
@@ -62,7 +66,9 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 			{ "GetWestInput", &AFYPPawn::execGetWestInput },
 			{ "InputDataAgmentation", &AFYPPawn::execInputDataAgmentation },
 			{ "InputsPressed", &AFYPPawn::execInputsPressed },
+			{ "IsAiAlive", &AFYPPawn::execIsAiAlive },
 			{ "LapMarkerCollider", &AFYPPawn::execLapMarkerCollider },
+			{ "ResetCar", &AFYPPawn::execResetCar },
 			{ "UpdateCarSpeed", &AFYPPawn::execUpdateCarSpeed },
 			{ "UpdateRayCasts", &AFYPPawn::execUpdateRayCasts },
 			{ "UpdateUIElements", &AFYPPawn::execUpdateUIElements },
@@ -237,6 +243,41 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_GetNorthWestInput_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFYPPawn_GetScore_Statics
+	{
+		struct FYPPawn_eventGetScore_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFYPPawn_GetScore_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FYPPawn_eventGetScore_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFYPPawn_GetScore_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFYPPawn_GetScore_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_GetScore_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval" },
+		{ "Comment", "//- Get for score and alive -//\n" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+		{ "ToolTip", "- Get for score and alive -" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFYPPawn_GetScore_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFYPPawn, nullptr, "GetScore", nullptr, nullptr, sizeof(FYPPawn_eventGetScore_Parms), Z_Construct_UFunction_AFYPPawn_GetScore_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_GetScore_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFYPPawn_GetScore_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_GetScore_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFYPPawn_GetScore()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_GetScore_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -501,6 +542,44 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFYPPawn_IsAiAlive_Statics
+	{
+		struct FYPPawn_eventIsAiAlive_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_AFYPPawn_IsAiAlive_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((FYPPawn_eventIsAiAlive_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFYPPawn_IsAiAlive_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FYPPawn_eventIsAiAlive_Parms), &Z_Construct_UFunction_AFYPPawn_IsAiAlive_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFYPPawn_IsAiAlive_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFYPPawn_IsAiAlive_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_IsAiAlive_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFYPPawn_IsAiAlive_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFYPPawn, nullptr, "IsAiAlive", nullptr, nullptr, sizeof(FYPPawn_eventIsAiAlive_Parms), Z_Construct_UFunction_AFYPPawn_IsAiAlive_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_IsAiAlive_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFYPPawn_IsAiAlive_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_IsAiAlive_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFYPPawn_IsAiAlive()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_IsAiAlive_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_AFYPPawn_LapMarkerCollider_Statics
 	{
 		struct FYPPawn_eventLapMarkerCollider_Parms
@@ -579,6 +658,31 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_LapMarkerCollider_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFYPPawn_ResetCar_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_ResetCar_Statics::Function_MetaDataParams[] = {
+		{ "Category", "BY DAVID TAYLOR|FUNCTIONS|CarReset" },
+		{ "Comment", "//- Death Functions -//\n" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+		{ "ToolTip", "- Death Functions -" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFYPPawn_ResetCar_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFYPPawn, nullptr, "ResetCar", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFYPPawn_ResetCar_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AFYPPawn_ResetCar_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFYPPawn_ResetCar()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFYPPawn_ResetCar_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -705,6 +809,10 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_NorthRayDistanceUI;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ScoreUI_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ScoreUI;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LapMultiplyerUI_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_LapMultiplyerUI;
@@ -794,6 +902,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		{ &Z_Construct_UFunction_AFYPPawn_GetNorthEastInput, "GetNorthEastInput" }, // 2604597651
 		{ &Z_Construct_UFunction_AFYPPawn_GetNorthInput, "GetNorthInput" }, // 630116705
 		{ &Z_Construct_UFunction_AFYPPawn_GetNorthWestInput, "GetNorthWestInput" }, // 4020575816
+		{ &Z_Construct_UFunction_AFYPPawn_GetScore, "GetScore" }, // 468227443
 		{ &Z_Construct_UFunction_AFYPPawn_GetSouthEastInput, "GetSouthEastInput" }, // 1710976476
 		{ &Z_Construct_UFunction_AFYPPawn_GetSouthInput, "GetSouthInput" }, // 1016589291
 		{ &Z_Construct_UFunction_AFYPPawn_GetSouthWestInput, "GetSouthWestInput" }, // 2618735992
@@ -802,7 +911,9 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		{ &Z_Construct_UFunction_AFYPPawn_GetWestInput, "GetWestInput" }, // 993606809
 		{ &Z_Construct_UFunction_AFYPPawn_InputDataAgmentation, "InputDataAgmentation" }, // 3237922113
 		{ &Z_Construct_UFunction_AFYPPawn_InputsPressed, "InputsPressed" }, // 24485081
+		{ &Z_Construct_UFunction_AFYPPawn_IsAiAlive, "IsAiAlive" }, // 3460455905
 		{ &Z_Construct_UFunction_AFYPPawn_LapMarkerCollider, "LapMarkerCollider" }, // 1252950113
+		{ &Z_Construct_UFunction_AFYPPawn_ResetCar, "ResetCar" }, // 2732888523
 		{ &Z_Construct_UFunction_AFYPPawn_UpdateCarSpeed, "UpdateCarSpeed" }, // 1439680706
 		{ &Z_Construct_UFunction_AFYPPawn_UpdateRayCasts, "UpdateRayCasts" }, // 1085970886
 		{ &Z_Construct_UFunction_AFYPPawn_UpdateUIElements, "UpdateUIElements" }, // 1748481015
@@ -881,11 +992,22 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthRayDistanceUI_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Display" },
+		{ "Comment", "//- Decliration Of Feeler Distances -//\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "FYP_Car_Body.h" },
+		{ "ToolTip", "- Decliration Of Feeler Distances -" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthRayDistanceUI = { "NorthRayDistanceUI", nullptr, (EPropertyFlags)0x00100000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFYPPawn, NorthRayDistanceUI), Z_Construct_UClass_UTextRenderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthRayDistanceUI_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthRayDistanceUI_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFYPPawn_Statics::NewProp_ScoreUI_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Display" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "FYP_Car_Body.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthRayDistanceUI = { "NorthRayDistanceUI", nullptr, (EPropertyFlags)0x00100000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFYPPawn, NorthRayDistanceUI), Z_Construct_UClass_UTextRenderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthRayDistanceUI_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthRayDistanceUI_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFYPPawn_Statics::NewProp_ScoreUI = { "ScoreUI", nullptr, (EPropertyFlags)0x00100000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFYPPawn, ScoreUI), Z_Construct_UClass_UTextRenderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFYPPawn_Statics::NewProp_ScoreUI_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFYPPawn_Statics::NewProp_ScoreUI_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFYPPawn_Statics::NewProp_LapMultiplyerUI_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -908,10 +1030,10 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFYPPawn_Statics::NewProp_TimeLeft_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Display" },
-		{ "Comment", "//- Decliration Of UI Elements -//\x09\n" },
+		{ "Comment", "//- Decliration Of UI Score/Time Elements -//\x09\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "FYP_Car_Body.h" },
-		{ "ToolTip", "- Decliration Of UI Elements -" },
+		{ "ToolTip", "- Decliration Of UI Score/Time Elements -" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFYPPawn_Statics::NewProp_TimeLeft = { "TimeLeft", nullptr, (EPropertyFlags)0x00100000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFYPPawn, TimeLeft), Z_Construct_UClass_UTextRenderComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFYPPawn_Statics::NewProp_TimeLeft_MetaData, ARRAY_COUNT(Z_Construct_UClass_AFYPPawn_Statics::NewProp_TimeLeft_MetaData)) };
@@ -1082,6 +1204,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_EastRayDistanceUI,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthEastRayDistanceUI,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_NorthRayDistanceUI,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_ScoreUI,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_LapMultiplyerUI,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_DistanceTraveledScoreUI,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFYPPawn_Statics::NewProp_TimeLeft,
@@ -1129,7 +1252,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFYPPawn, 126299559);
+	IMPLEMENT_CLASS(AFYPPawn, 1306434763);
 	template<> FYP_API UClass* StaticClass<AFYPPawn>()
 	{
 		return AFYPPawn::StaticClass();

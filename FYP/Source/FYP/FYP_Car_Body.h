@@ -7,6 +7,7 @@
 #include <string>
 #include "Components/BoxComponent.h"
 #include "Components/SphereComponent.h"
+#include "Math/Vector.h"
 #include "DrawDebugHelpers.h"
 #include "Math/Float32.h"
 #include "FYP_Car_Body.generated.h"
@@ -38,34 +39,34 @@ class AFYPPawn : public AWheeledVehicle
 
 	/** Spring arm that will offset the camera */
 	UPROPERTY(Category = Camera, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USpringArmComponent* SpringArm;
+		USpringArmComponent* SpringArm;
 
 	/** Camera component that will be our viewpoint */
 	UPROPERTY(Category = Camera, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UCameraComponent* Camera;
+		UCameraComponent* Camera;
 
 	/** Text component for the In-Car speed */
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* InCarSpeed;
+		UTextRenderComponent* InCarSpeed;
 
 	/** Text component for the In-Car gear */
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* InCarGear;
+		UTextRenderComponent* InCarGear;
 
 	/** Audio component for the engine sound */
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UAudioComponent* EngineSoundComponent;
+		UAudioComponent* EngineSoundComponent;
 
 public:
 	AFYPPawn();
 
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly)
 	/** The color of the incar gear text in forward gears */
-	FColor	GearDisplayColor;
+		FColor	GearDisplayColor;
 
 	/** The color of the incar gear text when in reverse */
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly)
-	FColor	GearDisplayReverseColor;
+		FColor	GearDisplayReverseColor;
 
 	// Begin Pawn interface
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
@@ -115,74 +116,80 @@ public:
 
 	//- Required Elements For Tracking Compleated Laps -//
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UBoxComponent* mp_collider;
+		UBoxComponent* mp_collider;
+
 	UFUNCTION()
 	void LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AActor* _otherActor, UPrimitiveComponent* _otherComp, int32 _otherBodyIndex, bool _bFromSweep, const FHitResult & _hitResult);
+	
 	uint32 mi_LapMultiplyer;
 	uint32 mi_HistoryCount;
+	uint32 mi_Score;
+
 	FString LapMarkerNames[4];
 	FString LapMarkerHistory[4];
 
 	//- Required Data For Car RayCasts -//
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USphereComponent* North;
+		USphereComponent* North;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USphereComponent* NorthEast;
+		USphereComponent* NorthEast;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USphereComponent* East;
+		USphereComponent* East;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USphereComponent* SouthEast;
+		USphereComponent* SouthEast;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USphereComponent* South;
+		USphereComponent* South;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USphereComponent* SouthWest;
+		USphereComponent* SouthWest;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USphereComponent* West;
+		USphereComponent* West;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USphereComponent* NorthWest;
+		USphereComponent* NorthWest;
+
 	RayCastInfo Casts[8];
 	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|CarUpdateFunctions")
-	void UpdateRayCasts();
+		void UpdateRayCasts();
 
 	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|CarUpdateFunctions ")
-	void UpdateCarSpeed(float Delta);
+		void UpdateCarSpeed(float Delta);
 
 	//- Decliration Of UI Score/Time Elements -//	
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* TimeLeft;
+		UTextRenderComponent* TimeLeft;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* DistanceTraveledScoreUI;
+		UTextRenderComponent* DistanceTraveledScoreUI;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* LapMultiplyerUI;
+		UTextRenderComponent* LapMultiplyerUI;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* ScoreUI;
+		UTextRenderComponent* ScoreUI;
 
 
 	//- Decliration Of Feeler Distances -//
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* NorthRayDistanceUI;
+		UTextRenderComponent* NorthRayDistanceUI;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* NorthEastRayDistanceUI;
+		UTextRenderComponent* NorthEastRayDistanceUI;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* EastRayDistanceUI;
+		UTextRenderComponent* EastRayDistanceUI;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* SouthEastRayDistanceUI;
+		UTextRenderComponent* SouthEastRayDistanceUI;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* SouthRayDistanceUI;
+		UTextRenderComponent* SouthRayDistanceUI;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* SouthWestRayDistanceUI;
+		UTextRenderComponent* SouthWestRayDistanceUI;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* WestRayDistanceUI;
+		UTextRenderComponent* WestRayDistanceUI;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UTextRenderComponent* NorthWestRayDistanceUI;
+		UTextRenderComponent* NorthWestRayDistanceUI;
+	
 	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|CarUpdateFunctions")
-	void UpdateUIElements();
+		void UpdateUIElements();
 
 	FText m_GearDisplayString;
 	FText m_SpeedDisplayString;
 
 	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataPrep")
-	void InputDataAgmentation();
+		void InputDataAgmentation();
 
 	float mf_NInput , mf_NEInput, mf_EInput, mf_SEInput, mf_SInput, mf_SWInput, mf_WInput, mf_NWInput;
 
@@ -205,9 +212,9 @@ public:
 
 	//- Get for score and alive -//
 	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
-		float GetScore() { return  }
+		float GetScore() { return mi_Score; }
 	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
-		bool IsAiAlive() { return mf_NWInput; }
+		bool IsAiAlive() { return !(mf_TimeLeft >= mf_MaxTimeStationary); }
 
 	float mf_Steering = 0.0f, mf_Acceleration = 0.0f; 
 
@@ -227,8 +234,10 @@ public:
 
 
 	//- Death Functions -//
-	void AiFailed();
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|CarReset")
+		void ResetCar();
 
+	float mf_MaxTimeStationary = 10.0f;
 
 	//- Steering Var -//
 	float Accel = 0.0f;

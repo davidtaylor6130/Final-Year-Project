@@ -2,34 +2,35 @@ import tensorflow as tf
 import unreal_engine as ue
 import json as json
 import numpy as np
-import random;
+import random
+import os
 
 from pathlib import Path
 from TFPluginAPI import TFPluginAPI
-from enum import Enum
+from enum import IntEnum
 
-class OptimiserType(Enum):
-    Adam = 0
-    Sigmoid = 0
+class OptimiserType(IntEnum):
+    Adam = 1
+    Sigmoid = 2
     
-class SensorTypes(Enum):
-     FrontThreeDiagonal = 0
-     FrontThreePerpendicular = 1
-     FrontFive = 2
-     AllEight = 3
+class SensorTypes(IntEnum):
+     FrontThreeDiagonal = 1
+     FrontThreePerpendicular = 2
+     FrontFive = 3
+     AllEight = 4
 
-class ModelLayouts(Enum):
-    ThirtytwoSixteenEight = 0
-    EightSixteen = 1
-    Eight = 2
+class ModelLayouts(IntEnum):
+    ThirtytwoSixteenEight = 1
+    EightSixteen = 2
+    Eight = 3
 
 
-class AiToTrainValues(Enum):
-    ModelLayoutSelection = 0
-    OptimiserSelection = 1
-    SensorTypeSelection = 2
-    DataLengthSelection = 3
-    Epochs = 4
+class AiToTrainValues(IntEnum):
+    ModelLayoutSelection = 1
+    OptimiserSelection = 2
+    SensorTypeSelection = 3
+    DataLengthSelection = 4
+    Epochs = 5
 
 #ModelLayoutSelection -> OptimiserSelection -> SensorTypeSelection -> DataLengthSelection -> Epochs
 #3 -> 2 -> 3 -> 2139 -> 30     
@@ -138,100 +139,101 @@ class CarAi(TFPluginAPI):
             if (self.SensorTypes == SensorTypes.AllEight):
                 #Training Data Format
                 for i in range(self.LearnDataLength): 
-                    trainingData[i][0] = float(data[str(i)]['North'])
-                    trainingData[i][1] = float(data[str(i)]['NorthEast'])
-                    trainingData[i][2] = float(data[str(i)]['East'])
-                    trainingData[i][3] = float(data[str(i)]['SouthEast'])
-                    trainingData[i][4] = float(data[str(i)]['South'])
-                    trainingData[i][5] = float(data[str(i)]['SouthWest'])
-                    trainingData[i][6] = float(data[str(i)]['West'])
-                    trainingData[i][7] = float(data[str(i)]['NorthWest'])
-                    trainingLables[i][0] = float(data[str(i)]['Acceleration'])
-                    trainingLables[i][1] = float(data[str(i)]['Steering'])
+                    self.trainingData[i][0] = float(data[str(i)]['North'])
+                    self.trainingData[i][1] = float(data[str(i)]['NorthEast'])
+                    self.trainingData[i][2] = float(data[str(i)]['East'])
+                    self.trainingData[i][3] = float(data[str(i)]['SouthEast'])
+                    self.trainingData[i][4] = float(data[str(i)]['South'])
+                    self.trainingData[i][5] = float(data[str(i)]['SouthWest'])
+                    self.trainingData[i][6] = float(data[str(i)]['West'])
+                    self.trainingData[i][7] = float(data[str(i)]['NorthWest'])
+                    self.trainingLables[i][0] = float(data[str(i)]['Acceleration'])
+                    self.trainingLables[i][1] = float(data[str(i)]['Steering'])
                 #Review Data Format
                 for i in range(self.TestDataLength):
-                    ValidationData[i][0] = float(data[str(i + self.LearnDataLength)]['North'])
-                    ValidationData[i][1] = float(data[str(i + self.LearnDataLength)]['NorthEast'])
-                    ValidationData[i][2] = float(data[str(i + self.LearnDataLength)]['East'])
-                    ValidationData[i][3] = float(data[str(i + self.LearnDataLength)]['SouthEast'])
-                    ValidationData[i][4] = float(data[str(i + self.LearnDataLength)]['South'])
-                    ValidationData[i][5] = float(data[str(i + self.LearnDataLength)]['SouthWest'])
-                    ValidationData[i][6] = float(data[str(i + self.LearnDataLength)]['West'])
-                    ValidationData[i][7] = float(data[str(i + self.LearnDataLength)]['NorthWest'])
-                    ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
-                    ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
+                    self.ValidationData[i][0] = float(data[str(i + self.LearnDataLength)]['North'])
+                    self.ValidationData[i][1] = float(data[str(i + self.LearnDataLength)]['NorthEast'])
+                    self.ValidationData[i][2] = float(data[str(i + self.LearnDataLength)]['East'])
+                    self.ValidationData[i][3] = float(data[str(i + self.LearnDataLength)]['SouthEast'])
+                    self.ValidationData[i][4] = float(data[str(i + self.LearnDataLength)]['South'])
+                    self.ValidationData[i][5] = float(data[str(i + self.LearnDataLength)]['SouthWest'])
+                    self.ValidationData[i][6] = float(data[str(i + self.LearnDataLength)]['West'])
+                    self.ValidationData[i][7] = float(data[str(i + self.LearnDataLength)]['NorthWest'])
+                    self.ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
+                    self.ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
 
             elif (self.SensorTypes == SensorTypes.FrontFive):
                 #Learning Data Format
                 for i in range(self.LearnDataLength): 
-                    trainingData[i][0] = float(data[str(i)]['North'])
-                    trainingData[i][1] = float(data[str(i)]['NorthEast'])
-                    trainingData[i][2] = float(data[str(i)]['East'])
-                    trainingData[i][3] = float(data[str(i)]['West'])
-                    trainingData[i][4] = float(data[str(i)]['NorthWest'])
-                    trainingLables[i][0] = float(data[str(i)]['Acceleration'])
-                    trainingLables[i][1] = float(data[str(i)]['Steering'])
+                    self.trainingData[i][0] = float(data[str(i)]['North'])
+                    self.trainingData[i][1] = float(data[str(i)]['NorthEast'])
+                    self.trainingData[i][2] = float(data[str(i)]['East'])
+                    self.trainingData[i][3] = float(data[str(i)]['West'])
+                    self.trainingData[i][4] = float(data[str(i)]['NorthWest'])
+                    self.trainingLables[i][0] = float(data[str(i)]['Acceleration'])
+                    self.trainingLables[i][1] = float(data[str(i)]['Steering'])
                 #Validation data formating
                 for i in range(self.TestDataLength):
-                    ValidationData[i][0] = float(data[str(i + self.LearnDataLength)]['North'])
-                    ValidationData[i][1] = float(data[str(i + self.LearnDataLength)]['NorthEast'])
-                    ValidationData[i][2] = float(data[str(i + self.LearnDataLength)]['East'])
-                    ValidationData[i][3] = float(data[str(i + self.LearnDataLength)]['West'])
-                    ValidationData[i][4] = float(data[str(i + self.LearnDataLength)]['NorthWest'])
-                    ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
-                    ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
+                    self.ValidationData[i][0] = float(data[str(i + self.LearnDataLength)]['North'])
+                    self.ValidationData[i][1] = float(data[str(i + self.LearnDataLength)]['NorthEast'])
+                    self.ValidationData[i][2] = float(data[str(i + self.LearnDataLength)]['East'])
+                    self.ValidationData[i][3] = float(data[str(i + self.LearnDataLength)]['West'])
+                    self.ValidationData[i][4] = float(data[str(i + self.LearnDataLength)]['NorthWest'])
+                    self.ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
+                    self.ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
 
             elif (self.SensorTypes == SensorTypes.FrontThreePerpendicular):
                 #Learning Data Formating
                 for i in range(self.LearnDataLength): 
-                    trainingData[i][0] = float(data[str(i)]['North'])
-                    trainingData[i][1] = float(data[str(i)]['East'])
-                    trainingData[i][2] = float(data[str(i)]['West'])
-                    trainingLables[i][0] = float(data[str(i)]['Acceleration'])
-                    trainingLables[i][1] = float(data[str(i)]['Steering'])
+                    self.trainingData[i][0] = float(data[str(i)]['North'])
+                    self.trainingData[i][1] = float(data[str(i)]['East'])
+                    self.trainingData[i][2] = float(data[str(i)]['West'])
+                    self.trainingLables[i][0] = float(data[str(i)]['Acceleration'])
+                    self.trainingLables[i][1] = float(data[str(i)]['Steering'])
                 #Validation Data Forming
                 for i in range(self.TestDataLength):
-                    ValidationData[i][0] = float(data[str(i + self.LearnDataLength)]['North'])
-                    ValidationData[i][1] = float(data[str(i + self.LearnDataLength)]['East'])
-                    ValidationData[i][2] = float(data[str(i + self.LearnDataLength)]['West'])
-                    ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
-                    ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
+                    self.ValidationData[i][0] = float(data[str(i + self.LearnDataLength)]['North'])
+                    self.ValidationData[i][1] = float(data[str(i + self.LearnDataLength)]['East'])
+                    self.ValidationData[i][2] = float(data[str(i + self.LearnDataLength)]['West'])
+                    self.ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
+                    self.ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
 
             elif (self.SensorTypes == SensorTypes.FrontThreeDiagonal):
                 #Learning Data Formatting
                 for i in range(self.LearnDataLength): 
-                    trainingData[i][0] = float(data[str(i)]['North'])
-                    trainingData[i][1] = float(data[str(i)]['NorthEast'])
-                    trainingData[i][2] = float(data[str(i)]['NorthWest'])
-                    trainingLables[i][0] = float(data[str(i)]['Acceleration'])
-                    trainingLables[i][1] = float(data[str(i)]['Steering'])
+                    self.trainingData[i][0] = float(data[str(i)]['North'])
+                    self.trainingData[i][1] = float(data[str(i)]['NorthEast'])
+                    self.trainingData[i][2] = float(data[str(i)]['NorthWest'])
+                    self.trainingLables[i][0] = float(data[str(i)]['Acceleration'])
+                    self.trainingLables[i][1] = float(data[str(i)]['Steering'])
                 #Validation Data Formatting
                 for i in range(self.TestDataLength) :
-                    ValidationData[i][0] = float(data[str(i + self.LearnDataLength)]['North'])
-                    ValidationData[i][1] = float(data[str(i + self.LearnDataLength)]['NorthEast'])
-                    ValidationData[i][2] = float(data[str(i + self.LearnDataLength)]['NorthWest'])
-                    ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
-                    ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
+                    self.ValidationData[i][0] = float(data[str(i + self.LearnDataLength)]['North'])
+                    self.ValidationData[i][1] = float(data[str(i + self.LearnDataLength)]['NorthEast'])
+                    self.ValidationData[i][2] = float(data[str(i + self.LearnDataLength)]['NorthWest'])
+                    self.ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
+                    self.ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
         
 
         return
 
 #//----------------------------------------------------------------------------------------------------------------------------------//
 
-    def ModelTraining(self):
-
+    def ModelTrainingFunction(self):
         # Swap Over The optimiser type
         # Not the best solution but super simple for easy future use
         if (self.ModelTraining == OptimiserType.Adam):
             self.model.compile(optimizer='Adam', loss='binary_crossentropy', metrics=['accuracy'])
-        elif (sel.ModelTraining == OptimiserType.Sigmoid):
-            self.model.compile(optimizer='sigmoid', loss='binary_crossentropy', metrics=['accuracy'])
+
+        elif (self.ModelTraining == OptimiserType.Sigmoid):
+            self.model.compile(optimizer='rmsprop', loss='binary_crossentropy', metrics=['accuracy'])
 
         #Swap from training new models to loading the last model
         #Again folowing the rule of keep it simple
         if (self.ToTrain) :
                 self.model.fit(self.trainingData, self.trainingLables, epochs=self.epochs, batch_size=self.batches , validation_data=(self.ValidationData, self.ValidationLables))
                 self.model.save_weights(self.GoodAiPath + '/CurrentWeights1.h5')
+                
         else :
                 self.model.load_weights(self.GoodAiPath + '/CurrentWeights1.h5')
 
@@ -277,13 +279,13 @@ class CarAi(TFPluginAPI):
     def ModelReset(self):
 
         #Ai Var about input Data
-        self.LearnDataLength = round(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] * 0.9)
-        self.TestDataLength = round(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] * 0.1)
+        self.LearnDataLength = round(self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)] * 0.9)
+        self.TestDataLength = round(self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)] * 0.1)
         self.TotalDataLength = 500
 
         #Ai Var About Training Amounts
         #Epocs are amount that the full data set is trainined on
-        self.epochs = self.AIStatsToCheck[AiToTrainValues.Epochs]
+        self.epochs = self.AIStatsToCheck[(AiToTrainValues.Epochs)]
         #batches are how much gradient decent is tested for errors one is highest resoution
         self.batches = 1
 
@@ -291,15 +293,15 @@ class CarAi(TFPluginAPI):
         self.ToTrain = True
 
         #Decisions for Model Layout and training and sensor layouts
-        self.ModelStruct = ModelLayouts(self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection])
-        self.ModelTraining = OptimiserType(self.AIStatsToCheck[AiToTrainValues.OptimiserSelection])
-        self.SensorTypes = SensorTypes(self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection])
+        self.ModelStruct = self.AIStatsToCheck[(AiToTrainValues.ModelLayoutSelection)]
+        self.ModelTraining = self.AIStatsToCheck[(AiToTrainValues.OptimiserSelection)]
+        self.SensorTypes = self.AIStatsToCheck[(AiToTrainValues.SensorTypeSelection)]
 
         self.InputDataProcessing()
         self.ModelLayout()
-        self.ModelTraining()
+        self.ModelTrainingFunction()
 
-    def CompareModelPerformance(performance):
+    def CompareModelPerformance(self, performance):
         
         if (float(performance) > self.BestCurrentScore):
             #Update Best Score To Only allow best ai to be saved
@@ -315,17 +317,22 @@ class CarAi(TFPluginAPI):
             JsonFile['Optimiser Used'] = str(self.AIStatsToCheck[AiToTrainValues.OptimiserSelection])
             JsonFile['Model Layout Used'] = str(self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection])
 
-            #Save To Good Storage
+            #Create Folder Name
             FolderName = '/'
             FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection])) + '_'
             FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.OptimiserSelection])) + '_'
             FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection])) + '_'
             FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection])) + '_'
             FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.Epochs]))
-            self.model.save_weights(self.pathToFile + '/Auto Ai Saves' + FolderName + '/AiWeights.h5')
-            self.model.save(self.pathToFile + '/Auto Ai Saves' + FolderName + '/AiStuctureSave.h5')
             
-            with open(self.pathToFile + '/Auto Ai Saves' + FolderName + 'AiInfo.Json', 'w') as outfile:
+            #Make The File For Ai Files
+            os.mkdir(self.GoodAiPath + 'Auto Ai Saves' + FolderName)
+
+            #Saves Weights to the New File
+            self.model.save_weights(self.GoodAiPath + '/Auto Ai Saves' + FolderName + '/AiWeights.h5')
+            self.model.save(self.GoodAiPath + '/Auto Ai Saves' + FolderName + '/AiStuctureSave.h5')
+            
+            with open(self.GoodAiPath + '/Auto Ai Saves' + FolderName + 'AiInfo.Json', 'w') as outfile:
                     json.dump(JsonFile, outfile, indent=4)
         
         # Saving Model Weights to vault
@@ -335,7 +342,9 @@ class CarAi(TFPluginAPI):
         FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection])) + '_'
         FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection])) + '_'
         FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.Epochs]))
-            
+        
+        os.mkdir(self.AiVault + FolderName)
+
         self.model.save_weights(self.AiVault + FolderName + '/CurrentWeights1.h5')
         self.model.save(self.AiVault + FolderName + '/AiStructireSave.h5')
 
@@ -356,15 +365,14 @@ class CarAi(TFPluginAPI):
         temp = Path(__file__).parent.absolute()
         self.GoodAiPath = str( temp )
 
-        self.AiValut = 'D:\AI Valut'
+        self.AiVault = 'D:\AI Valut'
 
-
-        self.AIStatsToCheck = np.array(5)
-        self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection] = 3
-        self.AIStatsToCheck[AiToTrainValues.OptimiserSelection] = 2
-        self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection] = 3
-        self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] = 500
-        self.AIStatsToCheck[AiToTrainValues.Epochs] = 30
+        self.AIStatsToCheck = [0,0,0,0,0,0]
+        self.AIStatsToCheck[(AiToTrainValues.ModelLayoutSelection)] = 3
+        self.AIStatsToCheck[(AiToTrainValues.OptimiserSelection)] = 2
+        self.AIStatsToCheck[(AiToTrainValues.SensorTypeSelection)] = 3
+        self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)] = 500
+        self.AIStatsToCheck[(AiToTrainValues.Epochs)] = 30
 
         #Update Params and Re-Train AI
         self.ModelReset()
@@ -390,10 +398,15 @@ class CarAi(TFPluginAPI):
                 return
             return
         
-        elif (jsonInput['Alive'] == 'False'):
+        elif (jsonInput['Alive'] == 'false'):
             self.CompareModelPerformance(jsonInput['Score'])
             self.UpdateModelNumbers()
             self.ModelReset()
+
+            result = {}
+            result['FB'] = 0.5
+            result['LR'] = 0.5
+            result['ResetCar'] = 'true'
 
             return
         # if not recording format and output ai results
@@ -402,20 +415,34 @@ class CarAi(TFPluginAPI):
             result['LR'] = 0.5
             result['FB'] = 1
 
-            Data = np.zeros((1, 8))
-            Data[0][0] = float(jsonInput['North'])
-            Data[0][1] = float(jsonInput['NorthEast'])
-            Data[0][2] = float(jsonInput['East'])
-            Data[0][3] = float(jsonInput['SouthEast'])
-            Data[0][4] = float(jsonInput['South'])
-            Data[0][5] = float(jsonInput['SouthWest'])
-            Data[0][6] = float(jsonInput['West'])
-            Data[0][7] = float(jsonInput['NorthWest'])
+            Data = np.zeros((1, self.AiInputLength))
+
+            if (self.SensorTypes == SensorTypes.AllEight):
+                Data[0][0] = float(jsonInput['North'])
+                Data[0][1] = float(jsonInput['NorthEast'])
+                Data[0][2] = float(jsonInput['East'])
+                Data[0][3] = float(jsonInput['SouthEast'])
+                Data[0][4] = float(jsonInput['South'])
+                Data[0][5] = float(jsonInput['SouthWest'])
+                Data[0][6] = float(jsonInput['West'])
+                Data[0][7] = float(jsonInput['NorthWest'])
+
+            elif (self.SensorTypes == SensorTypes.FrontThreeDiagonal):
+                Data[0][0] = float(jsonInput['North'])
+                Data[0][1] = float(jsonInput['NorthEast'])
+                Data[0][2] = float(jsonInput['NorthWest'])
+
+            elif (self.SensorTypes == SensorTypes.FrontThreePerpendicular):
+                Data[0][0] = float(jsonInput['North'])
+                Data[0][1] = float(jsonInput['East'])
+                Data[0][2] = float(jsonInput['West'])
+
 
             temp = self.model.predict(Data)
 
             result['FB'] = float(temp[0][0])
             result['LR'] = float(temp[0][1])
+            result['ResetCar'] = 'false'
 
             return result
 

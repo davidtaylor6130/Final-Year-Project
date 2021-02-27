@@ -172,6 +172,12 @@ AFYPPawn::AFYPPawn()
 	LapMultiplyerUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
 	LapMultiplyerUI->SetupAttachment(Camera);
 
+	ScoreUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Car Score"));
+	ScoreUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	ScoreUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
+	ScoreUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	ScoreUI->SetupAttachment(Camera);
+
 	NorthRayDistanceUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("N"));
 	NorthRayDistanceUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	NorthRayDistanceUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
@@ -290,6 +296,9 @@ AFYPPawn::AFYPPawn()
 	LapMarkerNames[1] = "LapMarker2";
 	LapMarkerNames[2] = "LapMarker3";
 	LapMarkerNames[3] = "LapMarker4";
+
+	mi_Score = 0;
+	
 }
 
 void AFYPPawn::BeginPlay()
@@ -388,10 +397,9 @@ void AFYPPawn::UpdateCarSpeed(float Delta)
 	if (KPH < 1)
 	{
 		mf_TimeLeft += Delta;
-		if (mf_TimeLeft > 5.0f)
+		if (mf_TimeLeft >= mf_MaxTimeStationary)
 		{
-			AiFailed();
-			mf_TimeLeft = 5.0f;
+			mf_TimeLeft = mf_MaxTimeStationary;
 		}
 	}
 	else if (mf_TimeLeft > 0)
@@ -412,6 +420,10 @@ void AFYPPawn::UpdateUIElements()
 	TimeLeft->SetText(FText::Format(LOCTEXT("Time Stationary: ", "Time Stationary: {0}"), mf_TimeLeft));
 	DistanceTraveledScoreUI->SetText(FText::Format(LOCTEXT("Dist Traveled: ", "Dist Traveled: {0}"), mf_DistanceTraveled));
 	LapMultiplyerUI->SetText(FText::Format(LOCTEXT("Laps: ", "Laps: {0}"), mi_LapMultiplyer));
+	ScoreUI->SetText(FText::Format(LOCTEXT("Score: ", "Score: {0}"), mi_Score));
+
+
+
 	NorthRayDistanceUI->SetText(FText::Format(LOCTEXT("N: ", "N: {0}"), Casts[0].OutHit.Distance));
 	NorthEastRayDistanceUI->SetText(FText::Format(LOCTEXT("NE: ", "NE: {0}"), Casts[1].OutHit.Distance));
 	EastRayDistanceUI->SetText(FText::Format(LOCTEXT("E: ", "E: {0}"), Casts[2].OutHit.Distance));
@@ -475,9 +487,12 @@ void AFYPPawn::AICarControl(float LR, float FB)
 	GetVehicleMovementComponent()->SetThrottleInput(Accsel);
 }
 
-void AFYPPawn::AiFailed()
+void AFYPPawn::ResetCar()
 {
-
+	mf_TimeLeft = 0;
+	mi_Score = 0.0f;
+	mf_DistanceTraveled = 0.0f;
+	mi_LapMultiplyer = 1;
 }
 
 #undef LOCTEXT_NAMESPACE
