@@ -147,13 +147,18 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|CarUpdateFunctions ")
 	void UpdateCarSpeed(float Delta);
 
-	//- Decliration Of UI Elements -//	
+	//- Decliration Of UI Score/Time Elements -//	
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UTextRenderComponent* TimeLeft;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UTextRenderComponent* DistanceTraveledScoreUI;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UTextRenderComponent* LapMultiplyerUI;
+	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UTextRenderComponent* ScoreUI;
+
+
+	//- Decliration Of Feeler Distances -//
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UTextRenderComponent* NorthRayDistanceUI;
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
@@ -198,6 +203,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
 		float GetNorthWestInput() { return mf_NWInput; }
 
+	//- Get for score and alive -//
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
+		float GetScore() { return  }
+	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
+		bool IsAiAlive() { return mf_NWInput; }
+
 	float mf_Steering = 0.0f, mf_Acceleration = 0.0f; 
 
 	//- User Controll of car -//
@@ -206,7 +217,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
 		float GetUserCarSteering() { return mf_Steering; };
 	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|InputDataRetreval")
-		bool InputsPressed() { return (mf_Steering != 0 && mf_Acceleration != 0); };
+		bool InputsPressed() { return (mf_Steering != 0 || mf_Acceleration != 0); };
 
 
 
@@ -217,5 +228,10 @@ public:
 
 	//- Death Functions -//
 	void AiFailed();
+
+
+	//- Steering Var -//
+	float Accel = 0.0f;
+	float Steer = 0.0f;
 
 };

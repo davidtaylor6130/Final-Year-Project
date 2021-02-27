@@ -69,11 +69,9 @@ AFYPPawn::AFYPPawn()
 
 	// Engine 
 	// Torque setup
-	Vehicle4W->MaxEngineRPM = 5700.0f;
+	Vehicle4W->MaxEngineRPM = 7;
 	Vehicle4W->EngineSetup.TorqueCurve.GetRichCurve()->Reset();
-	Vehicle4W->EngineSetup.TorqueCurve.GetRichCurve()->AddKey(0.0f, 400.0f);
-	Vehicle4W->EngineSetup.TorqueCurve.GetRichCurve()->AddKey(1890.0f, 500.0f);
-	Vehicle4W->EngineSetup.TorqueCurve.GetRichCurve()->AddKey(5730.0f, 400.0f);
+	Vehicle4W->EngineSetup.TorqueCurve.GetRichCurve()->AddKey(0.0f, 4);
 
 	// Adjust the steering 
 	Vehicle4W->SteeringCurve.GetRichCurve()->Reset();
@@ -89,7 +87,7 @@ AFYPPawn::AFYPPawn()
 	Vehicle4W->DifferentialSetup.FrontRearSplit = 0.65;
 
 	// Automatic gearbox
-	Vehicle4W->TransmissionSetup.bUseGearAutoBox = true;
+	Vehicle4W->TransmissionSetup.bUseGearAutoBox = false;
 	Vehicle4W->TransmissionSetup.GearSwitchTime = 0.15f;
 	Vehicle4W->TransmissionSetup.GearAutoBoxLatency = 1.0f;
 
@@ -321,15 +319,19 @@ void AFYPPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputCompo
 
 void AFYPPawn::MoveForward(float Val)
 {
-	mf_Acceleration = Val; 
-	GetVehicleMovementComponent()->SetThrottleInput(Val);
+	float valMin = Val;
+
+	mf_Acceleration = valMin;
+	GetVehicleMovementComponent()->SetThrottleInput(valMin);
 	//UE_LOG(LogTemp, Warning, TEXT("Forward/Backword : %f"), ((Val / 2) + 0.5f));
 }
 
 void AFYPPawn::MoveRight(float Val)
 {
-	mf_Steering = Val;
-	GetVehicleMovementComponent()->SetSteeringInput(Val);
+	float valMin = Val;
+
+	mf_Steering = valMin;
+	GetVehicleMovementComponent()->SetSteeringInput(valMin);
 	//UE_LOG(LogTemp, Warning, TEXT("Left/Right : %f"), ((Val / 2) + 0.5f));
 }
 
@@ -358,7 +360,7 @@ void AFYPPawn::UpdateRayCasts()
 	{
 		Casts[i].Start = Casts[i].StartPoint->GetComponentLocation();
 		Casts[i].ForwardVector = Casts[i].StartPoint->GetForwardVector();
-		Casts[i].End = Casts[i].Start + (Casts[i].ForwardVector * 1000);
+		Casts[i].End = Casts[i].Start + (Casts[i].ForwardVector * 10000);
 
 		DrawDebugLine(GetWorld(), Casts[i].Start, Casts[i].End, FColor::Red, false, 0.01f, 0, 2);
 		GetWorld()->LineTraceSingleByChannel(Casts[i].OutHit, Casts[i].Start, Casts[i].End, ECC_Visibility, Casts[i].CollisionParams);
@@ -422,15 +424,15 @@ void AFYPPawn::UpdateUIElements()
 
 void AFYPPawn::InputDataAgmentation()
 {
-	mf_NInput = Casts[0].OutHit.Distance / 1000;
-	mf_NEInput = Casts[1].OutHit.Distance / 1000;
-	mf_EInput = Casts[2].OutHit.Distance / 1000;
-	mf_SEInput = Casts[3].OutHit.Distance / 1000;
-	mf_SInput = Casts[4].OutHit.Distance / 1000;
-	mf_SWInput = Casts[5].OutHit.Distance / 1000;
-	mf_WInput = Casts[6].OutHit.Distance / 1000;
-	mf_NWInput = Casts[7].OutHit.Distance / 1000;
-	UE_LOG(LogTemp, Warning, TEXT("Format Format"));
+	mf_NInput = Casts[0].OutHit.Distance / 10000;
+	mf_NEInput = Casts[1].OutHit.Distance / 10000;
+	mf_EInput = Casts[2].OutHit.Distance / 10000;
+	mf_SEInput = Casts[3].OutHit.Distance / 10000;
+	mf_SInput = Casts[4].OutHit.Distance / 10000;
+	mf_SWInput = Casts[5].OutHit.Distance / 10000;
+	mf_WInput = Casts[6].OutHit.Distance / 10000;
+	mf_NWInput = Casts[7].OutHit.Distance / 10000;
+	//UE_LOG(LogTemp, Warning, TEXT("Format Format"));
 }
 
 void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AActor* _otherActor, UPrimitiveComponent* _otherComp, int32 _otherBodyIndex, bool _bFromSweep, const FHitResult & _hitResult)
@@ -464,10 +466,10 @@ void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AAc
 
 void AFYPPawn::AICarControl(float LR, float FB)
 {
-	UE_LOG(LogTemp, Warning, TEXT("CURRENT STEERING RUNNING"));
-
 	float Accsel = ((FB + FB) - 1);
 	float Steer = ((LR + LR) - 1);
+	
+	//UE_LOG(LogTemp, Warning, TEXT(" Into Car LR: %f    FB: %f"), toString(Steer), toString(Accsel));
 
 	GetVehicleMovementComponent()->SetSteeringInput(Steer);
 	GetVehicleMovementComponent()->SetThrottleInput(Accsel);

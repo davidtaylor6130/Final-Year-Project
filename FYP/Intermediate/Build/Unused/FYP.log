@@ -1,25 +1,23 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\david\Documents\GitHub\Final-Year-Project).
-  Waiting for 'git status' command to complete
-  Terminating git child process due to timeout
   Parsing headers for FYPEditor
     Running UnrealHeaderTool "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\FYP.uproject" "C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\FYPEditor\Development\FYPEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for FYPEditor in 7.6090566 seconds
+  Reflection code generated for FYPEditor in 7.2922731 seconds
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 25 actions with 4 processes...
-    [1/25] UE4Editor-SIOJson-0008.lib
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJson\UE4Editor-SIOJson-0008.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJson\UE4Editor-SIOJson-0008.exp
-    [2/25] UE4Editor-CoreUtility-0008.lib
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\CoreUtility\UE4Editor-CoreUtility-0008.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\CoreUtility\UE4Editor-CoreUtility-0008.exp
-    [3/25] UE4Editor-SocketIOLib-0008.lib
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOLib\UE4Editor-SocketIOLib-0008.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOLib\UE4Editor-SocketIOLib-0008.exp
-    [4/25] UE4Editor-UnrealEnginePython-0008.lib
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\UnrealEnginePython\UE4Editor-UnrealEnginePython-0008.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\UnrealEnginePython\UE4Editor-UnrealEnginePython-0008.exp
-    [5/25] UE4Editor-CoreUtility-0008.dll
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\CoreUtility\UE4Editor-CoreUtility-0008.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\CoreUtility\UE4Editor-CoreUtility-0008.suppressed.exp
-    [6/25] UE4Editor-FYP-0008.dll
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0008.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0008.suppressed.exp
-    [7/25] UE4Editor-PythonConsole-0008.dll
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonConsole\UE4Editor-PythonConsole-0008.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonConsole\UE4Editor-PythonConsole-0008.suppressed.exp
+    [1/25] UE4Editor-CoreUtility-0026.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\CoreUtility\UE4Editor-CoreUtility-0026.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\CoreUtility\UE4Editor-CoreUtility-0026.exp
+    [2/25] UE4Editor-SIOJson-0026.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJson\UE4Editor-SIOJson-0026.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJson\UE4Editor-SIOJson-0026.exp
+    [3/25] UE4Editor-SocketIOLib-0026.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOLib\UE4Editor-SocketIOLib-0026.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOLib\UE4Editor-SocketIOLib-0026.exp
+    [4/25] UE4Editor-UnrealEnginePython-0026.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\UnrealEnginePython\UE4Editor-UnrealEnginePython-0026.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\UnrealEnginePython\UE4Editor-UnrealEnginePython-0026.exp
+    [5/25] UE4Editor-CoreUtility-0026.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\CoreUtility\UE4Editor-CoreUtility-0026.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\CoreUtility\UE4Editor-CoreUtility-0026.suppressed.exp
+    [6/25] UE4Editor-FYP-0026.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0026.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0026.suppressed.exp
+    [7/25] UE4Editor-PythonConsole-0026.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonConsole\UE4Editor-PythonConsole-0026.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonConsole\UE4Editor-PythonConsole-0026.suppressed.exp
 PythonConsole.init.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
 PythonScriptFactory.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
 PyFbxFactory.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
@@ -29,78 +27,37 @@ SPythonConsole.cpp.obj : warning LNK4206: precompiled type information not found
 SPythonLog.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
 PyFactory.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
 PyFbxFactory.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-    [8/25] UE4Editor-TensorFlow-0008.dll
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TensorFlow\UE4Editor-TensorFlow-0008.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TensorFlow\UE4Editor-TensorFlow-0008.suppressed.exp
-    [9/25] UE4Editor-SIOJson-0008.dll
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJson\UE4Editor-SIOJson-0008.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJson\UE4Editor-SIOJson-0008.suppressed.exp
-    [10/25] UE4Editor-PythonAutomation-0008.dll
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonAutomation\UE4Editor-PythonAutomation-0008.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonAutomation\UE4Editor-PythonAutomation-0008.suppressed.exp
+    [8/25] UE4Editor-SIOJson-0026.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJson\UE4Editor-SIOJson-0026.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJson\UE4Editor-SIOJson-0026.suppressed.exp
+    [9/25] UE4Editor-TensorFlow-0026.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TensorFlow\UE4Editor-TensorFlow-0026.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TensorFlow\UE4Editor-TensorFlow-0026.suppressed.exp
+    [10/25] UE4Editor-PythonAutomation-0026.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonAutomation\UE4Editor-PythonAutomation-0026.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonAutomation\UE4Editor-PythonAutomation-0026.suppressed.exp
 PythonAutomationModule.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
 UEPyFAutomationEditorCommonUtils.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-    [11/25] UE4Editor-SocketIOLib-0008.dll
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOLib\UE4Editor-SocketIOLib-0008.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOLib\UE4Editor-SocketIOLib-0008.suppressed.exp
+    [11/25] UE4Editor-TFAudioCapture-0026.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TFAudioCapture\UE4Editor-TFAudioCapture-0026.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TFAudioCapture\UE4Editor-TFAudioCapture-0026.suppressed.exp
+    [12/25] UE4Editor-PythonEditor-0026.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonEditor\UE4Editor-PythonEditor-0026.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonEditor\UE4Editor-PythonEditor-0026.exp
+    [13/25] UE4Editor-FYP-0026.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0026.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0026.exp
+    [14/25] UE4Editor-PythonConsole-0026.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonConsole\UE4Editor-PythonConsole-0026.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonConsole\UE4Editor-PythonConsole-0026.exp
+    [15/25] UE4Editor-TensorFlow-0026.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TensorFlow\UE4Editor-TensorFlow-0026.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TensorFlow\UE4Editor-TensorFlow-0026.exp
+    [16/25] UE4Editor-SocketIOLib-0026.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOLib\UE4Editor-SocketIOLib-0026.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOLib\UE4Editor-SocketIOLib-0026.suppressed.exp
 Module.SocketIOLib.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-    [12/25] UE4Editor-TFAudioCapture-0008.dll
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TFAudioCapture\UE4Editor-TFAudioCapture-0008.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TFAudioCapture\UE4Editor-TFAudioCapture-0008.suppressed.exp
-    [13/25] UE4Editor-FYP-0008.lib
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0008.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Intermediate\Build\Win64\UE4Editor\Development\FYP\UE4Editor-FYP-0008.exp
-    [14/25] UE4Editor-PythonConsole-0008.lib
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonConsole\UE4Editor-PythonConsole-0008.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonConsole\UE4Editor-PythonConsole-0008.exp
-    [15/25] UE4Editor-PythonEditor-0008.lib
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonEditor\UE4Editor-PythonEditor-0008.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonEditor\UE4Editor-PythonEditor-0008.exp
-    [16/25] UE4Editor-TensorFlow-0008.lib
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TensorFlow\UE4Editor-TensorFlow-0008.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TensorFlow\UE4Editor-TensorFlow-0008.exp
-    [17/25] UE4Editor-SIOJEditorPlugin-0008.lib
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJEditorPlugin\UE4Editor-SIOJEditorPlugin-0008.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJEditorPlugin\UE4Editor-SIOJEditorPlugin-0008.exp
-    [18/25] UE4Editor-SocketIOClient-0008.lib
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOClient\UE4Editor-SocketIOClient-0008.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOClient\UE4Editor-SocketIOClient-0008.exp
-    [19/25] UE4Editor-PythonAutomation-0008.lib
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonAutomation\UE4Editor-PythonAutomation-0008.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonAutomation\UE4Editor-PythonAutomation-0008.exp
-    [20/25] UE4Editor-TFAudioCapture-0008.lib
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TFAudioCapture\UE4Editor-TFAudioCapture-0008.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TFAudioCapture\UE4Editor-TFAudioCapture-0008.exp
-    [21/25] UE4Editor-SIOJEditorPlugin-0008.dll
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJEditorPlugin\UE4Editor-SIOJEditorPlugin-0008.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJEditorPlugin\UE4Editor-SIOJEditorPlugin-0008.suppressed.exp
-Module.SIOJEditorPlugin.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-Module.SIOJEditorPlugin.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-    [22/25] UE4Editor-SocketIOClient-0008.dll
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOClient\UE4Editor-SocketIOClient-0008.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOClient\UE4Editor-SocketIOClient-0008.suppressed.exp
-    [23/25] UE4Editor-PythonEditor-0008.dll
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonEditor\UE4Editor-PythonEditor-0008.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonEditor\UE4Editor-PythonEditor-0008.suppressed.exp
-PythonEditorCustomization.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PythonProject.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PythonProjectItem.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-DirectoryScanner.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PYRichTextSyntaxHighlighterTextLayoutMarshaller.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PythonEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PythonEditorCustomization.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PythonEditorStyle.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PythonProject.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PythonProjectEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PythonProjectEditorCommands.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PythonProjectEditorToolbar.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PythonProjectItem.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PythonSyntaxTokenizer.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-SProjectViewItem.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-SPythonEditableText.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-SPythonEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-SPythonProjectEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-WhiteSpaceTextRun.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PythonEditor.init.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-    [24/25] UE4Editor-UnrealEnginePython-0008.dll
-       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\UnrealEnginePython\UE4Editor-UnrealEnginePython-0008.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\UnrealEnginePython\UE4Editor-UnrealEnginePython-0008.suppressed.exp
-UEPySEditableTextBox.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-UEPyTicker.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-UEPySPythonTreeView.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-UEPyHUD.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-UEPyFARFilter.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-UEPyFKeyEvent.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-PipConsoleManager.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-UEPySEditorViewport.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-UEPyTimer.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-UEPySPythonWidget.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-UEPyInput.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-UEPyFAssetData.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
-UEPyFMenuBuilder.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+    [17/25] UE4Editor-SIOJEditorPlugin-0026.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJEditorPlugin\UE4Editor-SIOJEditorPlugin-0026.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJEditorPlugin\UE4Editor-SIOJEditorPlugin-0026.exp
+    [18/25] UE4Editor-SocketIOClient-0026.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOClient\UE4Editor-SocketIOClient-0026.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOClient\UE4Editor-SocketIOClient-0026.exp
+    [19/25] UE4Editor-PythonAutomation-0026.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonAutomation\UE4Editor-PythonAutomation-0026.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonAutomation\UE4Editor-PythonAutomation-0026.exp
+    [20/25] UE4Editor-TFAudioCapture-0026.lib
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TFAudioCapture\UE4Editor-TFAudioCapture-0026.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\tensorflow-ue4\Intermediate\Build\Win64\UE4Editor\Development\TFAudioCapture\UE4Editor-TFAudioCapture-0026.exp
+    [21/25] UE4Editor-UnrealEnginePython-0026.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\UnrealEnginePython\UE4Editor-UnrealEnginePython-0026.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\UnrealEnginePython\UE4Editor-UnrealEnginePython-0026.suppressed.exp
 PyActor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
 UEPySFilePathPicker.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
 UEPyUClassesImporter.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
@@ -278,6 +235,47 @@ UEPyFoliage.cpp.obj : warning LNK4206: precompiled type information not found; '
 UEPyESlateEnums.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
 UEPyFInputEvent.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
 UEPyIAssetEditorInstance.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySEditableTextBox.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyTicker.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySPythonTreeView.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyHUD.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFARFilter.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFKeyEvent.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PipConsoleManager.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySEditorViewport.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyTimer.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPySPythonWidget.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyInput.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFAssetData.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+UEPyFMenuBuilder.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+    [22/25] UE4Editor-SIOJEditorPlugin-0026.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJEditorPlugin\UE4Editor-SIOJEditorPlugin-0026.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SIOJEditorPlugin\UE4Editor-SIOJEditorPlugin-0026.suppressed.exp
+Module.SIOJEditorPlugin.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+Module.SIOJEditorPlugin.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+    [23/25] UE4Editor-SocketIOClient-0026.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOClient\UE4Editor-SocketIOClient-0026.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\socketio-client-ue4\Intermediate\Build\Win64\UE4Editor\Development\SocketIOClient\UE4Editor-SocketIOClient-0026.suppressed.exp
+    [24/25] UE4Editor-PythonEditor-0026.dll
+       Creating library C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonEditor\UE4Editor-PythonEditor-0026.suppressed.lib and object C:\Users\david\Documents\GitHub\Final-Year-Project\FYP\Plugins\UnrealEnginePython\Intermediate\Build\Win64\UE4Editor\Development\PythonEditor\UE4Editor-PythonEditor-0026.suppressed.exp
+DirectoryScanner.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PYRichTextSyntaxHighlighterTextLayoutMarshaller.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonEditorCustomization.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonEditorStyle.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProject.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProjectEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProjectEditorCommands.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProjectEditorToolbar.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProjectItem.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonSyntaxTokenizer.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+SProjectViewItem.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+SPythonEditableText.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+SPythonEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+SPythonProjectEditor.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+WhiteSpaceTextRun.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonEditor.init.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonEditorCustomization.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProject.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
+PythonProjectItem.gen.cpp.obj : warning LNK4206: precompiled type information not found; '' not linked or overwritten; linking object as if no debug info
     [25/25] FYPEditor.target
-  Total time in Parallel executor: 25.12 seconds
-  Total execution time: 52.02 seconds
+  Total time in Parallel executor: 9.06 seconds
+  Total execution time: 19.00 seconds

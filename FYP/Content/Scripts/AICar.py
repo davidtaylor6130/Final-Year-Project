@@ -2,117 +2,402 @@ import tensorflow as tf
 import unreal_engine as ue
 import json as json
 import numpy as np
+import random;
 
 from pathlib import Path
 from TFPluginAPI import TFPluginAPI
+from enum import Enum
+
+class OptimiserType(Enum):
+    Adam = 0
+    Sigmoid = 0
+    
+class SensorTypes(Enum):
+     FrontThreeDiagonal = 0
+     FrontThreePerpendicular = 1
+     FrontFive = 2
+     AllEight = 3
+
+class ModelLayouts(Enum):
+    ThirtytwoSixteenEight = 0
+    EightSixteen = 1
+    Eight = 2
+
+
+class AiToTrainValues(Enum):
+    ModelLayoutSelection = 0
+    OptimiserSelection = 1
+    SensorTypeSelection = 2
+    DataLengthSelection = 3
+    Epochs = 4
+
+#ModelLayoutSelection -> OptimiserSelection -> SensorTypeSelection -> DataLengthSelection -> Epochs
+#3 -> 2 -> 3 -> 2139 -> 30     
+#1,155,060 combinations
+
+# 3 -> 2 -> 3 -> 500 -> 30
+#270,000 combonations 
+
 
 class CarAi(TFPluginAPI):
 
-    #Contains The Optimisation of the weights and calculation of loss score
-    def AiDeath():
-        self.RunsCompleated += 1
+    def DataScrambleFunction(self):
+        f1 = open(self.GoodAiPath + '/DataRecorded1.json', "r")
+        data1 = json.loads(f1.read()) 
+        f1.close()
 
-    #Saves Current Weights Everytime incase of pc crashes then saves after every 5 deaths as a backup
-    def SaveModel():
-        #Save weights each run
-        self.model.save_weights(self.pathToFile + 'CurrentWeights.h5')
-        
-        #Backup Saves Weights Every Five Runs
-        if (self.RunsTillSave == 0):
-            self.model.save_weight(self.pathToFile + 'Trained ' + self.RunsCompleated + '.h5')
-            self.RunsTillSave = 5
-        else:
-            self.RunsTillSave -= 1
+        f2 = open(self.GoodAiPath + '/DataRecorded2.json', "r")
+        data2 = json.loads(f2.read()) 
+        f2.close()
 
-    #loads the last save to the network
-    def LoadModel():
-        self.model.load_weights("CurrentWeights.h5")
+        data1Length = 1070
+        data2Length = 9000
+        countOfDataSet = 0
 
-#//------------------------------------ Python API Functions -----------------------------------//
-    def onSetup(self):
-        # Declaring Required Variable
-        self.RunsTillSave = 5
-        self.RunsCompleated = 0
-        self.ShutDownActive = False
+        JsonFile = {}
 
-        ue.log("Var Setup")
+        for i in range(data1Length) :
+            JsonFile[str(countOfDataSet)] = data1[str(i)]
+            countOfDataSet = countOfDataSet + 1
 
-        # Recording To Json
-        self.recordedData = {}
-        temp = Path(__file__).parent.absolute()
-        self.pathToFile = str( temp )
+            JsonFile[str(countOfDataSet)] = data2[str(i)]
+            countOfDataSet = countOfDataSet + 1
 
-        ue.log("Got Path")
+
+
+        with open(self.GoodAiPath + '/DataScrambled.json', 'w') as outfile:
+            json.dump(JsonFile, outfile, indent=4)
+        return
+
+        ue.log("Sucsessful Scramble")
+
+#//----------------------------------------------------------------------------------------------------------------------------------//
+
+    def ModelLayout(self):
+        #Building The Neural Network's Structure
+        #Following the rule of keep it simple
+
+        #First sucsess was with this layout
+        if (self.ModelStruct == ModelLayouts.EightSixteen):
+            self.model = tf.keras.models.Sequential()
+            self.model.add(tf.keras.layers.Dense(8, activation='relu', input_shape=(self.AiInputLength,)))
+            self.model.add(tf.keras.layers.Dense(16, activation='relu'))
+            self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
+
+        #Keeping Simple Ai as not a very complex problem
+        elif (self.ModelStruct == ModelLayouts.Eight):
+            self.model = tf.keras.models.Sequential()
+            self.model.add(tf.keras.layers.Dense(8, activation='relu', input_shape=(self.AiInputLength,)))
+            self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
+
+        #Using this idea from nvidea Ai paper where it worked with picture input
+        elif (self.ModelStruct == ModelLayouts.ThirtytwoSixteenEight):
+            self.model = tf.keras.models.Sequential()
+            self.model.add(tf.keras.layers.Dense(32, activation='relu', input_shape=(self.AiInputLength,)))
+            self.model.add(tf.keras.layers.Dense(16, activation='relu'))
+            self.model.add(tf.keras.layers.Dense(8, activation='relu'))
+            self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
+
+
+        self.model.summary()
+
+#//----------------------------------------------------------------------------------------------------------------------------------//
+
+    def InputDataProcessing(self):
+
+        # If statement length
+        if (self.SensorTypes == SensorTypes.AllEight):
+            self.AiInputLength = 8
+
+        elif (self.SensorTypes == SensorTypes.FrontFive):
+            self.AiInputLength = 5
+
+        elif (self.SensorTypes == SensorTypes.FrontThreeDiagonal or self.SensorTypes == SensorTypes.FrontThreePerpendicular):
+            self.AiInputLength = 3
+
 
         #Training initlization
-        trainingData = np.zeros((1070 , 8))
-        trainingLables = np.zeros((1070, 2))
+        self.trainingData = np.zeros((self.LearnDataLength , self.AiInputLength))
+        self.trainingLables = np.zeros((self.LearnDataLength, 2))
 
-        ue.log("Is Initilized")
+        self.ValidationData = np.zeros((self.TestDataLength , self.AiInputLength))
+        self.ValidationLables = np.zeros((self.TestDataLength, 2))
 
         #open and read json data
-        f = open (self.pathToFile + '/DataRecorded1.json', "r")
+        f = open (self.GoodAiPath + '/DataScrambled.json', "r")
         data = json.loads(f.read()) 
         f.close()
 
-        ue.log("File Loaded")
+        if (self.LearnDataLength + self.TestDataLength > self.TotalDataLength):
+            raise NameError('Data Lengths are too long and will cause an error set learnData/testData to equal lower than MaxInputSize')
+        else:
+            #Formatting From Json Data Storage to Float In arrays
+            #Diffrent Input configs require diffrent processing
+            #Not the best way to do this but im keeping this simple for future ease
 
-        # Iterating through the json and formatting json to just feelers 
-        for i in range(1070): 
-            trainingData[i][0] = data[str(i)]['North']
-            trainingData[i][1] = data[str(i)]['NorthEast']
-            trainingData[i][2] = data[str(i)]['East']
-            trainingData[i][3] = data[str(i)]['SouthEast']
-            trainingData[i][4] = data[str(i)]['South']
-            trainingData[i][5] = data[str(i)]['SouthWest']
-            trainingData[i][6] = data[str(i)]['West']
-            trainingData[i][7] = data[str(i)]['NorthWest']
+            if (self.SensorTypes == SensorTypes.AllEight):
+                #Training Data Format
+                for i in range(self.LearnDataLength): 
+                    trainingData[i][0] = float(data[str(i)]['North'])
+                    trainingData[i][1] = float(data[str(i)]['NorthEast'])
+                    trainingData[i][2] = float(data[str(i)]['East'])
+                    trainingData[i][3] = float(data[str(i)]['SouthEast'])
+                    trainingData[i][4] = float(data[str(i)]['South'])
+                    trainingData[i][5] = float(data[str(i)]['SouthWest'])
+                    trainingData[i][6] = float(data[str(i)]['West'])
+                    trainingData[i][7] = float(data[str(i)]['NorthWest'])
+                    trainingLables[i][0] = float(data[str(i)]['Acceleration'])
+                    trainingLables[i][1] = float(data[str(i)]['Steering'])
+                #Review Data Format
+                for i in range(self.TestDataLength):
+                    ValidationData[i][0] = float(data[str(i + self.LearnDataLength)]['North'])
+                    ValidationData[i][1] = float(data[str(i + self.LearnDataLength)]['NorthEast'])
+                    ValidationData[i][2] = float(data[str(i + self.LearnDataLength)]['East'])
+                    ValidationData[i][3] = float(data[str(i + self.LearnDataLength)]['SouthEast'])
+                    ValidationData[i][4] = float(data[str(i + self.LearnDataLength)]['South'])
+                    ValidationData[i][5] = float(data[str(i + self.LearnDataLength)]['SouthWest'])
+                    ValidationData[i][6] = float(data[str(i + self.LearnDataLength)]['West'])
+                    ValidationData[i][7] = float(data[str(i + self.LearnDataLength)]['NorthWest'])
+                    ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
+                    ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
 
-            trainingLables[i][0] = data[str(i)]['Acceleration']
-            trainingLables[i][1] = data[str(i)]['Steering']
+            elif (self.SensorTypes == SensorTypes.FrontFive):
+                #Learning Data Format
+                for i in range(self.LearnDataLength): 
+                    trainingData[i][0] = float(data[str(i)]['North'])
+                    trainingData[i][1] = float(data[str(i)]['NorthEast'])
+                    trainingData[i][2] = float(data[str(i)]['East'])
+                    trainingData[i][3] = float(data[str(i)]['West'])
+                    trainingData[i][4] = float(data[str(i)]['NorthWest'])
+                    trainingLables[i][0] = float(data[str(i)]['Acceleration'])
+                    trainingLables[i][1] = float(data[str(i)]['Steering'])
+                #Validation data formating
+                for i in range(self.TestDataLength):
+                    ValidationData[i][0] = float(data[str(i + self.LearnDataLength)]['North'])
+                    ValidationData[i][1] = float(data[str(i + self.LearnDataLength)]['NorthEast'])
+                    ValidationData[i][2] = float(data[str(i + self.LearnDataLength)]['East'])
+                    ValidationData[i][3] = float(data[str(i + self.LearnDataLength)]['West'])
+                    ValidationData[i][4] = float(data[str(i + self.LearnDataLength)]['NorthWest'])
+                    ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
+                    ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
+
+            elif (self.SensorTypes == SensorTypes.FrontThreePerpendicular):
+                #Learning Data Formating
+                for i in range(self.LearnDataLength): 
+                    trainingData[i][0] = float(data[str(i)]['North'])
+                    trainingData[i][1] = float(data[str(i)]['East'])
+                    trainingData[i][2] = float(data[str(i)]['West'])
+                    trainingLables[i][0] = float(data[str(i)]['Acceleration'])
+                    trainingLables[i][1] = float(data[str(i)]['Steering'])
+                #Validation Data Forming
+                for i in range(self.TestDataLength):
+                    ValidationData[i][0] = float(data[str(i + self.LearnDataLength)]['North'])
+                    ValidationData[i][1] = float(data[str(i + self.LearnDataLength)]['East'])
+                    ValidationData[i][2] = float(data[str(i + self.LearnDataLength)]['West'])
+                    ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
+                    ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
+
+            elif (self.SensorTypes == SensorTypes.FrontThreeDiagonal):
+                #Learning Data Formatting
+                for i in range(self.LearnDataLength): 
+                    trainingData[i][0] = float(data[str(i)]['North'])
+                    trainingData[i][1] = float(data[str(i)]['NorthEast'])
+                    trainingData[i][2] = float(data[str(i)]['NorthWest'])
+                    trainingLables[i][0] = float(data[str(i)]['Acceleration'])
+                    trainingLables[i][1] = float(data[str(i)]['Steering'])
+                #Validation Data Formatting
+                for i in range(self.TestDataLength) :
+                    ValidationData[i][0] = float(data[str(i + self.LearnDataLength)]['North'])
+                    ValidationData[i][1] = float(data[str(i + self.LearnDataLength)]['NorthEast'])
+                    ValidationData[i][2] = float(data[str(i + self.LearnDataLength)]['NorthWest'])
+                    ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
+                    ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
+        
+
+        return
+
+#//----------------------------------------------------------------------------------------------------------------------------------//
+
+    def ModelTraining(self):
+
+        # Swap Over The optimiser type
+        # Not the best solution but super simple for easy future use
+        if (self.ModelTraining == OptimiserType.Adam):
+            self.model.compile(optimizer='Adam', loss='binary_crossentropy', metrics=['accuracy'])
+        elif (sel.ModelTraining == OptimiserType.Sigmoid):
+            self.model.compile(optimizer='sigmoid', loss='binary_crossentropy', metrics=['accuracy'])
+
+        #Swap from training new models to loading the last model
+        #Again folowing the rule of keep it simple
+        if (self.ToTrain) :
+                self.model.fit(self.trainingData, self.trainingLables, epochs=self.epochs, batch_size=self.batches , validation_data=(self.ValidationData, self.ValidationLables))
+                self.model.save_weights(self.GoodAiPath + '/CurrentWeights1.h5')
+        else :
+                self.model.load_weights(self.GoodAiPath + '/CurrentWeights1.h5')
+
+    def UpdateModelNumbers(self):
+        
+        if (self.FinishedCalculatingBestResults == False):
+            #Remove An Epoc Every time fail state kicks in
+            self.AIStatsToCheck[AiToTrainValues.Epochs] -= 1
+            self.AmmountChecked += 1
+
+            #if all 30 epochs have been calculated then remove one from data selection and reset epochs
+            if (self.AIStatsToCheck[AiToTrainValues.Epochs] == 0):
+                self.AIStatsToCheck[AiToTrainValues.Epochs] = 30
+                self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] -= 1
             
-        ue.log("Is trainingData Constructed")
+                #if data length is compleated then reset and chnage sensor type
+                if (self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] == 0):
+                    self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] = 500
+                    self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection] -= 1
+                
+                    #if  sensor types have compleated
+                    if (self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection] == 0):
+                        self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection] = 3
+                        self.AIStatsToCheck[AiToTrainValues.OptimiserSelection] -= 1
 
-        #Building The Neural Network's Structure
-        self.model = tf.keras.models.Sequential()
-        self.model.add(tf.keras.layers.Dense(8, activation='relu', input_shape=(8,)))
-        self.model.add(tf.keras.layers.Dense(16, activation='relu'))
-        self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
-        self.model.summary()
+                        # if optimers compleated
+                        if (self.AIStatsToCheck[AiToTrainValues.OptimiserSelection] == 0):
+                            self.AIStatsToCheck[AiToTrainValues.OptimiserSelection] = 2
+                            self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection] -= 1
 
-        ue.log("Is Constructed")
+                            # if All Model Layouts are compleated
+                            if (self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection] == 0):
+                                ue.log('COMPLEATED ALL AI VERSIONS')
+                                self.FinishedCalculatingBestResults = True
+                                return
+                        return
+                    return
+                return
+            return
+        else:
+            return 
 
-        self.model.compile(optimizer='rmsprop',
-                  loss='binary_crossentropy',
-                  metrics=['accuracy'])
+    def ModelReset(self):
 
-        ue.log("Is Complie")
+        #Ai Var about input Data
+        self.LearnDataLength = round(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] * 0.9)
+        self.TestDataLength = round(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] * 0.1)
+        self.TotalDataLength = 500
 
-        self.model.fit(trainingData, trainingLables, epochs=20, batch_size=512, validation_data=(trainingData, trainingLables))
+        #Ai Var About Training Amounts
+        #Epocs are amount that the full data set is trainined on
+        self.epochs = self.AIStatsToCheck[AiToTrainValues.Epochs]
+        #batches are how much gradient decent is tested for errors one is highest resoution
+        self.batches = 1
 
-        ue.log("Is Fit")
+        #Train new ai or load old ai weights
+        self.ToTrain = True
 
-        #Loading the Last Weights Back in
-        #self.model.load_weights(self.pathToFile + '/CurrentWeights.h5')
-        self.model.save_weights(self.pathToFile + '/CurrentWeights.h5')
+        #Decisions for Model Layout and training and sensor layouts
+        self.ModelStruct = ModelLayouts(self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection])
+        self.ModelTraining = OptimiserType(self.AIStatsToCheck[AiToTrainValues.OptimiserSelection])
+        self.SensorTypes = SensorTypes(self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection])
 
+        self.InputDataProcessing()
+        self.ModelLayout()
+        self.ModelTraining()
+
+    def CompareModelPerformance(performance):
+        
+        if (float(performance) > self.BestCurrentScore):
+            #Update Best Score To Only allow best ai to be saved
+            self.BestCurrentScore = float(performance)
+
+            #Add all values for the AI to be saved for human readable Json to see all info
+            JsonFile = {}
+            JsonFile['Performance Score'] = str(performance)
+            JsonFile['Itteration Of AI Length'] = str(self.AmmountChecked)
+            JsonFile['Epochs Trained For'] = str(self.AIStatsToCheck[AiToTrainValues.Epochs])
+            JsonFile['Amount Of Training Data Used'] = str(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection])
+            JsonFile['Sensor Style Used'] = str(self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection])
+            JsonFile['Optimiser Used'] = str(self.AIStatsToCheck[AiToTrainValues.OptimiserSelection])
+            JsonFile['Model Layout Used'] = str(self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection])
+
+            #Save To Good Storage
+            FolderName = '/'
+            FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection])) + '_'
+            FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.OptimiserSelection])) + '_'
+            FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection])) + '_'
+            FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection])) + '_'
+            FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.Epochs]))
+            self.model.save_weights(self.pathToFile + '/Auto Ai Saves' + FolderName + '/AiWeights.h5')
+            self.model.save(self.pathToFile + '/Auto Ai Saves' + FolderName + '/AiStuctureSave.h5')
+            
+            with open(self.pathToFile + '/Auto Ai Saves' + FolderName + 'AiInfo.Json', 'w') as outfile:
+                    json.dump(JsonFile, outfile, indent=4)
+        
+        # Saving Model Weights to vault
+        FolderName = '/'
+        FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection])) + '_'
+        FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.OptimiserSelection])) + '_'
+        FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection])) + '_'
+        FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection])) + '_'
+        FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.Epochs]))
+            
+        self.model.save_weights(self.AiVault + FolderName + '/CurrentWeights1.h5')
+        self.model.save(self.AiVault + FolderName + '/AiStructireSave.h5')
+
+        return
+
+#//------------------------------------ Python API Functions -----------------------------------//
+    def onSetup(self):
+        #Hidden Data Collection Var        
+        self.RunsCompleated = 0
+        self.ToRecordAt = 5000
+        self.Recording = False
+        self.FinishedCalculatingBestResults = False
+        self.BestCurrentScore = -1.0
+        self.AmmountChecked = 0
+
+        #Calculating local file dectory to read and write files
+        self.recordedData = {}
+        temp = Path(__file__).parent.absolute()
+        self.GoodAiPath = str( temp )
+
+        self.AiValut = 'D:\AI Valut'
+
+
+        self.AIStatsToCheck = np.array(5)
+        self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection] = 3
+        self.AIStatsToCheck[AiToTrainValues.OptimiserSelection] = 2
+        self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection] = 3
+        self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] = 500
+        self.AIStatsToCheck[AiToTrainValues.Epochs] = 30
+
+        #Update Params and Re-Train AI
+        self.ModelReset()
+
+        
     #Parse Json to useable Data
     def onJsonInput(self, jsonInput):
         #save This Frames Data To
-        self.recordedData[self.RunsCompleated] = jsonInput
-        
-        #Increase Counter Count
-        self.RunsCompleated = self.RunsCompleated + 1
-            
 
-        #Split into two elements to Data Recording and Ai Driving
-        if (jsonInput['RecordingData'] == 'True') :
-            #Open file and add this frames data
-            with open(self.pathToFile + '/DataRecorded1.json', 'w') as outfile:
-                json.dump(self.recordedData, outfile, indent=4)
+        # if Recording then store the data else dont waste memory space
+        if (self.Recording):
+            self.recordedData[self.RunsCompleated] = jsonInput
+            #Increase Counter Count
+            self.RunsCompleated = self.RunsCompleated + 1
+            #Split into two elements to Data Recording and Ai Driving
+            if (self.RunsCompleated > self.ToRecordAt) :
+                ue.log("Saved Data")
+                self.ToRecordAt += 1000;
+
+                #Open file and add this frames data
+                with open(self.GoodAiPath + '/DataRecorded2.json', 'w') as outfile:
+                    json.dump(self.recordedData, outfile, indent=4)
+                return
             return
+        
+        elif (jsonInput['Alive'] == 'False'):
+            self.CompareModelPerformance(jsonInput['Score'])
+            self.UpdateModelNumbers()
+            self.ModelReset()
+
+            return
+        # if not recording format and output ai results
         else:
-            #ue.log('MY CODE IS RUNNING')
             result = {}
             result['LR'] = 0.5
             result['FB'] = 1
@@ -127,44 +412,17 @@ class CarAi(TFPluginAPI):
             Data[0][6] = float(jsonInput['West'])
             Data[0][7] = float(jsonInput['NorthWest'])
 
-            #inData = np.array([
-            #    [float(jsonInput['North'])],
-            #    [float(jsonInput['NorthEast'])],
-            #    [float(jsonInput['East'])],
-            #    [float(jsonInput['SouthEast'])],
-            #    [float(jsonInput['South'])],
-            #    [float(jsonInput['SouthWest'])],
-            #    [float(jsonInput['West'])],
-            #    [float(jsonInput['NorthWest'])]])
-            
-            #inData.append(float(jsonInput['North']))
-            #inData.append(float(jsonInput['NorthEast']))
-            #inData.append(float(jsonInput['East']))
-            #inData.append(float(jsonInput['SouthEast']))
-            #inData.append(float(jsonInput['South']))
-            #inData.append(float(jsonInput['SouthWest']))
-            #inData.append(float(jsonInput['West']))
-            #inData.append(float(jsonInput['NorthWest']))
-
-            #a = np.array(inData)
-
-            #self.model.predict(inData)
-            #temp = self.model.predict(a)
-
             temp = self.model.predict(Data)
-
-            #ue.log(temp)
 
             result['FB'] = float(temp[0][0])
             result['LR'] = float(temp[0][1])
-
-            ue.log(result)
 
             return result
 
 
     def onBeginTraining(self):
         pass
+
 
 def getApi():
     return CarAi.getInstance()

@@ -1,0 +1,25 @@
+Batch size of 1 for highest quality
+
+started at 32: good but wobbily
+Jumped down to 16: Not working
+17 Improvement
+18 large improvement
+19 nonimal improvement
+20 small improvement
+21 - horrible
+22 - horrible
+23 - shit
+24 - bad
+25 - bad
+26 - slight left and then strieght
+27 - bad
+28 - bad
+29 - bad
+30 - goes in streight line
+31 - really bad
+32 - bad 
+
+for the data input of 250 with 100 to check with 20 is the best epoch
+
+Tryed 5 inputs and no improvements
+
