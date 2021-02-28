@@ -11,7 +11,7 @@ from enum import IntEnum
 
 class OptimiserType(IntEnum):
     Adam = 1
-    Sigmoid = 2
+    SGD = 2
     
 class SensorTypes(IntEnum):
      FrontThreeDiagonal = 1
@@ -20,10 +20,9 @@ class SensorTypes(IntEnum):
      AllEight = 4
 
 class ModelLayouts(IntEnum):
-    ThirtytwoSixteenEight = 1
+    Sixteen = 1
     EightSixteen = 2
     Eight = 3
-
 
 class AiToTrainValues(IntEnum):
     ModelLayoutSelection = 1
@@ -32,12 +31,19 @@ class AiToTrainValues(IntEnum):
     DataLengthSelection = 4
     Epochs = 5
 
+
+
 #ModelLayoutSelection -> OptimiserSelection -> SensorTypeSelection -> DataLengthSelection -> Epochs
 #3 -> 2 -> 3 -> 2139 -> 30     
 #1,155,060 combinations
 
 # 3 -> 2 -> 3 -> 500 -> 30
 #270,000 combonations 
+
+# 3 -> 2 -> 3 -> 284 -> 25
+#127,800 diffrent combo's
+
+
 
 
 class CarAi(TFPluginAPI):
@@ -80,24 +86,84 @@ class CarAi(TFPluginAPI):
 
         #First sucsess was with this layout
         if (self.ModelStruct == ModelLayouts.EightSixteen):
+            #Set Up Sequential model
             self.model = tf.keras.models.Sequential()
-            self.model.add(tf.keras.layers.Dense(8, activation='relu', input_shape=(self.AiInputLength,)))
-            self.model.add(tf.keras.layers.Dense(16, activation='relu'))
+            
+            #Set up input and first hidden layer with leakyRelu
+            self.model.add(tf.keras.layers.Dense(16, input_shape=(self.AiInputLength,)))
+            self.model.add(tf.keras.layers.LeakyReLU(aplha = 0.3))
+
+            #Set up Second Layer With LeakyReLU
+            self.model.add(tf.keras.layers.Dense(8))
+            self.model.add(tf.keras.layers.LeakyReLU(aplha = 0.3))
+
+            #Setup output layer
             self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
+
+            #Calculate amount of connections in the neural network
+            AmountOfConnections = ((8*16) + (16*8) + (8*2))
+            
+            #Offset from that factor
+            self.DataLengthTop = self.DataRange + AmmountAmountOfConnections
+            self.DataLengthBottom = self.DataRange + AmmountAmountOfConnections
+
+            #if Lower than 1 then force to be one
+            if (AmmountOfConnections - self.DataRange < 1):
+                self.DataLengthBottom = 1
 
         #Keeping Simple Ai as not a very complex problem
         elif (self.ModelStruct == ModelLayouts.Eight):
+            #Sequential model set up
             self.model = tf.keras.models.Sequential()
-            self.model.add(tf.keras.layers.Dense(8, activation='relu', input_shape=(self.AiInputLength,)))
+            
+            #Set input and first hidden layer of 8
+            self.model.add(tf.keras.layers.Dense(8, input_shape=(self.AiInputLength,)))
+            
+            #Set up activation for first layer
+            self.model.add(tf.keras.layers.LeakyReLU(aplha = 0.3))
+
+            #Set up output layer
             self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
 
+            
+            #Calculate amount of connections in the neural network
+            AmountOfConnections = ((8*8) + (8*2))
+            
+            #Offset from that factor
+            self.DataLengthTop = self.DataRange + AmmountAmountOfConnections
+            self.DataLengthBottom = self.DataRange + AmmountAmountOfConnections
+
+            #if Lower than 1 then force to be one
+            if (AmmountOfConnections - self.DataRange < 1):
+                self.DataLengthBottom = 1
+
+
         #Using this idea from nvidea Ai paper where it worked with picture input
-        elif (self.ModelStruct == ModelLayouts.ThirtytwoSixteenEight):
+        elif (self.ModelStruct == ModelLayouts.Sixteen):
+            #Set Up input model as sequential
             self.model = tf.keras.models.Sequential()
-            self.model.add(tf.keras.layers.Dense(32, activation='relu', input_shape=(self.AiInputLength,)))
-            self.model.add(tf.keras.layers.Dense(16, activation='relu'))
-            self.model.add(tf.keras.layers.Dense(8, activation='relu'))
-            self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
+
+            #Set Up input and first layer of 16
+            self.model.add(tf.keras.layers.Dense(16, input_shape=(self.AiInputLength,)))
+            
+            #Set first layers activation function as leakyRelu
+            self.model.add(tf.keras.layers.LeakyReLU(alpha = 0.3))
+            
+            #Set up output layer of two with sigmoid output
+            self.model.ass(tf.keras.layers.Dense(2, activation='sigmoid'))
+
+            
+            #Calculate amount of connections in the neural network
+            AmountOfConnections = ((8*16) + (16*2))
+            
+            #Offset from that factor
+            self.DataLengthTop = self.DataRange + AmmountAmountOfConnections
+            self.DataLengthBottom = self.DataRange + AmmountAmountOfConnections
+
+            #if Lower than 1 then force to be one
+            if (AmmountOfConnections - self.DataRange < 1):
+                self.DataLengthBottom = 1
+
 
 
         self.model.summary()
@@ -223,10 +289,10 @@ class CarAi(TFPluginAPI):
         # Swap Over The optimiser type
         # Not the best solution but super simple for easy future use
         if (self.ModelTraining == OptimiserType.Adam):
-            self.model.compile(optimizer='Adam', loss='binary_crossentropy', metrics=['accuracy'])
+            self.model.compile(optimizer='Adam', loss=tf.keras.losses.MeanSquaredError(), metrics=['accuracy'])
 
-        elif (self.ModelTraining == OptimiserType.Sigmoid):
-            self.model.compile(optimizer='rmsprop', loss='binary_crossentropy', metrics=['accuracy'])
+        elif (self.ModelTraining == OptimiserType.SGD):
+            self.model.compile(optimizer='SGD', loss=tf.keras.losses.MeanSquaredError(), metrics=['accuracy'])
 
         #Swap from training new models to loading the last model
         #Again folowing the rule of keep it simple
@@ -367,12 +433,21 @@ class CarAi(TFPluginAPI):
 
         self.AiVault = 'D:\AI Valut'
 
+        #Current Progress
         self.AIStatsToCheck = [0,0,0,0,0,0]
         self.AIStatsToCheck[(AiToTrainValues.ModelLayoutSelection)] = 3
         self.AIStatsToCheck[(AiToTrainValues.OptimiserSelection)] = 2
         self.AIStatsToCheck[(AiToTrainValues.SensorTypeSelection)] = 3
         self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)] = 500
         self.AIStatsToCheck[(AiToTrainValues.Epochs)] = 30
+
+        #Reset Values for AI
+        self.DataRange = 25
+        self.DataLengthTop = 0
+        self.DataLengthBottom = 0
+
+        self.EpochsTop = 30
+        self.EpochsBottom = 5
 
         #Update Params and Re-Train AI
         self.ModelReset()
