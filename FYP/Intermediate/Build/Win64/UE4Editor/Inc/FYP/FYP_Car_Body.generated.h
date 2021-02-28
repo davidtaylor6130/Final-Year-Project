@@ -28,11 +28,12 @@ struct FHitResult;
  \
 	DECLARE_FUNCTION(execAICarControl) \
 	{ \
+		P_GET_UBOOL(Z_Param_Restarting); \
 		P_GET_PROPERTY(UFloatProperty,Z_Param_LR); \
 		P_GET_PROPERTY(UFloatProperty,Z_Param_FB); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->AICarControl(Z_Param_LR,Z_Param_FB); \
+		P_THIS->AICarControl(Z_Param_Restarting,Z_Param_LR,Z_Param_FB); \
 		P_NATIVE_END; \
 	} \
  \
@@ -200,11 +201,12 @@ struct FHitResult;
  \
 	DECLARE_FUNCTION(execAICarControl) \
 	{ \
+		P_GET_UBOOL(Z_Param_Restarting); \
 		P_GET_PROPERTY(UFloatProperty,Z_Param_LR); \
 		P_GET_PROPERTY(UFloatProperty,Z_Param_FB); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->AICarControl(Z_Param_LR,Z_Param_FB); \
+		P_THIS->AICarControl(Z_Param_Restarting,Z_Param_LR,Z_Param_FB); \
 		P_NATIVE_END; \
 	} \
  \

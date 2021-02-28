@@ -79,11 +79,14 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 	{
 		struct FYPPawn_eventAICarControl_Parms
 		{
+			bool Restarting;
 			float LR;
 			float FB;
 		};
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_FB;
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_LR;
+		static void NewProp_Restarting_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_Restarting;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -92,9 +95,15 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 	};
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::NewProp_FB = { "FB", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FYPPawn_eventAICarControl_Parms, FB), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::NewProp_LR = { "LR", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FYPPawn_eventAICarControl_Parms, LR), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::NewProp_Restarting_SetBit(void* Obj)
+	{
+		((FYPPawn_eventAICarControl_Parms*)Obj)->Restarting = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::NewProp_Restarting = { "Restarting", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FYPPawn_eventAICarControl_Parms), &Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::NewProp_Restarting_SetBit, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::NewProp_FB,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::NewProp_LR,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::NewProp_Restarting,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFYPPawn_AICarControl_Statics::Function_MetaDataParams[] = {
@@ -897,7 +906,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FYP,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFYPPawn_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFYPPawn_AICarControl, "AICarControl" }, // 3065185430
+		{ &Z_Construct_UFunction_AFYPPawn_AICarControl, "AICarControl" }, // 3390624046
 		{ &Z_Construct_UFunction_AFYPPawn_GetEastInput, "GetEastInput" }, // 1778860635
 		{ &Z_Construct_UFunction_AFYPPawn_GetNorthEastInput, "GetNorthEastInput" }, // 2604597651
 		{ &Z_Construct_UFunction_AFYPPawn_GetNorthInput, "GetNorthInput" }, // 630116705
@@ -1252,7 +1261,7 @@ void EmptyLinkFunctionForGeneratedCodeFYP_Car_Body() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFYPPawn, 1306434763);
+	IMPLEMENT_CLASS(AFYPPawn, 2924597429);
 	template<> FYP_API UClass* StaticClass<AFYPPawn>()
 	{
 		return AFYPPawn::StaticClass();

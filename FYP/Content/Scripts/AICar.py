@@ -326,13 +326,13 @@ class CarAi(TFPluginAPI):
             FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.Epochs]))
             
             #Make The File For Ai Files
-            os.mkdir(self.GoodAiPath + 'Auto Ai Saves' + FolderName)
+            os.mkdir(self.GoodAiPath + '/Auto Ai Saves' + FolderName)
 
             #Saves Weights to the New File
             self.model.save_weights(self.GoodAiPath + '/Auto Ai Saves' + FolderName + '/AiWeights.h5')
             self.model.save(self.GoodAiPath + '/Auto Ai Saves' + FolderName + '/AiStuctureSave.h5')
             
-            with open(self.GoodAiPath + '/Auto Ai Saves' + FolderName + 'AiInfo.Json', 'w') as outfile:
+            with open(self.GoodAiPath + '/Auto Ai Saves' + FolderName + '/AiInfo.Json', 'w') as outfile:
                     json.dump(JsonFile, outfile, indent=4)
         
         # Saving Model Weights to vault
@@ -395,57 +395,55 @@ class CarAi(TFPluginAPI):
                 #Open file and add this frames data
                 with open(self.GoodAiPath + '/DataRecorded2.json', 'w') as outfile:
                     json.dump(self.recordedData, outfile, indent=4)
-                return
-            return
-        
-        elif (jsonInput['Alive'] == 'false'):
-            self.CompareModelPerformance(jsonInput['Score'])
-            self.UpdateModelNumbers()
-            self.ModelReset()
 
-            result = {}
-            result['FB'] = 0.5
-            result['LR'] = 0.5
-            result['ResetCar'] = 'true'
-
-            return
         # if not recording format and output ai results
         else:
-            result = {}
-            result['LR'] = 0.5
-            result['FB'] = 1
 
-            Data = np.zeros((1, self.AiInputLength))
+            if (jsonInput['Alive'] == 'false'):
+                self.CompareModelPerformance(jsonInput['Score'])
+                self.UpdateModelNumbers()
+                self.ModelReset()
 
-            if (self.SensorTypes == SensorTypes.AllEight):
-                Data[0][0] = float(jsonInput['North'])
-                Data[0][1] = float(jsonInput['NorthEast'])
-                Data[0][2] = float(jsonInput['East'])
-                Data[0][3] = float(jsonInput['SouthEast'])
-                Data[0][4] = float(jsonInput['South'])
-                Data[0][5] = float(jsonInput['SouthWest'])
-                Data[0][6] = float(jsonInput['West'])
-                Data[0][7] = float(jsonInput['NorthWest'])
+                result = {}
+                result['FB'] = 0.5
+                result['LR'] = 0.5
+                result['ResetCar'] = 1.0
 
-            elif (self.SensorTypes == SensorTypes.FrontThreeDiagonal):
-                Data[0][0] = float(jsonInput['North'])
-                Data[0][1] = float(jsonInput['NorthEast'])
-                Data[0][2] = float(jsonInput['NorthWest'])
+            else:
+                result = {}
+                result['LR'] = 0.5
+                result['FB'] = 0.5
 
-            elif (self.SensorTypes == SensorTypes.FrontThreePerpendicular):
-                Data[0][0] = float(jsonInput['North'])
-                Data[0][1] = float(jsonInput['East'])
-                Data[0][2] = float(jsonInput['West'])
+                Data = np.zeros((1, self.AiInputLength))
+
+                if (self.SensorTypes == SensorTypes.AllEight):
+                    Data[0][0] = float(jsonInput['North'])
+                    Data[0][1] = float(jsonInput['NorthEast'])
+                    Data[0][2] = float(jsonInput['East'])
+                    Data[0][3] = float(jsonInput['SouthEast'])
+                    Data[0][4] = float(jsonInput['South'])
+                    Data[0][5] = float(jsonInput['SouthWest'])
+                    Data[0][6] = float(jsonInput['West'])
+                    Data[0][7] = float(jsonInput['NorthWest'])
+
+                elif (self.SensorTypes == SensorTypes.FrontThreeDiagonal):
+                    Data[0][0] = float(jsonInput['North'])
+                    Data[0][1] = float(jsonInput['NorthEast'])
+                    Data[0][2] = float(jsonInput['NorthWest'])
+
+                elif (self.SensorTypes == SensorTypes.FrontThreePerpendicular):
+                    Data[0][0] = float(jsonInput['North'])
+                    Data[0][1] = float(jsonInput['East'])
+                    Data[0][2] = float(jsonInput['West'])
 
 
-            temp = self.model.predict(Data)
+                temp = self.model.predict(Data)
 
-            result['FB'] = float(temp[0][0])
-            result['LR'] = float(temp[0][1])
-            result['ResetCar'] = 'false'
+                result['FB'] = float(temp[0][0])
+                result['LR'] = float(temp[0][1])
+                result['ResetCar'] = 0.0
 
             return result
-
 
     def onBeginTraining(self):
         pass

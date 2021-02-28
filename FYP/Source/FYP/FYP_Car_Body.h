@@ -112,7 +112,7 @@ public:
 	float mf_TimeLeft;
 
 	//- Needed Elements To Track Distance Moved -//
-	float mf_DistanceTraveled;
+	float mf_DistanceTraveled = 0.0f;
 
 	//- Required Elements For Tracking Compleated Laps -//
 	UPROPERTY(Category = Display, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
@@ -123,7 +123,7 @@ public:
 	
 	uint32 mi_LapMultiplyer;
 	uint32 mi_HistoryCount;
-	uint32 mi_Score;
+	uint32 mi_Score = 0;
 
 	FString LapMarkerNames[4];
 	FString LapMarkerHistory[4];
@@ -230,7 +230,7 @@ public:
 
 	//- Get Input Feedback -//
 	UFUNCTION(BlueprintCallable, Category = "BY DAVID TAYLOR|FUNCTIONS|CarInputDataUsages")
-		void AICarControl(float LR, float FB);
+		void AICarControl(bool Restarting, float LR, float FB);
 
 
 	//- Death Functions -//

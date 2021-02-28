@@ -298,7 +298,8 @@ AFYPPawn::AFYPPawn()
 	LapMarkerNames[3] = "LapMarker4";
 
 	mi_Score = 0;
-	
+	mi_LapMultiplyer = 1;
+	mf_DistanceTraveled = 0.000000f;
 }
 
 void AFYPPawn::BeginPlay()
@@ -409,6 +410,14 @@ void AFYPPawn::UpdateCarSpeed(float Delta)
 
 	//- Calculations for Distance Traveled -//
 	mf_DistanceTraveled += (GetVehicleMovement()->GetForwardSpeed() * 0.036f) * Delta;
+	
+	//- Calculate Score -//
+	mi_Score = (mf_DistanceTraveled > 0) ? mf_DistanceTraveled * mi_LapMultiplyer : 0.0f;
+	
+	if (mi_Score < 0 || mi_Score == 4294967296)
+	{
+		mi_Score = 0;
+	}
 }
 
 void AFYPPawn::UpdateUIElements()
@@ -420,7 +429,7 @@ void AFYPPawn::UpdateUIElements()
 	TimeLeft->SetText(FText::Format(LOCTEXT("Time Stationary: ", "Time Stationary: {0}"), mf_TimeLeft));
 	DistanceTraveledScoreUI->SetText(FText::Format(LOCTEXT("Dist Traveled: ", "Dist Traveled: {0}"), mf_DistanceTraveled));
 	LapMultiplyerUI->SetText(FText::Format(LOCTEXT("Laps: ", "Laps: {0}"), mi_LapMultiplyer));
-	ScoreUI->SetText(FText::Format(LOCTEXT("Score: ", "Score: {0}"), mi_Score));
+	ScoreUI->SetText(FText::Format(LOCTEXT("Score: ", "Score: {0} "), mi_Score));
 
 
 
@@ -476,21 +485,24 @@ void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AAc
 	//UE_LOG(LogTemp, Warning, TEXT("Current Location in history array: %d"), mi_HistoryCount);
 }
 
-void AFYPPawn::AICarControl(float LR, float FB)
+void AFYPPawn::AICarControl(bool Restarting, float LR, float FB)
 {
-	float Accsel = ((FB + FB) - 1);
-	float Steer = ((LR + LR) - 1);
-	
-	//UE_LOG(LogTemp, Warning, TEXT(" Into Car LR: %f    FB: %f"), toString(Steer), toString(Accsel));
+	if (!Restarting)
+	{
+		float Accsel = ((FB + FB) - 1);
+		float Steer = ((LR + LR) - 1);
 
-	GetVehicleMovementComponent()->SetSteeringInput(Steer);
-	GetVehicleMovementComponent()->SetThrottleInput(Accsel);
+		//UE_LOG(LogTemp, Warning, TEXT(" Into Car LR: %f    FB: %f"), toString(Steer), toString(Accsel));
+
+		GetVehicleMovementComponent()->SetSteeringInput(Steer);
+		GetVehicleMovementComponent()->SetThrottleInput(Accsel);
+	}
 }
 
 void AFYPPawn::ResetCar()
 {
 	mf_TimeLeft = 0;
-	mi_Score = 0.0f;
+	mi_Score = 0;
 	mf_DistanceTraveled = 0.0f;
 	mi_LapMultiplyer = 1;
 }
