@@ -69,11 +69,9 @@ AFYPPawn::AFYPPawn()
 
 	// Engine 
 	// Torque setup
-	Vehicle4W->MaxEngineRPM = 5700.0f;
+	Vehicle4W->MaxEngineRPM = 7;
 	Vehicle4W->EngineSetup.TorqueCurve.GetRichCurve()->Reset();
-	Vehicle4W->EngineSetup.TorqueCurve.GetRichCurve()->AddKey(0.0f, 400.0f);
-	Vehicle4W->EngineSetup.TorqueCurve.GetRichCurve()->AddKey(1890.0f, 500.0f);
-	Vehicle4W->EngineSetup.TorqueCurve.GetRichCurve()->AddKey(5730.0f, 400.0f);
+	Vehicle4W->EngineSetup.TorqueCurve.GetRichCurve()->AddKey(0.0f, 4);
 
 	// Adjust the steering 
 	Vehicle4W->SteeringCurve.GetRichCurve()->Reset();
@@ -89,7 +87,7 @@ AFYPPawn::AFYPPawn()
 	Vehicle4W->DifferentialSetup.FrontRearSplit = 0.65;
 
 	// Automatic gearbox
-	Vehicle4W->TransmissionSetup.bUseGearAutoBox = true;
+	Vehicle4W->TransmissionSetup.bUseGearAutoBox = false;
 	Vehicle4W->TransmissionSetup.GearSwitchTime = 0.15f;
 	Vehicle4W->TransmissionSetup.GearAutoBoxLatency = 1.0f;
 
@@ -173,6 +171,12 @@ AFYPPawn::AFYPPawn()
 	LapMultiplyerUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
 	LapMultiplyerUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
 	LapMultiplyerUI->SetupAttachment(Camera);
+
+	ScoreUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Car Score"));
+	ScoreUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
+	ScoreUI->SetRelativeLocation(FVector(35.0f, 5.0f, 20.0f));
+	ScoreUI->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
+	ScoreUI->SetupAttachment(Camera);
 
 	NorthRayDistanceUI = CreateDefaultSubobject<UTextRenderComponent>(TEXT("N"));
 	NorthRayDistanceUI->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
@@ -292,6 +296,10 @@ AFYPPawn::AFYPPawn()
 	LapMarkerNames[1] = "LapMarker2";
 	LapMarkerNames[2] = "LapMarker3";
 	LapMarkerNames[3] = "LapMarker4";
+
+	mi_Score = 0;
+	mi_LapMultiplyer = 1;
+	mf_DistanceTraveled = 0.000000f;
 }
 
 void AFYPPawn::BeginPlay()
@@ -321,15 +329,19 @@ void AFYPPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputCompo
 
 void AFYPPawn::MoveForward(float Val)
 {
-	mf_Acceleration = Val; 
-	GetVehicleMovementComponent()->SetThrottleInput(Val);
+	float valMin = Val;
+
+	mf_Acceleration = valMin;
+	GetVehicleMovementComponent()->SetThrottleInput(valMin);
 	//UE_LOG(LogTemp, Warning, TEXT("Forward/Backword : %f"), ((Val / 2) + 0.5f));
 }
 
 void AFYPPawn::MoveRight(float Val)
 {
-	mf_Steering = Val;
-	GetVehicleMovementComponent()->SetSteeringInput(Val);
+	float valMin = Val;
+
+	mf_Steering = valMin;
+	GetVehicleMovementComponent()->SetSteeringInput(valMin);
 	//UE_LOG(LogTemp, Warning, TEXT("Left/Right : %f"), ((Val / 2) + 0.5f));
 }
 
@@ -358,7 +370,7 @@ void AFYPPawn::UpdateRayCasts()
 	{
 		Casts[i].Start = Casts[i].StartPoint->GetComponentLocation();
 		Casts[i].ForwardVector = Casts[i].StartPoint->GetForwardVector();
-		Casts[i].End = Casts[i].Start + (Casts[i].ForwardVector * 1000);
+		Casts[i].End = Casts[i].Start + (Casts[i].ForwardVector * 10000);
 
 		DrawDebugLine(GetWorld(), Casts[i].Start, Casts[i].End, FColor::Red, false, 0.01f, 0, 2);
 		GetWorld()->LineTraceSingleByChannel(Casts[i].OutHit, Casts[i].Start, Casts[i].End, ECC_Visibility, Casts[i].CollisionParams);
@@ -386,10 +398,9 @@ void AFYPPawn::UpdateCarSpeed(float Delta)
 	if (KPH < 1)
 	{
 		mf_TimeLeft += Delta;
-		if (mf_TimeLeft > 5.0f)
+		if (mf_TimeLeft >= mf_MaxTimeStationary)
 		{
-			AiFailed();
-			mf_TimeLeft = 5.0f;
+			mf_TimeLeft = mf_MaxTimeStationary;
 		}
 	}
 	else if (mf_TimeLeft > 0)
@@ -399,6 +410,14 @@ void AFYPPawn::UpdateCarSpeed(float Delta)
 
 	//- Calculations for Distance Traveled -//
 	mf_DistanceTraveled += (GetVehicleMovement()->GetForwardSpeed() * 0.036f) * Delta;
+	
+	//- Calculate Score -//
+	mi_Score = (mf_DistanceTraveled > 0) ? mf_DistanceTraveled * mi_LapMultiplyer : 0.0f;
+	
+	if (mi_Score < 0 || mi_Score == 4294967296)
+	{
+		mi_Score = 0;
+	}
 }
 
 void AFYPPawn::UpdateUIElements()
@@ -410,6 +429,10 @@ void AFYPPawn::UpdateUIElements()
 	TimeLeft->SetText(FText::Format(LOCTEXT("Time Stationary: ", "Time Stationary: {0}"), mf_TimeLeft));
 	DistanceTraveledScoreUI->SetText(FText::Format(LOCTEXT("Dist Traveled: ", "Dist Traveled: {0}"), mf_DistanceTraveled));
 	LapMultiplyerUI->SetText(FText::Format(LOCTEXT("Laps: ", "Laps: {0}"), mi_LapMultiplyer));
+	ScoreUI->SetText(FText::Format(LOCTEXT("Score: ", "Score: {0} "), mi_Score));
+
+
+
 	NorthRayDistanceUI->SetText(FText::Format(LOCTEXT("N: ", "N: {0}"), Casts[0].OutHit.Distance));
 	NorthEastRayDistanceUI->SetText(FText::Format(LOCTEXT("NE: ", "NE: {0}"), Casts[1].OutHit.Distance));
 	EastRayDistanceUI->SetText(FText::Format(LOCTEXT("E: ", "E: {0}"), Casts[2].OutHit.Distance));
@@ -422,15 +445,15 @@ void AFYPPawn::UpdateUIElements()
 
 void AFYPPawn::InputDataAgmentation()
 {
-	mf_NInput = Casts[0].OutHit.Distance / 1000;
-	mf_NEInput = Casts[1].OutHit.Distance / 1000;
-	mf_EInput = Casts[2].OutHit.Distance / 1000;
-	mf_SEInput = Casts[3].OutHit.Distance / 1000;
-	mf_SInput = Casts[4].OutHit.Distance / 1000;
-	mf_SWInput = Casts[5].OutHit.Distance / 1000;
-	mf_WInput = Casts[6].OutHit.Distance / 1000;
-	mf_NWInput = Casts[7].OutHit.Distance / 1000;
-	UE_LOG(LogTemp, Warning, TEXT("Format Format"));
+	mf_NInput = Casts[0].OutHit.Distance / 10000;
+	mf_NEInput = Casts[1].OutHit.Distance / 10000;
+	mf_EInput = Casts[2].OutHit.Distance / 10000;
+	mf_SEInput = Casts[3].OutHit.Distance / 10000;
+	mf_SInput = Casts[4].OutHit.Distance / 10000;
+	mf_SWInput = Casts[5].OutHit.Distance / 10000;
+	mf_WInput = Casts[6].OutHit.Distance / 10000;
+	mf_NWInput = Casts[7].OutHit.Distance / 10000;
+	//UE_LOG(LogTemp, Warning, TEXT("Format Format"));
 }
 
 void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AActor* _otherActor, UPrimitiveComponent* _otherComp, int32 _otherBodyIndex, bool _bFromSweep, const FHitResult & _hitResult)
@@ -462,20 +485,26 @@ void AFYPPawn::LapMarkerCollider(UPrimitiveComponent * _overlappedComponent, AAc
 	//UE_LOG(LogTemp, Warning, TEXT("Current Location in history array: %d"), mi_HistoryCount);
 }
 
-void AFYPPawn::AICarControl(float LR, float FB)
+void AFYPPawn::AICarControl(bool Restarting, float LR, float FB)
 {
-	UE_LOG(LogTemp, Warning, TEXT("CURRENT STEERING RUNNING"));
+	if (!Restarting)
+	{
+		float Accsel = ((FB + FB) - 1);
+		float Steer = ((LR + LR) - 1);
 
-	float Accsel = ((FB + FB) - 1);
-	float Steer = ((LR + LR) - 1);
+		//UE_LOG(LogTemp, Warning, TEXT(" Into Car LR: %f    FB: %f"), toString(Steer), toString(Accsel));
 
-	GetVehicleMovementComponent()->SetSteeringInput(Steer);
-	GetVehicleMovementComponent()->SetThrottleInput(Accsel);
+		GetVehicleMovementComponent()->SetSteeringInput(Steer);
+		GetVehicleMovementComponent()->SetThrottleInput(Accsel);
+	}
 }
 
-void AFYPPawn::AiFailed()
+void AFYPPawn::ResetCar()
 {
-
+	mf_TimeLeft = 0;
+	mi_Score = 0;
+	mf_DistanceTraveled = 0.0f;
+	mi_LapMultiplyer = 1;
 }
 
 #undef LOCTEXT_NAMESPACE
