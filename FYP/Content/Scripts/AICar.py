@@ -15,9 +15,8 @@ class OptimiserType(IntEnum):
     
 class SensorTypes(IntEnum):
      FrontThreeDiagonal = 1
-     FrontThreePerpendicular = 2
-     FrontFive = 3
-     AllEight = 4
+     FrontFive = 2
+     AllEight = 3
 
 class ModelLayouts(IntEnum):
     Sixteen = 1
@@ -84,6 +83,20 @@ class CarAi(TFPluginAPI):
         #Building The Neural Network's Structure
         #Following the rule of keep it simple
 
+        # If statement length
+        if (self.SensorTypes == SensorTypes.AllEight):
+            self.AiInputLength = 8
+
+        elif (self.SensorTypes == SensorTypes.FrontFive):
+            self.AiInputLength = 5
+
+        elif (self.SensorTypes == SensorTypes.FrontThreeDiagonal):
+            self.AiInputLength = 3
+
+
+
+
+
         #First sucsess was with this layout
         if (self.ModelStruct == ModelLayouts.EightSixteen):
             #Set Up Sequential model
@@ -91,24 +104,29 @@ class CarAi(TFPluginAPI):
             
             #Set up input and first hidden layer with leakyRelu
             self.model.add(tf.keras.layers.Dense(16, input_shape=(self.AiInputLength,)))
-            self.model.add(tf.keras.layers.LeakyReLU(aplha = 0.3))
+            self.model.add(tf.keras.layers.LeakyReLU(alpha = 0.3))
 
             #Set up Second Layer With LeakyReLU
             self.model.add(tf.keras.layers.Dense(8))
-            self.model.add(tf.keras.layers.LeakyReLU(aplha = 0.3))
+            self.model.add(tf.keras.layers.LeakyReLU(alpha = 0.3))
 
             #Setup output layer
             self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
 
             #Calculate amount of connections in the neural network
-            AmountOfConnections = ((8*16) + (16*8) + (8*2))
+            AmountOfConnections = ((self.AiInputLength*16) + (16*8) + (8*2))
             
             #Offset from that factor
-            self.DataLengthTop = self.DataRange + AmmountAmountOfConnections
-            self.DataLengthBottom = self.DataRange + AmmountAmountOfConnections
+            self.DataLengthTop = self.DataRange + AmountOfConnections
+            self.DataLengthBottom = self.DataRange - AmountOfConnections
+
+            if (self.FirstLoopRound):
+                self.AIStatsToCheck[AiToTrainValues.Epochs] = self.EpochsTop
+                self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] = self.DataLengthTop
+                self.FirstLoopRound = False
 
             #if Lower than 1 then force to be one
-            if (AmmountOfConnections - self.DataRange < 1):
+            if (AmountOfConnections - self.DataRange < 1):
                 self.DataLengthBottom = 1
 
         #Keeping Simple Ai as not a very complex problem
@@ -120,21 +138,26 @@ class CarAi(TFPluginAPI):
             self.model.add(tf.keras.layers.Dense(8, input_shape=(self.AiInputLength,)))
             
             #Set up activation for first layer
-            self.model.add(tf.keras.layers.LeakyReLU(aplha = 0.3))
+            self.model.add(tf.keras.layers.LeakyReLU(alpha = 0.3))
 
             #Set up output layer
             self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
 
             
             #Calculate amount of connections in the neural network
-            AmountOfConnections = ((8*8) + (8*2))
+            AmountOfConnections = ((self.AiInputLength*8) + (8*2))
             
             #Offset from that factor
-            self.DataLengthTop = self.DataRange + AmmountAmountOfConnections
-            self.DataLengthBottom = self.DataRange + AmmountAmountOfConnections
+            self.DataLengthTop = self.DataRange + AmountOfConnections
+            self.DataLengthBottom = self.DataRange - AmountOfConnections
+
+            if (self.FirstLoopRound):
+                self.AIStatsToCheck[AiToTrainValues.Epochs] = self.EpochsTop
+                self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] = self.DataLengthTop
+                self.FirstLoopRound = False
 
             #if Lower than 1 then force to be one
-            if (AmmountOfConnections - self.DataRange < 1):
+            if (AmountOfConnections - self.DataRange < 1):
                 self.DataLengthBottom = 1
 
 
@@ -154,14 +177,20 @@ class CarAi(TFPluginAPI):
 
             
             #Calculate amount of connections in the neural network
-            AmountOfConnections = ((8*16) + (16*2))
+            AmountOfConnections = ((self.AiInputLength*16) + (16*2))
             
             #Offset from that factor
-            self.DataLengthTop = self.DataRange + AmmountAmountOfConnections
-            self.DataLengthBottom = self.DataRange + AmmountAmountOfConnections
+            self.DataLengthTop = self.DataRange + AmountOfConnections
+            self.DataLengthBottom = self.DataRange - AmountOfConnections
+
+            if (self.FirstLoopRound):
+                self.AIStatsToCheck[AiToTrainValues.Epochs] = self.EpochsTop
+                self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] = self.DataLengthTop
+                self.FirstLoopRound = False
+
 
             #if Lower than 1 then force to be one
-            if (AmmountOfConnections - self.DataRange < 1):
+            if (AmountOfConnections - self.DataRange < 1):
                 self.DataLengthBottom = 1
 
 
@@ -172,20 +201,9 @@ class CarAi(TFPluginAPI):
 
     def InputDataProcessing(self):
 
-        # If statement length
-        if (self.SensorTypes == SensorTypes.AllEight):
-            self.AiInputLength = 8
-
-        elif (self.SensorTypes == SensorTypes.FrontFive):
-            self.AiInputLength = 5
-
-        elif (self.SensorTypes == SensorTypes.FrontThreeDiagonal or self.SensorTypes == SensorTypes.FrontThreePerpendicular):
-            self.AiInputLength = 3
-
-
         #Training initlization
-        self.trainingData = np.zeros((self.LearnDataLength , self.AiInputLength))
-        self.trainingLables = np.zeros((self.LearnDataLength, 2))
+        self.trainingData = np.zeros((self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] , self.AiInputLength))
+        self.trainingLables = np.zeros((self.AIStatsToCheck[AiToTrainValues.DataLengthSelection], 2))
 
         self.ValidationData = np.zeros((self.TestDataLength , self.AiInputLength))
         self.ValidationLables = np.zeros((self.TestDataLength, 2))
@@ -204,7 +222,7 @@ class CarAi(TFPluginAPI):
 
             if (self.SensorTypes == SensorTypes.AllEight):
                 #Training Data Format
-                for i in range(self.LearnDataLength): 
+                for i in range(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection]): 
                     self.trainingData[i][0] = float(data[str(i)]['North'])
                     self.trainingData[i][1] = float(data[str(i)]['NorthEast'])
                     self.trainingData[i][2] = float(data[str(i)]['East'])
@@ -230,7 +248,7 @@ class CarAi(TFPluginAPI):
 
             elif (self.SensorTypes == SensorTypes.FrontFive):
                 #Learning Data Format
-                for i in range(self.LearnDataLength): 
+                for i in range(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection]): 
                     self.trainingData[i][0] = float(data[str(i)]['North'])
                     self.trainingData[i][1] = float(data[str(i)]['NorthEast'])
                     self.trainingData[i][2] = float(data[str(i)]['East'])
@@ -248,25 +266,9 @@ class CarAi(TFPluginAPI):
                     self.ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
                     self.ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
 
-            elif (self.SensorTypes == SensorTypes.FrontThreePerpendicular):
-                #Learning Data Formating
-                for i in range(self.LearnDataLength): 
-                    self.trainingData[i][0] = float(data[str(i)]['North'])
-                    self.trainingData[i][1] = float(data[str(i)]['East'])
-                    self.trainingData[i][2] = float(data[str(i)]['West'])
-                    self.trainingLables[i][0] = float(data[str(i)]['Acceleration'])
-                    self.trainingLables[i][1] = float(data[str(i)]['Steering'])
-                #Validation Data Forming
-                for i in range(self.TestDataLength):
-                    self.ValidationData[i][0] = float(data[str(i + self.LearnDataLength)]['North'])
-                    self.ValidationData[i][1] = float(data[str(i + self.LearnDataLength)]['East'])
-                    self.ValidationData[i][2] = float(data[str(i + self.LearnDataLength)]['West'])
-                    self.ValidationLables[i][0] = float(data[str(i + self.LearnDataLength)]['Acceleration'])
-                    self.ValidationLables[i][1] = float(data[str(i + self.LearnDataLength)]['Steering'])
-
             elif (self.SensorTypes == SensorTypes.FrontThreeDiagonal):
                 #Learning Data Formatting
-                for i in range(self.LearnDataLength): 
+                for i in range(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection]): 
                     self.trainingData[i][0] = float(data[str(i)]['North'])
                     self.trainingData[i][1] = float(data[str(i)]['NorthEast'])
                     self.trainingData[i][2] = float(data[str(i)]['NorthWest'])
@@ -289,10 +291,10 @@ class CarAi(TFPluginAPI):
         # Swap Over The optimiser type
         # Not the best solution but super simple for easy future use
         if (self.ModelTraining == OptimiserType.Adam):
-            self.model.compile(optimizer='Adam', loss=tf.keras.losses.MeanSquaredError(), metrics=['accuracy'])
+            self.model.compile(optimizer='Adam', loss='mean_squared_error')
 
         elif (self.ModelTraining == OptimiserType.SGD):
-            self.model.compile(optimizer='SGD', loss=tf.keras.losses.MeanSquaredError(), metrics=['accuracy'])
+            self.model.compile(optimizer='sgd', loss='mean_squared_error')
 
         #Swap from training new models to loading the last model
         #Again folowing the rule of keep it simple
@@ -311,13 +313,13 @@ class CarAi(TFPluginAPI):
             self.AmmountChecked += 1
 
             #if all 30 epochs have been calculated then remove one from data selection and reset epochs
-            if (self.AIStatsToCheck[AiToTrainValues.Epochs] == 0):
-                self.AIStatsToCheck[AiToTrainValues.Epochs] = 30
+            if (self.AIStatsToCheck[AiToTrainValues.Epochs] == (self.EpochsBottom - 1)):
+                self.AIStatsToCheck[AiToTrainValues.Epochs] = self.EpochsTop
                 self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] -= 1
             
                 #if data length is compleated then reset and chnage sensor type
-                if (self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] == 0):
-                    self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] = 500
+                if (self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] == (self.DataLengthBottom - 1)):
+                    self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] = self.DataLengthTop
                     self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection] -= 1
                 
                     #if  sensor types have compleated
@@ -345,9 +347,9 @@ class CarAi(TFPluginAPI):
     def ModelReset(self):
 
         #Ai Var about input Data
-        self.LearnDataLength = round(self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)] * 0.9)
+        self.LearnDataLength = self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)]
         self.TestDataLength = round(self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)] * 0.1)
-        self.TotalDataLength = 500
+        self.TotalDataLength = 2139
 
         #Ai Var About Training Amounts
         #Epocs are amount that the full data set is trainined on
@@ -363,8 +365,8 @@ class CarAi(TFPluginAPI):
         self.ModelTraining = self.AIStatsToCheck[(AiToTrainValues.OptimiserSelection)]
         self.SensorTypes = self.AIStatsToCheck[(AiToTrainValues.SensorTypeSelection)]
 
-        self.InputDataProcessing()
         self.ModelLayout()
+        self.InputDataProcessing()
         self.ModelTrainingFunction()
 
     def CompareModelPerformance(self, performance):
@@ -385,11 +387,11 @@ class CarAi(TFPluginAPI):
 
             #Create Folder Name
             FolderName = '/'
-            FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection])) + '_'
-            FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.OptimiserSelection])) + '_'
-            FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection])) + '_'
-            FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection])) + '_'
-            FolderName += str(int(self.AIStatsToCheck[AiToTrainValues.Epochs]))
+            FolderName += str(self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection]) + '_'
+            FolderName += str(self.AIStatsToCheck[AiToTrainValues.OptimiserSelection]) + '_'
+            FolderName += str(self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection]) + '_'
+            FolderName += str(self.AIStatsToCheck[AiToTrainValues.DataLengthSelection]) + '_'
+            FolderName += str(self.AIStatsToCheck[AiToTrainValues.Epochs])
             
             #Make The File For Ai Files
             os.mkdir(self.GoodAiPath + '/Auto Ai Saves' + FolderName)
@@ -423,7 +425,7 @@ class CarAi(TFPluginAPI):
         self.ToRecordAt = 5000
         self.Recording = False
         self.FinishedCalculatingBestResults = False
-        self.BestCurrentScore = -1.0
+        self.BestCurrentScore = -10.0
         self.AmmountChecked = 0
 
         #Calculating local file dectory to read and write files
@@ -438,11 +440,13 @@ class CarAi(TFPluginAPI):
         self.AIStatsToCheck[(AiToTrainValues.ModelLayoutSelection)] = 3
         self.AIStatsToCheck[(AiToTrainValues.OptimiserSelection)] = 2
         self.AIStatsToCheck[(AiToTrainValues.SensorTypeSelection)] = 3
-        self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)] = 500
+        self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)] = 95
         self.AIStatsToCheck[(AiToTrainValues.Epochs)] = 30
 
+        self.FirstLoopRound = True
+
         #Reset Values for AI
-        self.DataRange = 25
+        self.DataRange = 15
         self.DataLengthTop = 0
         self.DataLengthBottom = 0
 
