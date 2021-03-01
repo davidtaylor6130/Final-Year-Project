@@ -118,7 +118,7 @@ class CarAi(TFPluginAPI):
             
             #Offset from that factor
             self.DataLengthTop = self.DataRange + AmountOfConnections
-            self.DataLengthBottom = self.DataRange - AmountOfConnections
+            self.DataLengthBottom = AmountOfConnections - self.DataRange;
 
             if (self.FirstLoopRound):
                 self.AIStatsToCheck[AiToTrainValues.Epochs] = self.EpochsTop
@@ -149,7 +149,7 @@ class CarAi(TFPluginAPI):
             
             #Offset from that factor
             self.DataLengthTop = self.DataRange + AmountOfConnections
-            self.DataLengthBottom = self.DataRange - AmountOfConnections
+            self.DataLengthBottom = AmountOfConnections - self.DataRange;
 
             if (self.FirstLoopRound):
                 self.AIStatsToCheck[AiToTrainValues.Epochs] = self.EpochsTop
@@ -181,7 +181,7 @@ class CarAi(TFPluginAPI):
             
             #Offset from that factor
             self.DataLengthTop = self.DataRange + AmountOfConnections
-            self.DataLengthBottom = self.DataRange - AmountOfConnections
+            self.DataLengthBottom = AmountOfConnections - self.DataRange;
 
             if (self.FirstLoopRound):
                 self.AIStatsToCheck[AiToTrainValues.Epochs] = self.EpochsTop
@@ -439,8 +439,8 @@ class CarAi(TFPluginAPI):
         self.AIStatsToCheck = [0,0,0,0,0,0]
         self.AIStatsToCheck[(AiToTrainValues.ModelLayoutSelection)] = 3
         self.AIStatsToCheck[(AiToTrainValues.OptimiserSelection)] = 2
-        self.AIStatsToCheck[(AiToTrainValues.SensorTypeSelection)] = 3
-        self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)] = 95
+        self.AIStatsToCheck[(AiToTrainValues.SensorTypeSelection)] = 2
+        self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)] = 287
         self.AIStatsToCheck[(AiToTrainValues.Epochs)] = 30
 
         self.FirstLoopRound = True
