@@ -30,8 +30,6 @@ class AiToTrainValues(IntEnum):
     DataLengthSelection = 4
     Epochs = 5
 
-
-
 #ModelLayoutSelection -> OptimiserSelection -> SensorTypeSelection -> DataLengthSelection -> Epochs
 #3 -> 2 -> 3 -> 2139 -> 30     
 #1,155,060 combinations
@@ -42,10 +40,31 @@ class AiToTrainValues(IntEnum):
 # 3 -> 2 -> 3 -> 284 -> 25
 #127,800 diffrent combo's
 
-
-
-
 class CarAi(TFPluginAPI):
+
+    def LoadProgress(self):
+        f1 = open(self.GoodAiPath + '/AutoTestingProgress.json', "r")
+        data1 = json.loads(f1.read())
+        f1.close()
+
+        self.startValues[1] = int(data1['Model'])
+        self.startValues[2] = int(data1['Optimiser'])
+        self.startValues[3] = int(data1['Sensor'])
+        self.startValues[4] = int(data1['Data'])
+        self.startValues[5] = int(data1['Epochs'])
+
+    def SaveProgress(self):
+
+        ToSave = {}
+        ToSave['Model']     = str(self.AIStatsToCheck[1])
+        ToSave['Optimiser'] = str(self.AIStatsToCheck[2])
+        ToSave['Sensor']    = str(self.AIStatsToCheck[3])
+        ToSave['Data']      = str(self.AIStatsToCheck[4])
+        ToSave['Epochs']    = str(self.AIStatsToCheck[5])
+
+        #Open file and add this frames data
+        with open(self.GoodAiPath + '/AutoTestingProgress.json', "w") as outfile:
+            json.dump(ToSave, outfile, indent=4)
 
     def DataScrambleFunction(self):
         f1 = open(self.GoodAiPath + '/DataRecorded1.json', "r")
@@ -173,7 +192,7 @@ class CarAi(TFPluginAPI):
             self.model.add(tf.keras.layers.LeakyReLU(alpha = 0.3))
             
             #Set up output layer of two with sigmoid output
-            self.model.ass(tf.keras.layers.Dense(2, activation='sigmoid'))
+            self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
 
             
             #Calculate amount of connections in the neural network
@@ -192,8 +211,6 @@ class CarAi(TFPluginAPI):
             #if Lower than 1 then force to be one
             if (AmountOfConnections - self.DataRange < 1):
                 self.DataLengthBottom = 1
-
-
 
         self.model.summary()
 
@@ -313,27 +330,27 @@ class CarAi(TFPluginAPI):
             self.AmmountChecked += 1
 
             #if all 30 epochs have been calculated then remove one from data selection and reset epochs
-            if (self.AIStatsToCheck[AiToTrainValues.Epochs] == (self.EpochsBottom - 1)):
+            if (self.AIStatsToCheck[AiToTrainValues.Epochs] <= (self.EpochsBottom - 1)):
                 self.AIStatsToCheck[AiToTrainValues.Epochs] = self.EpochsTop
                 self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] -= 1
             
                 #if data length is compleated then reset and chnage sensor type
-                if (self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] == (self.DataLengthBottom - 1)):
+                if (self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] <= (self.DataLengthBottom - 1)):
                     self.AIStatsToCheck[AiToTrainValues.DataLengthSelection] = self.DataLengthTop
                     self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection] -= 1
                 
                     #if  sensor types have compleated
-                    if (self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection] == 0):
+                    if (self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection] <= 0):
                         self.AIStatsToCheck[AiToTrainValues.SensorTypeSelection] = 3
                         self.AIStatsToCheck[AiToTrainValues.OptimiserSelection] -= 1
 
                         # if optimers compleated
-                        if (self.AIStatsToCheck[AiToTrainValues.OptimiserSelection] == 0):
+                        if (self.AIStatsToCheck[AiToTrainValues.OptimiserSelection] <= 0):
                             self.AIStatsToCheck[AiToTrainValues.OptimiserSelection] = 2
                             self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection] -= 1
 
                             # if All Model Layouts are compleated
-                            if (self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection] == 0):
+                            if (self.AIStatsToCheck[AiToTrainValues.ModelLayoutSelection] <= 0):
                                 ue.log('COMPLEATED ALL AI VERSIONS')
                                 self.FinishedCalculatingBestResults = True
                                 return
@@ -346,6 +363,10 @@ class CarAi(TFPluginAPI):
 
     def ModelReset(self):
 
+        #Train new ai or load old ai weights
+        self.ToTrain = False
+
+
         #Ai Var about input Data
         self.LearnDataLength = self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)]
         self.TestDataLength = round(self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)] * 0.1)
@@ -355,19 +376,45 @@ class CarAi(TFPluginAPI):
         #Epocs are amount that the full data set is trainined on
         self.epochs = self.AIStatsToCheck[(AiToTrainValues.Epochs)]
         #batches are how much gradient decent is tested for errors one is highest resoution
-        self.batches = 1
-
-        #Train new ai or load old ai weights
-        self.ToTrain = True
-
+        self.batches = 8
+        
         #Decisions for Model Layout and training and sensor layouts
         self.ModelStruct = self.AIStatsToCheck[(AiToTrainValues.ModelLayoutSelection)]
         self.ModelTraining = self.AIStatsToCheck[(AiToTrainValues.OptimiserSelection)]
         self.SensorTypes = self.AIStatsToCheck[(AiToTrainValues.SensorTypeSelection)]
 
-        self.ModelLayout()
-        self.InputDataProcessing()
-        self.ModelTrainingFunction()
+        #Epocs are amount that the full data set is trainined on
+        self.epochs = self.AIStatsToCheck[(AiToTrainValues.Epochs)]
+
+        if (self.ToTrain == True) :
+            self.ModelLayout()
+            self.InputDataProcessing()
+            self.ModelTrainingFunction()
+
+        else:
+            self.AiInputLength = 8;
+            self.SensorTypes = 3;
+
+            self.InputDataProcessing()
+
+            #Set Up Sequential model
+            self.model = tf.keras.models.Sequential()
+            
+            #Set up input and first hidden layer with leakyRelu
+            self.model.add(tf.keras.layers.Dense(36, input_shape=(8,)))
+            self.model.add(tf.keras.layers.LeakyReLU(alpha = 0.3))
+
+            #Setup output layer
+            self.model.add(tf.keras.layers.Dense(2, activation='linar'))
+
+            self.model.compile(optimizer='sgd', loss='mean_squared_error')
+
+            self.model.fit(self.trainingData, self.trainingLables, epochs=30, batch_size=8 , validation_data=(self.ValidationData, self.ValidationLables))
+            self.model.save_weights(self.GoodAiPath + '/CurrentWeights1.h5')
+
+            #self.model = tf.keras.models.load_model(self.GoodAiPath + '/Auto Ai Saves/' + '2_2_2_284_29/AiStuctureSave.h5')  
+            self.model.summary()
+
 
     def CompareModelPerformance(self, performance):
         
@@ -397,7 +444,7 @@ class CarAi(TFPluginAPI):
             os.mkdir(self.GoodAiPath + '/Auto Ai Saves' + FolderName)
 
             #Saves Weights to the New File
-            self.model.save_weights(self.GoodAiPath + '/Auto Ai Saves' + FolderName + '/AiWeights.h5')
+            #self.model.save_weights(self.GoodAiPath + '/Auto Ai Saves' + FolderName + '/AiWeights.h5')
             self.model.save(self.GoodAiPath + '/Auto Ai Saves' + FolderName + '/AiStuctureSave.h5')
             
             with open(self.GoodAiPath + '/Auto Ai Saves' + FolderName + '/AiInfo.Json', 'w') as outfile:
@@ -413,19 +460,24 @@ class CarAi(TFPluginAPI):
         
         os.mkdir(self.AiVault + FolderName)
 
-        self.model.save_weights(self.AiVault + FolderName + '/CurrentWeights1.h5')
+        #self.model.save_weights(self.AiVault + FolderName + '/CurrentWeights1.h5')
         self.model.save(self.AiVault + FolderName + '/AiStructireSave.h5')
 
         return
 
 #//------------------------------------ Python API Functions -----------------------------------//
     def onSetup(self):
+
+        #need to change BestCurrentHighScore
+        #Need to change MOdel optimiser and sensor type need to match the correct values
+        #data length and Epochs dont need changing
+
         #Hidden Data Collection Var        
         self.RunsCompleated = 0
         self.ToRecordAt = 5000
         self.Recording = False
         self.FinishedCalculatingBestResults = False
-        self.BestCurrentScore = -10.0
+        self.BestCurrentScore = 35.0
         self.AmmountChecked = 0
 
         #Calculating local file dectory to read and write files
@@ -435,15 +487,19 @@ class CarAi(TFPluginAPI):
 
         self.AiVault = 'D:\AI Valut'
 
+        self.startValues = [0,0,0,0,0,0]
+
+        self.LoadProgress()
+
         #Current Progress
         self.AIStatsToCheck = [0,0,0,0,0,0]
-        self.AIStatsToCheck[(AiToTrainValues.ModelLayoutSelection)] = 3
-        self.AIStatsToCheck[(AiToTrainValues.OptimiserSelection)] = 2
-        self.AIStatsToCheck[(AiToTrainValues.SensorTypeSelection)] = 2
-        self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)] = 287
-        self.AIStatsToCheck[(AiToTrainValues.Epochs)] = 30
+        self.AIStatsToCheck[(AiToTrainValues.ModelLayoutSelection)] = self.startValues[1]
+        self.AIStatsToCheck[(AiToTrainValues.OptimiserSelection)] = self.startValues[2]
+        self.AIStatsToCheck[(AiToTrainValues.SensorTypeSelection)] = self.startValues[3]
+        self.AIStatsToCheck[(AiToTrainValues.DataLengthSelection)] = self.startValues[4]
+        self.AIStatsToCheck[(AiToTrainValues.Epochs)] = self.startValues[5]
 
-        self.FirstLoopRound = True
+        self.FirstLoopRound = False
 
         #Reset Values for AI
         self.DataRange = 15
@@ -477,17 +533,17 @@ class CarAi(TFPluginAPI):
 
         # if not recording format and output ai results
         else:
-
             if (jsonInput['Alive'] == 'false'):
-                self.CompareModelPerformance(jsonInput['Score'])
-                self.UpdateModelNumbers()
+                if (self.ToTrain):
+                    self.CompareModelPerformance(jsonInput['Score'])
+                    self.UpdateModelNumbers()
+                    self.SaveProgress();
+                
                 self.ModelReset()
-
                 result = {}
                 result['FB'] = 0.5
                 result['LR'] = 0.5
                 result['ResetCar'] = 1.0
-
             else:
                 result = {}
                 result['LR'] = 0.5
@@ -510,10 +566,12 @@ class CarAi(TFPluginAPI):
                     Data[0][1] = float(jsonInput['NorthEast'])
                     Data[0][2] = float(jsonInput['NorthWest'])
 
-                elif (self.SensorTypes == SensorTypes.FrontThreePerpendicular):
+                elif (self.SensorTypes == SensorTypes.FrontFive):
                     Data[0][0] = float(jsonInput['North'])
-                    Data[0][1] = float(jsonInput['East'])
-                    Data[0][2] = float(jsonInput['West'])
+                    Data[0][1] = float(jsonInput['NorthEast'])
+                    Data[0][2] = float(jsonInput['East'])
+                    Data[0][3] = float(jsonInput['West'])
+                    Data[0][4] = float(jsonInput['NorthWest'])
 
 
                 temp = self.model.predict(Data)
