@@ -19,7 +19,7 @@ class CarAi(TFPluginAPI):
         
         #Creating the AI
         self.model = tf.keras.models.Sequential()
-        self.model.add(tf.keras.layers.Dense(12, input_shape=(4,)))
+        self.model.add(tf.keras.layers.Dense(16, input_shape=(4,)))
         self.model.add(tf.keras.layers.LeakyReLU(alpha = 0.3))
         self.model.add(tf.keras.layers.Dense(2, activation='sigmoid'))
         
